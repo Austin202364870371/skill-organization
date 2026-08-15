@@ -1,0 +1,6 @@
+root: data/appworld
+agent: simplified_react_code_agent
+max_steps: 30
+num_workers: 4
+splits: [train, dev, test_normal, test_challenge]
+

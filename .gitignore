@@ -1,0 +1,17 @@
+.env
+.gitconfig-lfs
+env/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+logs/*.out
+logs/*.err
+models/
+data/appworld/
+data/reference_trajectories/
+data/retrieval_snapshots/
+outputs/runs/
+outputs/trajectories/
+outputs/skill_generation/
+

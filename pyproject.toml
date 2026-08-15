@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-organization"
+version = "0.1.0"
+description = "Controlled AppWorld experiments for skill organization and disclosure"
+requires-python = ">=3.11"
+dependencies = [
+  "PyYAML>=6.0",
+  "openai>=1.40",
+]
+
+[project.optional-dependencies]
+appworld = ["appworld", "vllm"]
+test = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*.py" = ["E402"]
+
