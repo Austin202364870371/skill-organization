@@ -17,7 +17,20 @@ OPENAI_VERSION="${OPENAI_VERSION:-1.99.8}"
 LITELLM_VERSION="${LITELLM_VERSION:-1.78.2}"
 TRANSFORMERS_VERSION="${TRANSFORMERS_VERSION:-4.56.2}"
 cd "$PROJECT_DIR"
-mkdir -p logs .cache/huggingface outputs/audits
+export XDG_CACHE_HOME="$PROJECT_DIR/.cache"
+export PIP_CACHE_DIR="$PROJECT_DIR/.cache/pip"
+export HF_HOME="$PROJECT_DIR/.cache/huggingface"
+export TORCH_HOME="$PROJECT_DIR/.cache/torch"
+export TRITON_CACHE_DIR="$PROJECT_DIR/.cache/triton"
+export VLLM_CACHE_ROOT="$PROJECT_DIR/.cache/vllm"
+export VLLM_CONFIG_ROOT="$PROJECT_DIR/.cache/vllm-config"
+export CUDA_CACHE_PATH="$PROJECT_DIR/.cache/cuda"
+export NUMBA_CACHE_DIR="$PROJECT_DIR/.cache/numba"
+export TMPDIR="$PROJECT_DIR/.cache/tmp"
+export CONDA_PKGS_DIRS="$PROJECT_DIR/.cache/conda-pkgs"
+mkdir -p logs outputs/audits "$PIP_CACHE_DIR" "$HF_HOME" "$TORCH_HOME" \
+  "$TRITON_CACHE_DIR" "$VLLM_CACHE_ROOT" "$VLLM_CONFIG_ROOT" "$CUDA_CACHE_PATH" \
+  "$NUMBA_CACHE_DIR" "$TMPDIR" "$CONDA_PKGS_DIRS"
 
 if [[ ! -x env/bin/python ]]; then
   conda create -p "$PROJECT_DIR/env" python=3.11 -y
