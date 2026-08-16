@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import asdict, is_dataclass
 from typing import Any
 
@@ -11,6 +12,11 @@ from skill_loader import SkillLoader
 
 
 LOAD_SENTINEL = "__LOAD_SKILL__:"
+COMPLETION_RULE = """
+AppWorld completion rule:
+- For an action task, call `apis.supervisor.complete_task()` without an answer.
+- Pass `answer=...` only when the task explicitly asks for information to be returned.
+"""
 SKILL_RULES = """
 Skill controller rules:
 - To load a disclosed skill, emit a standalone line: LOAD_SKILL <skill_id>
@@ -39,14 +45,24 @@ def solve_with_official(
         def __init__(self, **kwargs: Any) -> None:
             super().__init__(**kwargs)
             self.used_skill_ids: set[str] = set()
+            original_generate = self.language_model.generate
+
+            def normalized_generate(*args: Any, **generation_kwargs: Any) -> dict[str, Any]:
+                output = original_generate(*args, **generation_kwargs)
+                if output.get("reasoning_content") is None:
+                    output["reasoning_content"] = ""
+                return output
+
+            self.language_model.generate = normalized_generate
 
         def initialize(self, current_world: Any) -> None:
             super().initialize(current_world)
-            addition = (
+            skill_addition = (
                 SKILL_RULES
                 if view.loader_enabled
                 else "At the end of every response emit USED_SKILLS: []. No skills are available in this condition."
             )
+            addition = COMPLETION_RULE + "\n" + skill_addition
             if view.initial_context:
                 addition += "\n" + view.initial_context
             for message in reversed(self.messages):
@@ -121,22 +137,36 @@ def solve_with_official(
 def local_model_config(base_url: str, model_id: str) -> dict[str, Any]:
     if not base_url.startswith(("http://127.0.0.1", "http://localhost")):
         raise ValueError("formal Agent model must use a loopback endpoint")
+    # appworld-agents resolves model URLs through this environment variable,
+    # even when the supplied base_url contains no template placeholders.
+    os.environ["MODEL_SERVER_URL"] = base_url
+    os.environ.setdefault("OPENAI_API_KEY", "local")
     return {
         "name": model_id,
-        "cost_per_token": {},
+        "cost_per_token": {
+            "input_cache_miss": 0.0,
+            "input_cache_hit": 0.0,
+            "input_cache_write": 0.0,
+            "output": 0.0,
+        },
         "client_name": "openai",
         "base_url": base_url,
         "api_key": "local",
         "temperature": 0.7,
         "top_p": 0.8,
         "max_tokens": 4096,
-        "extra_body": {"top_k": 20, "repetition_penalty": 1.05},
         "use_cache": False,
         "max_retries": 3,
     }
 
 
 def _usage_tokens(usage: Any) -> tuple[int, int]:
+    tokens = getattr(usage, "tokens", None)
+    if tokens is not None:
+        prompt = int(getattr(tokens, "input_cache_miss", 0) or 0)
+        prompt += int(getattr(tokens, "input_cache_hit", 0) or 0)
+        completion = int(getattr(tokens, "output", 0) or 0)
+        return prompt, completion
     value = asdict(usage) if is_dataclass(usage) else getattr(usage, "__dict__", {})
     prompt = value.get("prompt_tokens", value.get("input_tokens", 0))
     completion = value.get("completion_tokens", value.get("output_tokens", 0))

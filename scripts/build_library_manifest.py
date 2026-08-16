@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from skill_validation import assert_frozen_library_ready
+from family_validation import assert_frozen_library_ready
 from utils import canonical_hash, file_hash, read_json, write_json
 
 
@@ -26,7 +26,9 @@ def main() -> None:
         metadata = read_json(directory / "metadata.json")
         records.append({
             "skill_id": directory.name,
-            "source_task": metadata["source_task"],
+            "candidate_type": metadata["candidate_type"],
+            "family_id": metadata.get("family_id"),
+            "supporting_family_ids": metadata.get("supporting_family_ids", []),
             "version": metadata.get("version", 0),
             "validation_status": metadata["validation_status"],
             "skill_sha256": file_hash(directory / "SKILL.md"),

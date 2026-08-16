@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import importlib.metadata
 import inspect
+import os
 import platform
 import time
 from pathlib import Path
@@ -28,8 +29,9 @@ def require_appworld() -> tuple[Any, Any]:
 
 
 def audit_install(root: str | Path, output_dir: str | Path) -> dict[str, Any]:
-    AppWorld, load_task_ids = require_appworld()
     root = Path(root).resolve()
+    os.environ["APPWORLD_ROOT"] = str(root)
+    AppWorld, load_task_ids = require_appworld()
     output_dir = Path(output_dir)
     counts: dict[str, Any] = {}
     for split in SPLITS:
@@ -72,7 +74,7 @@ def run_task(
         evaluation = world.evaluate()
         evaluation_dict = serialize_evaluation(evaluation)
     elapsed = time.monotonic() - started
-    tgc, sgc, success = extract_scores(evaluation_dict)
+    tgc, requirement_completion_rate, success = extract_scores(evaluation_dict)
     return {
         "task_id": task_id,
         "split": split,
@@ -84,7 +86,7 @@ def run_task(
         **trace,
         "evaluation": evaluation_dict,
         "tgc": tgc,
-        "sgc": sgc,
+        "requirement_completion_rate": requirement_completion_rate,
         "success": success,
         "wall_clock_time": elapsed,
     }
@@ -100,7 +102,7 @@ def serialize_evaluation(value: Any) -> dict[str, Any]:
             if isinstance(result, dict):
                 return result
     result: dict[str, Any] = {}
-    for name in ("success", "passes", "failures", "tgc", "sgc"):
+    for name in ("success", "passes", "failures"):
         if hasattr(value, name):
             item = getattr(value, name)
             result[name] = item() if callable(item) else item
@@ -110,14 +112,19 @@ def serialize_evaluation(value: Any) -> dict[str, Any]:
 
 
 def extract_scores(evaluation: dict[str, Any]) -> tuple[float, float, bool]:
+    """Return strict task completion, partial requirement completion, and success.
+
+    AppWorld's official task-goal completion is strict: a task contributes one
+    only when every evaluator requirement passes. Scenario-goal completion is a
+    dataset-level metric and therefore cannot be computed from one task here.
+    """
     passes = evaluation.get("passes", [])
     failures = evaluation.get("failures", [])
     pass_count = len(passes) if isinstance(passes, (list, dict)) else int(passes or 0)
     failure_count = len(failures) if isinstance(failures, (list, dict)) else int(failures or 0)
     has_tests = pass_count + failure_count > 0
     success = bool(evaluation.get("success", has_tests and failure_count == 0))
-    default_tgc = pass_count / (pass_count + failure_count) if has_tests else float(success)
-    tgc = float(evaluation.get("tgc", default_tgc))
-    sgc = float(evaluation.get("sgc", float(success)))
-    return tgc, sgc, success
-
+    requirement_completion_rate = (
+        pass_count / (pass_count + failure_count) if has_tests else float(success)
+    )
+    return float(success), requirement_completion_rate, success

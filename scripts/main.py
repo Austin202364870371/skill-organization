@@ -18,6 +18,7 @@ if str(SRC) not in sys.path:
 from agent import LocalModelClient
 from appworld_runtime import audit_install
 from contracts import contract_from_mapping, contract_prompt, parse_contract_response
+from corpus import prepare_skill_corpus
 from experiment import run_grid
 from graph import build_candidate_graph, validate_graph
 from analysis import analyze_runs
@@ -42,6 +43,10 @@ def parser() -> argparse.ArgumentParser:
     inspect_cmd = commands.add_parser("inspect-trajectories")
     inspect_cmd.add_argument("--root", required=True)
     inspect_cmd.add_argument("--output", default="outputs/audits/trajectory_schema.json")
+
+    prepare = commands.add_parser("prepare-skill-corpus")
+    prepare.add_argument("--appworld-root", default="data/appworld")
+    prepare.add_argument("--output", default="outputs/skill_build")
 
     normalize = commands.add_parser("normalize-trajectory")
     normalize.add_argument("--input", required=True)
@@ -110,6 +115,8 @@ def main() -> None:
         result = audit_install(args.root, args.output_dir)
     elif args.command == "inspect-trajectories":
         result = inspect_trajectory_tree(args.root, args.output)
+    elif args.command == "prepare-skill-corpus":
+        result = prepare_skill_corpus(args.appworld_root, args.output)
     elif args.command == "normalize-trajectory":
         result = normalize_trajectory(args.input, args.task_id)
         write_json(args.output, result)
@@ -168,9 +175,23 @@ def _generate_skill(args: argparse.Namespace) -> dict[str, Any]:
     if task.get("split") != "train":
         raise ValueError("generate-skill accepts Train tasks only")
     model = _local_model()
-    reply = model.complete([{"role": "user", "content": induction_prompt(task["instruction"], reference)}], args.seed)
+    raw_path = ROOT / "outputs" / "skill_generation" / "raw" / f"{task['task_id']}.json"
+    if raw_path.exists():
+        raw = read_json(raw_path)
+        if raw.get("task_id") != task["task_id"] or raw.get("seed") != args.seed:
+            raise ValueError(f"raw generation provenance mismatch: {raw_path}")
+        reply_text = str(raw["response"])
+    else:
+        reply = model.complete(
+            [{"role": "user", "content": induction_prompt(task["instruction"], reference)}], args.seed
+        )
+        reply_text = reply.text
+        write_json(raw_path, {
+            "task_id": task["task_id"], "seed": args.seed, "response": reply_text,
+            "input_tokens": reply.input_tokens, "output_tokens": reply.output_tokens,
+        })
     skill_id = str(task["task_id"]).replace("_", "-")
-    skill = parse_skill_markdown(skill_id, reply.text, {"source_task": task["task_id"]})
+    skill = parse_skill_markdown(skill_id, reply_text, {"source_task": task["task_id"]})
     contract_reply = model.complete([{"role": "user", "content": contract_prompt(skill_id, skill.body)}], args.seed)
     contract = parse_contract_response(contract_reply.text, skill_id)
     destination = write_skill_package(

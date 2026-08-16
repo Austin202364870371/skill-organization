@@ -3,13 +3,21 @@
 from __future__ import annotations
 
 import itertools
+import math
 import random
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 from typing import Any
 
-from metrics import METRIC_NAMES, holm_adjust, paired_bootstrap_difference, run_metrics, summarize
+from metrics import (
+    METRIC_NAMES,
+    holm_adjust,
+    paired_bootstrap_difference,
+    run_metrics,
+    scenario_outcomes,
+    summarize,
+)
 from utils import read_json
 
 
@@ -24,11 +32,15 @@ PRIMARY_COMPARISONS = (
 def analyze_runs(root: str | Path, bootstrap_samples: int = 10000) -> dict[str, Any]:
     records = [read_json(path) for path in Path(root).rglob("*.json")]
     groups: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
-    indexed: dict[tuple[str, str, int, str], dict[str, float]] = {}
+    indexed: dict[tuple[str, str, int, str], dict[str, float | None]] = {}
     for record in records:
         split, condition = record["split"], record["condition"]
         groups[(split, condition)].append(record)
         indexed[(split, record["task_id"], int(record["seed"]), condition)] = run_metrics(record)
+    scenario_indexed = {
+        (split, scenario, seed, condition): outcome
+        for (split, condition, seed, scenario), outcome in scenario_outcomes(records).items()
+    }
 
     summaries = {
         split: {condition: summarize(group) for (group_split, condition), group in groups.items() if group_split == split}
@@ -40,7 +52,11 @@ def analyze_runs(root: str | Path, bootstrap_samples: int = 10000) -> dict[str, 
         for left, right in PRIMARY_COMPARISONS:
             entry = {"left": left, "right": right, "metrics": {}}
             for metric in METRIC_NAMES:
-                pairs = _pairs(indexed, split, left, right, metric)
+                pairs = (
+                    _scenario_pairs(scenario_indexed, split, left, right)
+                    if metric == "sgc"
+                    else _pairs(indexed, split, left, right, metric)
+                )
                 if not pairs:
                     continue
                 result = paired_bootstrap_difference(pairs, bootstrap_samples)
@@ -81,7 +97,7 @@ def paired_permutation_p(pairs: list[tuple[float, float]], samples: int = 10000,
 
 
 def _pairs(
-    indexed: dict[tuple[str, str, int, str], dict[str, float]],
+    indexed: dict[tuple[str, str, int, str], dict[str, float | None]],
     split: str,
     left: str,
     right: str,
@@ -93,6 +109,25 @@ def _pairs(
         left_value = indexed.get((split, task_id, seed, left))
         right_value = indexed.get((split, task_id, seed, right))
         if left_value is not None and right_value is not None:
-            result.append((left_value[metric], right_value[metric]))
+            left_metric, right_metric = left_value[metric], right_value[metric]
+            if left_metric is not None and right_metric is not None:
+                if math.isfinite(left_metric) and math.isfinite(right_metric):
+                    result.append((left_metric, right_metric))
+    return result
+
+
+def _scenario_pairs(
+    indexed: dict[tuple[str, str, int, str], float],
+    split: str,
+    left: str,
+    right: str,
+) -> list[tuple[float, float]]:
+    keys = {(key[1], key[2]) for key in indexed if key[0] == split}
+    result = []
+    for scenario, seed in sorted(keys):
+        left_value = indexed.get((split, scenario, seed, left))
+        right_value = indexed.get((split, scenario, seed, right))
+        if left_value is not None and right_value is not None:
+            result.append((left_value, right_value))
     return result
 

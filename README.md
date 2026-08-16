@@ -17,7 +17,7 @@ Graph-PD
 - 登录节点仅用于代码、检查、提交和短测试。
 - 正式预处理、推理和评测全部通过 Slurm。
 - AppWorld 使用项目本地 `./env`，FCSR 继续使用其冻结环境。
-- Qwen3-Coder-30B-A3B-Instruct 仅在 GPU4 的单张 H200 上、在作业生命周期内本地部署。
+- Qwen3-Coder-30B-A3B-Instruct 固定在 GPU2 或 GPU3 单节点上的两张 L40 上以 Tensor Parallel=2 本地部署，服务仅存活于作业生命周期。
 - `.env`、模型、数据、缓存和正式输出不进入 Git。
 - 安装、下载和提交作业前必须人工检查命令。
 
@@ -64,7 +64,7 @@ sbatch jobs/download_appworld.sbatch
 sbatch jobs/smoke_appworld.sbatch
 ```
 
-该作业申请 GPU4 单张 H200，启动仅绑定 loopback 的 vLLM，完成一个 No-Skill Dev task 后自动关闭服务。
+该作业申请 GPU2 或 GPU3 单节点上的两张 L40，以 Tensor Parallel=2 启动仅绑定 loopback 的 vLLM，完成一个 No-Skill Dev task 后自动关闭服务。
 
 ### 2. Trajectory 与 Skill
 
@@ -117,18 +117,19 @@ sbatch --export=ALL,SPLIT=test_normal,SNAPSHOTS=$PWD/data/retrieval_snapshots/te
 sbatch --export=ALL,SPLIT=test_challenge,SNAPSHOTS=$PWD/data/retrieval_snapshots/test_challenge.jsonl jobs/run_experiment.sbatch
 ```
 
-不要同时提交大量相似作业；一个 split 作业内部使用 4 个隔离 worker，共享单张 H200 上的本地模型。
+不要同时提交大量相似作业；一个 split 作业内部使用 4 个隔离 worker，共享两张 L40 上 Tensor Parallel=2 的本地模型。
 
-## 八个正式指标
+## 九个正式指标
 
 1. TGC
 2. SGC
 3. Success Rate
-4. Total Tokens
-5. Execution Steps
-6. Wall-clock Time
-7. Skill Utilization Rate
-8. Unique Skills Loaded
+4. Requirement Completion Rate
+5. Total Tokens
+6. Execution Steps
+7. Wall-clock Time
+8. Skill Utilization Rate
+9. Unique Skills Loaded
 
 Token Reduction、Skill Lift 和 Step Reduction仅作为上述指标的条件间差值，不增加主指标数。
 

@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from skill_validation import assert_frozen_library_ready
+from family_validation import assert_frozen_library_ready
 
 
 def main() -> None:

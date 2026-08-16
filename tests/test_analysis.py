@@ -13,7 +13,7 @@ class AnalysisTests(unittest.TestCase):
             for condition, tokens in (("Flat-NoPD", 20), ("Flat-PD", 10)):
                 record = {
                     "split": "dev", "task_id": "task", "seed": 42, "condition": condition,
-                    "tgc": 1, "sgc": 1, "success": True, "input_tokens": tokens,
+                    "success": True, "input_tokens": tokens,
                     "output_tokens": 0, "execution_steps": 2, "wall_clock_time": 1,
                     "exposed_skill_ids": ["a"], "used_skill_ids": ["a"], "skill_load_events": [],
                 }
