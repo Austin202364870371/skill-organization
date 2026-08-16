@@ -20,6 +20,7 @@ cd "$PROJECT_DIR"
 export XDG_CACHE_HOME="$PROJECT_DIR/.cache"
 export PIP_CACHE_DIR="$PROJECT_DIR/.cache/pip"
 export HF_HOME="$PROJECT_DIR/.cache/huggingface"
+export APPWORLD_CACHE="$PROJECT_DIR/.cache/appworld"
 export TORCH_HOME="$PROJECT_DIR/.cache/torch"
 export TRITON_CACHE_DIR="$PROJECT_DIR/.cache/triton"
 export VLLM_CACHE_ROOT="$PROJECT_DIR/.cache/vllm"
@@ -28,7 +29,7 @@ export CUDA_CACHE_PATH="$PROJECT_DIR/.cache/cuda"
 export NUMBA_CACHE_DIR="$PROJECT_DIR/.cache/numba"
 export TMPDIR="$PROJECT_DIR/.cache/tmp"
 export CONDA_PKGS_DIRS="$PROJECT_DIR/.cache/conda-pkgs"
-mkdir -p logs outputs/audits "$PIP_CACHE_DIR" "$HF_HOME" "$TORCH_HOME" \
+mkdir -p logs outputs/audits "$PIP_CACHE_DIR" "$HF_HOME" "$APPWORLD_CACHE" "$TORCH_HOME" \
   "$TRITON_CACHE_DIR" "$VLLM_CACHE_ROOT" "$VLLM_CONFIG_ROOT" "$CUDA_CACHE_PATH" \
   "$NUMBA_CACHE_DIR" "$TMPDIR" "$CONDA_PKGS_DIRS"
 

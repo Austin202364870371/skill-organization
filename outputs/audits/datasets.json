@@ -1,0 +1,38 @@
+{
+  "train": {
+    "count": 90,
+    "task_ids_hash": "099a50a058a00149c1a004fc980904d32a627ae194deb1f02e79ffdb3daa6edd",
+    "sample": [
+      "82e2fac_1",
+      "82e2fac_2",
+      "82e2fac_3"
+    ]
+  },
+  "dev": {
+    "count": 57,
+    "task_ids_hash": "c6aad8dca959d9c54537555dd6c3a4ececdd55390029511ab7971550d796e463",
+    "sample": [
+      "50e1ac9_1",
+      "50e1ac9_2",
+      "50e1ac9_3"
+    ]
+  },
+  "test_normal": {
+    "count": 168,
+    "task_ids_hash": "990c25609f0777893feec8a72385c0457e5e19f0c17c575159ff263dbe809e83",
+    "sample": [
+      "3d9a636_1",
+      "3d9a636_2",
+      "3d9a636_3"
+    ]
+  },
+  "test_challenge": {
+    "count": 417,
+    "task_ids_hash": "fed1a3450160953daddf7a3db6441a3aa2e7f069cf41b1e2a3c0622079c29ffb",
+    "sample": [
+      "5238afc_1",
+      "5238afc_2",
+      "5238afc_3"
+    ]
+  }
+}

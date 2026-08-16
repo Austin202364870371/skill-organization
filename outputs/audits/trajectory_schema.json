@@ -1,0 +1,80 @@
+{
+  "root": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/experiments/outputs",
+  "file_count": 153364,
+  "suffix_counts": {
+    ".json": 226,
+    ".md": 17020,
+    "<none>": 30,
+    ".jsonl": 110565,
+    ".txt": 25523
+  },
+  "samples": [
+    {
+      "path": "legacy_function_calling_agent/openai/gpt-4-turbo-2024-04-09/test_normal/metadata.json",
+      "hash": "283c231bd84b207f4b6748c6eb208e2c596891340632939eacf22e80fbf4be44",
+      "shape": {
+        "id": "str",
+        "dataset": "str",
+        "method": {
+          "name": "str",
+          "tooltip": "str"
+        },
+        "llm": {
+          "name": "str",
+          "tooltip": "str"
+        },
+        "url": "str",
+        "date": "str"
+      },
+      "error": null
+    },
+    {
+      "path": "legacy_function_calling_agent/openai/gpt-4-turbo-2024-04-09/test_normal/tasks/afc4005_2/logs/api_calls.jsonl",
+      "hash": "1c1121101f8586b1a85a5bd71018044399bd3f1c398e8efd0943182a7b599200",
+      "shape": {
+        "type": "list",
+        "length": 6,
+        "item": {
+          "method": "str",
+          "url": "str",
+          "data": {}
+        }
+      },
+      "error": null
+    },
+    {
+      "path": "legacy_function_calling_agent/openai/gpt-4-turbo-2024-04-09/test_normal/tasks/afc4005_2/dbs/supervisor.jsonl",
+      "hash": "8052a04eeb5347cd6d7efcd716882c173fb0bb22e3109e4390a8196009d06bb7",
+      "shape": {
+        "type": "list",
+        "length": 18,
+        "item": {
+          "type": "list",
+          "length": 3,
+          "item": "str"
+        }
+      },
+      "error": null
+    },
+    {
+      "path": "legacy_function_calling_agent/openai/gpt-4-turbo-2024-04-09/test_normal/tasks/afc4005_2/dbs/amazon.jsonl",
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "shape": {
+        "type": "list",
+        "length": 0,
+        "item": null
+      },
+      "error": null
+    },
+    {
+      "path": "legacy_function_calling_agent/openai/gpt-4-turbo-2024-04-09/test_normal/tasks/afc4005_2/dbs/todoist.jsonl",
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "shape": {
+        "type": "list",
+        "length": 0,
+        "item": null
+      },
+      "error": null
+    }
+  ]
+}
