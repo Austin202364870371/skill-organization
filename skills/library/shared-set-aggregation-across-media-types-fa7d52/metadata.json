@@ -1,0 +1,34 @@
+{
+  "skill_id": "shared-set-aggregation-across-media-types-fa7d52",
+  "status": "candidate",
+  "source_split": "train",
+  "candidate_type": "reusable_subskill",
+  "supporting_core_ids": [
+    "6104387-core",
+    "e7a10f8-core",
+    "82e2fac-core"
+  ],
+  "supporting_family_ids": [
+    "6104387",
+    "82e2fac",
+    "e7a10f8"
+  ],
+  "supporting_apis": [
+    "spotify.show_album_library",
+    "spotify.show_playlist_library",
+    "spotify.show_song"
+  ],
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "shared_subskill_generation_v2_skill_only",
+  "prompt_hash": "791109272e3785e47de37700fad65e64687699997510e29c62a5bf6226e68d4f",
+  "proposal_hash": "9576491294c7b993957ffb89c1db5c82dfa34b9c86d61ee48760509b29e582a3",
+  "content_hash": "7e985e6c7ce3843bcfb8fc71bf754df8c83db510990d53741bd87f3132b40be8",
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "insufficient_execution_attribution",
+  "c_evidence_families": [
+    "e7a10f8"
+  ],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

@@ -1,0 +1,34 @@
+{
+  "proposal": {
+    "capability": "Paginate and Filter API Results",
+    "description": "Iterate through paginated API responses, apply date/time and content-based filters, and perform actions on matching items.",
+    "supporting_core_ids": [
+      "2a163ab-core",
+      "82e2fac-core",
+      "e3d6c94-core"
+    ],
+    "supporting_apis": [
+      "phone.search_contacts",
+      "spotify.show_playlist_library",
+      "spotify.show_song",
+      "spotify.show_recommendations"
+    ],
+    "inputs": [
+      "pagination parameters",
+      "filter criteria"
+    ],
+    "outputs": [
+      "filtered results",
+      "processed items"
+    ],
+    "proposal_id": "shared-paginate-and-filter-api-results-8fccba"
+  },
+  "source_reference_hashes": {
+    "2a163ab-core": "247bb209b90314b33397b4d943d57893510fb66f3e76268805c09f0fc0863e9d",
+    "82e2fac-core": "bce64e07ddfed946e64cda3ef3ff89e0ff598c7f798302f1dd936dcec3868cde",
+    "e3d6c94-core": "50d0bc867ad1497d4a9c85f9ce49b700dc805ca54875ea68659d089a93aeb20f"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-paginate-and-filter-api-results-8fccba/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "6c9086ba848940b5fe5a24b93c6a8144109ede7c56ef64cc0535b816b34eb6ef",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

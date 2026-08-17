@@ -1,0 +1,35 @@
+{
+  "skill_id": "shared-note-based-task-state-updates-191e5d",
+  "status": "candidate",
+  "source_split": "train",
+  "candidate_type": "reusable_subskill",
+  "supporting_core_ids": [
+    "cf6abd2-core",
+    "b0a8eae-core",
+    "22cc237-core"
+  ],
+  "supporting_family_ids": [
+    "22cc237",
+    "b0a8eae",
+    "cf6abd2"
+  ],
+  "supporting_apis": [
+    "simple_note.update_note",
+    "simple_note.show_note",
+    "spotify.play_music"
+  ],
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "shared_subskill_generation_v2_skill_only",
+  "prompt_hash": "af7279fe2c1b39e62f0447a8a1ed3c0dd4785f2fa590cfc25e3d2101834eac44",
+  "proposal_hash": "0315e90a5d9c9326ca0fc1f94ddae65f3c4125fdebb854d81f1c3604211359eb",
+  "content_hash": "fa33c6eb25b18783465f9c01b29f84ebbc5422ed122aac8f8bffb008605010d1",
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "stage_observed_across_two_families",
+  "c_evidence_families": [
+    "b0a8eae",
+    "cf6abd2"
+  ],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

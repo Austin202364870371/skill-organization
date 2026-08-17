@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from utils import file_hash, write_json
+from common.utils import file_hash, write_json
 
 
 def main() -> None:

@@ -1,0 +1,134 @@
+{
+  "required_apis": [
+    "supervisor.complete_task",
+    "supervisor.show_account_passwords",
+    "supervisor.show_profile",
+    "phone.login",
+    "phone.search_contacts",
+    "venmo.approve_payment_request",
+    "venmo.login",
+    "venmo.show_received_payment_requests"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/payment_requests/{id}/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/payment_requests/{id}/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

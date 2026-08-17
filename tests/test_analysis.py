@@ -2,8 +2,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from analysis import analyze_runs
-from utils import write_json
+from common.utils import write_json
+from evaluation.analysis import analyze_runs
 
 
 class AnalysisTests(unittest.TestCase):

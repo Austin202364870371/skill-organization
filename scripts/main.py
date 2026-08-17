@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Single command-line entry point for the complete experiment pipeline."""
+"""Command-line entry point for the frozen Skill organization experiment."""
 
 from __future__ import annotations
 
@@ -8,50 +8,36 @@ import json
 import os
 import sys
 from pathlib import Path
-from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from agent import LocalModelClient
-from appworld_runtime import audit_install
-from contracts import contract_from_mapping, contract_prompt, parse_contract_response
-from corpus import prepare_skill_corpus
-from experiment import run_grid
-from graph import build_candidate_graph, validate_graph
-from analysis import analyze_runs
-from retrieval_bridge import (
-    build_snapshots, create_freeze_manifest, export_queries, export_skills,
-    load_skill_library, load_snapshots, verify_freeze_manifest,
+from common.schemas import CONDITIONS
+from common.utils import read_json, write_json
+from evaluation.analysis import analyze_runs
+from organization.graph import build_candidate_graph, validate_graph
+from organization.hierarchy import build_hierarchy
+from organization.library import validate_library
+from retrieval.bridge import (
+    build_snapshots,
+    create_freeze_manifest,
+    export_queries,
+    export_skills,
+    load_skill_library,
+    load_snapshots,
+    verify_freeze_manifest,
 )
-from schemas import CONDITIONS
-from skill_generation import induction_prompt, parse_skill_markdown, write_skill_package
-from trajectory import inspect_trajectory_tree, normalize_trajectory
-from utils import read_json, write_json
+from runtime.experiment import run_grid
 
 
 def parser() -> argparse.ArgumentParser:
-    root = argparse.ArgumentParser(description="Skill organization experiment pipeline")
+    root = argparse.ArgumentParser(description="Frozen Skill organization experiment")
     commands = root.add_subparsers(dest="command", required=True)
 
-    audit = commands.add_parser("audit-appworld")
-    audit.add_argument("--root", required=True)
-    audit.add_argument("--output-dir", default="outputs/audits")
-
-    inspect_cmd = commands.add_parser("inspect-trajectories")
-    inspect_cmd.add_argument("--root", required=True)
-    inspect_cmd.add_argument("--output", default="outputs/audits/trajectory_schema.json")
-
-    prepare = commands.add_parser("prepare-skill-corpus")
-    prepare.add_argument("--appworld-root", default="data/appworld")
-    prepare.add_argument("--output", default="outputs/skill_build")
-
-    normalize = commands.add_parser("normalize-trajectory")
-    normalize.add_argument("--input", required=True)
-    normalize.add_argument("--task-id")
-    normalize.add_argument("--output", required=True)
+    validate = commands.add_parser("validate-library")
+    validate.add_argument("--library", default="skills/library")
 
     export = commands.add_parser("export-skills")
     export.add_argument("--library", default="skills/library")
@@ -64,23 +50,17 @@ def parser() -> argparse.ArgumentParser:
     snapshots = commands.add_parser("build-snapshots")
     snapshots.add_argument("--records", required=True)
     snapshots.add_argument("--output", required=True)
-    snapshots.add_argument("--provenance", required=True, help="JSON provenance file")
+    snapshots.add_argument("--provenance", required=True)
     snapshots.add_argument("--top-k", type=int, default=5)
 
     graph = commands.add_parser("build-graph")
-    graph.add_argument("--contracts", default="skills/library")
-    graph.add_argument("--trajectory-orders", help="Optional JSON list of ordered skill-id lists")
+    graph.add_argument("--library", default="skills/library")
+    graph.add_argument("--trajectory-orders", help="Optional Train-only ordered Skill IDs")
     graph.add_argument("--output", default="organization/global_graph.json")
 
     hierarchy = commands.add_parser("build-hierarchy")
-    hierarchy.add_argument("--contracts", default="skills/library")
+    hierarchy.add_argument("--library", default="skills/library")
     hierarchy.add_argument("--output", default="organization/global_hierarchy.json")
-
-    generate = commands.add_parser("generate-skill")
-    generate.add_argument("--task", required=True, help="JSON file with task_id, split, instruction")
-    generate.add_argument("--reference", required=True)
-    generate.add_argument("--library", default="skills/library")
-    generate.add_argument("--seed", type=int, default=42)
 
     freeze = commands.add_parser("freeze")
     freeze.add_argument("--artifact", action="append", required=True, help="NAME=PATH")
@@ -111,32 +91,27 @@ def parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = parser().parse_args()
-    if args.command == "audit-appworld":
-        result = audit_install(args.root, args.output_dir)
-    elif args.command == "inspect-trajectories":
-        result = inspect_trajectory_tree(args.root, args.output)
-    elif args.command == "prepare-skill-corpus":
-        result = prepare_skill_corpus(args.appworld_root, args.output)
-    elif args.command == "normalize-trajectory":
-        result = normalize_trajectory(args.input, args.task_id)
-        write_json(args.output, result)
+    if args.command == "validate-library":
+        result = validate_library(args.library)
     elif args.command == "export-skills":
         result = export_skills(args.library, args.output)
     elif args.command == "export-queries":
         result = {"count": export_queries(read_json(args.input), args.output)}
     elif args.command == "build-snapshots":
-        result = build_snapshots(args.records, args.output, read_json(args.provenance), args.top_k)
+        result = build_snapshots(
+            args.records, args.output, read_json(args.provenance), args.top_k
+        )
     elif args.command == "build-graph":
-        contracts = _load_contracts(args.contracts)
+        library = load_skill_library(args.library)
         orders = read_json(args.trajectory_orders) if args.trajectory_orders else []
-        result = build_candidate_graph(contracts, orders)
+        result = build_candidate_graph(
+            {skill_id: skill.metadata for skill_id, skill in library.items()}, orders
+        )
         validate_graph(result)
         write_json(args.output, result)
     elif args.command == "build-hierarchy":
-        result = _build_hierarchy(_load_contracts(args.contracts))
+        result = build_hierarchy(load_skill_library(args.library))
         write_json(args.output, result)
-    elif args.command == "generate-skill":
-        result = _generate_skill(args)
     elif args.command == "freeze":
         artifacts = dict(item.split("=", 1) for item in args.artifact)
         result = create_freeze_manifest(artifacts, read_json(args.metadata), args.output)
@@ -150,73 +125,29 @@ def main() -> None:
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
-def _load_contracts(root: str | Path) -> list[Any]:
-    return [contract_from_mapping(read_json(path)) for path in sorted(Path(root).glob("*/contract.json"))]
-
-
-def _build_hierarchy(contracts: list[Any]) -> dict[str, Any]:
-    paths = {}
-    for contract in contracts:
-        app = contract.apps[0] if contract.apps else "General"
-        paths[contract.skill_id] = [contract.domain, app, contract.capability]
-    return {"schema_version": "skill_hierarchy_v1", "paths": paths}
-
-
-def _local_model() -> LocalModelClient:
-    return LocalModelClient(
-        base_url=os.environ.get("MODEL_BASE_URL", "http://127.0.0.1:8000/v1"),
-        api_key=os.environ.get("MODEL_API_KEY", "local"),
-        model_id=os.environ.get("MODEL_ID", "Qwen/Qwen3-Coder-30B-A3B-Instruct"),
-    )
-
-
-def _generate_skill(args: argparse.Namespace) -> dict[str, Any]:
-    task, reference = read_json(args.task), read_json(args.reference)
-    if task.get("split") != "train":
-        raise ValueError("generate-skill accepts Train tasks only")
-    model = _local_model()
-    raw_path = ROOT / "outputs" / "skill_generation" / "raw" / f"{task['task_id']}.json"
-    if raw_path.exists():
-        raw = read_json(raw_path)
-        if raw.get("task_id") != task["task_id"] or raw.get("seed") != args.seed:
-            raise ValueError(f"raw generation provenance mismatch: {raw_path}")
-        reply_text = str(raw["response"])
-    else:
-        reply = model.complete(
-            [{"role": "user", "content": induction_prompt(task["instruction"], reference)}], args.seed
-        )
-        reply_text = reply.text
-        write_json(raw_path, {
-            "task_id": task["task_id"], "seed": args.seed, "response": reply_text,
-            "input_tokens": reply.input_tokens, "output_tokens": reply.output_tokens,
-        })
-    skill_id = str(task["task_id"]).replace("_", "-")
-    skill = parse_skill_markdown(skill_id, reply_text, {"source_task": task["task_id"]})
-    contract_reply = model.complete([{"role": "user", "content": contract_prompt(skill_id, skill.body)}], args.seed)
-    contract = parse_contract_response(contract_reply.text, skill_id)
-    destination = write_skill_package(
-        args.library, skill, contract,
-        {"source_task": task["task_id"], "generation_seed": args.seed, "validation_status": "pending"},
-        split="train",
-    )
-    return {"skill_id": skill_id, "path": str(destination), "validation_status": "pending"}
-
-
-def _run(args: argparse.Namespace) -> dict[str, Any]:
+def _run(args: argparse.Namespace) -> dict:
     model_config = {
         "base_url": os.environ.get("MODEL_BASE_URL", "http://127.0.0.1:8000/v1"),
         "api_key": os.environ.get("MODEL_API_KEY", "local"),
-        "model_id": os.environ.get("MODEL_ID", "Qwen/Qwen3-Coder-30B-A3B-Instruct"),
+        "model_id": os.environ.get(
+            "MODEL_ID", "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+        ),
     }
     return run_grid(
-        split=args.split, snapshots=load_snapshots(args.snapshots),
-        library=load_skill_library(args.library), conditions=args.conditions.split(","),
-        seeds=[int(value) for value in args.seeds.split(",")], model_config=model_config,
-        output_root=args.output, hierarchy=read_json(args.hierarchy), graph=read_json(args.graph),
-        max_steps=args.max_steps, workers=args.workers, task_limit=args.task_limit,
+        split=args.split,
+        snapshots=load_snapshots(args.snapshots),
+        library=load_skill_library(args.library),
+        conditions=args.conditions.split(","),
+        seeds=[int(value) for value in args.seeds.split(",")],
+        model_config=model_config,
+        output_root=args.output,
+        hierarchy=read_json(args.hierarchy),
+        graph=read_json(args.graph),
+        max_steps=args.max_steps,
+        workers=args.workers,
+        task_limit=args.task_limit,
     )
 
 
 if __name__ == "__main__":
     main()
-

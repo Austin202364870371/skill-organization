@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "spotify.show_song",
+    "spotify.show_playlist",
+    "spotify.show_album_library"
+  ]
+}

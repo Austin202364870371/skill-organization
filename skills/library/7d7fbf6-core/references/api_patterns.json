@@ -1,0 +1,104 @@
+{
+  "required_apis": [
+    "supervisor.complete_task",
+    "supervisor.show_account_passwords",
+    "supervisor.show_profile",
+    "file_system.compress_directory",
+    "file_system.login",
+    "file_system.show_directory"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path",
+        "recursive"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/file_system/directory/compress",
+      "parameter_names": [
+        "access_token",
+        "compressed_file_path",
+        "delete_directory",
+        "directory_path",
+        "overwrite"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path",
+        "recursive"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/file_system/directory/compress",
+      "parameter_names": [
+        "access_token",
+        "compressed_file_path",
+        "delete_directory",
+        "directory_path",
+        "overwrite"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "skill_library_build_summary_v1",
+  "inclusion_policy": "train_grounded_v1",
+  "library_size": 45,
+  "core_skills": 30,
+  "reusable_subskills": 15,
+  "minimum_size": 40,
+  "maximum_size": 60,
+  "count_gate_passed": true,
+  "contracts_used": false,
+  "execution_validation": {
+    "accepted_families": 8,
+    "rejected_or_inconclusive_families": 22,
+    "role": "diagnostic_and_refinement_signal",
+    "hard_inclusion_gate": false
+  },
+  "fallback_generation": {
+    "role": "sensitivity_audit",
+    "applied_to_main_library": false
+  },
+  "library_sha256": "c8d95a9ca1e289b75c6c736a89d31c97cf9dcb179a9858ac670bddbafe59a43d"
+}

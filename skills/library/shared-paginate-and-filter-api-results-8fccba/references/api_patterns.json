@@ -1,0 +1,8 @@
+{
+  "supporting_apis": [
+    "phone.search_contacts",
+    "spotify.show_playlist_library",
+    "spotify.show_song",
+    "spotify.show_recommendations"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "skill_id": "2a163ab-core",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "2a163ab",
+  "candidate_type": "core",
+  "generation_task": "2a163ab_1",
+  "refinement_task": "2a163ab_2",
+  "acceptance_task": "2a163ab_3",
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "family_candidate_v2_skill_only",
+  "prompt_hash": "68fa0c887406ea0a78e7e144a9f553eae8cb444b7285cbba7fb8f94c13454c04",
+  "reference_hash": "247bb209b90314b33397b4d943d57893510fb66f3e76268805c09f0fc0863e9d",
+  "content_hash": "c777ef4990eee807af68bf71aa4e094be2ece71cbbc2e817a8088851254cac75",
+  "required_apps": [
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "version": 2,
+  "last_refinement_task": "2a163ab_2",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "b_failed",
+  "c_evidence_families": [],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

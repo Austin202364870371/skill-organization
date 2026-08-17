@@ -1,0 +1,230 @@
+{
+  "schema_version": "skill_hierarchy_v2",
+  "paths": {
+    "07b42fd-core": [
+      "Core",
+      "spotify",
+      "Authenticate and Follow Artists by Genre"
+    ],
+    "229360a-core": [
+      "Core",
+      "spotify",
+      "Filter and Remove Media Items Based on Download and Like Status"
+    ],
+    "22cc237-core": [
+      "Core",
+      "phone",
+      "When to Use"
+    ],
+    "27e1026-core": [
+      "Core",
+      "spotify",
+      "Retrieve and Analyze Media Library Data"
+    ],
+    "287e338-core": [
+      "Core",
+      "spotify",
+      "Get Artist with Most or Least Recommendations"
+    ],
+    "29caf6f-core": [
+      "Core",
+      "phone",
+      "Retrieve and Synthesize Information from Multiple Apps"
+    ],
+    "2a163ab-core": [
+      "Core",
+      "phone",
+      "Iterate Through Paginated API Results and Apply Conditional Logic"
+    ],
+    "302c169-core": [
+      "Core",
+      "phone",
+      "Update Alarm Time and Manage Other Alarms"
+    ],
+    "34d9492-core": [
+      "Core",
+      "file_system",
+      "Organize Files by Date into Category Folders"
+    ],
+    "3c13f5a-core": [
+      "Core",
+      "file_system",
+      "Process Shared Expenses with Contact and File Access"
+    ],
+    "60d0b5b-core": [
+      "Core",
+      "phone",
+      "Retrieve and Process Payment Information for Refund"
+    ],
+    "6104387-core": [
+      "Core",
+      "file_system",
+      "SKILL.md"
+    ],
+    "692c77d-core": [
+      "Core",
+      "spotify",
+      "SKILL.md"
+    ],
+    "6ea6792-core": [
+      "Core",
+      "phone",
+      "SKILL.md"
+    ],
+    "76f2c72-core": [
+      "Core",
+      "file_system",
+      "Aggregate Financial Data from Structured Files"
+    ],
+    "771d8fc-core": [
+      "Core",
+      "phone",
+      "Delete Phone Messages by Filter"
+    ],
+    "7d7fbf6-core": [
+      "Core",
+      "file_system",
+      "Compress and Clean Up Directory Structure"
+    ],
+    "82e2fac-core": [
+      "Core",
+      "spotify",
+      "Retrieve and Analyze Spotify Library Data"
+    ],
+    "aa8502b-core": [
+      "Core",
+      "spotify",
+      "Manage Artist Follow Status Based on Liked Songs"
+    ],
+    "afc0fce-core": [
+      "Core",
+      "phone",
+      "Authenticate and Retrieve Contact Data for Transaction Processing"
+    ],
+    "b0a8eae-core": [
+      "Core",
+      "simple_note",
+      "Retrieve and Process User Data to Trigger External Actions"
+    ],
+    "b7a9ee9-core": [
+      "Core",
+      "spotify",
+      "Iterate Through Playlist Songs and Follow Artists by Genre"
+    ],
+    "c901732-core": [
+      "Core",
+      "spotify",
+      "Retrieve and Play Song Based on Collection and Play Count"
+    ],
+    "ccb4494-core": [
+      "Core",
+      "spotify",
+      "Manage Spotify Playlist by Liking Previous Songs"
+    ],
+    "ce359b5-core": [
+      "Core",
+      "spotify",
+      "Filter and Remove Media by Release Year"
+    ],
+    "cf6abd2-core": [
+      "Core",
+      "simple_note",
+      "Update Note Content Based on Task Status"
+    ],
+    "d0b1f43-core": [
+      "Core",
+      "phone",
+      "Retrieve and Filter Financial Transactions by Contact and Time Range"
+    ],
+    "e3d6c94-core": [
+      "Core",
+      "spotify",
+      "CreateFilteredPlaylistFromRecommendations"
+    ],
+    "e7a10f8-core": [
+      "Core",
+      "spotify",
+      "Analyze Playlist Durations for Longest or Shortest"
+    ],
+    "e85d92a-core": [
+      "Core",
+      "spotify",
+      "Search for Artist and Sort Songs by Play Count"
+    ],
+    "shared-aggregate-and-process-multi-app-data-046b84": [
+      "Shared",
+      "phone",
+      "Aggregate and Process Multi-App Data for Payment Requests"
+    ],
+    "shared-conditional-media-item-management-ae2999": [
+      "Shared",
+      "spotify",
+      "Conditional Media Item Management"
+    ],
+    "shared-cross-app-entity-resolution-f1abe4": [
+      "Shared",
+      "phone",
+      "Cross-App Entity Resolution"
+    ],
+    "shared-extract-and-transform-metadata-42f943": [
+      "Shared",
+      "spotify",
+      "Extract and Transform Media Metadata"
+    ],
+    "shared-file-system-directory-management-f04886": [
+      "Shared",
+      "file_system",
+      "Manage File System Directories"
+    ],
+    "shared-iterative-playlist-and-artist-processing-fcdaf9": [
+      "Shared",
+      "spotify",
+      "Iterate and Process Playlists or Artists"
+    ],
+    "shared-join-app-specific-entities-7d507c": [
+      "Shared",
+      "phone",
+      "Join App-Specific Entities Using Shared Identifiers"
+    ],
+    "shared-note-based-task-state-updates-191e5d": [
+      "Shared",
+      "simple_note",
+      "Update Note Content Based on Task Status"
+    ],
+    "shared-paginate-and-filter-api-results-8fccba": [
+      "Shared",
+      "phone",
+      "When to Use"
+    ],
+    "shared-ranking-by-metadata-criteria-532682": [
+      "Shared",
+      "spotify",
+      "Rank Items by Metadata Criteria"
+    ],
+    "shared-safe-batch-mutation-b459e3": [
+      "Shared",
+      "spotify",
+      "Safe Batch Mutation"
+    ],
+    "shared-set-aggregation-across-media-types-fa7d52": [
+      "Shared",
+      "spotify",
+      "Set Aggregation Across Media Types"
+    ],
+    "shared-song-review-management-4acfeb": [
+      "Shared",
+      "spotify",
+      "Manage Song Reviews Based on Library Content and Liked Status"
+    ],
+    "shared-temporal-filtering-of-transactions-6f1f17": [
+      "Shared",
+      "phone",
+      "Temporal Filtering of Transactions"
+    ],
+    "shared-verify-and-validate-data-integrity-8907ae": [
+      "Shared",
+      "file_system",
+      "Verify and Validate Data Integrity"
+    ]
+  }
+}

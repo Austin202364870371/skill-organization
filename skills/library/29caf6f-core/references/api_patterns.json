@@ -1,0 +1,172 @@
+{
+  "required_apis": [
+    "supervisor.complete_task",
+    "supervisor.show_account_passwords",
+    "supervisor.show_profile",
+    "phone.login",
+    "phone.search_contacts",
+    "phone.search_text_messages",
+    "phone.send_text_message",
+    "simple_note.login",
+    "simple_note.search_notes",
+    "simple_note.show_note"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/simple_note/notes/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/phone/messages/text/{id}",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/simple_note/notes/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/phone/messages/text/{id}",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

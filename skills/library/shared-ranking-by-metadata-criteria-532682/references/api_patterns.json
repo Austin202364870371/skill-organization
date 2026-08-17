@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "spotify.show_song",
+    "spotify.search_songs",
+    "spotify.show_recommendations"
+  ]
+}

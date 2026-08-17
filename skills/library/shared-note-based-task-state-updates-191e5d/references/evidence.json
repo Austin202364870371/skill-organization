@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Note-Based Task State Updates",
+    "description": "Modify note content dynamically based on task completion status, updating checklists or annotations accordingly.",
+    "supporting_core_ids": [
+      "cf6abd2-core",
+      "b0a8eae-core",
+      "22cc237-core"
+    ],
+    "supporting_apis": [
+      "simple_note.update_note",
+      "simple_note.show_note",
+      "spotify.play_music"
+    ],
+    "inputs": [
+      "note identifier",
+      "task status"
+    ],
+    "outputs": [
+      "updated note",
+      "status change log"
+    ],
+    "proposal_id": "shared-note-based-task-state-updates-191e5d"
+  },
+  "source_reference_hashes": {
+    "cf6abd2-core": "f97a53c3093aa8356a96d9a81b6d37ecc2707c41a5522ba769672a5a9c89fa58",
+    "b0a8eae-core": "84f5fc5db8d64d2444ed0cf9888b045bd6931716fd05b2efb66cc181e5f01683",
+    "22cc237-core": "a049487b6aad82ce08705887276fecaf2f9ec758d13acd8d688abfd148f55d7c"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-note-based-task-state-updates-191e5d/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "9278f7fd611e233c483b70d7c3502c0a415029b08fc6ba2bdfa3ead2cb288544",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

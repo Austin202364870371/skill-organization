@@ -1,0 +1,17 @@
+{
+  "split_roles": {
+    "family_id": "b0a8eae",
+    "generation_task": "b0a8eae_1",
+    "refinement_task": "b0a8eae_2",
+    "acceptance_task": "b0a8eae_3"
+  },
+  "reference_provenance": {
+    "solution_hash": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+    "api_calls_hash": "d2cda7c90f881751a0c19a840ad8df953b70e168da0951eb0beb382b818be4df",
+    "verification_hash": "abe2bcba8dc45cb526ba21f51c75458e9c7dc44ad862c0eb799912025081e37e"
+  },
+  "reference_hash": "84f5fc5db8d64d2444ed0cf9888b045bd6931716fd05b2efb66cc181e5f01683",
+  "raw_response_path": "outputs/skill_build/generation/b0a8eae/raw_family_candidate_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "12935dc720337441d46e2cffc6144813dd1ab41c14a7d889d2fb4bfe282cf1fc",
+  "evidence_scope": "generation evidence; not causal validation evidence"
+}

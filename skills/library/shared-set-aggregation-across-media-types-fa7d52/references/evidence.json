@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Set Aggregation Across Media Types",
+    "description": "Collect and group media items (songs, albums, playlists) from various sources to compute totals, averages, or counts.",
+    "supporting_core_ids": [
+      "6104387-core",
+      "e7a10f8-core",
+      "82e2fac-core"
+    ],
+    "supporting_apis": [
+      "spotify.show_album_library",
+      "spotify.show_playlist_library",
+      "spotify.show_song"
+    ],
+    "inputs": [
+      "media types",
+      "aggregation function"
+    ],
+    "outputs": [
+      "aggregated set",
+      "statistical summary"
+    ],
+    "proposal_id": "shared-set-aggregation-across-media-types-fa7d52"
+  },
+  "source_reference_hashes": {
+    "6104387-core": "107b171f9626a5108aac504c5fe4f2f0546f939b595f123debd2b14f52868c86",
+    "e7a10f8-core": "450d0685514feb2f2752056b89a4c3012ed6046d76bdff150fbae22f049cd019",
+    "82e2fac-core": "bce64e07ddfed946e64cda3ef3ff89e0ff598c7f798302f1dd936dcec3868cde"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-set-aggregation-across-media-types-fa7d52/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "4572cb9b30ae7b6332722a12953f2833886473a267a2f41288311b7e211f5c3a",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

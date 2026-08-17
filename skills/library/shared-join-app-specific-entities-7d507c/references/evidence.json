@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Join App-Specific Entities",
+    "description": "Combine entities from different applications (e.g., contacts from phone and notes from simple_note) using shared identifiers.",
+    "supporting_core_ids": [
+      "29caf6f-core",
+      "3c13f5a-core",
+      "b0a8eae-core"
+    ],
+    "supporting_apis": [
+      "phone.search_contacts",
+      "simple_note.search_notes",
+      "spotify.show_playlist_library"
+    ],
+    "inputs": [
+      "join keys",
+      "source apps"
+    ],
+    "outputs": [
+      "joined dataset",
+      "merged records"
+    ],
+    "proposal_id": "shared-join-app-specific-entities-7d507c"
+  },
+  "source_reference_hashes": {
+    "29caf6f-core": "75a769fa5d7eb26a61aca928deed6396721559b8a9d79bd69fdbfae4de795397",
+    "3c13f5a-core": "4f4a66eeb56e977ebacc3dd105b930383e7c397f5832b9e8b8e75f8830f3ce4e",
+    "b0a8eae-core": "84f5fc5db8d64d2444ed0cf9888b045bd6931716fd05b2efb66cc181e5f01683"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-join-app-specific-entities-7d507c/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "00f90c66feb73d0b1b863b2d44ae62c7b2038c7c344da0940f8586204db5c45c",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

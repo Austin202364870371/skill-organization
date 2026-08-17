@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "phone.search_contacts",
+    "simple_note.search_notes",
+    "venmo.show_transactions"
+  ]
+}

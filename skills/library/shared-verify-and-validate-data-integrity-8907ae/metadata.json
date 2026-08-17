@@ -1,0 +1,32 @@
+{
+  "skill_id": "shared-verify-and-validate-data-integrity-8907ae",
+  "status": "candidate",
+  "source_split": "train",
+  "candidate_type": "reusable_subskill",
+  "supporting_core_ids": [
+    "22cc237-core",
+    "6104387-core",
+    "76f2c72-core"
+  ],
+  "supporting_family_ids": [
+    "22cc237",
+    "6104387",
+    "76f2c72"
+  ],
+  "supporting_apis": [
+    "file_system.show_file",
+    "simple_note.show_note",
+    "spotify.show_song"
+  ],
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "shared_subskill_generation_v2_skill_only",
+  "prompt_hash": "c7e6742fb7028634613e5210910fa4d24a62698ee0fd50a470c54b1d54d1454e",
+  "proposal_hash": "edce22de8cfa376563ba97da11737efea299b4e10321d6ef7fcd50271d99c31e",
+  "content_hash": "496aa1fc767a26e638cbe6b1048f7e74285e9080d678c07b5fe20c2c9e8babc3",
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "insufficient_execution_attribution",
+  "c_evidence_families": [],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

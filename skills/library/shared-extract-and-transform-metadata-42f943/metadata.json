@@ -1,0 +1,34 @@
+{
+  "skill_id": "shared-extract-and-transform-metadata-42f943",
+  "status": "candidate",
+  "source_split": "train",
+  "candidate_type": "reusable_subskill",
+  "supporting_core_ids": [
+    "27e1026-core",
+    "6104387-core",
+    "e7a10f8-core"
+  ],
+  "supporting_family_ids": [
+    "27e1026",
+    "6104387",
+    "e7a10f8"
+  ],
+  "supporting_apis": [
+    "spotify.show_song",
+    "spotify.show_playlist",
+    "spotify.show_album_library"
+  ],
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "shared_subskill_generation_v2_skill_only",
+  "prompt_hash": "c1c31f6d4b3523e9c38de42434694ddb58d0861d49f3bb2f8bd2a95ae26a50f2",
+  "proposal_hash": "197e31afad449a5abf3196a2d6e06496cd9f345b6bfc1d495749f6f09b681c3b",
+  "content_hash": "97acfeb76f2cf05833d0d24515fe719a889429f70d21e1f7fb8c46825e209557",
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "insufficient_execution_attribution",
+  "c_evidence_families": [
+    "e7a10f8"
+  ],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

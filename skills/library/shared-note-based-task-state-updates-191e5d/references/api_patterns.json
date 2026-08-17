@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "simple_note.update_note",
+    "simple_note.show_note",
+    "spotify.play_music"
+  ]
+}

@@ -11,9 +11,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from appworld_runtime import require_appworld
-from retrieval_bridge import export_queries
-from utils import write_json
+from common.utils import write_json
+from retrieval.bridge import export_queries
+from runtime.appworld_runtime import require_appworld
 
 
 def main() -> None:
@@ -35,4 +35,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

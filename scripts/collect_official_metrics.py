@@ -11,8 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from schemas import CONDITIONS
-from utils import read_json, write_json
+from common.schemas import CONDITIONS
+from common.utils import read_json, write_json
 
 
 def main() -> None:

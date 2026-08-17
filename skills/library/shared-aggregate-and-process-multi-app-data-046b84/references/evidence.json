@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Aggregate and Process Multi-App Data",
+    "description": "Retrieve, parse, and aggregate data across multiple applications to identify users and amounts for payment requests.",
+    "supporting_core_ids": [
+      "22cc237-core",
+      "3c13f5a-core",
+      "60d0b5b-core"
+    ],
+    "supporting_apis": [
+      "phone.search_contacts",
+      "simple_note.search_notes",
+      "venmo.show_transactions"
+    ],
+    "inputs": [
+      "data sources",
+      "aggregation logic"
+    ],
+    "outputs": [
+      "aggregated data",
+      "payment requests"
+    ],
+    "proposal_id": "shared-aggregate-and-process-multi-app-data-046b84"
+  },
+  "source_reference_hashes": {
+    "22cc237-core": "a049487b6aad82ce08705887276fecaf2f9ec758d13acd8d688abfd148f55d7c",
+    "3c13f5a-core": "4f4a66eeb56e977ebacc3dd105b930383e7c397f5832b9e8b8e75f8830f3ce4e",
+    "60d0b5b-core": "b144c09cc1e1612432384eed5984e2a4f9344de0f45c42cd3cf912da9fe9fcdc"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-aggregate-and-process-multi-app-data-046b84/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "aac46c5a4b908f77126566622860d5fa8289ad52cf7682c2660cc710ed9c0d9d",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

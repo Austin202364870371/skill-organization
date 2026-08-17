@@ -105,5 +105,3 @@ python -m appworld.cli verify tasks --root "$APPWORLD_ROOT"
 python scripts/main.py audit-appworld --root "$APPWORLD_ROOT" --output-dir outputs/audits
 python scripts/audit_agent.py
 OUTPUT_ROOT="$APPWORLD_ROOT/experiments/outputs"
-if [[ -d "$OUTPUT_ROOT" ]]; then python scripts/main.py inspect-trajectories --root "$OUTPUT_ROOT" --output outputs/audits/trajectory_schema.json; fi
-

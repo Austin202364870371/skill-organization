@@ -1,19 +1,23 @@
 import unittest
 
-from graph import build_candidate_graph, validate_graph
-from metrics import METRIC_NAMES, holm_adjust, run_metrics, summarize
-from schemas import Contract
+from evaluation.metrics import METRIC_NAMES, holm_adjust, run_metrics, summarize
+from organization.graph import build_candidate_graph, validate_graph
 
 
 class GraphMetricTests(unittest.TestCase):
-    def test_dependency_from_contract_terms(self):
-        first = Contract("a", "find", "mail", outputs=("message id",))
-        second = Contract("b", "reply", "mail", inputs=("message id",))
-        graph = build_candidate_graph([first, second])
+    def test_shared_support_edge_from_train_provenance(self):
+        graph = build_candidate_graph({
+            "a-core": {"candidate_type": "core"},
+            "shared-search": {
+                "candidate_type": "reusable_subskill",
+                "supporting_core_ids": ["a-core"],
+            },
+        })
         validate_graph(graph)
-        self.assertEqual(graph["edges"][0]["relation"], "dependency")
+        self.assertEqual(graph["edges"][0]["relation"], "semantic")
+        self.assertEqual(graph["edges"][0]["method"], "train_shared_support")
 
-    def test_eight_metrics(self):
+    def test_nine_metrics(self):
         record = {
             "condition": "Flat-PD", "success": True,
             "evaluation": {"passes": [1, 2], "failures": [3]},
@@ -54,4 +58,3 @@ class GraphMetricTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

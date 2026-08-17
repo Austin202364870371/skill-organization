@@ -9,8 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from retrieval_bridge import verify_freeze_manifest
-from utils import file_hash
+from common.utils import file_hash
+from retrieval.bridge import verify_freeze_manifest
 
 
 def main() -> None:
@@ -28,4 +28,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

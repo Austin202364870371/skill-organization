@@ -1,0 +1,26 @@
+{
+  "skill_id": "692c77d-core",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "692c77d",
+  "candidate_type": "core",
+  "generation_task": "692c77d_1",
+  "refinement_task": "692c77d_2",
+  "acceptance_task": "692c77d_3",
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "family_candidate_v2_skill_only",
+  "prompt_hash": "c02936940e854a40fea637efccf9212dfab6cb674244bf5727143b859093be56",
+  "reference_hash": "eeb6bc107e6e0907457b75550a921a771598e5480c34b0c72f1348a87ba19aad",
+  "content_hash": "0d3598415452549697ed0e15bbe191d006b409012ee469761d3e1057fd7d3082",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "version": 2,
+  "last_refinement_task": "692c77d_2",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "b_failed",
+  "c_evidence_families": [],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

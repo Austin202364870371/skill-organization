@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "phone.get_current_date_and_time",
+    "venmo.show_transactions",
+    "venmo.like_transaction"
+  ]
+}

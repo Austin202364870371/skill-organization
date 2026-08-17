@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Iterative Playlist and Artist Processing",
+    "description": "Loop through playlists or artists, applying consistent procedures like following, reviewing, or filtering based on genre or criteria.",
+    "supporting_core_ids": [
+      "b7a9ee9-core",
+      "07b42fd-core",
+      "aa8502b-core"
+    ],
+    "supporting_apis": [
+      "spotify.show_playlist",
+      "spotify.follow_artist",
+      "spotify.show_following_artists"
+    ],
+    "inputs": [
+      "playlist or artist list",
+      "processing rules"
+    ],
+    "outputs": [
+      "processed entities",
+      "action logs"
+    ],
+    "proposal_id": "shared-iterative-playlist-and-artist-processing-fcdaf9"
+  },
+  "source_reference_hashes": {
+    "b7a9ee9-core": "87dd838b52a40bbc30d16666a7500df8e410eeb808bf5a6f380710413531a530",
+    "07b42fd-core": "df1188d2f899df2025dd55f8897d72c394cf86d147d3fbcf94596b4e7026e3e2",
+    "aa8502b-core": "38add5d426fa4c85424fde2eaf66117a81f39c51ca2076cab762b4c749847099"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-iterative-playlist-and-artist-processing-fcdaf9/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "48abc0ecf32f78882afb497023ae6d83aee9fa3db4f623b8d02db73fd3a31ce2",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

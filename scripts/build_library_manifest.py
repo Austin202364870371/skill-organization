@@ -9,8 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from family_validation import assert_frozen_library_ready
-from utils import canonical_hash, file_hash, read_json, write_json
+from common.utils import canonical_hash, file_hash, read_json, write_json
+from organization.library import validate_library
 
 
 def main() -> None:
@@ -18,12 +18,17 @@ def main() -> None:
     parser.add_argument("--library", default="skills/library")
     parser.add_argument("--output", default="skills/manifest.json")
     args = parser.parse_args()
-    status = assert_frozen_library_ready(args.library)
+    status = validate_library(args.library)
     records = []
     for directory in sorted(Path(args.library).iterdir()):
         if not directory.is_dir() or not (directory / "SKILL.md").exists():
             continue
         metadata = read_json(directory / "metadata.json")
+        reference_hashes = {
+            str(path.relative_to(directory)): file_hash(path)
+            for path in sorted((directory / "references").rglob("*"))
+            if path.is_file()
+        } if (directory / "references").is_dir() else {}
         records.append({
             "skill_id": directory.name,
             "candidate_type": metadata["candidate_type"],
@@ -32,10 +37,10 @@ def main() -> None:
             "version": metadata.get("version", 0),
             "validation_status": metadata["validation_status"],
             "skill_sha256": file_hash(directory / "SKILL.md"),
-            "contract_sha256": file_hash(directory / "contract.json"),
             "metadata_sha256": file_hash(directory / "metadata.json"),
+            "reference_sha256": reference_hashes,
         })
-    manifest = {"schema_version": "skill_library_v1", "count": len(records), "skills": records}
+    manifest = {"schema_version": "skill_library_v2", "count": len(records), "skills": records}
     manifest["library_hash"] = canonical_hash(manifest)
     write_json(args.output, manifest, overwrite=False)
     print(json.dumps({**status, "library_hash": manifest["library_hash"]}, indent=2))
@@ -43,4 +48,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

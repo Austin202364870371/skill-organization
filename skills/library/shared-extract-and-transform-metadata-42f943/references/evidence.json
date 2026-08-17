@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Extract and Transform Metadata",
+    "description": "Retrieve metadata from media or document items and transform it into a standardized or enriched format for downstream use.",
+    "supporting_core_ids": [
+      "27e1026-core",
+      "6104387-core",
+      "e7a10f8-core"
+    ],
+    "supporting_apis": [
+      "spotify.show_song",
+      "spotify.show_playlist",
+      "spotify.show_album_library"
+    ],
+    "inputs": [
+      "source items",
+      "transformation rules"
+    ],
+    "outputs": [
+      "transformed metadata",
+      "enriched data sets"
+    ],
+    "proposal_id": "shared-extract-and-transform-metadata-42f943"
+  },
+  "source_reference_hashes": {
+    "27e1026-core": "99cb0187dddcf476c6167348e762459ff7b0830123c882d556a22d4a600b3753",
+    "6104387-core": "107b171f9626a5108aac504c5fe4f2f0546f939b595f123debd2b14f52868c86",
+    "e7a10f8-core": "450d0685514feb2f2752056b89a4c3012ed6046d76bdff150fbae22f049cd019"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-extract-and-transform-metadata-42f943/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "596378583b2cd998db79e54d93cd422a5e962d4e19b8e21a61f89839f98447e3",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

@@ -1,0 +1,177 @@
+{
+  "required_apis": [
+    "supervisor.complete_task",
+    "supervisor.show_account_passwords",
+    "supervisor.show_profile",
+    "file_system.login",
+    "file_system.show_directory",
+    "file_system.show_file",
+    "phone.get_current_date_and_time",
+    "phone.login",
+    "phone.search_contacts",
+    "venmo.create_payment_request",
+    "venmo.login"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path",
+        "entry_type",
+        "substring"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/payment_requests",
+      "parameter_names": [
+        "access_token",
+        "amount",
+        "description",
+        "user_email"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path",
+        "entry_type",
+        "substring"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/venmo/payment_requests",
+      "parameter_names": [
+        "access_token",
+        "amount",
+        "description",
+        "user_email"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

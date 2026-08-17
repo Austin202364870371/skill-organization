@@ -1,0 +1,23 @@
+{
+  "split_roles": {
+    "family_id": "27e1026",
+    "generation_task": "27e1026_1",
+    "refinement_task": "27e1026_2",
+    "acceptance_task": "27e1026_3"
+  },
+  "reference_provenance": {
+    "solution_hash": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
+    "api_calls_hash": "87f3f1dc3fbcacc6fea75555f27fa22cae93f21354f83a17f21c8a1d824299b8",
+    "verification_hash": "db55bbc70716272b542c5b3c3f6a52e465a362d069ad1621748e1fe000022418"
+  },
+  "reference_hash": "99cb0187dddcf476c6167348e762459ff7b0830123c882d556a22d4a600b3753",
+  "raw_response_path": "outputs/skill_build/generation/27e1026/raw_family_candidate_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "70b9a11ec528e5ab5796462f0b1b9ede82c18ff27bf96b4b379dec6bfed5847c",
+  "evidence_scope": "generation evidence; not causal validation evidence",
+  "fallback_sensitivity_audit": {
+    "applied_to_main_library": false,
+    "output_directory": "outputs/skill_build/fallback/generation/27e1026",
+    "validated_fallback_skill_sha256": "a0d65995e4fef98c651ff2a7df927d8c8d2ce40f3a680dddf94655a84ab875b9",
+    "validated_fallback_metadata_sha256": "dc14c2245cb4e839b934beca6f0bd16a2ae426ccc4131bd6b942e6ab8e00185b"
+  }
+}

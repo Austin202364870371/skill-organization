@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Song Review Management",
+    "description": "Manage song reviews by either creating new ones or updating existing ones based on user preferences and liked status.",
+    "supporting_core_ids": [
+      "692c77d-core",
+      "ccb4494-core",
+      "e85d92a-core"
+    ],
+    "supporting_apis": [
+      "spotify.review_song",
+      "spotify.update_song_review",
+      "spotify.show_song_reviews"
+    ],
+    "inputs": [
+      "song identifiers",
+      "review criteria"
+    ],
+    "outputs": [
+      "updated reviews",
+      "review history"
+    ],
+    "proposal_id": "shared-song-review-management-4acfeb"
+  },
+  "source_reference_hashes": {
+    "692c77d-core": "eeb6bc107e6e0907457b75550a921a771598e5480c34b0c72f1348a87ba19aad",
+    "ccb4494-core": "7dae6182668365a29c736a891007d3d3259c93849735a668fa1550487e555475",
+    "e85d92a-core": "82119db8c48101dffae7e42c1c85768fe8cfd65603d430f5666274902f9afd3c"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-song-review-management-4acfeb/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "d3f9987817c8386425820f5ad01516a11003694aaee566d60c2b469c08610c70",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

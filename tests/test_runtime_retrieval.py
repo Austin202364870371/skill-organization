@@ -2,11 +2,11 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from agent import parse_code, parse_used_skills
-from appworld_runtime import extract_scores
-from official_agent import COMPLETION_RULE
-from retrieval_bridge import build_snapshots, load_snapshots
-from utils import write_jsonl
+from common.utils import write_jsonl
+from retrieval.bridge import build_snapshots, load_snapshots
+from runtime.agent import parse_code, parse_used_skills
+from runtime.appworld_runtime import extract_scores
+from runtime.official_agent import COMPLETION_RULE
 
 
 class RuntimeRetrievalTests(unittest.TestCase):
@@ -18,29 +18,6 @@ class RuntimeRetrievalTests(unittest.TestCase):
         text = '```python\nprint("ok")\n```\nUSED_SKILLS: ["a", "outside"]'
         self.assertEqual(parse_code(text), 'print("ok")')
         self.assertEqual(parse_used_skills(text, {"a"}), ["a"])
-
-    def test_fenced_skill_markdown(self):
-        from skill_generation import parse_skill_markdown
-        text = "```markdown\n---\nname: Search Songs\ndescription: Find songs generically.\n---\n\n## When to Use\nUse for song search.\n```"
-        skill = parse_skill_markdown("search-songs", text)
-        self.assertEqual(skill.name, "Search Songs")
-        self.assertTrue(skill.body.startswith("---"))
-
-    def test_title_frontmatter_is_normalized(self):
-        from skill_generation import parse_skill_markdown
-        text = "---\ntitle: Search Songs\n---\n\n## When to Use\n\nFind songs by an artist.\n\n## Preconditions\n\nAPI access.\n"
-        skill = parse_skill_markdown("search-songs", text)
-        self.assertEqual(skill.name, "Search Songs")
-        self.assertEqual(skill.description, "Find songs by an artist.")
-        self.assertIn("description: Find songs by an artist.", skill.body)
-
-    def test_markdown_title_and_description_are_normalized(self):
-        from skill_generation import parse_skill_markdown
-        text = "# Search Songs\n\n## Description\nFind songs generically.\n\n## When to Use\nUse for song search.\n"
-        skill = parse_skill_markdown("search-songs", text)
-        self.assertEqual(skill.name, "Search Songs")
-        self.assertEqual(skill.description, "Find songs generically.")
-        self.assertTrue(skill.body.startswith("---\nname: Search Songs\n"))
 
     def test_pass_failure_fallback(self):
         tgc, requirement_completion, success = extract_scores({"passes": [1, 2], "failures": [3]})

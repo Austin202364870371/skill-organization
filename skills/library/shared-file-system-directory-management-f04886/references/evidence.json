@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "File System Directory Management",
+    "description": "Organize and manage files in directories by moving, archiving, or deleting based on file properties such as date or type.",
+    "supporting_core_ids": [
+      "34d9492-core",
+      "7d7fbf6-core",
+      "771d8fc-core"
+    ],
+    "supporting_apis": [
+      "file_system.move_file",
+      "file_system.compress_directory",
+      "phone.delete_text_message"
+    ],
+    "inputs": [
+      "directory structure",
+      "file properties"
+    ],
+    "outputs": [
+      "organized file layout",
+      "cleaned-up storage"
+    ],
+    "proposal_id": "shared-file-system-directory-management-f04886"
+  },
+  "source_reference_hashes": {
+    "34d9492-core": "7a59c24812db084da10085cab3479e5fce63b5616b6a6e4f011cd02500285794",
+    "7d7fbf6-core": "4a49c154c37f6988c98610391b67d7cfb46b65a11fe6337ba7fe1748abfd4440",
+    "771d8fc-core": "506bb0d1893b2663cf58bc5c61bb494ac7b433b79bf5b95293e59960ede00ee6"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-file-system-directory-management-f04886/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "8ae9820c0606d3206bcf7f05afed7043d7f4140f941286f615e9db7996822ce6",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

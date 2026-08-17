@@ -1,0 +1,35 @@
+{
+  "skill_id": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+  "status": "candidate",
+  "source_split": "train",
+  "candidate_type": "reusable_subskill",
+  "supporting_core_ids": [
+    "b7a9ee9-core",
+    "07b42fd-core",
+    "aa8502b-core"
+  ],
+  "supporting_family_ids": [
+    "07b42fd",
+    "aa8502b",
+    "b7a9ee9"
+  ],
+  "supporting_apis": [
+    "spotify.show_playlist",
+    "spotify.follow_artist",
+    "spotify.show_following_artists"
+  ],
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "shared_subskill_generation_v2_skill_only",
+  "prompt_hash": "1eaf9bea59d5a059b0f788da555f1e1c2dc8cbfae77fc147ce05f59261ff982f",
+  "proposal_hash": "884623501796263c189ddac42f56cb80bd15c334d8f76ff54bd44172cfca2556",
+  "content_hash": "75eab5ae2d3e27cad487b77396b37dcefa1d9fe22cedb2b934f996c3dee533f5",
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "stage_observed_across_two_families",
+  "c_evidence_families": [
+    "07b42fd",
+    "aa8502b"
+  ],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

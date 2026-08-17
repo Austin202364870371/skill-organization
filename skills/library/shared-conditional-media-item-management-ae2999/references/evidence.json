@@ -1,0 +1,33 @@
+{
+  "proposal": {
+    "capability": "Conditional Media Item Management",
+    "description": "Conditionally add, remove, or modify media items (songs, albums) based on boolean logic applied to metadata or status fields.",
+    "supporting_core_ids": [
+      "229360a-core",
+      "ce359b5-core",
+      "aa8502b-core"
+    ],
+    "supporting_apis": [
+      "spotify.remove_album_from_library",
+      "spotify.remove_song_from_library",
+      "spotify.follow_artist"
+    ],
+    "inputs": [
+      "condition logic",
+      "item metadata"
+    ],
+    "outputs": [
+      "modified library state",
+      "action outcomes"
+    ],
+    "proposal_id": "shared-conditional-media-item-management-ae2999"
+  },
+  "source_reference_hashes": {
+    "229360a-core": "ede72cafa8f10d2ca2142bdf93a4909dfb6ae00ecc599c8f3c2296a0c8a8f3d7",
+    "ce359b5-core": "0499a2bdad8648eacfb3e2f08043497794ea9c0b370e51e4c7d38ee6c14cfee1",
+    "aa8502b-core": "38add5d426fa4c85424fde2eaf66117a81f39c51ca2076cab762b4c749847099"
+  },
+  "raw_response_path": "outputs/skill_build/subskill_generation/shared-conditional-media-item-management-ae2999/raw_shared_subskill_generation_v2_skill_only_attempt_1.json",
+  "raw_response_hash": "6a491b3e421a09af7c7478ca71f6b7b4151173182c71aff0274f1489acb65499",
+  "evidence_scope": "cross-family Train evidence; execution validation pending"
+}

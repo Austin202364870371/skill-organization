@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "spotify.remove_song_from_library",
+    "spotify.remove_song_from_playlist",
+    "spotify.like_song"
+  ]
+}

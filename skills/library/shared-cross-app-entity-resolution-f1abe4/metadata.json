@@ -1,0 +1,32 @@
+{
+  "skill_id": "shared-cross-app-entity-resolution-f1abe4",
+  "status": "candidate",
+  "source_split": "train",
+  "candidate_type": "reusable_subskill",
+  "supporting_core_ids": [
+    "29caf6f-core",
+    "6ea6792-core",
+    "d0b1f43-core"
+  ],
+  "supporting_family_ids": [
+    "29caf6f",
+    "6ea6792",
+    "d0b1f43"
+  ],
+  "supporting_apis": [
+    "phone.search_contacts",
+    "venmo.show_received_payment_requests",
+    "venmo.show_transactions"
+  ],
+  "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "generation_seed": 42,
+  "prompt_version": "shared_subskill_generation_v2_skill_only",
+  "prompt_hash": "542d5f6319df0c14c8d7a09921c3acafca22acd2d57fdc701dc3e31064351259",
+  "proposal_hash": "3883d84b88da247ba0e4f82407d565614237c95512c94120616e146055f7bbfd",
+  "content_hash": "99ef233fab1f87187a7048183780e6a05f76a6e23e8069e920ca6a7fd7050029",
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v1",
+  "execution_validation_status": "insufficient_execution_attribution",
+  "c_evidence_families": [],
+  "validation_scope": "B/C execution audit; not an inclusion gate"
+}

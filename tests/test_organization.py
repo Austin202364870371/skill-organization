@@ -1,8 +1,8 @@
 import unittest
 
-from organizers import assert_fair_views, build_view
-from schemas import Candidate, Skill, Snapshot
-from skill_loader import SkillLoader
+from common.schemas import Candidate, Skill, Snapshot
+from organization.organizers import assert_fair_views, build_view
+from organization.skill_loader import SkillLoader
 
 
 class OrganizationTests(unittest.TestCase):
@@ -42,4 +42,3 @@ class OrganizationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

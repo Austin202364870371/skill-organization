@@ -1,0 +1,152 @@
+{
+  "required_apis": [
+    "supervisor.complete_task",
+    "supervisor.show_account_passwords",
+    "supervisor.show_profile",
+    "spotify.login",
+    "spotify.remove_song_from_library",
+    "spotify.remove_song_from_playlist",
+    "spotify.show_playlist",
+    "spotify.show_playlist_library",
+    "spotify.show_song",
+    "spotify.show_song_library"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/songs/{id}",
+      "parameter_names": []
+    },
+    {
+      "method": "DELETE",
+      "path": "/spotify/library/songs/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/playlists/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/spotify/playlists/{id}/songs/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "method": "GET",
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "method": "GET",
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "method": "POST",
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/songs/{id}",
+      "parameter_names": []
+    },
+    {
+      "method": "DELETE",
+      "path": "/spotify/library/songs/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/spotify/playlists/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/spotify/playlists/{id}/songs/{id}",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

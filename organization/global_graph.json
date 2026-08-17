@@ -1,0 +1,412 @@
+{
+  "schema_version": "skill_graph_v2",
+  "nodes": [
+    "07b42fd-core",
+    "229360a-core",
+    "22cc237-core",
+    "27e1026-core",
+    "287e338-core",
+    "29caf6f-core",
+    "2a163ab-core",
+    "302c169-core",
+    "34d9492-core",
+    "3c13f5a-core",
+    "60d0b5b-core",
+    "6104387-core",
+    "692c77d-core",
+    "6ea6792-core",
+    "76f2c72-core",
+    "771d8fc-core",
+    "7d7fbf6-core",
+    "82e2fac-core",
+    "aa8502b-core",
+    "afc0fce-core",
+    "b0a8eae-core",
+    "b7a9ee9-core",
+    "c901732-core",
+    "ccb4494-core",
+    "ce359b5-core",
+    "cf6abd2-core",
+    "d0b1f43-core",
+    "e3d6c94-core",
+    "e7a10f8-core",
+    "e85d92a-core",
+    "shared-aggregate-and-process-multi-app-data-046b84",
+    "shared-conditional-media-item-management-ae2999",
+    "shared-cross-app-entity-resolution-f1abe4",
+    "shared-extract-and-transform-metadata-42f943",
+    "shared-file-system-directory-management-f04886",
+    "shared-iterative-playlist-and-artist-processing-fcdaf9",
+    "shared-join-app-specific-entities-7d507c",
+    "shared-note-based-task-state-updates-191e5d",
+    "shared-paginate-and-filter-api-results-8fccba",
+    "shared-ranking-by-metadata-criteria-532682",
+    "shared-safe-batch-mutation-b459e3",
+    "shared-set-aggregation-across-media-types-fa7d52",
+    "shared-song-review-management-4acfeb",
+    "shared-temporal-filtering-of-transactions-6f1f17",
+    "shared-verify-and-validate-data-integrity-8907ae"
+  ],
+  "edges": [
+    {
+      "source": "22cc237-core",
+      "target": "shared-aggregate-and-process-multi-app-data-046b84",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "3c13f5a-core",
+      "target": "shared-aggregate-and-process-multi-app-data-046b84",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "60d0b5b-core",
+      "target": "shared-aggregate-and-process-multi-app-data-046b84",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "229360a-core",
+      "target": "shared-conditional-media-item-management-ae2999",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "ce359b5-core",
+      "target": "shared-conditional-media-item-management-ae2999",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "aa8502b-core",
+      "target": "shared-conditional-media-item-management-ae2999",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "29caf6f-core",
+      "target": "shared-cross-app-entity-resolution-f1abe4",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "6ea6792-core",
+      "target": "shared-cross-app-entity-resolution-f1abe4",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "d0b1f43-core",
+      "target": "shared-cross-app-entity-resolution-f1abe4",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "27e1026-core",
+      "target": "shared-extract-and-transform-metadata-42f943",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "6104387-core",
+      "target": "shared-extract-and-transform-metadata-42f943",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "e7a10f8-core",
+      "target": "shared-extract-and-transform-metadata-42f943",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "34d9492-core",
+      "target": "shared-file-system-directory-management-f04886",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "7d7fbf6-core",
+      "target": "shared-file-system-directory-management-f04886",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "771d8fc-core",
+      "target": "shared-file-system-directory-management-f04886",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "b7a9ee9-core",
+      "target": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "07b42fd-core",
+      "target": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "aa8502b-core",
+      "target": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "29caf6f-core",
+      "target": "shared-join-app-specific-entities-7d507c",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "3c13f5a-core",
+      "target": "shared-join-app-specific-entities-7d507c",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "b0a8eae-core",
+      "target": "shared-join-app-specific-entities-7d507c",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "cf6abd2-core",
+      "target": "shared-note-based-task-state-updates-191e5d",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "b0a8eae-core",
+      "target": "shared-note-based-task-state-updates-191e5d",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "22cc237-core",
+      "target": "shared-note-based-task-state-updates-191e5d",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "2a163ab-core",
+      "target": "shared-paginate-and-filter-api-results-8fccba",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "82e2fac-core",
+      "target": "shared-paginate-and-filter-api-results-8fccba",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "e3d6c94-core",
+      "target": "shared-paginate-and-filter-api-results-8fccba",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "82e2fac-core",
+      "target": "shared-ranking-by-metadata-criteria-532682",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "e85d92a-core",
+      "target": "shared-ranking-by-metadata-criteria-532682",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "287e338-core",
+      "target": "shared-ranking-by-metadata-criteria-532682",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "229360a-core",
+      "target": "shared-safe-batch-mutation-b459e3",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "ce359b5-core",
+      "target": "shared-safe-batch-mutation-b459e3",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "ccb4494-core",
+      "target": "shared-safe-batch-mutation-b459e3",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "6104387-core",
+      "target": "shared-set-aggregation-across-media-types-fa7d52",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "e7a10f8-core",
+      "target": "shared-set-aggregation-across-media-types-fa7d52",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "82e2fac-core",
+      "target": "shared-set-aggregation-across-media-types-fa7d52",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "692c77d-core",
+      "target": "shared-song-review-management-4acfeb",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "ccb4494-core",
+      "target": "shared-song-review-management-4acfeb",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "e85d92a-core",
+      "target": "shared-song-review-management-4acfeb",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "d0b1f43-core",
+      "target": "shared-temporal-filtering-of-transactions-6f1f17",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "2a163ab-core",
+      "target": "shared-temporal-filtering-of-transactions-6f1f17",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "afc0fce-core",
+      "target": "shared-temporal-filtering-of-transactions-6f1f17",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "22cc237-core",
+      "target": "shared-verify-and-validate-data-integrity-8907ae",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "6104387-core",
+      "target": "shared-verify-and-validate-data-integrity-8907ae",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    },
+    {
+      "source": "76f2c72-core",
+      "target": "shared-verify-and-validate-data-integrity-8907ae",
+      "relation": "semantic",
+      "evidence": "shared procedure supported by this Train-family core skill",
+      "confidence": 1.0,
+      "method": "train_shared_support"
+    }
+  ]
+}

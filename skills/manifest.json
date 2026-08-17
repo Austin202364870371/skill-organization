@@ -1,0 +1,742 @@
+{
+  "schema_version": "skill_library_v2",
+  "count": 45,
+  "skills": [
+    {
+      "skill_id": "07b42fd-core",
+      "candidate_type": "core",
+      "family_id": "07b42fd",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "85a21819c1a621e35e5666e7dcdade90098d4cb9925c53db471c0fac66cdd610",
+      "metadata_sha256": "f3388447a7ba1b75a069fb426fae1c4b6f86891aa1b39d6749945aa9ef8dd38f",
+      "reference_sha256": {
+        "references/api_patterns.json": "6c5642856cea4a5b3f8632148599ebf1326de5c06ced8a2b879554478bb35c3c",
+        "references/evidence.json": "e5b4b2c5d964adf9927e7d493433632b7d24d277d683de3fe136bca0ba37ca0d",
+        "references/examples.json": "2d1a98cd97f7fbebb969bf46de95c10c55c38a3a9b77bbca7cbdf47975b9b6b0"
+      }
+    },
+    {
+      "skill_id": "229360a-core",
+      "candidate_type": "core",
+      "family_id": "229360a",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "d5cb897c12d7c19e102ce8cd0a984bd205539bd98b8811ec642cbe2cfd426302",
+      "metadata_sha256": "e5ed90ebb945cb64f112ed9708c56fc005ccad79174d8f3e4620b8cdf54b92c2",
+      "reference_sha256": {
+        "references/api_patterns.json": "52c71eea64e7a7a7b9288e19e911d4e5c2e8c8fabe6c1367995d1d2bea9ab15e",
+        "references/evidence.json": "31581417f3266cf0ef43db9c83a030308a60d349c31c450015a3e7b97bfd393c",
+        "references/examples.json": "61e68d3c86dc8c33a46a0f8e9e9a5e091797094f2975f84a07d9478787d88195"
+      }
+    },
+    {
+      "skill_id": "22cc237-core",
+      "candidate_type": "core",
+      "family_id": "22cc237",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "da93e40135e761457f865b8a3aac73121e1cb0ffbb41e12b1d2f969d997ec140",
+      "metadata_sha256": "5a11e76c3d90fb19d1ef4a852ab498dff2e442cf2490e0da54ed788cd381cb09",
+      "reference_sha256": {
+        "references/api_patterns.json": "0886cdcf997882f9f277a7c70fd08b88db75f95b25f2a5640866d82199727de3",
+        "references/evidence.json": "c2c42a438109616e219fcc8bdabf8fa63b47ba2a27ef8d0a789c76c1d2368ce2",
+        "references/examples.json": "14917d728bb62b8e9ecafb6971b6043d9aa0166abbc03818524792d06fdabfaf"
+      }
+    },
+    {
+      "skill_id": "27e1026-core",
+      "candidate_type": "core",
+      "family_id": "27e1026",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "19c9b2fec701d716dc963a74d515315395d064582ea54dfc7a9bf8b4bc887856",
+      "metadata_sha256": "101d6359c226c2d3c6c803c07a2e9f26f535e291e7257e73a94f40d924b1948b",
+      "reference_sha256": {
+        "references/api_patterns.json": "2396c425cdef36e81aff04908611f11e44811e2f18418bd02c23e1011adf1ee7",
+        "references/evidence.json": "4fec5159238ac0d3acf42daa68e22ed02f25e3879a2b69871600c61b95c00e93",
+        "references/examples.json": "43bae254601cb1d919949be01e07b76ea098e9827d28bd9c63ca5226cb96a7e0"
+      }
+    },
+    {
+      "skill_id": "287e338-core",
+      "candidate_type": "core",
+      "family_id": "287e338",
+      "supporting_family_ids": [],
+      "version": 1,
+      "validation_status": "grounded",
+      "skill_sha256": "ebfa1f1704d68449fa001cca262e12799caf70c9026550c79663c3bc7bee4378",
+      "metadata_sha256": "db426408dde5283de9e76a006c51bced9897394ea714696a53712f921e35e766",
+      "reference_sha256": {
+        "references/api_patterns.json": "3564bb865d99b5c74bb19aee4b877e710377fb26e16fccfca94fba6d4c2e9505",
+        "references/evidence.json": "ab860615e6ddb843dff7f5031d49cca31efceffd72070c9f55579848b69bec76",
+        "references/examples.json": "b15d8ba086094c0aa84702ebfc3aba419a4fe2f7f939c5da4bdd7951cf22ef3f"
+      }
+    },
+    {
+      "skill_id": "29caf6f-core",
+      "candidate_type": "core",
+      "family_id": "29caf6f",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "59ec40c8eeea41b49884487f6305f89daf02e275771adc9037d9b14d1fac7632",
+      "metadata_sha256": "828bd62159eee7d5fffe2e719b177bab9fcca8e12fe94030c91acac61251925a",
+      "reference_sha256": {
+        "references/api_patterns.json": "7a8f01a54907d5007c60f5f2b1bdc2c58d1bd416d3a697ad847d8ebd8d5144b0",
+        "references/evidence.json": "34c726673e4b0ac5e4a4f35cf45dfbf87e17a1a7538dcf80740d1747b48147a4",
+        "references/examples.json": "a8429737cf37674b42989fed64f4d887dad7822f00b9a4772c68eab0cfde1218"
+      }
+    },
+    {
+      "skill_id": "2a163ab-core",
+      "candidate_type": "core",
+      "family_id": "2a163ab",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "c972dd0bfef29f501e07232a551a072e737df731e6a55e4ee263b861c5c063e6",
+      "metadata_sha256": "4780af1fe1915f9818a02abd3713e83b0431f0c7812a42437b9741ff4574b539",
+      "reference_sha256": {
+        "references/api_patterns.json": "49761ab9aff1e3258e8aaeabf185790e4f3f1bffb104c851373526026816e878",
+        "references/evidence.json": "b8e8dbde6de84582e40610c70148d5611b114730d1ab4880658a44102b0fa1cf",
+        "references/examples.json": "234ee4925d213fb548c13e00c599c8bdb7472244376b4f2fc20562b8d39ec254"
+      }
+    },
+    {
+      "skill_id": "302c169-core",
+      "candidate_type": "core",
+      "family_id": "302c169",
+      "supporting_family_ids": [],
+      "version": 1,
+      "validation_status": "grounded",
+      "skill_sha256": "182ed9c8968b9da4b1e1aa089f732f2fbc6e56318c67bcad6e2175ce1e1e181c",
+      "metadata_sha256": "8e2bdb005f610ad317897d98d16f051cf89eef99949f55d0c608d449d839eb8a",
+      "reference_sha256": {
+        "references/api_patterns.json": "af4e800c5725a2e24a12ad343122670e61dde8396ff8f4fe24b02b684dcf669c",
+        "references/evidence.json": "f3476825874b8454b6d8aa2eea725c75236507d4bc41aa856c1079b0f7e250c6",
+        "references/examples.json": "8b68b7f9a30b6e96910f7ba43bfb22bd278424d232d9a60846b6eaab8e1baafb"
+      }
+    },
+    {
+      "skill_id": "34d9492-core",
+      "candidate_type": "core",
+      "family_id": "34d9492",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "62d4b8fbc0212df16a7db26762bbc5d6949bd210d47937d23452b9e774065e43",
+      "metadata_sha256": "8096f576545fe324c0b217b7a0ef9bfc5dc43c6bc7bb0e4cf2fb23093696346c",
+      "reference_sha256": {
+        "references/api_patterns.json": "39ee3db2674002a6c586ea3b77fc3026e8b81061cdc49031a95f09a1b0b7be18",
+        "references/evidence.json": "fd62d170ca356501eeefb6c3a6bb37db77699ba136b837320c4a7d667ce6b3e9",
+        "references/examples.json": "c931fdf22f8c7b3838c3536dc1c0d72e82e5edff735f0c0d403a9f5c1ed2a497"
+      }
+    },
+    {
+      "skill_id": "3c13f5a-core",
+      "candidate_type": "core",
+      "family_id": "3c13f5a",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "e9527f33ab9c657a633be315c3efa25ad79e89b01b0afc97acecd0e3e80a246a",
+      "metadata_sha256": "ba5fffc837cee74f1bb19961f88c2a7c5f7642282c69782e96abf063b17a01ba",
+      "reference_sha256": {
+        "references/api_patterns.json": "e553fe143ce6bd6ca6388b8c1144413ed75a6dbd6a4c97f7687ed08100f9b44a",
+        "references/evidence.json": "843c1879923e61fd1b322eb717ca16e1d06a3665f555bbd3f7c5d6dff54ee509",
+        "references/examples.json": "c2712aeb43afdf0b3215a0a4f0b2b9d8fe9c55715ab8fca1afd99d3f46046b7c"
+      }
+    },
+    {
+      "skill_id": "60d0b5b-core",
+      "candidate_type": "core",
+      "family_id": "60d0b5b",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "016dacab9b65047b3870228b1891427f3ed5b7828503f05df6969f1caaffda80",
+      "metadata_sha256": "7e04d18b180d5c0aa3f091b74cae8a3388bc47d34fe41b47ac86c2caa80a7916",
+      "reference_sha256": {
+        "references/api_patterns.json": "65269114afe41ccc964154c8239e8de80f57940dd334a5f2e35ea2c38ccea196",
+        "references/evidence.json": "b988be1a5fbd8e0f91bb247e8a4a1270faa51aecb4d9c50bdc67e550d4e46c4f",
+        "references/examples.json": "2c7a8dfebedfc17d401424f9434b37721347a4e4d3c8da9f354315835313d8c9"
+      }
+    },
+    {
+      "skill_id": "6104387-core",
+      "candidate_type": "core",
+      "family_id": "6104387",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "6bc4b51669adbf6a06a0e7e1ebbc6eec985bbf2f4b0053b7e653e80a7006efef",
+      "metadata_sha256": "d7dc2f8bb63822540a5b709e751dcdd24e6c33af3c4fae39e24226dbff902539",
+      "reference_sha256": {
+        "references/api_patterns.json": "d30e8aed24e4176bed931d9473c2d235c62a8817a48b973163026986740a92c7",
+        "references/evidence.json": "7732558f223443db19b855ec34c684a1c5490cc46a89b3d463df89cdca5d76a1",
+        "references/examples.json": "17dc0ed0cb4daf1bb1ca493b5d593b46ae3fff02918f93bba0388fb566b97902"
+      }
+    },
+    {
+      "skill_id": "692c77d-core",
+      "candidate_type": "core",
+      "family_id": "692c77d",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "16b0244ee2007de58d4581c575243c9eddb065fc9a6b175765622282d7255c5c",
+      "metadata_sha256": "86e8ec24027eb4ec6e0020667e1f8283cf96aebc790db904d072df88c109205a",
+      "reference_sha256": {
+        "references/api_patterns.json": "f61a624cfb74a86d571a495877ff8b57aa7eecf3a7e84be982e30dcd8cb38368",
+        "references/evidence.json": "df9e42c3ff73ccba73877b83f81406b4950d5b21b61a41d229401db068cd0375",
+        "references/examples.json": "d8600ca8e8a59b2e0d1d418d83dd6a7739764062785618538e497d1d27eac5ba"
+      }
+    },
+    {
+      "skill_id": "6ea6792-core",
+      "candidate_type": "core",
+      "family_id": "6ea6792",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "b0302d1d5422ab2a018275c317d0d9f8b9dd33f2746dc74db48d93e12d220741",
+      "metadata_sha256": "2880913bbd064536ec3872ce8f23d29260c49fd44c9440d4ac35363f86acb670",
+      "reference_sha256": {
+        "references/api_patterns.json": "0c0c94e5960b1b237f4e5194fe87a7f0ee1c3298f884ea9ad986dcc65a61f0fc",
+        "references/evidence.json": "66afdc672804d2cafc944832882489f24ff1d0230ddb3cce45cb8afe5090bb51",
+        "references/examples.json": "06231555e9974234373e6e91ac02a02be359e64751e0a1d76c17d76e444a0154"
+      }
+    },
+    {
+      "skill_id": "76f2c72-core",
+      "candidate_type": "core",
+      "family_id": "76f2c72",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "0dd8664b98e2012cfd2fabceccd7fe218efd12af1864f32fe42e987b4be49de9",
+      "metadata_sha256": "aea82276a8bfad15f0e4d6da8de1100f0b6259654ae54dd14022a7024efee6f2",
+      "reference_sha256": {
+        "references/api_patterns.json": "670ab7118b8b16b8426f7dedeedb21ebbaf4cdc92d3c153fc4927798a3876640",
+        "references/evidence.json": "9c56697bdca399bb3e5dab9025aeb1ca5152c08713b26ec6085220ab2f259539",
+        "references/examples.json": "031802c447cb520fa8dea76b577d5d5767cb0846d9c63d6028a5ae797081ac6c"
+      }
+    },
+    {
+      "skill_id": "771d8fc-core",
+      "candidate_type": "core",
+      "family_id": "771d8fc",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "b2a769b8bef99343b52a4211677b71cdb1f8916a831d76020067703e23349b58",
+      "metadata_sha256": "931ff0c15e7d7c3a20645eab48006711aed627d00a90eab53cc1b3297036b863",
+      "reference_sha256": {
+        "references/api_patterns.json": "ac94c59df5336b3eef6c542b01193e7b00914a74ac111d5092dcc06dd5e21fd6",
+        "references/evidence.json": "6ed1f3f7efdc4995b533e0942d9bcc8ed59398f069027e91f16be7993073ea10",
+        "references/examples.json": "c8343fbd02a969f612679863585a8353b8ede87b77d0bdde6f13c1d0cecc7876"
+      }
+    },
+    {
+      "skill_id": "7d7fbf6-core",
+      "candidate_type": "core",
+      "family_id": "7d7fbf6",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "bb37386e1ac5847aeb761fa76e95bd40b218590d0b6278f22614b92bf8e7357d",
+      "metadata_sha256": "304b28c102bf34dd63193c1381686432880db9f796ce741cc271d7a0e252a38a",
+      "reference_sha256": {
+        "references/api_patterns.json": "3190239b556ab470eb6be588813f129873e284abb576d78f6fbd998c33afc704",
+        "references/evidence.json": "5772b5a5ef094532585d189f1a900561a9494cda50cf2825fcbd3e1dee1c7978",
+        "references/examples.json": "e6615d717994059cee8cb9cebe6e5de484952b274123a61eba93b76370869086"
+      }
+    },
+    {
+      "skill_id": "82e2fac-core",
+      "candidate_type": "core",
+      "family_id": "82e2fac",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "49d2dfd5fb61d0d704322855718afb272f8ff42556b0d803142569df5cdeef75",
+      "metadata_sha256": "77cbd84f8129fe85c274521e78bf6b5276adae81c99dbf318e01112be24f10ae",
+      "reference_sha256": {
+        "references/api_patterns.json": "6fcfdd09609bdeb5d3b3ded94afbc28bb2c86611dfbbff113d1ef804fdc57161",
+        "references/evidence.json": "b3b51c9e2e9545eec3b3b49a0049f5c51630f394f9b494bfa32a5b37bdaa6ae6",
+        "references/examples.json": "333a17b44f0d4bce485039f1e7f2c526e35d4576426e98c11fb6026abf971178"
+      }
+    },
+    {
+      "skill_id": "aa8502b-core",
+      "candidate_type": "core",
+      "family_id": "aa8502b",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "ec3db34ccda85456ee988599ec65b38030cef304876397251ea3ab39f69ecce7",
+      "metadata_sha256": "48101c3d0775dbeeb2b2b7c6b576bea2cd29b068240df28414e71dc009250ea1",
+      "reference_sha256": {
+        "references/api_patterns.json": "7c472d2c48110c31b11d79dc8499eaca516f5c914b59ea711fdf3b10dcb66e84",
+        "references/evidence.json": "f3966adbc2be2fc84d5db38fb6e776cbac8e88b11ad86ef29362f7a71c938029",
+        "references/examples.json": "6b279dbb38d11ae4796d7ee49f2a9a887db6c6372d13b7c61eeb9819b904ce76"
+      }
+    },
+    {
+      "skill_id": "afc0fce-core",
+      "candidate_type": "core",
+      "family_id": "afc0fce",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "2a4148d8025f0a9d37b478b821f7e2f0dbbf57afc6f6b6c7c9b468b706a5c2d5",
+      "metadata_sha256": "f8136cc83d80384933d91f969aaad0d247d5fd4dae7fb3c4ce9a36e3d277ffb9",
+      "reference_sha256": {
+        "references/api_patterns.json": "ca2713ddaab2224d9246fa15be0f56f3840d844fe461e35c2cdde7fcacd54f49",
+        "references/evidence.json": "9975b7a407cd25ff5ed691227f4a18a4123f8984f74c993d36abf45f33c17c79",
+        "references/examples.json": "b4c99486760b9d68f1b52271b914259f44c2917718d3750deff900d38ce6a136"
+      }
+    },
+    {
+      "skill_id": "b0a8eae-core",
+      "candidate_type": "core",
+      "family_id": "b0a8eae",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "326f6a6c57178115fe68a5c722cb4d35182bff48ef99ca481b631e5e95e7e5cd",
+      "metadata_sha256": "48618bdef534c3bf022938dbe99dcd26f68962f9da2e6dc6583c1660aa9b058a",
+      "reference_sha256": {
+        "references/api_patterns.json": "68f3c1fae2654ece2bacd6104e5282a6baae934b51dd42a4ebee37f4737bfb4c",
+        "references/evidence.json": "ca61e8ac6856ab5dde1503f9f81e37b942f5cf795191926eb27c9e18a64c5b5f",
+        "references/examples.json": "e59f1a9dab770b33c806f2731058936c7f3c1e66b73eaefc9b908443eaae0246"
+      }
+    },
+    {
+      "skill_id": "b7a9ee9-core",
+      "candidate_type": "core",
+      "family_id": "b7a9ee9",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "9df78d9448f8db06ec02596484d972c75a33015058da4dbb74e987c6dab1aa33",
+      "metadata_sha256": "757329a8df81296372cbb2e858cedcba06a2eb17a4515b71e2b027c3fb4078f5",
+      "reference_sha256": {
+        "references/api_patterns.json": "68577227902b76cd6318c068832c832a59a13a21bda043abad8778f4866e70a7",
+        "references/evidence.json": "b8a65154954e8586920752c7188193351c2fa2380b0a6f28bdb4b2bc06c42d11",
+        "references/examples.json": "269720bf89bacb18e1c32f59d39bdeae3a49e2090a95f8bde0876a9516c7b1ba"
+      }
+    },
+    {
+      "skill_id": "c901732-core",
+      "candidate_type": "core",
+      "family_id": "c901732",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "49255866ecf5a2f725d51823bcb0fa14983bfc76a20c55325d842b501ab5edae",
+      "metadata_sha256": "6084f66f933cc4567399a61b1b604749b098aff00fee9fcabeb23866c2bff04c",
+      "reference_sha256": {
+        "references/api_patterns.json": "ed5af16c3389a5141195f9bc48872249ef6e210ee1251cdc3807c889ca700ffe",
+        "references/evidence.json": "3007b96f43d816dfb5edf5ccd5f1fcfeb74374f6d5f1994156d7a5f0fcdf5abb",
+        "references/examples.json": "f87c75624f778628934c2856225310c996a10c42980ce1867bf55216ad076eba"
+      }
+    },
+    {
+      "skill_id": "ccb4494-core",
+      "candidate_type": "core",
+      "family_id": "ccb4494",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "84a9c7bbf1f6fd7bd4df44fddab721da49a16262e451e59f4fc49cd9dd40234e",
+      "metadata_sha256": "129755f67e36de68b8520ecba299cbbb16d42c3a3559c7f1db1f21faeeafe548",
+      "reference_sha256": {
+        "references/api_patterns.json": "a59f8e2535d15054eae058fd70e5281646c6df09c6ce07b7f70e2ad70fe37ee0",
+        "references/evidence.json": "f1c417f2759a9d8b333aecae8d7f9c65851220c55a05edc371dd1b028e816b05",
+        "references/examples.json": "a1657e5be71524fc3b6a0e16c5854f4859250a3ee386048e649fab314589277e"
+      }
+    },
+    {
+      "skill_id": "ce359b5-core",
+      "candidate_type": "core",
+      "family_id": "ce359b5",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "20dfc4aac55ad04c0a27fac5f511fd3a2c2dae3c173585a56f7181e891778cc1",
+      "metadata_sha256": "c691e444b4eab64b2079f975afac8e74b65e82398f7fe17f22df0fb426e4a77f",
+      "reference_sha256": {
+        "references/api_patterns.json": "89e38655a47fc295da3e0543f5aba7e8ab013216bf2cc7ed9fb0b0ed41f337c1",
+        "references/evidence.json": "548fd016d809bbf8925131f45df7b73ca346248a7fe4c2b3f3fa15609d5c6a0f",
+        "references/examples.json": "1b6db6a1a54a181ea5b0fe30788303c6efd503f03f63ba37af944a719284e498"
+      }
+    },
+    {
+      "skill_id": "cf6abd2-core",
+      "candidate_type": "core",
+      "family_id": "cf6abd2",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "5b5e81525ac67adcd4f50aca6ef112e004a7ddcf869a5fbe88a1ea613b8c74cd",
+      "metadata_sha256": "cf4a0bf7679cdd7195a380646fa8c06f1a02ade874b457a044f2becd1b7ef881",
+      "reference_sha256": {
+        "references/api_patterns.json": "a44ed8731595733048d06ef051a28652b3f24a921b2417bd7bcd52b47616cd22",
+        "references/evidence.json": "bb78230b10e58f58112787f30b1e56c76a9d430f88d3f755b54d195c69b8aed8",
+        "references/examples.json": "6a3de32be0c8922e2c0517d39a8d5241807f04f56c1d9a85abb4e31cb5e284ed"
+      }
+    },
+    {
+      "skill_id": "d0b1f43-core",
+      "candidate_type": "core",
+      "family_id": "d0b1f43",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "1b27dfd5cdbd696a78d018535c5f013d22d4f9fa8bc085141aa1863621e96fb8",
+      "metadata_sha256": "ac8c872daedb69c0b3ca2ce3eac1a846da0a85d939bf0153d65ffde7329cc225",
+      "reference_sha256": {
+        "references/api_patterns.json": "bda280712389aa12b98d8e06a719342a80b4ac2e0581f52d71391fc6af94e881",
+        "references/evidence.json": "6acb9140e559396619abe6303c54715c4701d8f592b82b10c723f1792a0efe51",
+        "references/examples.json": "b721a6e100f04b9cac73ece482f1974442fc618e083175c184039ed8660ebb70"
+      }
+    },
+    {
+      "skill_id": "e3d6c94-core",
+      "candidate_type": "core",
+      "family_id": "e3d6c94",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "414d73e019accd4f26a7586e1ed35d48a486cea727cc09a7d637927a2cf7183b",
+      "metadata_sha256": "a6a5b7a70c1f49c731a826abc26e9768cbd22938703befa3ec3d2291e4b23f98",
+      "reference_sha256": {
+        "references/api_patterns.json": "3dca4f67138eac7c205b890d226a3c0740e2d9ba6439e489995eb8a7a397aa41",
+        "references/evidence.json": "c755e3f2e073e71030679669566617ef7baa32fd018d98b0ef3c4e898cc0b788",
+        "references/examples.json": "2623916ab773c31b14e0e63348978a4415e48c438b242b09b02ba825dd1e5f8b"
+      }
+    },
+    {
+      "skill_id": "e7a10f8-core",
+      "candidate_type": "core",
+      "family_id": "e7a10f8",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "db5c81b44c0cd7f71b29504fef0f7f2575b85ef037f83c395f2a6e810e4a9f6e",
+      "metadata_sha256": "01341a104216ff6acdfe3c78dc12ae42a97cf76674d5616a271cc66908bbd2df",
+      "reference_sha256": {
+        "references/api_patterns.json": "145e0aa04e5b447cb9bbe7726c7f546b3e0233460576c5b4def4f2bfe9a63c0e",
+        "references/evidence.json": "1c5cccb98b4a2b054916e6bf12060fef161023e7881387ca79faef730b44b816",
+        "references/examples.json": "8cf877a18bef483be7a920ca67109dcb302f3a8008ec5913e37eb80899fe5116"
+      }
+    },
+    {
+      "skill_id": "e85d92a-core",
+      "candidate_type": "core",
+      "family_id": "e85d92a",
+      "supporting_family_ids": [],
+      "version": 2,
+      "validation_status": "grounded",
+      "skill_sha256": "3a18040649f9aae57a1ebeea21186608fba259c06ce28be255ee458ab641ea1f",
+      "metadata_sha256": "8030f3bb90daa5b6dabf6348e637239247b5fbf3f9fa9b8314a61a7d2cffeea0",
+      "reference_sha256": {
+        "references/api_patterns.json": "0b790837c42bd93f796c3346e46579e723f989ab0ab811a07fefc4248168ee78",
+        "references/evidence.json": "b137910f1a9e0e41f6c2ec3cf46ba2303334bc84284ff9a3e777db71ae555be7",
+        "references/examples.json": "c143bac7b9ffc4e8493fa0b80b38a49e3b523c27e62ef996c5e6a88709b1709c"
+      }
+    },
+    {
+      "skill_id": "shared-aggregate-and-process-multi-app-data-046b84",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "22cc237",
+        "3c13f5a",
+        "60d0b5b"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "d6bfa6bde21d7bb2a4eaf0bfe58e22f5ef97875900ee6d715943b4828f6e8138",
+      "metadata_sha256": "d439ea12ebd4938898e8eb300817590ed56933290b9f8594af6554178bd7da48",
+      "reference_sha256": {
+        "references/api_patterns.json": "18d2db414cc4b5018064023c0721c1af2ff3cb8b66f125cd4e3e608da185342e",
+        "references/evidence.json": "fe30cf4941dc03185efdafda79a39808a73fee4102dfa0f75ba0af2f2da44aa7",
+        "references/examples.json": "e49b7bbb4af301fa0f2aef6a13b7313a6075c944ba5918914fcfb04fd7d8899e"
+      }
+    },
+    {
+      "skill_id": "shared-conditional-media-item-management-ae2999",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "229360a",
+        "aa8502b",
+        "ce359b5"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "070a932935b093e9a4b7ab7385b0729bc569fbc6dd57c578d24d2897194cb616",
+      "metadata_sha256": "60160736991dfa076f04bc5827890f50164272cd9667f3d9efb73538bd8d43ea",
+      "reference_sha256": {
+        "references/api_patterns.json": "9b6b5040a384d6775b14800e1406f9887a020d3a99ba30b387b87aa3d34ed1bf",
+        "references/evidence.json": "9f703808eebb1460004246382230fac092c9af6ab835fa8a8afc440867544f20",
+        "references/examples.json": "c74b0f8b610d866c2a199cc4aece37df4f7fa3ed149bb99943e92f507e41e8d1"
+      }
+    },
+    {
+      "skill_id": "shared-cross-app-entity-resolution-f1abe4",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "29caf6f",
+        "6ea6792",
+        "d0b1f43"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "307514c86228f2a0e72f0a0218ddb49876744df3a062788ce53c98f625e9c9aa",
+      "metadata_sha256": "d0b920ad8a824ad69a813790b114c2b77a18ef26996e1296723643067d24e886",
+      "reference_sha256": {
+        "references/api_patterns.json": "21c235bb8f7a7bb4dee59557f18e0e3c38d09ce564e3734659f45db8ea23d7ca",
+        "references/evidence.json": "06b763219daae6f597790d46c8022b28e4ca2c18178a8c6bec81c6fee2c8d2ef",
+        "references/examples.json": "940fbed1a32127644f91a4713e89721874e7f84eb294a6979642d208f82b126d"
+      }
+    },
+    {
+      "skill_id": "shared-extract-and-transform-metadata-42f943",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "27e1026",
+        "6104387",
+        "e7a10f8"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "f50138bd1ff69288385fb95f0257a42609ae95b2169c73e62d1539d617f07605",
+      "metadata_sha256": "3b6f09c2953a96771f86c9a9ae2a242bafe07bf59aafb7711cf79355df390785",
+      "reference_sha256": {
+        "references/api_patterns.json": "c0667a75e16ddfba45e1de6af86def2f6374a8a41a9196f7f0dd6d5e00083649",
+        "references/evidence.json": "441d3ea3134a00b70f3539d99ce7c675c24f8dd23c33a8ba9a4146246be9e597",
+        "references/examples.json": "3e97f13d501ad958da7aa50da9036424c41abb8781cb56a37b44c7ca8a14bf93"
+      }
+    },
+    {
+      "skill_id": "shared-file-system-directory-management-f04886",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "34d9492",
+        "771d8fc",
+        "7d7fbf6"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "525f0903d02d03df20f78fd796859d6246824976d299938ecae67b867d56b1e6",
+      "metadata_sha256": "199c8ac4946ddfbec102835729678c45a633b83e8de9551549c4c8708b342aae",
+      "reference_sha256": {
+        "references/api_patterns.json": "de80bd4e201984dfba581f1bc2ab97d98ed4c757024789f365a7ecc8af282bfa",
+        "references/evidence.json": "2651ff6c8a1550c47e375987426818652be13ab187bffdd2d1a21764fcc614fc",
+        "references/examples.json": "bab833d9a1c79b3faca5e930f5093b1296eec0701ce84fe80293ecdfd86b93ad"
+      }
+    },
+    {
+      "skill_id": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "07b42fd",
+        "aa8502b",
+        "b7a9ee9"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "604d1a6f7070993687b3f5bdcaa49d85fcb8728da9dc40b721e74e7f57235fb8",
+      "metadata_sha256": "b3244e098ec87f7223fd7875a11e519d5db33b0a98694d8327fa30383cbedeb1",
+      "reference_sha256": {
+        "references/api_patterns.json": "efe0a9348a8980c53195d4e0c1bc56fd958f23947476d26a3030152ebb8d442a",
+        "references/evidence.json": "f7859e990be74e5bac66c34f5f481ea1f9bccd6292ef8a98875c3a3d0d08c005",
+        "references/examples.json": "565ab7c881013b6a51ac355e4bd1f5c3c9b333690c28d35724f67813d15f6a0c"
+      }
+    },
+    {
+      "skill_id": "shared-join-app-specific-entities-7d507c",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "29caf6f",
+        "3c13f5a",
+        "b0a8eae"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "59e047ceb2a73feb2493b0a289621ed31e46a4a6bd3c761fc836e663daaa8860",
+      "metadata_sha256": "0dbca2e55ad253d18c539cc8eb6a10d566cd1c7d4886ed3d987e8434152d09af",
+      "reference_sha256": {
+        "references/api_patterns.json": "5b93258f597d7fb34b25c547bae19df922f2d82a06eeac5a1e3f6e67d0bcb6ca",
+        "references/evidence.json": "668972b33bda019b8f7d095ac0c08bcc28bcd7fc7724fc73e510bfcaebc34151",
+        "references/examples.json": "027e6a824e30b8204e7b0585497a3f3204407568ce45d1aa8218179a4d9b7114"
+      }
+    },
+    {
+      "skill_id": "shared-note-based-task-state-updates-191e5d",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "22cc237",
+        "b0a8eae",
+        "cf6abd2"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "e13b4e39113d55c9f0102f69b9fa5f3986040b0312d232f3209ae6a238ee3aa6",
+      "metadata_sha256": "2d509cc6afa9fad5e70aeb634818fb04b4c0f57bdf41ea15229b6de970aec852",
+      "reference_sha256": {
+        "references/api_patterns.json": "3193b9375651a1c76121482805947dd9aef468a993fc556d30aec659a01685f1",
+        "references/evidence.json": "96ca4eef0b7e656baeb8ca4dbcf2f030501fdab853e78a1b0a6ce540979f1fda",
+        "references/examples.json": "5d675c670f04cc00cb7d76a37f272fd250c95c327321713a2e89bcbfaa86bfac"
+      }
+    },
+    {
+      "skill_id": "shared-paginate-and-filter-api-results-8fccba",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "2a163ab",
+        "82e2fac",
+        "e3d6c94"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "cf97299c6e81ca7e1d4d55746db8ad2c42532eff344825c110a4ef73e6fa0689",
+      "metadata_sha256": "a5a1d25278fd39015021c6458c76c9799f9845990e86a727fa8f12cc0c9c4419",
+      "reference_sha256": {
+        "references/api_patterns.json": "e956b09648be279766f36c1f0d3aa6d2651f3af415a579cd3bb6be9cced56cfc",
+        "references/evidence.json": "d8ba29a7167fc637db127c7da56cd53823d5e9da89b9f0c3957b9a9bc25eb5ce",
+        "references/examples.json": "11c50b62b037b71bb84cea15d162e29d3fec83bbb1592e10b0f4bb684b8a32b6"
+      }
+    },
+    {
+      "skill_id": "shared-ranking-by-metadata-criteria-532682",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "287e338",
+        "82e2fac",
+        "e85d92a"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "a16b8783b53dc201eb93e998064dd91939ef75162303daef9bcdfe3ca2cc7c1b",
+      "metadata_sha256": "eb1f966855b1822e71c49827ec9fcc6eb033f70783e86758acfc61f42d7b5d75",
+      "reference_sha256": {
+        "references/api_patterns.json": "dbf5aba97e2a7fb2dd156fb46e033f50f7659c2b62f4f28014fe7b95ae32a3ed",
+        "references/evidence.json": "0af68f25de097a2f20111cc25b3c0e366823429b47d2aaaa78bf07f250da9c24",
+        "references/examples.json": "19f54c217eac50082ef4b11fc2ac83afc6d451c116f04ed002015ed55167f963"
+      }
+    },
+    {
+      "skill_id": "shared-safe-batch-mutation-b459e3",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "229360a",
+        "ccb4494",
+        "ce359b5"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "24f2b2cc10d83201e4eef34e96157ac65ed93e79c1ac3725f439d88e88d1bdea",
+      "metadata_sha256": "40ee422cf7940b1c19e69862d18c320f964b5e44b0d8b2bc43216fa6aae33e18",
+      "reference_sha256": {
+        "references/api_patterns.json": "80fc365e147038047d447e1dcce747d8cbf26875929edd799d43e50d5189644c",
+        "references/evidence.json": "1a49801a7d0cd5576fd417d69e9d4aedd4165c14b481a6723ed0cce37ee73cf2",
+        "references/examples.json": "17cc4bd71a3b801ac25f35b760ed36770abd775fbdeebbbd17829ef789b3ef04"
+      }
+    },
+    {
+      "skill_id": "shared-set-aggregation-across-media-types-fa7d52",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "6104387",
+        "82e2fac",
+        "e7a10f8"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "ad09d6f0c3fcaf19fabde32cc0d5c753c44cc2295a3228fe3000bff2b8db70b8",
+      "metadata_sha256": "0c671fd744f4155278e1c47d26b31ac7c675ea25ca49204fb8d728b15fee13fa",
+      "reference_sha256": {
+        "references/api_patterns.json": "4e249d912f47fe8977f8534f606ae3bc48571acddcff712904c5443ee45ae7c1",
+        "references/evidence.json": "55b9b493e5fdb416a0d7b1f281901fc598126620ec9ba3eeae9b0c4e4f6e7185",
+        "references/examples.json": "eb8561f279482c0f9d2b3a907f6ca0f94ad305a1c56d78fdb2630a322cc3b141"
+      }
+    },
+    {
+      "skill_id": "shared-song-review-management-4acfeb",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "692c77d",
+        "ccb4494",
+        "e85d92a"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "23c7426150021c9130c4367225886f293343f78e75b72de7a72f820c20c86dfc",
+      "metadata_sha256": "bb88a59d5036065b7bb0ef5630417b48bf69d0fe30fb784b9ceeaef2bca22028",
+      "reference_sha256": {
+        "references/api_patterns.json": "94c3d32d3db39df48ebbb233576ce560af7f5a7d941d554e3f14d63784515c80",
+        "references/evidence.json": "c9becb6a040d3c4d14dbe4b70553b52ef6fd6b7cae0ad93ba97841944c8303ab",
+        "references/examples.json": "8267a4cc3e1464bd5fd3ef356400c05c961334c3e1a12e84802a33d16a494f47"
+      }
+    },
+    {
+      "skill_id": "shared-temporal-filtering-of-transactions-6f1f17",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "2a163ab",
+        "afc0fce",
+        "d0b1f43"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "f2a5d9bbaf1adfbfd227627e5b0995772418a5bcba0c58856a44ba8726f0a121",
+      "metadata_sha256": "e6c728d5e2062c9b654f64073f28094c2700e274730d19921af61ebe1db956dd",
+      "reference_sha256": {
+        "references/api_patterns.json": "c30b858c0427b7c48b215b4496ec7ee6dc81602b7be1c5a37fee88b36ea056ad",
+        "references/evidence.json": "f3bd9c302e66c4854943a93c5ddb985c42fc9e2fff1bcf08de496f245da060d6",
+        "references/examples.json": "1b2f19de19c1ebc2e63e700ab772123940c0adc01b0b7da41d350a04353f77db"
+      }
+    },
+    {
+      "skill_id": "shared-verify-and-validate-data-integrity-8907ae",
+      "candidate_type": "reusable_subskill",
+      "family_id": null,
+      "supporting_family_ids": [
+        "22cc237",
+        "6104387",
+        "76f2c72"
+      ],
+      "version": 0,
+      "validation_status": "grounded",
+      "skill_sha256": "4c6dedb074c22119286a1b74b747a1939c4bd6a21ab010c5452bdaa91f317cd8",
+      "metadata_sha256": "5376794c5e82b11f28935ee77a86dd052322a482f186d64dd74b9a00a3798e13",
+      "reference_sha256": {
+        "references/api_patterns.json": "89961a9670aabb0b5eb0ffc094f630dcefe4831058fdbdc9e26e9a1d5262cb17",
+        "references/evidence.json": "72d791903e953273d1830306e127a7c66ccfac19e2776b593b1ef63a2b9612c8",
+        "references/examples.json": "72894fb37defdf02ec40d55c11e9ba2edf1053c50c5f7f785a3654537eae84c1"
+      }
+    }
+  ],
+  "library_hash": "c8d95a9ca1e289b75c6c736a89d31c97cf9dcb179a9858ac670bddbafe59a43d"
+}

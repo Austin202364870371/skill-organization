@@ -23,10 +23,6 @@ data/reference_trajectories/
 data/retrieval_snapshots/
 outputs/runs/
 outputs/trajectories/
-outputs/skill_generation/
-outputs/skill_build/
-skills/candidates/
-
 .DS_Store
 .vscode/
 .idea/

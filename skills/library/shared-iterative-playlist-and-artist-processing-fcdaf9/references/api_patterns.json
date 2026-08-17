@@ -1,0 +1,7 @@
+{
+  "supporting_apis": [
+    "spotify.show_playlist",
+    "spotify.follow_artist",
+    "spotify.show_following_artists"
+  ]
+}
