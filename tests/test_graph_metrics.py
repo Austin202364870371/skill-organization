@@ -1,6 +1,6 @@
 import unittest
 
-from evaluation.metrics import METRIC_NAMES, holm_adjust, run_metrics, summarize
+from reporting.metrics import METRIC_NAMES, holm_adjust, run_metrics, summarize
 
 
 class GraphMetricTests(unittest.TestCase):

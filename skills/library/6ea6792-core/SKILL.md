@@ -1,11 +1,4 @@
 ---
-name: SKILL.md
-description: - When tasked with reviewing and acting on Venmo payment requests from specific contacts. - When needing to automate approval or rejection of payment requests based on predefined conditions.
----
-
-# SKILL.md
-
----
 name: Process Payment Requests from Contact Emails
 description: Retrieve contact emails from a phone application and process Venmo payment requests from those contacts based on user-defined action (accept or reject).
 ---

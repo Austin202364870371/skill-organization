@@ -16,8 +16,9 @@ if str(SRC) not in sys.path:
 
 from common.schemas import CONDITIONS
 from common.utils import read_json, write_json
-from evaluation.analysis import analyze_runs
+from reporting.analysis import analyze_runs
 from organization.graph_builder import build_global_graph
+from organization.graph_evidence import extract_train_graph_evidence
 from organization.hierarchy import build_hierarchy
 from organization.library import validate_library
 from retrieval.bridge import (
@@ -47,6 +48,12 @@ def parser() -> argparse.ArgumentParser:
     queries.add_argument("--input", required=True, help="JSON list of task_id + instruction/query")
     queries.add_argument("--output", default="data/fcsr_exchange/appworld_queries.jsonl")
 
+    evidence = commands.add_parser("extract-graph-evidence")
+    evidence.add_argument("--library", default="skills/library")
+    evidence.add_argument("--appworld-root", default="data/appworld")
+    evidence.add_argument("--split-file")
+    evidence.add_argument("--output", default="organization/train_graph_evidence.json")
+
     snapshots = commands.add_parser("build-snapshots")
     snapshots.add_argument("--records", required=True)
     snapshots.add_argument("--output", required=True)
@@ -55,10 +62,7 @@ def parser() -> argparse.ArgumentParser:
 
     graph = commands.add_parser("build-graph")
     graph.add_argument("--library", default="skills/library")
-    graph.add_argument(
-        "--trajectory-orders",
-        help="JSON list of successful/GT Train records with split and skill_ids",
-    )
+    graph.add_argument("--evidence", required=True)
     graph.add_argument("--output", default="organization/global_graph.json")
 
     hierarchy = commands.add_parser("build-hierarchy")
@@ -85,6 +89,7 @@ def parser() -> argparse.ArgumentParser:
     run.add_argument("--graph", default="organization/global_graph.json")
     run.add_argument("--workers", type=int, default=1)
     run.add_argument("--task-limit", type=int)
+    run.add_argument("--task-ids", help="Comma-separated explicit task IDs from the split")
     run.add_argument("--max-steps", type=int, default=30)
     run.add_argument("--seeds", default="42,43,44")
     run.add_argument("--conditions", default=",".join(CONDITIONS))
@@ -100,13 +105,19 @@ def main() -> None:
         result = export_skills(args.library, args.output)
     elif args.command == "export-queries":
         result = {"count": export_queries(read_json(args.input), args.output)}
+    elif args.command == "extract-graph-evidence":
+        result = extract_train_graph_evidence(
+            args.library,
+            args.appworld_root,
+            args.output,
+            args.split_file,
+        )
     elif args.command == "build-snapshots":
         result = build_snapshots(
             args.records, args.output, read_json(args.provenance), args.top_k
         )
     elif args.command == "build-graph":
-        orders = read_json(args.trajectory_orders) if args.trajectory_orders else []
-        result = build_global_graph(args.library, args.output, orders)
+        result = build_global_graph(args.library, args.output, read_json(args.evidence))
     elif args.command == "build-hierarchy":
         skill_ids = sorted(
             directory.name
@@ -149,6 +160,11 @@ def _run(args: argparse.Namespace) -> dict:
         max_steps=args.max_steps,
         workers=args.workers,
         task_limit=args.task_limit,
+        task_ids=(
+            [value.strip() for value in args.task_ids.split(",") if value.strip()]
+            if args.task_ids
+            else None
+        ),
     )
 
 

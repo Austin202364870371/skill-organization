@@ -27,9 +27,20 @@ def run_grid(
     max_steps: int = 30,
     workers: int = 1,
     task_limit: int | None = None,
+    task_ids: list[str] | None = None,
 ) -> dict[str, int]:
     _, load_task_ids = require_appworld()
-    task_ids = list(load_task_ids(split))
+    split_task_ids = list(load_task_ids(split))
+    if task_ids is not None:
+        if task_limit is not None:
+            raise ValueError("task_ids and task_limit are mutually exclusive")
+        if len(task_ids) != len(set(task_ids)):
+            raise ValueError("task_ids contains duplicates")
+        unknown = sorted(set(task_ids) - set(split_task_ids))
+        if unknown:
+            raise ValueError(f"tasks are not members of split {split}: {unknown}")
+    else:
+        task_ids = split_task_ids
     if task_limit is not None:
         task_ids = task_ids[:task_limit]
     missing = [task_id for task_id in task_ids if task_id not in snapshots]

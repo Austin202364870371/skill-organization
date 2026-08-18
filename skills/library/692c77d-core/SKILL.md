@@ -1,11 +1,4 @@
 ---
-name: SKILL.md
-description: - When tasked with reviewing or re-reviewing songs from a user's Spotify library. - When the task specifies a condition such as "review only liked songs" or "review only unliked songs". - When the goal is to update or add ratings to specific songs in the user's collection.
----
-
-# SKILL.md
-
----
 name: Manage Song Reviews Based on Library Content and Liked Status
 description: This skill involves retrieving a user's music library content (playlists, albums, songs, or liked songs), filtering the content based on whether the songs are liked or not, and then either updating existing reviews or writing new reviews for those songs based on a target rating.
 ---

@@ -20,31 +20,69 @@ MIN_ORDER_RATIO = 0.8
 def build_global_graph(
     skill_root: str | Path,
     output_path: str | Path | None = None,
-    trajectory_orders: Iterable[Mapping[str, Any]] = (),
+    graph_evidence: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:
     records, warnings = parse_skill_records(skill_root)
-    edges = _support_edges(records)
-    edges.extend(_explicit_data_dependencies(records))
-    edges.extend(_precedence_edges(records, trajectory_orders))
-    edges = _unique_edges(edges)
+    edges = _evidence_edges(records, graph_evidence, warnings)
     graph = {
-        "schema_version": "typed_skill_graph_v3",
-        "source_scope": "train_derived_skill_library_only",
-        "thresholds": {
-            "min_order_support": MIN_ORDER_SUPPORT,
-            "min_order_ratio": MIN_ORDER_RATIO,
-        },
+        "schema_version": "typed_skill_graph_v4",
+        "source_scope": "train_ground_truth_evidence_only",
+        "evidence_schema": (
+            graph_evidence.get("schema_version") if graph_evidence else None
+        ),
+        "thresholds": dict(graph_evidence.get("thresholds", {}))
+        if graph_evidence
+        else {},
         "nodes": [
             {"id": record["id"], "name": record["name"], "type": record["type"]}
             for record in records.values()
         ],
-        "edges": [edge.__dict__ for edge in edges],
+        "edges": [edge.__dict__ for edge in _unique_edges(edges)],
         "warnings": warnings,
     }
     validate_global_graph(graph)
     if output_path is not None:
         write_json(output_path, graph)
     return graph
+
+
+def _evidence_edges(
+    records: Mapping[str, Mapping[str, Any]],
+    evidence: Mapping[str, Any] | None,
+    warnings: list[str],
+) -> list[GraphEdge]:
+    if evidence is None:
+        warnings.append("no Train graph evidence supplied; graph contains nodes only")
+        return []
+    if (
+        evidence.get("schema_version") != "train_graph_evidence_v1"
+        or evidence.get("split") != "train"
+        or evidence.get("source_scope") != "train_ground_truth_solutions_only"
+    ):
+        raise ValueError("global graph requires train_graph_evidence_v1 Train GT evidence")
+    result = []
+    for raw in evidence.get("edges", []):
+        if not isinstance(raw, Mapping):
+            raise ValueError("graph evidence edges must be objects")
+        edge = GraphEdge(**dict(raw))
+        if edge.source not in records or edge.target not in records:
+            raise ValueError("graph evidence references an unknown Skill")
+        if edge.type == "SUPPORTS":
+            source, target = records[edge.source], records[edge.target]
+            if source["type"] != "Shared" or target["type"] != "Core":
+                raise ValueError("SUPPORTS must point from Shared to Core")
+            if len(source["source_families"]) < 2:
+                raise ValueError("SUPPORTS source must span at least two Train families")
+            if not any(
+                isinstance(item, Mapping)
+                and item.get("family_id") in source["source_families"]
+                for item in edge.evidence
+            ):
+                raise ValueError("SUPPORTS lacks source-family trajectory evidence")
+        elif edge.support < 2:
+            raise ValueError(f"formal {edge.type} edge requires support from two Train GTs")
+        result.append(edge)
+    return result
 
 
 def parse_skill_records(
@@ -112,6 +150,7 @@ def validate_global_graph(graph: Mapping[str, Any]) -> None:
         edge = GraphEdge(**raw)
         if edge.source not in node_set or edge.target not in node_set:
             raise ValueError("global graph edge references an unknown node")
+    # SUPPORTS cycles are irrelevant; execution cycles are resolved per Top-K view.
     # Cycles are deliberately legal in the offline global graph.
 
 

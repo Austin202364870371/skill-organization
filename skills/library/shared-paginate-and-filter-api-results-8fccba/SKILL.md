@@ -1,11 +1,6 @@
 ---
-name: When to Use
-description: - When working with APIs that return large datasets in paginated form. - When filtering results based on temporal criteria (e.g., today, yesterday) or content conditions. - When needing to perform actions (e.g., liking, posting) on specific entries that meet certain conditions.
----
-
----
 name: Paginate and Filter API Results
-setDescription: Iteratively process paginated API responses, apply date/time and content-based filters, and perform actions on matching items.
+description: Iteratively process paginated API responses, apply date/time and content-based filters, and perform actions on matching items.
 ---
 
 ## When to Use

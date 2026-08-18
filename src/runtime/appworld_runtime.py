@@ -68,7 +68,7 @@ def run_task(
     with AppWorld(task_id=task_id, experiment_name=experiment_name) as world:
         trace = solve_with_official(
             world=world, view=view, loader=loader, model_config=model,
-            prompt_file_path=str(Path(__file__).resolve().parents[1] / "configs" / "react_prompt.txt"),
+            prompt_file_path=str(Path(__file__).resolve().parents[2] / "configs" / "react_prompt.txt"),
             max_steps=max_steps, seed=seed, experiment_name=experiment_name,
         )
         evaluation = world.evaluate()

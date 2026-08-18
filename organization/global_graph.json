@@ -1,9 +1,12 @@
 {
-  "schema_version": "typed_skill_graph_v3",
-  "source_scope": "train_derived_skill_library_only",
+  "schema_version": "typed_skill_graph_v4",
+  "source_scope": "train_ground_truth_evidence_only",
+  "evidence_schema": "train_graph_evidence_v1",
   "thresholds": {
+    "min_shared_source_families": 2,
     "min_order_support": 2,
-    "min_order_ratio": 0.8
+    "min_order_ratio": 0.8,
+    "min_data_support": 2
   },
   "nodes": [
     {
@@ -18,7 +21,7 @@
     },
     {
       "id": "22cc237-core",
-      "name": "When to Use",
+      "name": "Process and Aggregate Data from Multiple Apps to Generate Payment Requests",
       "type": "Core"
     },
     {
@@ -63,17 +66,17 @@
     },
     {
       "id": "6104387-core",
-      "name": "SKILL.md",
+      "name": "Aggregate and Export User Media Library Data",
       "type": "Core"
     },
     {
       "id": "692c77d-core",
-      "name": "SKILL.md",
+      "name": "Manage Song Reviews Based on Library Content and Liked Status",
       "type": "Core"
     },
     {
       "id": "6ea6792-core",
-      "name": "SKILL.md",
+      "name": "Process Payment Requests from Contact Emails",
       "type": "Core"
     },
     {
@@ -198,7 +201,7 @@
     },
     {
       "id": "shared-paginate-and-filter-api-results-8fccba",
-      "name": "When to Use",
+      "name": "Paginate and Filter API Results",
       "type": "Shared"
     },
     {
@@ -241,15 +244,48 @@
       "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "22cc237"
-          ],
-          "source_tasks": [],
+          "task_id": "22cc237_1",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
           "matched_apis": [
             "phone.search_contacts",
             "simple_note.search_notes",
             "venmo.show_transactions"
+          ],
+          "lines": [
+            42,
+            54,
+            85
+          ]
+        },
+        {
+          "task_id": "22cc237_2",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
+          "matched_apis": [
+            "phone.search_contacts",
+            "simple_note.search_notes",
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            42,
+            54,
+            85
+          ]
+        },
+        {
+          "task_id": "22cc237_3",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
+          "matched_apis": [
+            "phone.search_contacts",
+            "simple_note.search_notes",
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            42,
+            54,
+            85
           ]
         }
       ]
@@ -259,16 +295,39 @@
       "target": "3c13f5a-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "3c13f5a"
-          ],
-          "source_tasks": [],
+          "task_id": "3c13f5a_1",
+          "family_id": "3c13f5a",
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
           "matched_apis": [
             "phone.search_contacts"
+          ],
+          "lines": [
+            42
+          ]
+        },
+        {
+          "task_id": "3c13f5a_2",
+          "family_id": "3c13f5a",
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            42
+          ]
+        },
+        {
+          "task_id": "3c13f5a_3",
+          "family_id": "3c13f5a",
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            42
           ]
         }
       ]
@@ -278,16 +337,39 @@
       "target": "60d0b5b-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "60d0b5b"
-          ],
-          "source_tasks": [],
+          "task_id": "60d0b5b_1",
+          "family_id": "60d0b5b",
+          "solution_sha256": "733e8ab32f7f3a0549b876e93ad42cb95b6f184cb62d9e2723ffec6e97b8afdb",
           "matched_apis": [
             "phone.search_contacts"
+          ],
+          "lines": [
+            39
+          ]
+        },
+        {
+          "task_id": "60d0b5b_2",
+          "family_id": "60d0b5b",
+          "solution_sha256": "733e8ab32f7f3a0549b876e93ad42cb95b6f184cb62d9e2723ffec6e97b8afdb",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            39
+          ]
+        },
+        {
+          "task_id": "60d0b5b_3",
+          "family_id": "60d0b5b",
+          "solution_sha256": "733e8ab32f7f3a0549b876e93ad42cb95b6f184cb62d9e2723ffec6e97b8afdb",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            39
           ]
         }
       ]
@@ -297,17 +379,45 @@
       "target": "229360a-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "229360a"
-          ],
-          "source_tasks": [],
+          "task_id": "229360a_1",
+          "family_id": "229360a",
+          "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
           "matched_apis": [
             "spotify.remove_album_from_library",
             "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            68,
+            88
+          ]
+        },
+        {
+          "task_id": "229360a_2",
+          "family_id": "229360a",
+          "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+          "matched_apis": [
+            "spotify.remove_album_from_library",
+            "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            68,
+            88
+          ]
+        },
+        {
+          "task_id": "229360a_3",
+          "family_id": "229360a",
+          "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+          "matched_apis": [
+            "spotify.remove_album_from_library",
+            "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            68,
+            88
           ]
         }
       ]
@@ -317,16 +427,39 @@
       "target": "aa8502b-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "aa8502b"
-          ],
-          "source_tasks": [],
+          "task_id": "aa8502b_1",
+          "family_id": "aa8502b",
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
           "matched_apis": [
             "spotify.follow_artist"
+          ],
+          "lines": [
+            60
+          ]
+        },
+        {
+          "task_id": "aa8502b_2",
+          "family_id": "aa8502b",
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+          "matched_apis": [
+            "spotify.follow_artist"
+          ],
+          "lines": [
+            60
+          ]
+        },
+        {
+          "task_id": "aa8502b_3",
+          "family_id": "aa8502b",
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+          "matched_apis": [
+            "spotify.follow_artist"
+          ],
+          "lines": [
+            60
           ]
         }
       ]
@@ -336,16 +469,48 @@
       "target": "ce359b5-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "ce359b5"
-          ],
-          "source_tasks": [],
+          "task_id": "ce359b5_1",
+          "family_id": "ce359b5",
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
           "matched_apis": [
             "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            48,
+            59,
+            70,
+            81
+          ]
+        },
+        {
+          "task_id": "ce359b5_2",
+          "family_id": "ce359b5",
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+          "matched_apis": [
+            "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            48,
+            59,
+            70,
+            81
+          ]
+        },
+        {
+          "task_id": "ce359b5_3",
+          "family_id": "ce359b5",
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+          "matched_apis": [
+            "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            48,
+            59,
+            70,
+            81
           ]
         }
       ]
@@ -355,16 +520,39 @@
       "target": "29caf6f-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "29caf6f"
-          ],
-          "source_tasks": [],
+          "task_id": "29caf6f_1",
+          "family_id": "29caf6f",
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
           "matched_apis": [
             "phone.search_contacts"
+          ],
+          "lines": [
+            40
+          ]
+        },
+        {
+          "task_id": "29caf6f_2",
+          "family_id": "29caf6f",
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            40
+          ]
+        },
+        {
+          "task_id": "29caf6f_3",
+          "family_id": "29caf6f",
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            40
           ]
         }
       ]
@@ -374,17 +562,48 @@
       "target": "6ea6792-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "6ea6792"
-          ],
-          "source_tasks": [],
+          "task_id": "6ea6792_1",
+          "family_id": "6ea6792",
+          "solution_sha256": "040877edf502ba32ad6e8ea40f4aa9a80485acecff665960b9ad23e3506f3bb5",
           "matched_apis": [
             "phone.search_contacts",
             "venmo.show_received_payment_requests"
+          ],
+          "lines": [
+            43,
+            52,
+            62
+          ]
+        },
+        {
+          "task_id": "6ea6792_2",
+          "family_id": "6ea6792",
+          "solution_sha256": "040877edf502ba32ad6e8ea40f4aa9a80485acecff665960b9ad23e3506f3bb5",
+          "matched_apis": [
+            "phone.search_contacts",
+            "venmo.show_received_payment_requests"
+          ],
+          "lines": [
+            43,
+            52,
+            62
+          ]
+        },
+        {
+          "task_id": "6ea6792_3",
+          "family_id": "6ea6792",
+          "solution_sha256": "040877edf502ba32ad6e8ea40f4aa9a80485acecff665960b9ad23e3506f3bb5",
+          "matched_apis": [
+            "phone.search_contacts",
+            "venmo.show_received_payment_requests"
+          ],
+          "lines": [
+            43,
+            52,
+            62
           ]
         }
       ]
@@ -394,17 +613,51 @@
       "target": "d0b1f43-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "d0b1f43"
-          ],
-          "source_tasks": [],
+          "task_id": "d0b1f43_1",
+          "family_id": "d0b1f43",
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
           "matched_apis": [
             "phone.search_contacts",
             "venmo.show_transactions"
+          ],
+          "lines": [
+            45,
+            66,
+            78,
+            90
+          ]
+        },
+        {
+          "task_id": "d0b1f43_2",
+          "family_id": "d0b1f43",
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+          "matched_apis": [
+            "phone.search_contacts",
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            45,
+            66,
+            78,
+            90
+          ]
+        },
+        {
+          "task_id": "d0b1f43_3",
+          "family_id": "d0b1f43",
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+          "matched_apis": [
+            "phone.search_contacts",
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            45,
+            66,
+            78,
+            90
           ]
         }
       ]
@@ -414,17 +667,51 @@
       "target": "27e1026-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "27e1026"
-          ],
-          "source_tasks": [],
+          "task_id": "27e1026_1",
+          "family_id": "27e1026",
+          "solution_sha256": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
           "matched_apis": [
             "spotify.show_album_library",
             "spotify.show_song"
+          ],
+          "lines": [
+            44,
+            49,
+            62,
+            73
+          ]
+        },
+        {
+          "task_id": "27e1026_2",
+          "family_id": "27e1026",
+          "solution_sha256": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            44,
+            49,
+            62,
+            73
+          ]
+        },
+        {
+          "task_id": "27e1026_3",
+          "family_id": "27e1026",
+          "solution_sha256": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            44,
+            49,
+            62,
+            73
           ]
         }
       ]
@@ -434,17 +721,45 @@
       "target": "6104387-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "6104387"
-          ],
-          "source_tasks": [],
+          "task_id": "6104387_1",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
           "matched_apis": [
             "spotify.show_album_library",
             "spotify.show_song"
+          ],
+          "lines": [
+            49,
+            65
+          ]
+        },
+        {
+          "task_id": "6104387_2",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            49,
+            65
+          ]
+        },
+        {
+          "task_id": "6104387_3",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            49,
+            65
           ]
         }
       ]
@@ -454,17 +769,45 @@
       "target": "e7a10f8-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "e7a10f8"
-          ],
-          "source_tasks": [],
+          "task_id": "e7a10f8_1",
+          "family_id": "e7a10f8",
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
           "matched_apis": [
             "spotify.show_playlist",
             "spotify.show_song"
+          ],
+          "lines": [
+            44,
+            50
+          ]
+        },
+        {
+          "task_id": "e7a10f8_2",
+          "family_id": "e7a10f8",
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+          "matched_apis": [
+            "spotify.show_playlist",
+            "spotify.show_song"
+          ],
+          "lines": [
+            44,
+            50
+          ]
+        },
+        {
+          "task_id": "e7a10f8_3",
+          "family_id": "e7a10f8",
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+          "matched_apis": [
+            "spotify.show_playlist",
+            "spotify.show_song"
+          ],
+          "lines": [
+            44,
+            50
           ]
         }
       ]
@@ -474,16 +817,45 @@
       "target": "34d9492-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "34d9492"
-          ],
-          "source_tasks": [],
+          "task_id": "34d9492_1",
+          "family_id": "34d9492",
+          "solution_sha256": "c2bb40800c9e3d8b4b73554690275370ebf3e470b28e4d20024d311ea3999e5e",
           "matched_apis": [
             "file_system.move_file"
+          ],
+          "lines": [
+            55,
+            68,
+            78
+          ]
+        },
+        {
+          "task_id": "34d9492_2",
+          "family_id": "34d9492",
+          "solution_sha256": "c2bb40800c9e3d8b4b73554690275370ebf3e470b28e4d20024d311ea3999e5e",
+          "matched_apis": [
+            "file_system.move_file"
+          ],
+          "lines": [
+            55,
+            68,
+            78
+          ]
+        },
+        {
+          "task_id": "34d9492_3",
+          "family_id": "34d9492",
+          "solution_sha256": "c2bb40800c9e3d8b4b73554690275370ebf3e470b28e4d20024d311ea3999e5e",
+          "matched_apis": [
+            "file_system.move_file"
+          ],
+          "lines": [
+            55,
+            68,
+            78
           ]
         }
       ]
@@ -493,16 +865,39 @@
       "target": "771d8fc-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "771d8fc"
-          ],
-          "source_tasks": [],
+          "task_id": "771d8fc_1",
+          "family_id": "771d8fc",
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b",
           "matched_apis": [
             "phone.delete_text_message"
+          ],
+          "lines": [
+            45
+          ]
+        },
+        {
+          "task_id": "771d8fc_2",
+          "family_id": "771d8fc",
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b",
+          "matched_apis": [
+            "phone.delete_text_message"
+          ],
+          "lines": [
+            45
+          ]
+        },
+        {
+          "task_id": "771d8fc_3",
+          "family_id": "771d8fc",
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b",
+          "matched_apis": [
+            "phone.delete_text_message"
+          ],
+          "lines": [
+            45
           ]
         }
       ]
@@ -512,16 +907,39 @@
       "target": "7d7fbf6-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "7d7fbf6"
-          ],
-          "source_tasks": [],
+          "task_id": "7d7fbf6_1",
+          "family_id": "7d7fbf6",
+          "solution_sha256": "ed46a989164fda13597b4c475dfda45d9249ef28d99d7aa815f1d14c3fcff196",
           "matched_apis": [
             "file_system.compress_directory"
+          ],
+          "lines": [
+            50
+          ]
+        },
+        {
+          "task_id": "7d7fbf6_2",
+          "family_id": "7d7fbf6",
+          "solution_sha256": "ed46a989164fda13597b4c475dfda45d9249ef28d99d7aa815f1d14c3fcff196",
+          "matched_apis": [
+            "file_system.compress_directory"
+          ],
+          "lines": [
+            50
+          ]
+        },
+        {
+          "task_id": "7d7fbf6_3",
+          "family_id": "7d7fbf6",
+          "solution_sha256": "ed46a989164fda13597b4c475dfda45d9249ef28d99d7aa815f1d14c3fcff196",
+          "matched_apis": [
+            "file_system.compress_directory"
+          ],
+          "lines": [
+            50
           ]
         }
       ]
@@ -531,16 +949,39 @@
       "target": "07b42fd-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "07b42fd"
-          ],
-          "source_tasks": [],
+          "task_id": "07b42fd_1",
+          "family_id": "07b42fd",
+          "solution_sha256": "07c6f157393a047ae7b8d2b9442538b1bb2dc32ceb3a35b2c48f52bc718c30e0",
           "matched_apis": [
             "spotify.follow_artist"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "07b42fd_2",
+          "family_id": "07b42fd",
+          "solution_sha256": "07c6f157393a047ae7b8d2b9442538b1bb2dc32ceb3a35b2c48f52bc718c30e0",
+          "matched_apis": [
+            "spotify.follow_artist"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "07b42fd_3",
+          "family_id": "07b42fd",
+          "solution_sha256": "07c6f157393a047ae7b8d2b9442538b1bb2dc32ceb3a35b2c48f52bc718c30e0",
+          "matched_apis": [
+            "spotify.follow_artist"
+          ],
+          "lines": [
+            48
           ]
         }
       ]
@@ -550,17 +991,45 @@
       "target": "aa8502b-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "aa8502b"
-          ],
-          "source_tasks": [],
+          "task_id": "aa8502b_1",
+          "family_id": "aa8502b",
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
           "matched_apis": [
             "spotify.follow_artist",
             "spotify.show_following_artists"
+          ],
+          "lines": [
+            43,
+            60
+          ]
+        },
+        {
+          "task_id": "aa8502b_2",
+          "family_id": "aa8502b",
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+          "matched_apis": [
+            "spotify.follow_artist",
+            "spotify.show_following_artists"
+          ],
+          "lines": [
+            43,
+            60
+          ]
+        },
+        {
+          "task_id": "aa8502b_3",
+          "family_id": "aa8502b",
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+          "matched_apis": [
+            "spotify.follow_artist",
+            "spotify.show_following_artists"
+          ],
+          "lines": [
+            43,
+            60
           ]
         }
       ]
@@ -570,17 +1039,45 @@
       "target": "b7a9ee9-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "b7a9ee9"
-          ],
-          "source_tasks": [],
+          "task_id": "b7a9ee9_1",
+          "family_id": "b7a9ee9",
+          "solution_sha256": "28555e8c5226829b967e439cdf1792b422eb56c800099e6c309cb375a9501525",
           "matched_apis": [
             "spotify.follow_artist",
             "spotify.show_playlist"
+          ],
+          "lines": [
+            45,
+            59
+          ]
+        },
+        {
+          "task_id": "b7a9ee9_2",
+          "family_id": "b7a9ee9",
+          "solution_sha256": "28555e8c5226829b967e439cdf1792b422eb56c800099e6c309cb375a9501525",
+          "matched_apis": [
+            "spotify.follow_artist",
+            "spotify.show_playlist"
+          ],
+          "lines": [
+            45,
+            59
+          ]
+        },
+        {
+          "task_id": "b7a9ee9_3",
+          "family_id": "b7a9ee9",
+          "solution_sha256": "28555e8c5226829b967e439cdf1792b422eb56c800099e6c309cb375a9501525",
+          "matched_apis": [
+            "spotify.follow_artist",
+            "spotify.show_playlist"
+          ],
+          "lines": [
+            45,
+            59
           ]
         }
       ]
@@ -590,17 +1087,45 @@
       "target": "29caf6f-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "29caf6f"
-          ],
-          "source_tasks": [],
+          "task_id": "29caf6f_1",
+          "family_id": "29caf6f",
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
           "matched_apis": [
             "phone.search_contacts",
             "simple_note.search_notes"
+          ],
+          "lines": [
+            40,
+            62
+          ]
+        },
+        {
+          "task_id": "29caf6f_2",
+          "family_id": "29caf6f",
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+          "matched_apis": [
+            "phone.search_contacts",
+            "simple_note.search_notes"
+          ],
+          "lines": [
+            40,
+            62
+          ]
+        },
+        {
+          "task_id": "29caf6f_3",
+          "family_id": "29caf6f",
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+          "matched_apis": [
+            "phone.search_contacts",
+            "simple_note.search_notes"
+          ],
+          "lines": [
+            40,
+            62
           ]
         }
       ]
@@ -610,16 +1135,39 @@
       "target": "3c13f5a-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "3c13f5a"
-          ],
-          "source_tasks": [],
+          "task_id": "3c13f5a_1",
+          "family_id": "3c13f5a",
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
           "matched_apis": [
             "phone.search_contacts"
+          ],
+          "lines": [
+            42
+          ]
+        },
+        {
+          "task_id": "3c13f5a_2",
+          "family_id": "3c13f5a",
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            42
+          ]
+        },
+        {
+          "task_id": "3c13f5a_3",
+          "family_id": "3c13f5a",
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            42
           ]
         }
       ]
@@ -629,18 +1177,100 @@
       "target": "b0a8eae-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "b0a8eae"
-          ],
-          "source_tasks": [],
+          "task_id": "b0a8eae_1",
+          "family_id": "b0a8eae",
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
           "matched_apis": [
             "simple_note.search_notes",
             "spotify.show_playlist_library"
+          ],
+          "lines": [
+            43,
+            64
           ]
+        },
+        {
+          "task_id": "b0a8eae_2",
+          "family_id": "b0a8eae",
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+          "matched_apis": [
+            "simple_note.search_notes",
+            "spotify.show_playlist_library"
+          ],
+          "lines": [
+            43,
+            64
+          ]
+        },
+        {
+          "task_id": "b0a8eae_3",
+          "family_id": "b0a8eae",
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+          "matched_apis": [
+            "simple_note.search_notes",
+            "spotify.show_playlist_library"
+          ],
+          "lines": [
+            43,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "source": "shared-join-app-specific-entities-7d507c",
+      "target": "shared-note-based-task-state-updates-191e5d",
+      "type": "DATA_DEP",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "b0a8eae_1",
+          "family_id": "b0a8eae",
+          "source_api": "simple_note.search_notes",
+          "target_api": "simple_note.show_note",
+          "argument": "note_id",
+          "source_line": 43,
+          "target_line": 48,
+          "propagation_chain": [
+            "api_0002",
+            "note_id",
+            "api_0003"
+          ],
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149"
+        },
+        {
+          "task_id": "b0a8eae_2",
+          "family_id": "b0a8eae",
+          "source_api": "simple_note.search_notes",
+          "target_api": "simple_note.show_note",
+          "argument": "note_id",
+          "source_line": 43,
+          "target_line": 48,
+          "propagation_chain": [
+            "api_0002",
+            "note_id",
+            "api_0003"
+          ],
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149"
+        },
+        {
+          "task_id": "b0a8eae_3",
+          "family_id": "b0a8eae",
+          "source_api": "simple_note.search_notes",
+          "target_api": "simple_note.show_note",
+          "argument": "note_id",
+          "source_line": 43,
+          "target_line": 48,
+          "propagation_chain": [
+            "api_0002",
+            "note_id",
+            "api_0003"
+          ],
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149"
         }
       ]
     },
@@ -649,16 +1279,39 @@
       "target": "22cc237-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "22cc237"
-          ],
-          "source_tasks": [],
+          "task_id": "22cc237_1",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
           "matched_apis": [
             "simple_note.show_note"
+          ],
+          "lines": [
+            61
+          ]
+        },
+        {
+          "task_id": "22cc237_2",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
+          "matched_apis": [
+            "simple_note.show_note"
+          ],
+          "lines": [
+            61
+          ]
+        },
+        {
+          "task_id": "22cc237_3",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
+          "matched_apis": [
+            "simple_note.show_note"
+          ],
+          "lines": [
+            61
           ]
         }
       ]
@@ -668,17 +1321,45 @@
       "target": "b0a8eae-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "b0a8eae"
-          ],
-          "source_tasks": [],
+          "task_id": "b0a8eae_1",
+          "family_id": "b0a8eae",
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
           "matched_apis": [
             "simple_note.show_note",
             "spotify.play_music"
+          ],
+          "lines": [
+            48,
+            77
+          ]
+        },
+        {
+          "task_id": "b0a8eae_2",
+          "family_id": "b0a8eae",
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+          "matched_apis": [
+            "simple_note.show_note",
+            "spotify.play_music"
+          ],
+          "lines": [
+            48,
+            77
+          ]
+        },
+        {
+          "task_id": "b0a8eae_3",
+          "family_id": "b0a8eae",
+          "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+          "matched_apis": [
+            "simple_note.show_note",
+            "spotify.play_music"
+          ],
+          "lines": [
+            48,
+            77
           ]
         }
       ]
@@ -688,17 +1369,45 @@
       "target": "cf6abd2-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "cf6abd2"
-          ],
-          "source_tasks": [],
+          "task_id": "cf6abd2_1",
+          "family_id": "cf6abd2",
+          "solution_sha256": "8b37e8bb6f760a574c7250eb2dd5483e8ad80e5b5b4bd36f57a0272ec103a9a3",
           "matched_apis": [
             "simple_note.show_note",
             "simple_note.update_note"
+          ],
+          "lines": [
+            44,
+            60
+          ]
+        },
+        {
+          "task_id": "cf6abd2_2",
+          "family_id": "cf6abd2",
+          "solution_sha256": "8b37e8bb6f760a574c7250eb2dd5483e8ad80e5b5b4bd36f57a0272ec103a9a3",
+          "matched_apis": [
+            "simple_note.show_note",
+            "simple_note.update_note"
+          ],
+          "lines": [
+            44,
+            60
+          ]
+        },
+        {
+          "task_id": "cf6abd2_3",
+          "family_id": "cf6abd2",
+          "solution_sha256": "8b37e8bb6f760a574c7250eb2dd5483e8ad80e5b5b4bd36f57a0272ec103a9a3",
+          "matched_apis": [
+            "simple_note.show_note",
+            "simple_note.update_note"
+          ],
+          "lines": [
+            44,
+            60
           ]
         }
       ]
@@ -708,16 +1417,39 @@
       "target": "2a163ab-core",
       "type": "SUPPORTS",
       "confidence": 0.25,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "2a163ab"
-          ],
-          "source_tasks": [],
+          "task_id": "2a163ab_1",
+          "family_id": "2a163ab",
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
           "matched_apis": [
             "phone.search_contacts"
+          ],
+          "lines": [
+            42
+          ]
+        },
+        {
+          "task_id": "2a163ab_2",
+          "family_id": "2a163ab",
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            42
+          ]
+        },
+        {
+          "task_id": "2a163ab_3",
+          "family_id": "2a163ab",
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+          "matched_apis": [
+            "phone.search_contacts"
+          ],
+          "lines": [
+            42
           ]
         }
       ]
@@ -727,17 +1459,45 @@
       "target": "82e2fac-core",
       "type": "SUPPORTS",
       "confidence": 0.5,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "82e2fac"
-          ],
-          "source_tasks": [],
+          "task_id": "82e2fac_1",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
           "matched_apis": [
             "spotify.show_playlist_library",
             "spotify.show_song"
+          ],
+          "lines": [
+            43,
+            67
+          ]
+        },
+        {
+          "task_id": "82e2fac_2",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            43,
+            67
+          ]
+        },
+        {
+          "task_id": "82e2fac_3",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            43,
+            67
           ]
         }
       ]
@@ -747,18 +1507,136 @@
       "target": "e3d6c94-core",
       "type": "SUPPORTS",
       "confidence": 0.5,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "e3d6c94"
-          ],
-          "source_tasks": [],
+          "task_id": "e3d6c94_1",
+          "family_id": "e3d6c94",
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc",
           "matched_apis": [
             "spotify.show_recommendations",
             "spotify.show_song"
+          ],
+          "lines": [
+            41,
+            45
           ]
+        },
+        {
+          "task_id": "e3d6c94_2",
+          "family_id": "e3d6c94",
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc",
+          "matched_apis": [
+            "spotify.show_recommendations",
+            "spotify.show_song"
+          ],
+          "lines": [
+            41,
+            45
+          ]
+        },
+        {
+          "task_id": "e3d6c94_3",
+          "family_id": "e3d6c94",
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc",
+          "matched_apis": [
+            "spotify.show_recommendations",
+            "spotify.show_song"
+          ],
+          "lines": [
+            41,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "source": "shared-paginate-and-filter-api-results-8fccba",
+      "target": "shared-temporal-filtering-of-transactions-6f1f17",
+      "type": "PRECEDES",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "2a163ab_1",
+          "family_id": "2a163ab",
+          "source": "shared-paginate-and-filter-api-results-8fccba",
+          "target": "shared-temporal-filtering-of-transactions-6f1f17",
+          "source_interval": {
+            "first_line": 42,
+            "last_line": 42,
+            "occurrence_ids": [
+              "api_0002"
+            ],
+            "matched_apis": [
+              "phone.search_contacts"
+            ]
+          },
+          "target_interval": {
+            "first_line": 89,
+            "last_line": 89,
+            "occurrence_ids": [
+              "api_0005"
+            ],
+            "matched_apis": [
+              "venmo.like_transaction"
+            ]
+          },
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed"
+        },
+        {
+          "task_id": "2a163ab_2",
+          "family_id": "2a163ab",
+          "source": "shared-paginate-and-filter-api-results-8fccba",
+          "target": "shared-temporal-filtering-of-transactions-6f1f17",
+          "source_interval": {
+            "first_line": 42,
+            "last_line": 42,
+            "occurrence_ids": [
+              "api_0002"
+            ],
+            "matched_apis": [
+              "phone.search_contacts"
+            ]
+          },
+          "target_interval": {
+            "first_line": 89,
+            "last_line": 89,
+            "occurrence_ids": [
+              "api_0005"
+            ],
+            "matched_apis": [
+              "venmo.like_transaction"
+            ]
+          },
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed"
+        },
+        {
+          "task_id": "2a163ab_3",
+          "family_id": "2a163ab",
+          "source": "shared-paginate-and-filter-api-results-8fccba",
+          "target": "shared-temporal-filtering-of-transactions-6f1f17",
+          "source_interval": {
+            "first_line": 42,
+            "last_line": 42,
+            "occurrence_ids": [
+              "api_0002"
+            ],
+            "matched_apis": [
+              "phone.search_contacts"
+            ]
+          },
+          "target_interval": {
+            "first_line": 89,
+            "last_line": 89,
+            "occurrence_ids": [
+              "api_0005"
+            ],
+            "matched_apis": [
+              "venmo.like_transaction"
+            ]
+          },
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed"
         }
       ]
     },
@@ -767,17 +1645,45 @@
       "target": "287e338-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "287e338"
-          ],
-          "source_tasks": [],
+          "task_id": "287e338_1",
+          "family_id": "287e338",
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6",
           "matched_apis": [
             "spotify.show_recommendations",
             "spotify.show_song"
+          ],
+          "lines": [
+            41,
+            48
+          ]
+        },
+        {
+          "task_id": "287e338_2",
+          "family_id": "287e338",
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6",
+          "matched_apis": [
+            "spotify.show_recommendations",
+            "spotify.show_song"
+          ],
+          "lines": [
+            41,
+            48
+          ]
+        },
+        {
+          "task_id": "287e338_3",
+          "family_id": "287e338",
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6",
+          "matched_apis": [
+            "spotify.show_recommendations",
+            "spotify.show_song"
+          ],
+          "lines": [
+            41,
+            48
           ]
         }
       ]
@@ -787,16 +1693,39 @@
       "target": "82e2fac-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "82e2fac"
-          ],
-          "source_tasks": [],
+          "task_id": "82e2fac_1",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
           "matched_apis": [
             "spotify.show_song"
+          ],
+          "lines": [
+            67
+          ]
+        },
+        {
+          "task_id": "82e2fac_2",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+          "matched_apis": [
+            "spotify.show_song"
+          ],
+          "lines": [
+            67
+          ]
+        },
+        {
+          "task_id": "82e2fac_3",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+          "matched_apis": [
+            "spotify.show_song"
+          ],
+          "lines": [
+            67
           ]
         }
       ]
@@ -806,16 +1735,39 @@
       "target": "e85d92a-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "e85d92a"
-          ],
-          "source_tasks": [],
+          "task_id": "e85d92a_1",
+          "family_id": "e85d92a",
+          "solution_sha256": "4ccb53e54a9b0704603e6d863e28c31440f042ea36a7b681c5727e95d1aa662a",
           "matched_apis": [
             "spotify.search_songs"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "e85d92a_2",
+          "family_id": "e85d92a",
+          "solution_sha256": "4ccb53e54a9b0704603e6d863e28c31440f042ea36a7b681c5727e95d1aa662a",
+          "matched_apis": [
+            "spotify.search_songs"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "e85d92a_3",
+          "family_id": "e85d92a",
+          "solution_sha256": "4ccb53e54a9b0704603e6d863e28c31440f042ea36a7b681c5727e95d1aa662a",
+          "matched_apis": [
+            "spotify.search_songs"
+          ],
+          "lines": [
+            48
           ]
         }
       ]
@@ -825,16 +1777,39 @@
       "target": "229360a-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "229360a"
-          ],
-          "source_tasks": [],
+          "task_id": "229360a_1",
+          "family_id": "229360a",
+          "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
           "matched_apis": [
             "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            68
+          ]
+        },
+        {
+          "task_id": "229360a_2",
+          "family_id": "229360a",
+          "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+          "matched_apis": [
+            "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            68
+          ]
+        },
+        {
+          "task_id": "229360a_3",
+          "family_id": "229360a",
+          "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+          "matched_apis": [
+            "spotify.remove_song_from_library"
+          ],
+          "lines": [
+            68
           ]
         }
       ]
@@ -844,16 +1819,39 @@
       "target": "ccb4494-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "ccb4494"
-          ],
-          "source_tasks": [],
+          "task_id": "ccb4494_1",
+          "family_id": "ccb4494",
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7",
           "matched_apis": [
             "spotify.like_song"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "ccb4494_2",
+          "family_id": "ccb4494",
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7",
+          "matched_apis": [
+            "spotify.like_song"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "ccb4494_3",
+          "family_id": "ccb4494",
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7",
+          "matched_apis": [
+            "spotify.like_song"
+          ],
+          "lines": [
+            48
           ]
         }
       ]
@@ -863,17 +1861,63 @@
       "target": "ce359b5-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "ce359b5"
-          ],
-          "source_tasks": [],
+          "task_id": "ce359b5_1",
+          "family_id": "ce359b5",
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
           "matched_apis": [
             "spotify.remove_song_from_library",
             "spotify.remove_song_from_playlist"
+          ],
+          "lines": [
+            48,
+            59,
+            70,
+            81,
+            101,
+            111,
+            121,
+            131
+          ]
+        },
+        {
+          "task_id": "ce359b5_2",
+          "family_id": "ce359b5",
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+          "matched_apis": [
+            "spotify.remove_song_from_library",
+            "spotify.remove_song_from_playlist"
+          ],
+          "lines": [
+            48,
+            59,
+            70,
+            81,
+            101,
+            111,
+            121,
+            131
+          ]
+        },
+        {
+          "task_id": "ce359b5_3",
+          "family_id": "ce359b5",
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+          "matched_apis": [
+            "spotify.remove_song_from_library",
+            "spotify.remove_song_from_playlist"
+          ],
+          "lines": [
+            48,
+            59,
+            70,
+            81,
+            101,
+            111,
+            121,
+            131
           ]
         }
       ]
@@ -886,15 +1930,48 @@
       "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "6104387"
-          ],
-          "source_tasks": [],
+          "task_id": "6104387_1",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
           "matched_apis": [
             "spotify.show_album_library",
             "spotify.show_playlist_library",
             "spotify.show_song"
+          ],
+          "lines": [
+            49,
+            56,
+            65
+          ]
+        },
+        {
+          "task_id": "6104387_2",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            49,
+            56,
+            65
+          ]
+        },
+        {
+          "task_id": "6104387_3",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            49,
+            56,
+            65
           ]
         }
       ]
@@ -903,18 +1980,52 @@
       "source": "shared-set-aggregation-across-media-types-fa7d52",
       "target": "82e2fac-core",
       "type": "SUPPORTS",
-      "confidence": 0.6666666666666666,
-      "support": 2,
+      "confidence": 1.0,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "82e2fac"
-          ],
-          "source_tasks": [],
+          "task_id": "82e2fac_1",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
           "matched_apis": [
+            "spotify.show_album_library",
             "spotify.show_playlist_library",
             "spotify.show_song"
+          ],
+          "lines": [
+            43,
+            53,
+            67
+          ]
+        },
+        {
+          "task_id": "82e2fac_2",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            43,
+            53,
+            67
+          ]
+        },
+        {
+          "task_id": "82e2fac_3",
+          "family_id": "82e2fac",
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            43,
+            53,
+            67
           ]
         }
       ]
@@ -924,18 +2035,100 @@
       "target": "e7a10f8-core",
       "type": "SUPPORTS",
       "confidence": 0.6666666666666666,
-      "support": 2,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "e7a10f8"
-          ],
-          "source_tasks": [],
+          "task_id": "e7a10f8_1",
+          "family_id": "e7a10f8",
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
           "matched_apis": [
             "spotify.show_playlist_library",
             "spotify.show_song"
+          ],
+          "lines": [
+            39,
+            50
           ]
+        },
+        {
+          "task_id": "e7a10f8_2",
+          "family_id": "e7a10f8",
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            39,
+            50
+          ]
+        },
+        {
+          "task_id": "e7a10f8_3",
+          "family_id": "e7a10f8",
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ],
+          "lines": [
+            39,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "shared-set-aggregation-across-media-types-fa7d52",
+      "target": "shared-extract-and-transform-metadata-42f943",
+      "type": "DATA_DEP",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "e7a10f8_1",
+          "family_id": "e7a10f8",
+          "source_api": "spotify.show_playlist_library",
+          "target_api": "spotify.show_playlist",
+          "argument": "playlist_id",
+          "source_line": 39,
+          "target_line": 44,
+          "propagation_chain": [
+            "api_0002",
+            "playlist_id",
+            "api_0003"
+          ],
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d"
+        },
+        {
+          "task_id": "e7a10f8_2",
+          "family_id": "e7a10f8",
+          "source_api": "spotify.show_playlist_library",
+          "target_api": "spotify.show_playlist",
+          "argument": "playlist_id",
+          "source_line": 39,
+          "target_line": 44,
+          "propagation_chain": [
+            "api_0002",
+            "playlist_id",
+            "api_0003"
+          ],
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d"
+        },
+        {
+          "task_id": "e7a10f8_3",
+          "family_id": "e7a10f8",
+          "source_api": "spotify.show_playlist_library",
+          "target_api": "spotify.show_playlist",
+          "argument": "playlist_id",
+          "source_line": 39,
+          "target_line": 44,
+          "propagation_chain": [
+            "api_0002",
+            "playlist_id",
+            "api_0003"
+          ],
+          "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d"
         }
       ]
     },
@@ -947,15 +2140,48 @@
       "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "692c77d"
-          ],
-          "source_tasks": [],
+          "task_id": "692c77d_1",
+          "family_id": "692c77d",
+          "solution_sha256": "6929ab49e3ce9dc378aac88201a73eba8dd026cd625f9e9f2ccf20f947a5d55e",
           "matched_apis": [
             "spotify.review_song",
             "spotify.show_song_reviews",
             "spotify.update_song_review"
+          ],
+          "lines": [
+            85,
+            92,
+            100
+          ]
+        },
+        {
+          "task_id": "692c77d_2",
+          "family_id": "692c77d",
+          "solution_sha256": "6929ab49e3ce9dc378aac88201a73eba8dd026cd625f9e9f2ccf20f947a5d55e",
+          "matched_apis": [
+            "spotify.review_song",
+            "spotify.show_song_reviews",
+            "spotify.update_song_review"
+          ],
+          "lines": [
+            85,
+            92,
+            100
+          ]
+        },
+        {
+          "task_id": "692c77d_3",
+          "family_id": "692c77d",
+          "solution_sha256": "6929ab49e3ce9dc378aac88201a73eba8dd026cd625f9e9f2ccf20f947a5d55e",
+          "matched_apis": [
+            "spotify.review_song",
+            "spotify.show_song_reviews",
+            "spotify.update_song_review"
+          ],
+          "lines": [
+            85,
+            92,
+            100
           ]
         }
       ]
@@ -964,18 +2190,40 @@
       "source": "shared-temporal-filtering-of-transactions-6f1f17",
       "target": "2a163ab-core",
       "type": "SUPPORTS",
-      "confidence": 0.6666666666666666,
-      "support": 2,
+      "confidence": 0.3333333333333333,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "2a163ab"
-          ],
-          "source_tasks": [],
+          "task_id": "2a163ab_1",
+          "family_id": "2a163ab",
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
           "matched_apis": [
-            "phone.get_current_date_and_time",
             "venmo.like_transaction"
+          ],
+          "lines": [
+            89
+          ]
+        },
+        {
+          "task_id": "2a163ab_2",
+          "family_id": "2a163ab",
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+          "matched_apis": [
+            "venmo.like_transaction"
+          ],
+          "lines": [
+            89
+          ]
+        },
+        {
+          "task_id": "2a163ab_3",
+          "family_id": "2a163ab",
+          "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+          "matched_apis": [
+            "venmo.like_transaction"
+          ],
+          "lines": [
+            89
           ]
         }
       ]
@@ -984,19 +2232,46 @@
       "source": "shared-temporal-filtering-of-transactions-6f1f17",
       "target": "afc0fce-core",
       "type": "SUPPORTS",
-      "confidence": 1.0,
+      "confidence": 0.6666666666666666,
       "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "afc0fce"
-          ],
-          "source_tasks": [],
+          "task_id": "afc0fce_1",
+          "family_id": "afc0fce",
+          "solution_sha256": "3b25260bbda3e8b735cd8d6e88e9ae5d0008787755fb41000730300257403a0e",
           "matched_apis": [
-            "phone.get_current_date_and_time",
             "venmo.like_transaction",
             "venmo.show_transactions"
+          ],
+          "lines": [
+            57,
+            67
+          ]
+        },
+        {
+          "task_id": "afc0fce_2",
+          "family_id": "afc0fce",
+          "solution_sha256": "3b25260bbda3e8b735cd8d6e88e9ae5d0008787755fb41000730300257403a0e",
+          "matched_apis": [
+            "venmo.like_transaction",
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            57,
+            67
+          ]
+        },
+        {
+          "task_id": "afc0fce_3",
+          "family_id": "afc0fce",
+          "solution_sha256": "3b25260bbda3e8b735cd8d6e88e9ae5d0008787755fb41000730300257403a0e",
+          "matched_apis": [
+            "venmo.like_transaction",
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            57,
+            67
           ]
         }
       ]
@@ -1005,18 +2280,46 @@
       "source": "shared-temporal-filtering-of-transactions-6f1f17",
       "target": "d0b1f43-core",
       "type": "SUPPORTS",
-      "confidence": 0.6666666666666666,
-      "support": 2,
+      "confidence": 0.3333333333333333,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "d0b1f43"
-          ],
-          "source_tasks": [],
+          "task_id": "d0b1f43_1",
+          "family_id": "d0b1f43",
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
           "matched_apis": [
-            "phone.get_current_date_and_time",
             "venmo.show_transactions"
+          ],
+          "lines": [
+            66,
+            78,
+            90
+          ]
+        },
+        {
+          "task_id": "d0b1f43_2",
+          "family_id": "d0b1f43",
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+          "matched_apis": [
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            66,
+            78,
+            90
+          ]
+        },
+        {
+          "task_id": "d0b1f43_3",
+          "family_id": "d0b1f43",
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+          "matched_apis": [
+            "venmo.show_transactions"
+          ],
+          "lines": [
+            66,
+            78,
+            90
           ]
         }
       ]
@@ -1026,16 +2329,39 @@
       "target": "22cc237-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "22cc237"
-          ],
-          "source_tasks": [],
+          "task_id": "22cc237_1",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
           "matched_apis": [
             "simple_note.show_note"
+          ],
+          "lines": [
+            61
+          ]
+        },
+        {
+          "task_id": "22cc237_2",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
+          "matched_apis": [
+            "simple_note.show_note"
+          ],
+          "lines": [
+            61
+          ]
+        },
+        {
+          "task_id": "22cc237_3",
+          "family_id": "22cc237",
+          "solution_sha256": "27da87600d3ba0fcddb8dc79538748bdfe573b54b7ebacbeaa5b65b850c8fdc8",
+          "matched_apis": [
+            "simple_note.show_note"
+          ],
+          "lines": [
+            61
           ]
         }
       ]
@@ -1045,16 +2371,39 @@
       "target": "6104387-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "6104387"
-          ],
-          "source_tasks": [],
+          "task_id": "6104387_1",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
           "matched_apis": [
             "spotify.show_song"
+          ],
+          "lines": [
+            65
+          ]
+        },
+        {
+          "task_id": "6104387_2",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+          "matched_apis": [
+            "spotify.show_song"
+          ],
+          "lines": [
+            65
+          ]
+        },
+        {
+          "task_id": "6104387_3",
+          "family_id": "6104387",
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+          "matched_apis": [
+            "spotify.show_song"
+          ],
+          "lines": [
+            65
           ]
         }
       ]
@@ -1064,16 +2413,39 @@
       "target": "76f2c72-core",
       "type": "SUPPORTS",
       "confidence": 0.3333333333333333,
-      "support": 1,
+      "support": 3,
       "evidence": [
         {
-          "condition": "shared_source_and_api_in_successful_trajectory",
-          "source_families": [
-            "76f2c72"
-          ],
-          "source_tasks": [],
+          "task_id": "76f2c72_1",
+          "family_id": "76f2c72",
+          "solution_sha256": "126ec0ee65a1a88b524f3d16a69f1e6e83d6a1f6b165acc2d40fe6d9161e340e",
           "matched_apis": [
             "file_system.show_file"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "76f2c72_2",
+          "family_id": "76f2c72",
+          "solution_sha256": "126ec0ee65a1a88b524f3d16a69f1e6e83d6a1f6b165acc2d40fe6d9161e340e",
+          "matched_apis": [
+            "file_system.show_file"
+          ],
+          "lines": [
+            48
+          ]
+        },
+        {
+          "task_id": "76f2c72_3",
+          "family_id": "76f2c72",
+          "solution_sha256": "126ec0ee65a1a88b524f3d16a69f1e6e83d6a1f6b165acc2d40fe6d9161e340e",
+          "matched_apis": [
+            "file_system.show_file"
+          ],
+          "lines": [
+            48
           ]
         }
       ]

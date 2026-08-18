@@ -5,7 +5,7 @@ from pathlib import Path
 
 from common.schemas import Candidate, Skill, Snapshot
 from organization.graph_builder import build_global_graph, validate_global_graph
-from organization.graph_runtime import build_task_dag
+from organization.graph_runtime import build_task_dag, format_graph_context
 from organization.hierarchy import build_hierarchy
 from organization.organizers import assert_fair_views, build_view
 
@@ -67,116 +67,77 @@ class GraphBuildTests(unittest.TestCase):
             ],
         })
 
-    def test_support_is_shared_to_core_and_requires_evidence(self):
+    def test_graph_without_train_evidence_has_no_inferred_edges(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            make_skill(
-                root,
-                "core",
-                {"family_id": "family-1"},
-                {"required_apis": ["spotify.search", "spotify.add"]},
-            )
-            make_skill(root, "unrelated", {"family_id": "family-2"})
+            make_skill(root, "core", {"family_id": "family-1"})
             make_skill(root, "shared", {
                 "candidate_type": "reusable_subskill",
-                "supporting_family_ids": ["family-1"],
+                "supporting_family_ids": ["family-1", "family-2"],
                 "supporting_apis": ["spotify.search"],
             })
             graph = build_global_graph(root)
-            validate_global_graph(graph)
-            edges = graph["edges"]
-            self.assertEqual(len(edges), 1)
-            self.assertEqual(
-                (edges[0]["source"], edges[0]["target"], edges[0]["type"]),
-                ("shared", "core", "SUPPORTS"),
+            self.assertEqual(graph["edges"], [])
+            self.assertTrue(
+                any("no Train graph evidence" in value for value in graph["warnings"])
             )
 
-    def test_support_accepts_shared_source_task_evidence(self):
+    def test_accepts_only_formal_train_evidence_edges(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            make_skill(
-                root,
-                "core",
-                {"generation_task": "train-task"},
-                {"required_apis": ["spotify.search"]},
-            )
+            make_skill(root, "core", {"family_id": "family-1"})
             make_skill(root, "shared", {
                 "candidate_type": "reusable_subskill",
-                "generation_task": "train-task",
+                "supporting_family_ids": ["family-1", "family-2"],
                 "supporting_apis": ["spotify.search"],
             })
-            graph = build_global_graph(root)
+            evidence = {
+                "schema_version": "train_graph_evidence_v1",
+                "source_scope": "train_ground_truth_solutions_only",
+                "split": "train",
+                "thresholds": {"min_data_support": 2},
+                "edges": [
+                    {
+                        "source": "shared", "target": "core", "type": "SUPPORTS",
+                        "confidence": 1, "support": 1,
+                        "evidence": [{"family_id": "family-1", "task_id": "family-1_1"}],
+                    },
+                    {
+                        "source": "core", "target": "shared", "type": "PRECEDES",
+                        "confidence": 1, "support": 2, "evidence": [],
+                    },
+                    {
+                        "source": "shared", "target": "core", "type": "DATA_DEP",
+                        "confidence": 1, "support": 2, "evidence": [],
+                    },
+                ],
+            }
+            graph = build_global_graph(root, graph_evidence=evidence)
             self.assertEqual(
-                [(edge["source"], edge["target"]) for edge in graph["edges"]],
-                [("shared", "core")],
+                {edge["type"] for edge in graph["edges"]},
+                {"SUPPORTS", "PRECEDES", "DATA_DEP"},
             )
+            self.assertEqual(graph["schema_version"], "typed_skill_graph_v4")
 
-    def test_support_accepts_explicit_api_subsequence(self):
-        with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            make_skill(
-                root,
-                "core",
-                {},
-                {"api_sequences": [["a.start", "a.middle", "a.finish"]]},
-            )
-            make_skill(
-                root,
-                "shared",
-                {"candidate_type": "reusable_subskill"},
-                {"api_sequences": [["a.start", "a.finish"]]},
-            )
-            graph = build_global_graph(root)
-            self.assertEqual(
-                [(edge["source"], edge["target"], edge["type"]) for edge in graph["edges"]],
-                [("shared", "core", "SUPPORTS")],
-            )
-
-    def test_data_dependency_requires_explicit_producer_consumer_evidence(self):
-        with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            make_skill(root, "producer", {
-                "data_dependencies": [{
-                    "producer_skill_id": "producer",
-                    "consumer_skill_id": "consumer",
-                    "output": "contact_id",
-                    "input": "recipient_id",
-                    "support": 2,
-                }],
-            })
-            make_skill(root, "consumer", {})
-            make_skill(root, "same-app-only", {"required_apps": ["phone"]})
-            graph = build_global_graph(root)
-            data_edges = [edge for edge in graph["edges"] if edge["type"] == "DATA_DEP"]
-            self.assertEqual(
-                [(edge["source"], edge["target"], edge["support"]) for edge in data_edges],
-                [("producer", "consumer", 2)],
-            )
-
-    def test_precedes_uses_train_threshold_and_rejects_non_train(self):
+    def test_rejects_non_train_or_weak_formal_evidence(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             make_skill(root, "a", {})
             make_skill(root, "b", {})
-            graph = build_global_graph(
-                root,
-                trajectory_orders=[
-                    {"split": "train", "successful": True, "skill_ids": ["a", "b"]},
-                    {"split": "train", "successful": True, "skill_ids": ["a", "b"]},
-                ],
-            )
-            edge = next(edge for edge in graph["edges"] if edge["type"] == "PRECEDES")
-            self.assertEqual((edge["source"], edge["target"], edge["support"]), ("a", "b", 2))
+            evidence = {
+                "schema_version": "train_graph_evidence_v1",
+                "source_scope": "train_ground_truth_solutions_only",
+                "split": "dev", "edges": [],
+            }
             with self.assertRaises(ValueError):
-                build_global_graph(
-                    root,
-                    trajectory_orders=[{"split": "dev", "skill_ids": ["a", "b"]}],
-                )
+                build_global_graph(root, graph_evidence=evidence)
+            evidence["split"] = "train"
+            evidence["edges"] = [{
+                "source": "a", "target": "b", "type": "PRECEDES",
+                "confidence": 1, "support": 1, "evidence": [],
+            }]
             with self.assertRaises(ValueError):
-                build_global_graph(
-                    root,
-                    trajectory_orders=[{"split": "train", "skill_ids": ["a", "b"]}],
-                )
+                build_global_graph(root, graph_evidence=evidence)
 
     def test_non_train_skill_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -213,18 +174,46 @@ class GraphRuntimeTests(unittest.TestCase):
         self.assertFalse(any(edge["source"] == "d" for edge in first["edges"]))
         self.assertEqual(
             {(edge["source"], edge["target"]) for edge in first["edges"]},
-            {("b", "c"), ("c", "a")},
+            {("a", "b"), ("b", "c"), ("c", "a")},
         )
         self.assertEqual(
             {(edge["source"], edge["target"], edge["reason"]) for edge in first["dropped_edges"]},
-            {("a", "b", "cycle"), ("d", "d", "self_loop")},
+            {("d", "d", "self_loop")},
         )
+        self.assertEqual(first["topological_layers"], [["c"], ["a"], ["b"]])
+        self.assertEqual(first["supporting_only_candidates"], [])
+        self.assertEqual(first["unlinked_candidates"], ["d"])
 
     def test_empty_edges_preserve_every_node(self):
         dag = build_task_dag(["a", "b", "c"], {"edges": []})
         self.assertEqual(dag["nodes"], ["a", "b", "c"])
         self.assertEqual(dag["edges"], [])
-        self.assertEqual(dag["topological_layers"], [["a", "b", "c"]])
+        self.assertEqual(dag["topological_layers"], [])
+        self.assertEqual(dag["supporting_only_candidates"], [])
+        self.assertEqual(dag["unlinked_candidates"], ["a", "b", "c"])
+
+    def test_supporting_only_and_unlinked_preserve_retrieval_rank(self):
+        graph = {"edges": [{
+            "source": "b", "target": "c", "type": "SUPPORTS",
+            "confidence": 1, "support": 2,
+        }]}
+        dag = build_task_dag(["d", "b", "a", "c"], graph)
+        self.assertEqual(dag["topological_layers"], [])
+        self.assertEqual(dag["supporting_only_candidates"], ["b", "c"])
+        self.assertEqual(dag["unlinked_candidates"], ["d", "a"])
+        library = {
+            skill_id: Skill(skill_id, skill_id.upper(), "desc", f"Body {skill_id}")
+            for skill_id in ("a", "b", "c", "d")
+        }
+        context = format_graph_context(dag, library)
+        self.assertIn("no evidenced execution relations", context)
+        self.assertIn("b supports c", context)
+        self.assertIn("[b] B (retrieval rank: 2)", context)
+        self.assertIn("[c] C (retrieval rank: 4)", context)
+        self.assertLess(
+            context.index("[d] D (retrieval rank: 1)"),
+            context.index("[a] A (retrieval rank: 3)"),
+        )
 
     def test_same_type_cycle_prefers_confidence_then_support(self):
         graph = {"edges": [

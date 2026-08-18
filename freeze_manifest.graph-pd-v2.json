@@ -1,0 +1,77 @@
+{
+  "schema_version": "freeze_v1",
+  "artifacts": {
+    "agent_config": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/configs/appworld.yaml",
+      "sha256": "514a8f007c9838418850a50bc7a7cc4b386bd53836adf9662bb29a615c662b68"
+    },
+    "dev_snapshots": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/data/fcsr_exchange/snapshots/dev_graph_v2.jsonl",
+      "sha256": "9de73c2feb925c27cb0192ec4780e71c7e7a9ab4201e015ce385d9f2de596894"
+    },
+    "experiment_config": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/configs/experiment.yaml",
+      "sha256": "a0d6cd99b9b5cd8e230753e5ba5ea05ed72a74bfcc8d3184b9b7065a3f0e0abe"
+    },
+    "fcsr_manifest": {
+      "path": "/data-nfs/gpu3/u13256401368/fcsr/checkpoints/fcsr/manifest.json",
+      "sha256": "858331ca7687ac3b6372c3e0d4a5b278c5da0c4b11b0aeebbaf79ee845907df4"
+    },
+    "graph": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/organization/global_graph.json",
+      "sha256": "a58d326bbf270bce731a45052d31dd87f9af8ca871b90a496dd55a3ac907226f"
+    },
+    "graph_evidence": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/organization/train_graph_evidence.json",
+      "sha256": "bed88031d5feb6734d1930a600441aa562c36565c7b5b8b656abd67cfd282df1"
+    },
+    "hierarchy": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/organization/global_hierarchy.json",
+      "sha256": "ec733f380f243c64340c21be69e3efa356393c802ef4dc75998b2902a68c677a"
+    },
+    "library_manifest": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/skills/manifest.json",
+      "sha256": "4147467f50e97850e14c5a87efb5cca51568dba2f5c228ff564d99056cbfa192"
+    },
+    "model_config": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/configs/model.yaml",
+      "sha256": "773c0210ac9138a912fe9543d20e211a7d50caaafae1ee20835e9c3f448572e1"
+    },
+    "model_metadata": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/models/model_metadata.json",
+      "sha256": "59e54d5fce8d442d7909cdccc22625f1b783dad486eb9082b908e71219d19c4b"
+    },
+    "react_prompt": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/configs/react_prompt.txt",
+      "sha256": "c41f7852217d46586047a38f68e88b827cb9dcbe624e9651f9db8301547a534b"
+    },
+    "skill_config": {
+      "path": "/data-nfs/gpu3/u13256401368/skill-organization/configs/skills.yaml",
+      "sha256": "376022a176b923e547ca3b8f940560a699b1a86b22daf03b9c18edc60180eb56"
+    }
+  },
+  "metadata": {
+    "model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "conditions": [
+      "No-Skill",
+      "Flat-NoPD",
+      "Flat-PD",
+      "Hierarchy-PD",
+      "Graph-PD"
+    ],
+    "retrieval": {
+      "rrf_depth": 100,
+      "rrf_k": 60,
+      "top_50": 50,
+      "rerank_top_20": 20,
+      "snapshot_top_k": 5
+    },
+    "fcsr_checkpoint": "/data-nfs/gpu3/u13256401368/fcsr/checkpoints/fcsr"
+  },
+  "freeze_hash": "4cf0bd1384df30af7737eac6042df9b9a88193335101661cb6f322ec7d44b5eb"
+}

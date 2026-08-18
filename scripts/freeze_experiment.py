@@ -19,6 +19,10 @@ def main() -> None:
     parser.add_argument("--snapshot", action="append", required=True, help="SPLIT=PATH")
     parser.add_argument("--model-metadata", required=True)
     parser.add_argument(
+        "--graph-evidence",
+        default=ROOT / "organization" / "train_graph_evidence.json",
+    )
+    parser.add_argument(
         "--fcsr-manifest",
         default=ROOT.parent / "fcsr" / "checkpoints" / "fcsr" / "manifest.json",
     )
@@ -28,6 +32,7 @@ def main() -> None:
         "library_manifest": ROOT / "skills" / "manifest.json",
         "hierarchy": ROOT / "organization" / "global_hierarchy.json",
         "graph": ROOT / "organization" / "global_graph.json",
+        "graph_evidence": args.graph_evidence,
         "model_config": ROOT / "configs" / "model.yaml",
         "agent_config": ROOT / "configs" / "appworld.yaml",
         "skill_config": ROOT / "configs" / "skills.yaml",

@@ -10,7 +10,7 @@ from pathlib import Path
 from statistics import mean
 from typing import Any
 
-from evaluation.metrics import (
+from reporting.metrics import (
     METRIC_NAMES,
     holm_adjust,
     paired_bootstrap_difference,

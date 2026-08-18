@@ -1,11 +1,4 @@
 ---
-name: SKILL.md
-description: - When tasked with backing up or exporting a user's entire media library (e.g., Spotify) to a persistent storage location.
----
-
-# SKILL.md
-
----
 name: Aggregate and Export User Media Library Data
 description: Retrieve all songs, albums, and playlists from a user's media library, extract associated artist information, compile into a structured CSV format, and save it to a file system.
 ---

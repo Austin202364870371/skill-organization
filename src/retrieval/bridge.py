@@ -15,6 +15,8 @@ from common.utils import (
     write_jsonl,
 )
 
+from organization.library import parse_skill_frontmatter
+
 
 def load_skill_library(root: str | Path) -> dict[str, Skill]:
     library: dict[str, Skill] = {}
@@ -24,7 +26,7 @@ def load_skill_library(root: str | Path) -> dict[str, Skill]:
         metadata_path = directory / "metadata.json"
         metadata = read_json(metadata_path) if metadata_path.exists() else {}
         body = (directory / "SKILL.md").read_text(encoding="utf-8")
-        name, description = _frontmatter(body)
+        name, description = parse_skill_frontmatter(body)
         skill = Skill(directory.name, name, description, body, metadata)
         if skill.skill_id in library:
             raise ValueError(f"duplicate skill id: {skill.skill_id}")
@@ -136,17 +138,3 @@ def verify_freeze_manifest(path: str | Path) -> dict[str, Any]:
         if file_hash(artifact["path"]) != artifact["sha256"]:
             raise ValueError(f"frozen artifact changed: {name}")
     return manifest
-
-
-def _frontmatter(text: str) -> tuple[str, str]:
-    if not text.startswith("---\n"):
-        raise ValueError("SKILL.md lacks YAML frontmatter")
-    header = text.split("---\n", 2)[1]
-    values = {}
-    for line in header.splitlines():
-        if ":" in line:
-            key, value = line.split(":", 1)
-            values[key.strip()] = value.strip().strip("'\"")
-    if not values.get("name") or not values.get("description"):
-        raise ValueError("SKILL.md frontmatter requires name and description")
-    return values["name"], values["description"]

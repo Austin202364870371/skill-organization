@@ -23,6 +23,28 @@ Skill controller rules:
 - At the end of every response emit: USED_SKILLS: ["skill-id"]
 - USED_SKILLS is logging only and does not control execution.
 """
+FLAT_NO_PD_SKILL_RULES = """
+Skill usage rules:
+- The full instructions for the exposed skills are already provided below.
+- Do not emit LOAD_SKILL; progressive loading is disabled in this condition.
+- At the end of every response emit the IDs actually used: USED_SKILLS: ["skill-id"]
+- USED_SKILLS is logging only and does not control execution.
+"""
+NO_SKILL_RULES = """
+No skills are available in this condition.
+At the end of every response emit: USED_SKILLS: []
+"""
+
+
+def skill_rules_for_view(view: OrganizationView) -> str:
+    if view.condition == "No-Skill":
+        return NO_SKILL_RULES
+    if view.condition == "Flat-NoPD":
+        return FLAT_NO_PD_SKILL_RULES
+    if not view.loader_enabled:
+        raise ValueError(f"unexpected loader-disabled condition: {view.condition}")
+    return SKILL_RULES
+
 
 
 def solve_with_official(
@@ -57,11 +79,7 @@ def solve_with_official(
 
         def initialize(self, current_world: Any) -> None:
             super().initialize(current_world)
-            skill_addition = (
-                SKILL_RULES
-                if view.loader_enabled
-                else "At the end of every response emit USED_SKILLS: []. No skills are available in this condition."
-            )
+            skill_addition = skill_rules_for_view(view)
             addition = COMPLETION_RULE + "\n" + skill_addition
             if view.initial_context:
                 addition += "\n" + view.initial_context

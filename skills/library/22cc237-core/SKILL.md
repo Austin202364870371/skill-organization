@@ -1,10 +1,4 @@
 ---
-name: When to Use
-description: - When tasked with generating payment requests based on data scattered across different apps. - When required to cross-reference contact information, notes, and transaction history.
----
-
-SKILL:
----
 name: Process and Aggregate Data from Multiple Apps to Generate Payment Requests
 description: A procedure for retrieving, parsing, and aggregating data across multiple applications to identify users and amounts for payment requests.
 ---

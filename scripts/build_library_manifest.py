@@ -17,6 +17,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build a manifest for a validated frozen library")
     parser.add_argument("--library", default="skills/library")
     parser.add_argument("--output", default="skills/manifest.json")
+    parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     status = validate_library(args.library)
     records = []
@@ -42,7 +43,7 @@ def main() -> None:
         })
     manifest = {"schema_version": "skill_library_v2", "count": len(records), "skills": records}
     manifest["library_hash"] = canonical_hash(manifest)
-    write_json(args.output, manifest, overwrite=False)
+    write_json(args.output, manifest, overwrite=args.overwrite)
     print(json.dumps({**status, "library_hash": manifest["library_hash"]}, indent=2))
 
 
