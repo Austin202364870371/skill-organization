@@ -1,412 +1,1083 @@
 {
-  "schema_version": "skill_graph_v2",
+  "schema_version": "typed_skill_graph_v3",
+  "source_scope": "train_derived_skill_library_only",
+  "thresholds": {
+    "min_order_support": 2,
+    "min_order_ratio": 0.8
+  },
   "nodes": [
-    "07b42fd-core",
-    "229360a-core",
-    "22cc237-core",
-    "27e1026-core",
-    "287e338-core",
-    "29caf6f-core",
-    "2a163ab-core",
-    "302c169-core",
-    "34d9492-core",
-    "3c13f5a-core",
-    "60d0b5b-core",
-    "6104387-core",
-    "692c77d-core",
-    "6ea6792-core",
-    "76f2c72-core",
-    "771d8fc-core",
-    "7d7fbf6-core",
-    "82e2fac-core",
-    "aa8502b-core",
-    "afc0fce-core",
-    "b0a8eae-core",
-    "b7a9ee9-core",
-    "c901732-core",
-    "ccb4494-core",
-    "ce359b5-core",
-    "cf6abd2-core",
-    "d0b1f43-core",
-    "e3d6c94-core",
-    "e7a10f8-core",
-    "e85d92a-core",
-    "shared-aggregate-and-process-multi-app-data-046b84",
-    "shared-conditional-media-item-management-ae2999",
-    "shared-cross-app-entity-resolution-f1abe4",
-    "shared-extract-and-transform-metadata-42f943",
-    "shared-file-system-directory-management-f04886",
-    "shared-iterative-playlist-and-artist-processing-fcdaf9",
-    "shared-join-app-specific-entities-7d507c",
-    "shared-note-based-task-state-updates-191e5d",
-    "shared-paginate-and-filter-api-results-8fccba",
-    "shared-ranking-by-metadata-criteria-532682",
-    "shared-safe-batch-mutation-b459e3",
-    "shared-set-aggregation-across-media-types-fa7d52",
-    "shared-song-review-management-4acfeb",
-    "shared-temporal-filtering-of-transactions-6f1f17",
-    "shared-verify-and-validate-data-integrity-8907ae"
+    {
+      "id": "07b42fd-core",
+      "name": "Authenticate and Follow Artists by Genre",
+      "type": "Core"
+    },
+    {
+      "id": "229360a-core",
+      "name": "Filter and Remove Media Items Based on Download and Like Status",
+      "type": "Core"
+    },
+    {
+      "id": "22cc237-core",
+      "name": "When to Use",
+      "type": "Core"
+    },
+    {
+      "id": "27e1026-core",
+      "name": "Retrieve and Analyze Media Library Data",
+      "type": "Core"
+    },
+    {
+      "id": "287e338-core",
+      "name": "Get Artist with Most or Least Recommendations",
+      "type": "Core"
+    },
+    {
+      "id": "29caf6f-core",
+      "name": "Retrieve and Synthesize Information from Multiple Apps",
+      "type": "Core"
+    },
+    {
+      "id": "2a163ab-core",
+      "name": "Iterate Through Paginated API Results and Apply Conditional Logic",
+      "type": "Core"
+    },
+    {
+      "id": "302c169-core",
+      "name": "Update Alarm Time and Manage Other Alarms",
+      "type": "Core"
+    },
+    {
+      "id": "34d9492-core",
+      "name": "Organize Files by Date into Category Folders",
+      "type": "Core"
+    },
+    {
+      "id": "3c13f5a-core",
+      "name": "Process Shared Expenses with Contact and File Access",
+      "type": "Core"
+    },
+    {
+      "id": "60d0b5b-core",
+      "name": "Retrieve and Process Payment Information for Refund",
+      "type": "Core"
+    },
+    {
+      "id": "6104387-core",
+      "name": "SKILL.md",
+      "type": "Core"
+    },
+    {
+      "id": "692c77d-core",
+      "name": "SKILL.md",
+      "type": "Core"
+    },
+    {
+      "id": "6ea6792-core",
+      "name": "SKILL.md",
+      "type": "Core"
+    },
+    {
+      "id": "76f2c72-core",
+      "name": "Aggregate Financial Data from Structured Files",
+      "type": "Core"
+    },
+    {
+      "id": "771d8fc-core",
+      "name": "Delete Phone Messages by Filter",
+      "type": "Core"
+    },
+    {
+      "id": "7d7fbf6-core",
+      "name": "Compress and Clean Up Directory Structure",
+      "type": "Core"
+    },
+    {
+      "id": "82e2fac-core",
+      "name": "Retrieve and Analyze Spotify Library Data",
+      "type": "Core"
+    },
+    {
+      "id": "aa8502b-core",
+      "name": "Manage Artist Follow Status Based on Liked Songs",
+      "type": "Core"
+    },
+    {
+      "id": "afc0fce-core",
+      "name": "Authenticate and Retrieve Contact Data for Transaction Processing",
+      "type": "Core"
+    },
+    {
+      "id": "b0a8eae-core",
+      "name": "Retrieve and Process User Data to Trigger External Actions",
+      "type": "Core"
+    },
+    {
+      "id": "b7a9ee9-core",
+      "name": "Iterate Through Playlist Songs and Follow Artists by Genre",
+      "type": "Core"
+    },
+    {
+      "id": "c901732-core",
+      "name": "Retrieve and Play Song Based on Collection and Play Count",
+      "type": "Core"
+    },
+    {
+      "id": "ccb4494-core",
+      "name": "Manage Spotify Playlist by Liking Previous Songs",
+      "type": "Core"
+    },
+    {
+      "id": "ce359b5-core",
+      "name": "Filter and Remove Media by Release Year",
+      "type": "Core"
+    },
+    {
+      "id": "cf6abd2-core",
+      "name": "Update Note Content Based on Task Status",
+      "type": "Core"
+    },
+    {
+      "id": "d0b1f43-core",
+      "name": "Retrieve and Filter Financial Transactions by Contact and Time Range",
+      "type": "Core"
+    },
+    {
+      "id": "e3d6c94-core",
+      "name": "CreateFilteredPlaylistFromRecommendations",
+      "type": "Core"
+    },
+    {
+      "id": "e7a10f8-core",
+      "name": "Analyze Playlist Durations for Longest or Shortest",
+      "type": "Core"
+    },
+    {
+      "id": "e85d92a-core",
+      "name": "Search for Artist and Sort Songs by Play Count",
+      "type": "Core"
+    },
+    {
+      "id": "shared-aggregate-and-process-multi-app-data-046b84",
+      "name": "Aggregate and Process Multi-App Data for Payment Requests",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-conditional-media-item-management-ae2999",
+      "name": "Conditional Media Item Management",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-cross-app-entity-resolution-f1abe4",
+      "name": "Cross-App Entity Resolution",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-extract-and-transform-metadata-42f943",
+      "name": "Extract and Transform Media Metadata",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-file-system-directory-management-f04886",
+      "name": "Manage File System Directories",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "name": "Iterate and Process Playlists or Artists",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-join-app-specific-entities-7d507c",
+      "name": "Join App-Specific Entities Using Shared Identifiers",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-note-based-task-state-updates-191e5d",
+      "name": "Update Note Content Based on Task Status",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-paginate-and-filter-api-results-8fccba",
+      "name": "When to Use",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-ranking-by-metadata-criteria-532682",
+      "name": "Rank Items by Metadata Criteria",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-safe-batch-mutation-b459e3",
+      "name": "Safe Batch Mutation",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-set-aggregation-across-media-types-fa7d52",
+      "name": "Set Aggregation Across Media Types",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-song-review-management-4acfeb",
+      "name": "Manage Song Reviews Based on Library Content and Liked Status",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-temporal-filtering-of-transactions-6f1f17",
+      "name": "Temporal Filtering of Transactions",
+      "type": "Shared"
+    },
+    {
+      "id": "shared-verify-and-validate-data-integrity-8907ae",
+      "name": "Verify and Validate Data Integrity",
+      "type": "Shared"
+    }
   ],
   "edges": [
     {
-      "source": "22cc237-core",
-      "target": "shared-aggregate-and-process-multi-app-data-046b84",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
+      "source": "shared-aggregate-and-process-multi-app-data-046b84",
+      "target": "22cc237-core",
+      "type": "SUPPORTS",
       "confidence": 1.0,
-      "method": "train_shared_support"
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "22cc237"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts",
+            "simple_note.search_notes",
+            "venmo.show_transactions"
+          ]
+        }
+      ]
     },
     {
-      "source": "3c13f5a-core",
-      "target": "shared-aggregate-and-process-multi-app-data-046b84",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-aggregate-and-process-multi-app-data-046b84",
+      "target": "3c13f5a-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "3c13f5a"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts"
+          ]
+        }
+      ]
     },
     {
-      "source": "60d0b5b-core",
-      "target": "shared-aggregate-and-process-multi-app-data-046b84",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-aggregate-and-process-multi-app-data-046b84",
+      "target": "60d0b5b-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "60d0b5b"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts"
+          ]
+        }
+      ]
     },
     {
-      "source": "229360a-core",
-      "target": "shared-conditional-media-item-management-ae2999",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-conditional-media-item-management-ae2999",
+      "target": "229360a-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "229360a"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.remove_album_from_library",
+            "spotify.remove_song_from_library"
+          ]
+        }
+      ]
     },
     {
-      "source": "ce359b5-core",
-      "target": "shared-conditional-media-item-management-ae2999",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-conditional-media-item-management-ae2999",
+      "target": "aa8502b-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "aa8502b"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.follow_artist"
+          ]
+        }
+      ]
     },
     {
-      "source": "aa8502b-core",
-      "target": "shared-conditional-media-item-management-ae2999",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-conditional-media-item-management-ae2999",
+      "target": "ce359b5-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "ce359b5"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.remove_song_from_library"
+          ]
+        }
+      ]
     },
     {
-      "source": "29caf6f-core",
-      "target": "shared-cross-app-entity-resolution-f1abe4",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-cross-app-entity-resolution-f1abe4",
+      "target": "29caf6f-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "29caf6f"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts"
+          ]
+        }
+      ]
     },
     {
-      "source": "6ea6792-core",
-      "target": "shared-cross-app-entity-resolution-f1abe4",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-cross-app-entity-resolution-f1abe4",
+      "target": "6ea6792-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "6ea6792"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts",
+            "venmo.show_received_payment_requests"
+          ]
+        }
+      ]
     },
     {
-      "source": "d0b1f43-core",
-      "target": "shared-cross-app-entity-resolution-f1abe4",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-cross-app-entity-resolution-f1abe4",
+      "target": "d0b1f43-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "d0b1f43"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts",
+            "venmo.show_transactions"
+          ]
+        }
+      ]
     },
     {
-      "source": "27e1026-core",
-      "target": "shared-extract-and-transform-metadata-42f943",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-extract-and-transform-metadata-42f943",
+      "target": "27e1026-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "27e1026"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "6104387-core",
-      "target": "shared-extract-and-transform-metadata-42f943",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-extract-and-transform-metadata-42f943",
+      "target": "6104387-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "6104387"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "e7a10f8-core",
-      "target": "shared-extract-and-transform-metadata-42f943",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-extract-and-transform-metadata-42f943",
+      "target": "e7a10f8-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "e7a10f8"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_playlist",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "34d9492-core",
-      "target": "shared-file-system-directory-management-f04886",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-file-system-directory-management-f04886",
+      "target": "34d9492-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "34d9492"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "file_system.move_file"
+          ]
+        }
+      ]
     },
     {
-      "source": "7d7fbf6-core",
-      "target": "shared-file-system-directory-management-f04886",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-file-system-directory-management-f04886",
+      "target": "771d8fc-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "771d8fc"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.delete_text_message"
+          ]
+        }
+      ]
     },
     {
-      "source": "771d8fc-core",
-      "target": "shared-file-system-directory-management-f04886",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-file-system-directory-management-f04886",
+      "target": "7d7fbf6-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "7d7fbf6"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "file_system.compress_directory"
+          ]
+        }
+      ]
     },
     {
-      "source": "b7a9ee9-core",
-      "target": "shared-iterative-playlist-and-artist-processing-fcdaf9",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "target": "07b42fd-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "07b42fd"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.follow_artist"
+          ]
+        }
+      ]
     },
     {
-      "source": "07b42fd-core",
-      "target": "shared-iterative-playlist-and-artist-processing-fcdaf9",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "target": "aa8502b-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "aa8502b"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.follow_artist",
+            "spotify.show_following_artists"
+          ]
+        }
+      ]
     },
     {
-      "source": "aa8502b-core",
-      "target": "shared-iterative-playlist-and-artist-processing-fcdaf9",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "target": "b7a9ee9-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "b7a9ee9"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.follow_artist",
+            "spotify.show_playlist"
+          ]
+        }
+      ]
     },
     {
-      "source": "29caf6f-core",
-      "target": "shared-join-app-specific-entities-7d507c",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-join-app-specific-entities-7d507c",
+      "target": "29caf6f-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "29caf6f"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts",
+            "simple_note.search_notes"
+          ]
+        }
+      ]
     },
     {
-      "source": "3c13f5a-core",
-      "target": "shared-join-app-specific-entities-7d507c",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-join-app-specific-entities-7d507c",
+      "target": "3c13f5a-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "3c13f5a"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts"
+          ]
+        }
+      ]
     },
     {
-      "source": "b0a8eae-core",
-      "target": "shared-join-app-specific-entities-7d507c",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-join-app-specific-entities-7d507c",
+      "target": "b0a8eae-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "b0a8eae"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "simple_note.search_notes",
+            "spotify.show_playlist_library"
+          ]
+        }
+      ]
     },
     {
-      "source": "cf6abd2-core",
-      "target": "shared-note-based-task-state-updates-191e5d",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-note-based-task-state-updates-191e5d",
+      "target": "22cc237-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "22cc237"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "simple_note.show_note"
+          ]
+        }
+      ]
     },
     {
-      "source": "b0a8eae-core",
-      "target": "shared-note-based-task-state-updates-191e5d",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-note-based-task-state-updates-191e5d",
+      "target": "b0a8eae-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "b0a8eae"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "simple_note.show_note",
+            "spotify.play_music"
+          ]
+        }
+      ]
     },
     {
-      "source": "22cc237-core",
-      "target": "shared-note-based-task-state-updates-191e5d",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-note-based-task-state-updates-191e5d",
+      "target": "cf6abd2-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "cf6abd2"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "simple_note.show_note",
+            "simple_note.update_note"
+          ]
+        }
+      ]
     },
     {
-      "source": "2a163ab-core",
-      "target": "shared-paginate-and-filter-api-results-8fccba",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-paginate-and-filter-api-results-8fccba",
+      "target": "2a163ab-core",
+      "type": "SUPPORTS",
+      "confidence": 0.25,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "2a163ab"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.search_contacts"
+          ]
+        }
+      ]
     },
     {
-      "source": "82e2fac-core",
-      "target": "shared-paginate-and-filter-api-results-8fccba",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-paginate-and-filter-api-results-8fccba",
+      "target": "82e2fac-core",
+      "type": "SUPPORTS",
+      "confidence": 0.5,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "82e2fac"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "e3d6c94-core",
-      "target": "shared-paginate-and-filter-api-results-8fccba",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-paginate-and-filter-api-results-8fccba",
+      "target": "e3d6c94-core",
+      "type": "SUPPORTS",
+      "confidence": 0.5,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "e3d6c94"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_recommendations",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "82e2fac-core",
-      "target": "shared-ranking-by-metadata-criteria-532682",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-ranking-by-metadata-criteria-532682",
+      "target": "287e338-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "287e338"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_recommendations",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "e85d92a-core",
-      "target": "shared-ranking-by-metadata-criteria-532682",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-ranking-by-metadata-criteria-532682",
+      "target": "82e2fac-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "82e2fac"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "287e338-core",
-      "target": "shared-ranking-by-metadata-criteria-532682",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-ranking-by-metadata-criteria-532682",
+      "target": "e85d92a-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "e85d92a"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.search_songs"
+          ]
+        }
+      ]
     },
     {
-      "source": "229360a-core",
-      "target": "shared-safe-batch-mutation-b459e3",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-safe-batch-mutation-b459e3",
+      "target": "229360a-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "229360a"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.remove_song_from_library"
+          ]
+        }
+      ]
     },
     {
-      "source": "ce359b5-core",
-      "target": "shared-safe-batch-mutation-b459e3",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-safe-batch-mutation-b459e3",
+      "target": "ccb4494-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "ccb4494"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.like_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "ccb4494-core",
-      "target": "shared-safe-batch-mutation-b459e3",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-safe-batch-mutation-b459e3",
+      "target": "ce359b5-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "ce359b5"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.remove_song_from_library",
+            "spotify.remove_song_from_playlist"
+          ]
+        }
+      ]
     },
     {
-      "source": "6104387-core",
-      "target": "shared-set-aggregation-across-media-types-fa7d52",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
+      "source": "shared-set-aggregation-across-media-types-fa7d52",
+      "target": "6104387-core",
+      "type": "SUPPORTS",
       "confidence": 1.0,
-      "method": "train_shared_support"
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "6104387"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_album_library",
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "e7a10f8-core",
-      "target": "shared-set-aggregation-across-media-types-fa7d52",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-set-aggregation-across-media-types-fa7d52",
+      "target": "82e2fac-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "82e2fac"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "82e2fac-core",
-      "target": "shared-set-aggregation-across-media-types-fa7d52",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-set-aggregation-across-media-types-fa7d52",
+      "target": "e7a10f8-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "e7a10f8"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_playlist_library",
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "692c77d-core",
-      "target": "shared-song-review-management-4acfeb",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
+      "source": "shared-song-review-management-4acfeb",
+      "target": "692c77d-core",
+      "type": "SUPPORTS",
       "confidence": 1.0,
-      "method": "train_shared_support"
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "692c77d"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.review_song",
+            "spotify.show_song_reviews",
+            "spotify.update_song_review"
+          ]
+        }
+      ]
     },
     {
-      "source": "ccb4494-core",
-      "target": "shared-song-review-management-4acfeb",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-temporal-filtering-of-transactions-6f1f17",
+      "target": "2a163ab-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "2a163ab"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.get_current_date_and_time",
+            "venmo.like_transaction"
+          ]
+        }
+      ]
     },
     {
-      "source": "e85d92a-core",
-      "target": "shared-song-review-management-4acfeb",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
+      "source": "shared-temporal-filtering-of-transactions-6f1f17",
+      "target": "afc0fce-core",
+      "type": "SUPPORTS",
       "confidence": 1.0,
-      "method": "train_shared_support"
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "afc0fce"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.get_current_date_and_time",
+            "venmo.like_transaction",
+            "venmo.show_transactions"
+          ]
+        }
+      ]
     },
     {
-      "source": "d0b1f43-core",
-      "target": "shared-temporal-filtering-of-transactions-6f1f17",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-temporal-filtering-of-transactions-6f1f17",
+      "target": "d0b1f43-core",
+      "type": "SUPPORTS",
+      "confidence": 0.6666666666666666,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "d0b1f43"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "phone.get_current_date_and_time",
+            "venmo.show_transactions"
+          ]
+        }
+      ]
     },
     {
-      "source": "2a163ab-core",
-      "target": "shared-temporal-filtering-of-transactions-6f1f17",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-verify-and-validate-data-integrity-8907ae",
+      "target": "22cc237-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "22cc237"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "simple_note.show_note"
+          ]
+        }
+      ]
     },
     {
-      "source": "afc0fce-core",
-      "target": "shared-temporal-filtering-of-transactions-6f1f17",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-verify-and-validate-data-integrity-8907ae",
+      "target": "6104387-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "6104387"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "spotify.show_song"
+          ]
+        }
+      ]
     },
     {
-      "source": "22cc237-core",
-      "target": "shared-verify-and-validate-data-integrity-8907ae",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
-    },
-    {
-      "source": "6104387-core",
-      "target": "shared-verify-and-validate-data-integrity-8907ae",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
-    },
-    {
-      "source": "76f2c72-core",
-      "target": "shared-verify-and-validate-data-integrity-8907ae",
-      "relation": "semantic",
-      "evidence": "shared procedure supported by this Train-family core skill",
-      "confidence": 1.0,
-      "method": "train_shared_support"
+      "source": "shared-verify-and-validate-data-integrity-8907ae",
+      "target": "76f2c72-core",
+      "type": "SUPPORTS",
+      "confidence": 0.3333333333333333,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_source_and_api_in_successful_trajectory",
+          "source_families": [
+            "76f2c72"
+          ],
+          "source_tasks": [],
+          "matched_apis": [
+            "file_system.show_file"
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "warnings": []
 }

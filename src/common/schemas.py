@@ -10,7 +10,7 @@ from common.utils import canonical_hash
 
 CONDITIONS = ("No-Skill", "Flat-NoPD", "Flat-PD", "Hierarchy-PD", "Graph-PD")
 SKILL_CONDITIONS = CONDITIONS[1:]
-EDGE_TYPES = ("dependency", "workflow", "semantic", "alternative")
+EDGE_TYPES = ("SUPPORTS", "DATA_DEP", "PRECEDES")
 
 
 def _nonempty(value: str, field_name: str) -> str:
@@ -86,20 +86,20 @@ class Snapshot:
 class GraphEdge:
     source: str
     target: str
-    relation: str
-    evidence: str
+    type: str
     confidence: float
-    method: str
+    support: int
+    evidence: Any = field(default_factory=list)
 
     def __post_init__(self) -> None:
-        if self.relation not in EDGE_TYPES:
-            raise ValueError(f"unknown edge type: {self.relation}")
+        if self.type not in EDGE_TYPES:
+            raise ValueError(f"unknown edge type: {self.type}")
         if self.source == self.target:
             raise ValueError("self edges are forbidden")
         if not 0 <= self.confidence <= 1:
             raise ValueError("edge confidence must be between 0 and 1")
-        _nonempty(self.evidence, "evidence")
-        _nonempty(self.method, "method")
+        if not isinstance(self.support, int) or self.support < 1:
+            raise ValueError("edge support must be a positive integer")
 
 
 @dataclass(frozen=True)

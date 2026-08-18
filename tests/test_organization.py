@@ -12,10 +12,13 @@ class OrganizationTests(unittest.TestCase):
             "b": Skill("b", "B", "second", "Do B"),
         }
         self.snapshot = Snapshot("task", "query", (Candidate("a", 1, 2.0), Candidate("b", 2, 1.0)))
-        self.hierarchy = {"paths": {"a": ["D", "App", "CapA"], "b": ["D", "App", "CapB"]}}
-        self.graph = {"nodes": ["a", "b"], "edges": [{
-            "source": "a", "target": "b", "relation": "dependency", "evidence": "a output feeds b",
-            "confidence": 1.0, "method": "test",
+        self.hierarchy = {
+            "hierarchy": {"Core": {"App": ["a", "b"]}, "Shared": {}},
+            "names": {"a": "A", "b": "B"},
+        }
+        self.graph = {"nodes": [{"id": "a"}, {"id": "b"}], "edges": [{
+            "source": "a", "target": "b", "type": "DATA_DEP", "evidence": [],
+            "confidence": 1.0, "support": 1,
         }]}
 
     def test_all_skill_views_preserve_order_and_hash(self):

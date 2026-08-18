@@ -10,6 +10,23 @@
 
 四个 Skill 条件对同一任务使用相同的 FCSR Top-5 snapshot。Graph-PD 只展示 Top-5 induced subgraph，不执行图扩展、自动补点或图规划。
 
+## Organization 实现
+
+- `src/organization/hierarchy.py`：按 `Skill Type → Primary App → Skill Name`
+  组织有序检索结果，重复 ID 保留第一次出现的位置。
+- `src/organization/graph_builder.py`：只使用 Train-derived Library 的
+  `metadata.json` 和 `references/`，确定性构建独立的全局有类型图。
+- `src/organization/graph_runtime.py`：截取 Top-5 induced subgraph，并按
+  `DATA_DEP > SUPPORTS > PRECEDES` 确定性删除成环边。
+- `src/organization/organizers.py`：在相同 snapshot 上生成 Flat、Hierarchy
+  和 Graph header，并检查各 Skill 条件的有序 ID 与 snapshot hash 相同。
+- `src/retrieval/bridge.py`：将冻结 FCSR 的 rerank JSONL 转成有序、去重的
+  Top-5 snapshot。
+
+全局图允许有环，但每个任务的 Top-5 DAG 必须无环。图不会补充邻居、替换
+Skill 或改变检索顺序。只有明确证据才建立 `SUPPORTS`、`DATA_DEP` 和
+`PRECEDES`；没有可靠数据流或顺序证据时，相应边保持为空。
+
 ## 最终实验资产
 
 - Library：`skills/library/`，共 45 个 Train-grounded Skills
@@ -73,6 +90,27 @@ PYTHONPATH=src ./env/bin/python scripts/main.py export-skills
 PYTHONPATH=src ./env/bin/python scripts/main.py export-queries \
   --input data/tasks/dev.json
 sbatch jobs/fcsr_snapshots.sbatch
+```
+
+组织资产可以在登录节点轻量重建：
+
+```bash
+PYTHONPATH=src ./env/bin/python scripts/main.py build-hierarchy \
+  --library skills/library --output organization/global_hierarchy.json
+PYTHONPATH=src ./env/bin/python scripts/main.py build-graph \
+  --library skills/library --output organization/global_graph.json
+```
+
+`jobs/fcsr_snapshots.sbatch` 固定读取
+`/data-nfs/gpu3/u13256401368/fcsr/checkpoints/fcsr/{retriever,reranker}`。可通过
+`FCSR_ROOT` 改变 FCSR 项目根目录，但 checkpoint 子路径始终为
+`checkpoints/fcsr`，并且启动前必须存在该目录的 `manifest.json`。
+
+最小行为示例由以下测试覆盖：
+
+```bash
+PYTHONPATH=src ./env/bin/python -m unittest \
+  tests.test_skill_structures.GraphRuntimeTests -v
 ```
 
 正式运行前必须生成并验证 `freeze_manifest.json`。任一冻结输入 hash 改变都应阻止作业启动。

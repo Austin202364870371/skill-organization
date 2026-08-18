@@ -18,7 +18,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--snapshot", action="append", required=True, help="SPLIT=PATH")
     parser.add_argument("--model-metadata", required=True)
-    parser.add_argument("--fcsr-manifest", default="../fcsr/checkpoints/fcsr/manifest.json")
+    parser.add_argument(
+        "--fcsr-manifest",
+        default=ROOT.parent / "fcsr" / "checkpoints" / "fcsr" / "manifest.json",
+    )
     parser.add_argument("--output", default="freeze_manifest.json")
     args = parser.parse_args()
     artifacts = {
@@ -41,6 +44,7 @@ def main() -> None:
         "seeds": [42, 43, 44],
         "conditions": ["No-Skill", "Flat-NoPD", "Flat-PD", "Hierarchy-PD", "Graph-PD"],
         "retrieval": {"rrf_depth": 100, "rrf_k": 60, "top_50": 50, "rerank_top_20": 20, "snapshot_top_k": 5},
+        "fcsr_checkpoint": str(Path(args.fcsr_manifest).resolve().parent),
     }
     result = create_freeze_manifest(artifacts, metadata, args.output)
     print(json.dumps({"freeze_hash": result["freeze_hash"], "artifacts": len(artifacts)}, indent=2))

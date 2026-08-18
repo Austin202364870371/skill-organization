@@ -17,7 +17,7 @@ if str(SRC) not in sys.path:
 from common.schemas import CONDITIONS
 from common.utils import read_json, write_json
 from evaluation.analysis import analyze_runs
-from organization.graph import build_candidate_graph, validate_graph
+from organization.graph_builder import build_global_graph
 from organization.hierarchy import build_hierarchy
 from organization.library import validate_library
 from retrieval.bridge import (
@@ -55,7 +55,10 @@ def parser() -> argparse.ArgumentParser:
 
     graph = commands.add_parser("build-graph")
     graph.add_argument("--library", default="skills/library")
-    graph.add_argument("--trajectory-orders", help="Optional Train-only ordered Skill IDs")
+    graph.add_argument(
+        "--trajectory-orders",
+        help="JSON list of successful/GT Train records with split and skill_ids",
+    )
     graph.add_argument("--output", default="organization/global_graph.json")
 
     hierarchy = commands.add_parser("build-hierarchy")
@@ -102,15 +105,15 @@ def main() -> None:
             args.records, args.output, read_json(args.provenance), args.top_k
         )
     elif args.command == "build-graph":
-        library = load_skill_library(args.library)
         orders = read_json(args.trajectory_orders) if args.trajectory_orders else []
-        result = build_candidate_graph(
-            {skill_id: skill.metadata for skill_id, skill in library.items()}, orders
-        )
-        validate_graph(result)
-        write_json(args.output, result)
+        result = build_global_graph(args.library, args.output, orders)
     elif args.command == "build-hierarchy":
-        result = build_hierarchy(load_skill_library(args.library))
+        skill_ids = sorted(
+            directory.name
+            for directory in Path(args.library).iterdir()
+            if directory.is_dir() and (directory / "SKILL.md").is_file()
+        )
+        result = build_hierarchy(skill_ids, args.library)
         write_json(args.output, result)
     elif args.command == "freeze":
         artifacts = dict(item.split("=", 1) for item in args.artifact)

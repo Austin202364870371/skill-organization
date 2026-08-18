@@ -32,7 +32,11 @@ class SkillLoader:
             return self._record(skill_id, step, "forbidden", f"Unknown or unavailable skill: {skill_id}")
         if skill_id in self.loaded:
             return self._record(skill_id, step, "already_loaded", f"Skill {skill_id} is already loaded.")
-        skill = self.library[skill_id]
+        skill = self.library.get(skill_id)
+        if skill is None:
+            return self._record(
+                skill_id, step, "unavailable", f"Skill file is unavailable: {skill_id}"
+            )
         self.loaded.add(skill_id)
         return self._record(skill_id, step, "loaded", f"SKILL {skill_id}: {skill.name}\n{skill.body}")
 

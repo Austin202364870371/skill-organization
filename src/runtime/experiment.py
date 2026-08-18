@@ -9,6 +9,7 @@ from typing import Any
 
 from common.schemas import Skill, Snapshot
 from common.utils import write_json
+from organization.organizers import assert_fair_views, build_view
 from runtime.appworld_runtime import require_appworld, run_task
 from runtime.official_agent import local_model_config
 
@@ -34,6 +35,18 @@ def run_grid(
     missing = [task_id for task_id in task_ids if task_id not in snapshots]
     if missing:
         raise ValueError(f"missing retrieval snapshots for {len(missing)} tasks")
+    for task_id in task_ids:
+        views = [
+            build_view(
+                condition,
+                snapshots[task_id],
+                library,
+                hierarchy,
+                graph,
+            )
+            for condition in conditions
+        ]
+        assert_fair_views(views)
     work, skipped = [], 0
     for task_id in task_ids:
         for seed in seeds:

@@ -59,14 +59,23 @@ def build_snapshots(
     if top_k <= 0:
         raise ValueError("top_k must be positive")
     snapshots = []
+    duplicates_removed = 0
     for record in read_jsonl(rerank_records):
         raw_candidates = record.get("reranked_candidates")
         if not isinstance(raw_candidates, list):
             raise ValueError("reranker record lacks reranked_candidates")
         candidates = []
-        for rank, raw in enumerate(raw_candidates[:top_k], start=1):
+        seen: set[str] = set()
+        for raw in raw_candidates:
+            skill_id = str(raw["skill_id"])
+            if skill_id in seen:
+                duplicates_removed += 1
+                continue
+            seen.add(skill_id)
             score = raw.get("reranker_score", raw.get("score", 0.0))
-            candidates.append(Candidate(str(raw["skill_id"]), rank, float(score)))
+            candidates.append(Candidate(skill_id, len(candidates) + 1, float(score)))
+            if len(candidates) == top_k:
+                break
         snapshot = Snapshot(
             task_id=str(record.get("task_id") or record.get("query_id")),
             query=str(record.get("query") or record.get("task")),
@@ -77,7 +86,12 @@ def build_snapshots(
         payload["snapshot_hash"] = snapshot.snapshot_hash
         snapshots.append(payload)
     write_jsonl(output, snapshots)
-    return {"count": len(snapshots), "top_k": top_k, "output_hash": file_hash(output)}
+    return {
+        "count": len(snapshots),
+        "top_k": top_k,
+        "duplicates_removed": duplicates_removed,
+        "output_hash": file_hash(output),
+    }
 
 
 def load_snapshots(path: str | Path) -> dict[str, Snapshot]:

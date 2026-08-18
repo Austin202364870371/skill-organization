@@ -5,6 +5,6 @@ max_b_refinements: 2
 subskill_min_c_evidence_families: 2
 dedup_embedding_threshold: 0.90
 retrieval_top_k: 5
+fcsr_checkpoint: ../fcsr/checkpoints/fcsr
 skill_conditions: [Flat-NoPD, Flat-PD, Hierarchy-PD, Graph-PD]
 conditions: [No-Skill, Flat-NoPD, Flat-PD, Hierarchy-PD, Graph-PD]
-

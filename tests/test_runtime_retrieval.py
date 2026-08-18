@@ -34,12 +34,14 @@ class RuntimeRetrievalTests(unittest.TestCase):
                 "query_id": "task", "query": "do it",
                 "reranked_candidates": [
                     {"skill_id": "a", "reranker_score": 3},
+                    {"skill_id": "a", "reranker_score": 2.5},
                     {"skill_id": "b", "reranker_score": 2},
                 ],
             }])
-            build_snapshots(records, output, {"model": "frozen"}, top_k=2)
+            report = build_snapshots(records, output, {"model": "frozen"}, top_k=2)
             snapshots = load_snapshots(output)
             self.assertEqual(snapshots["task"].skill_ids, ("a", "b"))
+            self.assertEqual(report["duplicates_removed"], 1)
 
 
 if __name__ == "__main__":

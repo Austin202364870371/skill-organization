@@ -1,11 +1,17 @@
-"""Pure organization views; retrieval membership and rank never change here."""
+"""Organization-only views over one frozen ordered retrieval snapshot."""
 
 from __future__ import annotations
 
 from collections.abc import Mapping
 from typing import Any
 
-from common.schemas import CONDITIONS, GraphEdge, OrganizationView, Skill, Snapshot
+from common.schemas import CONDITIONS, OrganizationView, Skill, Snapshot
+from organization.graph_runtime import build_task_dag, format_graph_context
+from organization.hierarchy import (
+    dedupe_skill_ids,
+    format_hierarchy_context,
+    induce_hierarchy,
+)
 
 
 def build_view(
@@ -20,34 +26,44 @@ def build_view(
     if condition == "No-Skill":
         return OrganizationView(condition, "", (), (), False, {}, snapshot.snapshot_hash)
 
-    _require_skills(snapshot, skill_library)
-    metadata = _flat_metadata(snapshot, skill_library)
-    allowed = snapshot.skill_ids
+    allowed = tuple(dedupe_skill_ids(snapshot.skill_ids))
+    metadata = _flat_metadata(allowed, skill_library)
     loader_enabled = condition != "Flat-NoPD"
-    structure: dict[str, Any] = {}
+    structure: dict[str, Any] = {
+        "retrieved_skill_ids": list(allowed),
+        "warnings": [
+            f"skill metadata unavailable: {skill_id}"
+            for skill_id in allowed
+            if skill_id not in skill_library
+        ],
+    }
 
     if condition == "Flat-NoPD":
         blocks = ["Available Skills (full instructions):"]
         for skill_id in allowed:
-            skill = skill_library[skill_id]
-            blocks.append(f"\n[{skill.skill_id}] {skill.name}\nDescription: {skill.description}\n{skill.body}")
+            skill = skill_library.get(skill_id)
+            if skill is None:
+                continue
+            blocks.append(
+                f"\n[{skill.skill_id}] {skill.name}\n"
+                f"Description: {skill.description}\n{skill.body}"
+            )
         context = "\n".join(blocks)
     else:
         context = metadata + "\n\nLoad instructions with: LOAD_SKILL <skill_id>"
         if condition == "Hierarchy-PD":
-            paths = _induced_hierarchy(allowed, hierarchy or {})
-            structure = {"paths": paths}
-            context += "\n\nHierarchy:\n" + "\n".join(
-                f"- {' > '.join(path)}" for path in paths
-            )
+            induced = induce_hierarchy(allowed, hierarchy or {})
+            structure = induced
+            context += "\n\n" + format_hierarchy_context(induced, skill_library)
         elif condition == "Graph-PD":
-            edges = induced_edges(allowed, graph or {})
-            structure = {"edges": edges}
-            relation_lines = [
-                f"- {edge['source']} --{edge['relation']}--> {edge['target']}"
-                for edge in edges
-            ]
-            context += "\n\nRelations:\n" + ("\n".join(relation_lines) if relation_lines else "- none")
+            dag = build_task_dag(allowed, graph or {})
+            dag["warnings"].extend(
+                f"skill metadata unavailable: {skill_id}"
+                for skill_id in allowed
+                if skill_id not in skill_library
+            )
+            structure = dag
+            context += "\n\n" + format_graph_context(dag, skill_library, graph)
 
     return OrganizationView(
         condition=condition,
@@ -73,42 +89,16 @@ def assert_fair_views(views: list[OrganizationView]) -> None:
             raise ValueError("skill conditions do not share the same snapshot hash")
 
 
-def induced_edges(skill_ids: tuple[str, ...], graph: Mapping[str, Any]) -> list[dict[str, Any]]:
-    allowed = set(skill_ids)
-    order = {skill_id: rank for rank, skill_id in enumerate(skill_ids)}
-    result = []
-    for raw in graph.get("edges", []):
-        edge = GraphEdge(**raw)
-        if edge.source in allowed and edge.target in allowed:
-            result.append(raw)
-    return sorted(
-        result,
-        key=lambda item: (
-            order[item["source"]], order[item["target"]], item["relation"]
-        ),
-    )
-
-
-def _flat_metadata(snapshot: Snapshot, library: Mapping[str, Skill]) -> str:
+def _flat_metadata(
+    skill_ids: tuple[str, ...], library: Mapping[str, Skill]
+) -> str:
     lines = ["Available Skills:"]
-    for candidate in snapshot.skills:
-        skill = library[candidate.skill_id]
-        lines.append(f"{candidate.rank}. [{skill.skill_id}] {skill.name}\n   Description: {skill.description}")
+    for rank, skill_id in enumerate(skill_ids, start=1):
+        skill = library.get(skill_id)
+        if skill is None:
+            continue
+        lines.append(
+            f"{rank}. [{skill.skill_id}] {skill.name}\n"
+            f"   Description: {skill.description}"
+        )
     return "\n".join(lines)
-
-
-def _induced_hierarchy(skill_ids: tuple[str, ...], hierarchy: Mapping[str, Any]) -> list[list[str]]:
-    raw_paths = hierarchy.get("paths", {})
-    paths = []
-    for skill_id in skill_ids:
-        path = raw_paths.get(skill_id, ["Uncategorized", skill_id])
-        if not isinstance(path, list) or not all(isinstance(item, str) and item for item in path):
-            raise ValueError(f"invalid hierarchy path for {skill_id}")
-        paths.append([*path, skill_id] if path[-1] != skill_id else path)
-    return paths
-
-
-def _require_skills(snapshot: Snapshot, library: Mapping[str, Skill]) -> None:
-    missing = [skill_id for skill_id in snapshot.skill_ids if skill_id not in library]
-    if missing:
-        raise KeyError(f"snapshot skills missing from library: {missing}")
