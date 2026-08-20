@@ -2,7 +2,7 @@
 #SBATCH --job-name=skill-org-fcsr
 #SBATCH --qos=normal
 #SBATCH --nodes=1
-#SBATCH --exclude=GPU0,GPU1,GPU4
+#SBATCH --nodelist=GPU3
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G

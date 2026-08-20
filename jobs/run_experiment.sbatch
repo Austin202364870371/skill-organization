@@ -2,7 +2,7 @@
 #SBATCH --job-name=skill-org-run
 #SBATCH --qos=fast
 #SBATCH --nodes=1
-#SBATCH --nodelist=GPU2,GPU3
+#SBATCH --nodelist=GPU3
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=160G
