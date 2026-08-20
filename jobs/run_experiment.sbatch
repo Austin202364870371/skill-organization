@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=skill-org-run
-#SBATCH --qos=normal
+#SBATCH --qos=fast
 #SBATCH --nodes=1
 #SBATCH --nodelist=GPU2,GPU3
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=160G
-#SBATCH --time=3-00:00:00
+#SBATCH --time=06:00:00
 #SBATCH --output=logs/run-%j.out
 #SBATCH --error=logs/run-%j.err
 
