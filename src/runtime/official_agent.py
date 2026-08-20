@@ -19,7 +19,9 @@ AppWorld completion rule:
 """
 SKILL_RULES = """
 Skill controller rules:
-- To load a disclosed skill, emit a standalone line: LOAD_SKILL <skill_id>
+- Before writing task code, load the most task-relevant disclosed skill by emitting a standalone line: LOAD_SKILL <skill_id>
+- If you are unsure which skill is relevant, load the highest-ranked disclosed skill and verify its body.
+- Do not mix LOAD_SKILL with a Python code block in the same step; loading a skill is a valid standalone step.
 - At the end of every response emit: USED_SKILLS: ["skill-id"]
 - USED_SKILLS is logging only and does not control execution.
 """

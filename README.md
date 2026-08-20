@@ -17,7 +17,9 @@
 - `src/organization/graph_builder.py`：只使用 Train-derived Library 的
   `metadata.json` 和 `references/`，确定性构建独立的全局有类型图。
 - `src/organization/graph_runtime.py`：截取 Top-5 induced subgraph，并按
-  `DATA_DEP > SUPPORTS > PRECEDES` 确定性删除成环边。
+  `DATA_DEP > SUPPORTS > PRECEDES` 确定性删除成环边。当 Top-5 中没有证据化
+  执行边时，使用 SUPPORTS 目标与检索排名生成稳定的 advisory order，避免
+  Graph-PD 退化为空执行图。
 - `src/organization/organizers.py`：在相同 snapshot 上生成 Flat、Hierarchy
   和 Graph header，并检查各 Skill 条件的有序 ID 与 snapshot hash 相同。
 - `src/retrieval/bridge.py`：将冻结 FCSR 的 rerank JSONL 转成有序、去重的
@@ -25,7 +27,8 @@
 
 全局图允许有环，但每个任务的 Top-5 DAG 必须无环。图不会补充邻居、替换
 Skill 或改变检索顺序。只有明确证据才建立 `SUPPORTS`、`DATA_DEP` 和
-`PRECEDES`；没有可靠数据流或顺序证据时，相应边保持为空。
+`PRECEDES`；没有可靠数据流或顺序证据时，相应边保持为空，Graph-PD 使用
+support/retrieval 派生的 advisory order 作为可执行建议。
 
 ## 最终实验资产
 

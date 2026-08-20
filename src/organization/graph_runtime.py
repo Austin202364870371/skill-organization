@@ -93,6 +93,7 @@ def build_task_dag(
         skill_id for skill_id in skill_ids
         if skill_id not in execution_nodes and skill_id not in support_nodes
     ]
+    advisory_order = _advisory_order(skill_ids, supporting)
     return {
         "schema_version": "task_skill_graph_v2",
         "retrieved_skill_ids": skill_ids,
@@ -104,6 +105,7 @@ def build_task_dag(
             _topological_layers(execution_skill_ids, accepted)
             if execution_skill_ids else []
         ),
+        "advisory_order": advisory_order,
         "supporting_only_candidates": supporting_only,
         "unlinked_candidates": unlinked,
         "dropped_edges": dropped,
@@ -116,6 +118,14 @@ def format_graph_context(
     library: Mapping[str, Skill],
     global_graph: Mapping[str, Any] | None = None,
 ) -> str:
+    """Render a Top-K graph as an action-oriented recommendation.
+
+    The previous rendering led with "no evidenced execution relations" and
+    emphasized "unlinked candidates", which made Graph-PD read as a negative
+    classification rather than a useful plan. This version keeps the same
+    evidence but presents retrieval rank as the default order when no execution
+    edge is available, and labels the remaining skills by their actual role.
+    """
     names = {
         node.get("id"): node.get("name")
         for node in (global_graph or {}).get("nodes", [])
@@ -125,7 +135,7 @@ def format_graph_context(
         skill_id: rank
         for rank, skill_id in enumerate(dag.get("retrieved_skill_ids", []), start=1)
     }
-    lines = ["Retrieved Skill Graph", "Execution DAG:"]
+    lines = ["Retrieved Skill Graph", "Recommended execution order:"]
     layers = dag.get("topological_layers", [])
     if layers:
         for index, layer in enumerate(layers):
@@ -133,7 +143,15 @@ def format_graph_context(
             for skill_id in layer:
                 lines.append(f"- [{skill_id}] {_name(skill_id, library, names)}")
     else:
-        lines.append("- no evidenced execution relations")
+        order = dag.get("advisory_order") or dag.get("retrieved_skill_ids", [])
+        lines.append("- no evidenced execution relations in this retrieved subset; using support/retrieval-derived order.")
+        lines.append("Recommended order:")
+        for skill_id in order:
+            lines.append(
+                f"- [{skill_id}] {_name(skill_id, library, names)} "
+                f"(retrieval rank: {ranks[skill_id]})"
+            )
+
     lines.append("Execution relations:")
     execution_edges = dag.get("execution_edges", [])
     if execution_edges:
@@ -143,6 +161,7 @@ def format_graph_context(
         )
     else:
         lines.append("- none")
+
     lines.append("Supporting-only candidates:")
     supporting_only = dag.get("supporting_only_candidates", [])
     if supporting_only:
@@ -153,6 +172,7 @@ def format_graph_context(
             )
     else:
         lines.append("- none")
+
     lines.append("Supporting relations:")
     supporting_edges = dag.get("supporting_edges", [])
     if supporting_edges:
@@ -162,7 +182,8 @@ def format_graph_context(
         )
     else:
         lines.append("- none")
-    lines.append("Unlinked candidates:")
+
+    lines.append("Independent candidates:")
     unlinked = dag.get("unlinked_candidates", [])
     if unlinked:
         for skill_id in unlinked:
@@ -180,6 +201,41 @@ def _name(
 ) -> str:
     skill = library.get(skill_id)
     return skill.name if skill else str(names.get(skill_id, skill_id))
+
+
+def _advisory_order(
+    skill_ids: list[str], supporting: Iterable[GraphEdge]
+) -> list[str]:
+    """Return a stable suggested order when no execution edge is evidenced.
+
+    SUPPORTS edges point from a reusable sub-skill to a Core Skill. In practice
+    the Core target is the main workhorse, so put supported Core targets first
+    (in retrieval rank), then independent candidates, and finally supporting
+    sub-skills. This keeps Graph-PD actionable without inventing DATA_DEP or
+    PRECEDES edges that the Train evidence cannot support.
+    """
+    supported_targets = [edge.target for edge in supporting]
+    support_sources = [edge.source for edge in supporting]
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for skill_id in supported_targets:
+        if skill_id in seen or skill_id not in skill_ids:
+            continue
+        seen.add(skill_id)
+        ordered.append(skill_id)
+    for skill_id in skill_ids:
+        if skill_id not in seen and skill_id not in support_sources:
+            seen.add(skill_id)
+            ordered.append(skill_id)
+    for skill_id in support_sources:
+        if skill_id not in seen and skill_id in skill_ids:
+            seen.add(skill_id)
+            ordered.append(skill_id)
+    for skill_id in skill_ids:
+        if skill_id not in seen:
+            seen.add(skill_id)
+            ordered.append(skill_id)
+    return ordered
 
 
 def _sort_key(edge: GraphEdge) -> tuple[Any, ...]:

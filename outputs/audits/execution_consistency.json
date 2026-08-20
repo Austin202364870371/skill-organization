@@ -1,0 +1,934 @@
+{
+  "library": "/data-nfs/gpu3/u13256401368/skill-organization/skills/library",
+  "skill_count": 45,
+  "issue_count": 87,
+  "issues": [
+    {
+      "skill_id": "07b42fd-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.follow_artist",
+        "spotify.login",
+        "spotify.search_artists",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "229360a-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.remove_album_from_library",
+        "spotify.remove_song_from_library",
+        "spotify.show_album_library",
+        "spotify.show_downloaded_songs",
+        "spotify.show_liked_albums",
+        "spotify.show_liked_songs",
+        "spotify.show_song_library",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "229360a-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.remove_album_from_library",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_downloaded_songs",
+        "apis.spotify.show_liked_albums",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_song_library"
+      ]
+    },
+    {
+      "skill_id": "229360a-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "22cc237-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "phone.login",
+        "phone.search_contacts",
+        "simple_note.login",
+        "simple_note.search_notes",
+        "simple_note.show_note",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.create_payment_request",
+        "venmo.login",
+        "venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "22cc237-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "27e1026-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.show_album_library",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "spotify.show_song_library",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "27e1026-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "287e338-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.show_artist",
+        "spotify.show_recommendations",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "287e338-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song",
+        "apis.supervisor.message"
+      ]
+    },
+    {
+      "skill_id": "29caf6f-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.login",
+        "phone.search_contacts",
+        "phone.search_text_messages",
+        "phone.send_text_message",
+        "simple_note.login",
+        "simple_note.search_notes",
+        "simple_note.show_note",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "29caf6f-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "2a163ab-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "phone.login",
+        "phone.search_contacts",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.like_transaction",
+        "venmo.login",
+        "venmo.show_social_feed"
+      ]
+    },
+    {
+      "skill_id": "2a163ab-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "302c169-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.login",
+        "phone.show_alarms",
+        "phone.update_alarm",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "302c169-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.phone.login",
+        "apis.phone.show_alarms",
+        "apis.phone.update_alarm"
+      ]
+    },
+    {
+      "skill_id": "302c169-core",
+      "issue": "execution_validation_failed",
+      "status": "c_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "34d9492-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.login",
+        "file_system.move_file",
+        "file_system.show_directory",
+        "file_system.show_file",
+        "phone.get_current_date_and_time",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "34d9492-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "3c13f5a-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.login",
+        "file_system.show_directory",
+        "file_system.show_file",
+        "phone.get_current_date_and_time",
+        "phone.login",
+        "phone.search_contacts",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.create_payment_request",
+        "venmo.login"
+      ]
+    },
+    {
+      "skill_id": "3c13f5a-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.search_contacts",
+        "apis.venmo.create_payment_request"
+      ]
+    },
+    {
+      "skill_id": "3c13f5a-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "60d0b5b-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.login",
+        "phone.search_contacts",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.create_transaction",
+        "venmo.login",
+        "venmo.show_sent_payment_requests"
+      ]
+    },
+    {
+      "skill_id": "60d0b5b-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.phone.access_token_from",
+        "apis.phone.search_contacts",
+        "apis.venmo.access_token_from",
+        "apis.venmo.create_transaction",
+        "apis.venmo.show_sent_payment_requests"
+      ]
+    },
+    {
+      "skill_id": "6104387-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.create_file",
+        "file_system.login",
+        "spotify.delete_account",
+        "spotify.login",
+        "spotify.show_album_library",
+        "spotify.show_artist",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "spotify.show_song_library",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "6104387-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.file_system.create_file",
+        "apis.file_system.login",
+        "apis.spotify.login",
+        "apis.spotify.show_album",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ]
+    },
+    {
+      "skill_id": "6104387-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "692c77d-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.review_song",
+        "spotify.show_liked_songs",
+        "spotify.show_playlist_library",
+        "spotify.show_song_reviews",
+        "spotify.update_song_review",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "692c77d-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.review_song",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song_library",
+        "apis.spotify.show_song_reviews",
+        "apis.spotify.update_song_review"
+      ]
+    },
+    {
+      "skill_id": "692c77d-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "6ea6792-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.login",
+        "phone.search_contacts",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.approve_payment_request",
+        "venmo.login",
+        "venmo.show_received_payment_requests"
+      ]
+    },
+    {
+      "skill_id": "6ea6792-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.phone.show_contact_relationships",
+        "apis.venmo.approve_payment_request",
+        "apis.venmo.deny_payment_request",
+        "apis.venmo.login",
+        "apis.venmo.show_received_payment_requests"
+      ]
+    },
+    {
+      "skill_id": "6ea6792-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "76f2c72-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.login",
+        "file_system.show_directory",
+        "file_system.show_file",
+        "phone.get_current_date_and_time",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "76f2c72-core",
+      "issue": "execution_validation_failed",
+      "status": "c_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "771d8fc-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.delete_text_message",
+        "phone.delete_voice_message",
+        "phone.login",
+        "phone.search_text_messages",
+        "phone.search_voice_messages",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "771d8fc-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "7d7fbf6-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.compress_directory",
+        "file_system.login",
+        "file_system.show_directory",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "82e2fac-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "82e2fac-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.account_passwords",
+        "apis.supervisor.message",
+        "apis.supervisor.profile"
+      ]
+    },
+    {
+      "skill_id": "82e2fac-core",
+      "issue": "execution_validation_failed",
+      "status": "c_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "aa8502b-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.follow_artist",
+        "spotify.login",
+        "spotify.show_following_artists",
+        "spotify.show_liked_songs",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "aa8502b-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.follow_artist",
+        "apis.spotify.show_following_artists",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.unfollow_artist",
+        "apis.supervisor.message"
+      ]
+    },
+    {
+      "skill_id": "afc0fce-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "phone.login",
+        "phone.search_contacts",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.create_transaction_comment",
+        "venmo.like_transaction",
+        "venmo.login",
+        "venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "afc0fce-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.phone.login",
+        "apis.supervisor.show_account_passwords",
+        "apis.venmo.create_transaction_comment",
+        "apis.venmo.like_transaction",
+        "apis.venmo.login",
+        "apis.venmo.search_friends",
+        "apis.venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "afc0fce-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "b0a8eae-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "simple_note.login",
+        "simple_note.search_notes",
+        "simple_note.show_note",
+        "spotify.login",
+        "spotify.play_music",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "b7a9ee9-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.follow_artist",
+        "spotify.login",
+        "spotify.show_playlist",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "b7a9ee9-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.follow_artist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "b7a9ee9-core",
+      "issue": "execution_validation_failed",
+      "status": "c_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "c901732-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.play_music",
+        "spotify.search_albums",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "c901732-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.play_music",
+        "apis.spotify.search_albums",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "c901732-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "ccb4494-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.like_song",
+        "spotify.login",
+        "spotify.show_current_song",
+        "spotify.show_song_queue",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "ccb4494-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.like_song",
+        "apis.spotify.login",
+        "apis.spotify.show_current_song",
+        "apis.spotify.show_song_queue"
+      ]
+    },
+    {
+      "skill_id": "ccb4494-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "ce359b5-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.remove_song_from_library",
+        "spotify.remove_song_from_playlist",
+        "spotify.show_playlist",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "spotify.show_song_library",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "ce359b5-core",
+      "issue": "execution_validation_failed",
+      "status": "c_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "cf6abd2-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "simple_note.login",
+        "simple_note.search_notes",
+        "simple_note.show_note",
+        "simple_note.update_note",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "d0b1f43-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "phone.login",
+        "phone.search_contacts",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile",
+        "venmo.login",
+        "venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "d0b1f43-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.venmo.login",
+        "apis.venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "d0b1f43-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "e3d6c94-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "spotify.add_song_to_playlist",
+        "spotify.create_playlist",
+        "spotify.login",
+        "spotify.show_recommendations",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "e3d6c94-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "e7a10f8-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.login",
+        "spotify.show_playlist",
+        "spotify.show_playlist_library",
+        "spotify.show_song",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "e85d92a-core",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.search_artists",
+        "spotify.search_songs",
+        "supervisor.complete_task",
+        "supervisor.show_account_passwords",
+        "supervisor.show_profile"
+      ]
+    },
+    {
+      "skill_id": "e85d92a-core",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.search_artists",
+        "apis.spotify.search_songs"
+      ]
+    },
+    {
+      "skill_id": "e85d92a-core",
+      "issue": "execution_validation_failed",
+      "status": "b_failed",
+      "c_evidence_families": []
+    },
+    {
+      "skill_id": "shared-aggregate-and-process-multi-app-data-046b84",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.search_contacts",
+        "simple_note.search_notes",
+        "venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "shared-conditional-media-item-management-ae2999",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.follow_artist",
+        "spotify.remove_album_from_library",
+        "spotify.remove_song_from_library"
+      ]
+    },
+    {
+      "skill_id": "shared-cross-app-entity-resolution-f1abe4",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.search_contacts",
+        "venmo.show_received_payment_requests",
+        "venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "shared-extract-and-transform-metadata-42f943",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.show_album_library",
+        "spotify.show_playlist",
+        "spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "shared-file-system-directory-management-f04886",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.compress_directory",
+        "file_system.move_file",
+        "phone.delete_text_message"
+      ]
+    },
+    {
+      "skill_id": "shared-iterative-playlist-and-artist-processing-fcdaf9",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.follow_artist",
+        "spotify.show_following_artists",
+        "spotify.show_playlist"
+      ]
+    },
+    {
+      "skill_id": "shared-join-app-specific-entities-7d507c",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.search_contacts",
+        "simple_note.search_notes",
+        "spotify.show_playlist_library"
+      ]
+    },
+    {
+      "skill_id": "shared-note-based-task-state-updates-191e5d",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "simple_note.show_note",
+        "simple_note.update_note",
+        "spotify.play_music"
+      ]
+    },
+    {
+      "skill_id": "shared-paginate-and-filter-api-results-8fccba",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.search_contacts",
+        "spotify.show_playlist_library",
+        "spotify.show_recommendations",
+        "spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "shared-ranking-by-metadata-criteria-532682",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.search_songs",
+        "spotify.show_recommendations",
+        "spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "shared-ranking-by-metadata-criteria-532682",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.search_songs",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "shared-safe-batch-mutation-b459e3",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.like_song",
+        "spotify.remove_song_from_library",
+        "spotify.remove_song_from_playlist"
+      ]
+    },
+    {
+      "skill_id": "shared-safe-batch-mutation-b459e3",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from"
+      ]
+    },
+    {
+      "skill_id": "shared-set-aggregation-across-media-types-fa7d52",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.show_album_library",
+        "spotify.show_playlist_library",
+        "spotify.show_song"
+      ]
+    },
+    {
+      "skill_id": "shared-set-aggregation-across-media-types-fa7d52",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.show_album",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ]
+    },
+    {
+      "skill_id": "shared-song-review-management-4acfeb",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "spotify.review_song",
+        "spotify.show_song_reviews",
+        "spotify.update_song_review"
+      ]
+    },
+    {
+      "skill_id": "shared-song-review-management-4acfeb",
+      "issue": "skill_apis_missing_from_patterns",
+      "apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.review_song",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song_library",
+        "apis.spotify.show_song_reviews",
+        "apis.spotify.update_song_review"
+      ]
+    },
+    {
+      "skill_id": "shared-temporal-filtering-of-transactions-6f1f17",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "phone.get_current_date_and_time",
+        "venmo.like_transaction",
+        "venmo.show_transactions"
+      ]
+    },
+    {
+      "skill_id": "shared-verify-and-validate-data-integrity-8907ae",
+      "issue": "api_pattern_apis_missing_from_skill",
+      "apis": [
+        "file_system.show_file",
+        "simple_note.show_note",
+        "spotify.show_song"
+      ]
+    }
+  ]
+}
