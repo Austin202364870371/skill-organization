@@ -1,0 +1,4830 @@
+{
+  "schema_version": "typed_skill_graph_v5",
+  "source_scope": "train_ground_truth_evidence_and_skill_metadata",
+  "evidence_schema": "train_graph_evidence_v2",
+  "thresholds": {
+    "min_prereq_support": 2,
+    "min_prereq_ratio": 0.8,
+    "min_flow_support": 2,
+    "min_related_api_jaccard": 0.4
+  },
+  "nodes": [
+    {
+      "id": "adjust-phone-alarm-and-disable-others",
+      "name": "adjust_phone_alarm_and_disable_others",
+      "type": "Core",
+      "family_id": "302c169",
+      "skill_role": "primary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.login",
+        "apis.phone.show_alarms",
+        "apis.phone.update_alarm",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.phone.login",
+        "apis.phone.show_alarms",
+        "apis.phone.update_alarm"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.login",
+          "apis.phone.show_alarms",
+          "apis.phone.update_alarm",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "302c169_1",
+        "302c169_2",
+        "302c169_3"
+      ],
+      "source_families": [
+        "302c169"
+      ]
+    },
+    {
+      "id": "approve-or-deny-venmo-requests-from-selected-relationships",
+      "name": "Approve or Deny Venmo Requests from Selected Relationships",
+      "type": "Core",
+      "family_id": "6ea6792",
+      "skill_role": "primary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile",
+        "apis.venmo.approve_payment_request",
+        "apis.venmo.deny_payment_request",
+        "apis.venmo.login",
+        "apis.venmo.show_received_payment_requests"
+      ],
+      "app_apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.venmo.approve_payment_request",
+        "apis.venmo.deny_payment_request",
+        "apis.venmo.login",
+        "apis.venmo.show_received_payment_requests"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.login",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile",
+          "apis.venmo.approve_payment_request",
+          "apis.venmo.deny_payment_request",
+          "apis.venmo.login",
+          "apis.venmo.show_received_payment_requests"
+        ]
+      ],
+      "source_tasks": [
+        "6ea6792_1",
+        "6ea6792_2",
+        "6ea6792_3"
+      ],
+      "source_families": [
+        "6ea6792"
+      ]
+    },
+    {
+      "id": "bulk-set-spotify-song-ratings-by-library-and-liked-status",
+      "name": "Bulk Set Spotify Song Ratings by Library and Liked Status",
+      "type": "Core",
+      "family_id": "692c77d",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.review_song",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song_library",
+        "apis.spotify.show_song_reviews",
+        "apis.spotify.update_song_review",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.review_song",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song_library",
+        "apis.spotify.show_song_reviews",
+        "apis.spotify.update_song_review"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.review_song",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_liked_songs",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song_library",
+          "apis.spotify.show_song_reviews",
+          "apis.spotify.update_song_review",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "692c77d_1",
+        "692c77d_2",
+        "692c77d_3"
+      ],
+      "source_families": [
+        "692c77d"
+      ]
+    },
+    {
+      "id": "compress-subdirectories-to-archives",
+      "name": "compress_subdirectories_to_archives",
+      "type": "Core",
+      "family_id": "7d7fbf6",
+      "skill_role": "primary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.compress_directory",
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.file_system.compress_directory",
+        "apis.file_system.login",
+        "apis.file_system.show_directory"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.compress_directory",
+          "apis.file_system.login",
+          "apis.file_system.show_directory",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "7d7fbf6_1",
+        "7d7fbf6_2",
+        "7d7fbf6_3"
+      ],
+      "source_families": [
+        "7d7fbf6"
+      ]
+    },
+    {
+      "id": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+      "name": "Create Spotify Playlist from Recommended Songs by Genre and Release Year",
+      "type": "Core",
+      "family_id": "e3d6c94",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.spotify.add_song_to_playlist",
+        "apis.spotify.create_playlist",
+        "apis.spotify.login",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.spotify.add_song_to_playlist",
+        "apis.spotify.create_playlist",
+        "apis.spotify.login",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.get_current_date_and_time",
+          "apis.spotify.add_song_to_playlist",
+          "apis.spotify.create_playlist",
+          "apis.spotify.login",
+          "apis.spotify.show_recommendations",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "e3d6c94_1",
+        "e3d6c94_2",
+        "e3d6c94_3"
+      ],
+      "source_families": [
+        "e3d6c94"
+      ]
+    },
+    {
+      "id": "delete-all-messages-from-sender",
+      "name": "delete_all_messages_from_sender",
+      "type": "Core",
+      "family_id": "771d8fc",
+      "skill_role": "primary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.delete_text_message",
+        "apis.phone.delete_voice_message",
+        "apis.phone.login",
+        "apis.phone.search_text_messages",
+        "apis.phone.search_voice_messages",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.phone.delete_text_message",
+        "apis.phone.delete_voice_message",
+        "apis.phone.login",
+        "apis.phone.search_text_messages",
+        "apis.phone.search_voice_messages"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.delete_text_message",
+          "apis.phone.delete_voice_message",
+          "apis.phone.login",
+          "apis.phone.search_text_messages",
+          "apis.phone.search_voice_messages",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "771d8fc_1",
+        "771d8fc_2",
+        "771d8fc_3"
+      ],
+      "source_families": [
+        "771d8fc"
+      ]
+    },
+    {
+      "id": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "name": "Export Unique Spotify Library Songs to CSV and Delete Account",
+      "type": "Core",
+      "family_id": "6104387",
+      "skill_role": "primary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.create_file",
+        "apis.file_system.login",
+        "apis.spotify.delete_account",
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.file_system.create_file",
+        "apis.file_system.login",
+        "apis.spotify.delete_account",
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.create_file",
+          "apis.file_system.login",
+          "apis.spotify.delete_account",
+          "apis.spotify.login",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_artist",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "6104387_1",
+        "6104387_2",
+        "6104387_3"
+      ],
+      "source_families": [
+        "6104387"
+      ]
+    },
+    {
+      "id": "find-oldest-newest-song-across-spotify-libraries",
+      "name": "Find oldest/newest song across Spotify libraries",
+      "type": "Core",
+      "family_id": "27e1026",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "27e1026_1",
+        "27e1026_2",
+        "27e1026_3"
+      ],
+      "source_families": [
+        "27e1026"
+      ]
+    },
+    {
+      "id": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "name": "Find the most or least liked/played song in a Spotify library",
+      "type": "Core",
+      "family_id": "82e2fac",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "82e2fac_1",
+        "82e2fac_2",
+        "82e2fac_3"
+      ],
+      "source_families": [
+        "82e2fac"
+      ]
+    },
+    {
+      "id": "handle-edge-cases-in-simplenote-checklist-updates",
+      "name": "Handle edge cases in SimpleNote checklist updates",
+      "type": "Core",
+      "family_id": "cf6abd2",
+      "skill_role": "secondary",
+      "primary_app": "simple_note",
+      "required_apis": [
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.simple_note.update_note",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.simple_note.update_note"
+      ],
+      "api_sequences": [
+        [
+          "apis.simple_note.login",
+          "apis.simple_note.search_notes",
+          "apis.simple_note.show_note",
+          "apis.simple_note.update_note",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "cf6abd2_1",
+        "cf6abd2_2",
+        "cf6abd2_3"
+      ],
+      "source_families": [
+        "cf6abd2"
+      ]
+    },
+    {
+      "id": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+      "name": "Handle Pagination and Date Range Edge Cases for Spotify Recommendation Playlist Creation",
+      "type": "Core",
+      "family_id": "e3d6c94",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.spotify.add_song_to_playlist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song"
+      ],
+      "app_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.spotify.add_song_to_playlist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.get_current_date_and_time",
+          "apis.spotify.add_song_to_playlist",
+          "apis.spotify.show_recommendations",
+          "apis.spotify.show_song"
+        ]
+      ],
+      "source_tasks": [
+        "e3d6c94_1",
+        "e3d6c94_2",
+        "e3d6c94_3"
+      ],
+      "source_families": [
+        "e3d6c94"
+      ]
+    },
+    {
+      "id": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "name": "Handle pagination, deduplication, and edge cases in Spotify library song analysis",
+      "type": "Core",
+      "family_id": "82e2fac",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "82e2fac_1",
+        "82e2fac_2",
+        "82e2fac_3"
+      ],
+      "source_families": [
+        "82e2fac"
+      ]
+    },
+    {
+      "id": "handle-phone-message-deletion-edge-cases",
+      "name": "handle_phone_message_deletion_edge_cases",
+      "type": "Core",
+      "family_id": "771d8fc",
+      "skill_role": "secondary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.delete_text_message",
+        "apis.phone.delete_voice_message",
+        "apis.phone.search_text_messages",
+        "apis.phone.search_voice_messages",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.phone.delete_text_message",
+        "apis.phone.delete_voice_message",
+        "apis.phone.search_text_messages",
+        "apis.phone.search_voice_messages"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.delete_text_message",
+          "apis.phone.delete_voice_message",
+          "apis.phone.search_text_messages",
+          "apis.phone.search_voice_messages",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "771d8fc_1",
+        "771d8fc_2",
+        "771d8fc_3"
+      ],
+      "source_families": [
+        "771d8fc"
+      ]
+    },
+    {
+      "id": "handle-spotify-artist-search-pagination-and-follow-errors",
+      "name": "Handle Spotify Artist Search Pagination and Follow Errors",
+      "type": "Core",
+      "family_id": "07b42fd",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.search_artists",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.message"
+      ],
+      "app_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.search_artists"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.follow_artist",
+          "apis.spotify.search_artists",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.message"
+        ]
+      ],
+      "source_tasks": [
+        "07b42fd_1",
+        "07b42fd_2",
+        "07b42fd_3"
+      ],
+      "source_families": [
+        "07b42fd"
+      ]
+    },
+    {
+      "id": "handle-spotify-artist-sync-edge-cases",
+      "name": "handle_spotify_artist_sync_edge_cases",
+      "type": "Core",
+      "family_id": "aa8502b",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.show_following_artists",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.unfollow_artist",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.show_following_artists",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.unfollow_artist"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.follow_artist",
+          "apis.spotify.show_following_artists",
+          "apis.spotify.show_liked_songs",
+          "apis.spotify.unfollow_artist",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "aa8502b_1",
+        "aa8502b_2",
+        "aa8502b_3"
+      ],
+      "source_families": [
+        "aa8502b"
+      ]
+    },
+    {
+      "id": "handle-spotify-queue-like-edge-cases",
+      "name": "handle_spotify_queue_like_edge_cases",
+      "type": "Core",
+      "family_id": "ccb4494",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.like_song",
+        "apis.spotify.show_current_song",
+        "apis.spotify.show_song_queue",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.like_song",
+        "apis.spotify.show_current_song",
+        "apis.spotify.show_song_queue"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.like_song",
+          "apis.spotify.show_current_song",
+          "apis.spotify.show_song_queue",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "ccb4494_1",
+        "ccb4494_2",
+        "ccb4494_3"
+      ],
+      "source_families": [
+        "ccb4494"
+      ]
+    },
+    {
+      "id": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+      "name": "Handling ambiguous, missing, or malformed movie recommendation data",
+      "type": "Core",
+      "family_id": "29caf6f",
+      "skill_role": "secondary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.search_contacts",
+        "apis.phone.search_text_messages",
+        "apis.phone.send_text_message",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.phone.search_contacts",
+        "apis.phone.search_text_messages",
+        "apis.phone.send_text_message",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.search_contacts",
+          "apis.phone.search_text_messages",
+          "apis.phone.send_text_message",
+          "apis.simple_note.search_notes",
+          "apis.simple_note.show_note",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "29caf6f_1",
+        "29caf6f_2",
+        "29caf6f_3"
+      ],
+      "source_families": [
+        "29caf6f"
+      ]
+    },
+    {
+      "id": "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions",
+      "name": "Handling Missing Contacts, Empty Results, and Partial Failures in Venmo Batch Actions",
+      "type": "Core",
+      "family_id": "afc0fce",
+      "skill_role": "secondary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.venmo.create_transaction_comment",
+        "apis.venmo.like_transaction",
+        "apis.venmo.show_transactions"
+      ],
+      "app_apis": [
+        "apis.phone.search_contacts",
+        "apis.venmo.create_transaction_comment",
+        "apis.venmo.like_transaction",
+        "apis.venmo.show_transactions"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.venmo.create_transaction_comment",
+          "apis.venmo.like_transaction",
+          "apis.venmo.show_transactions"
+        ]
+      ],
+      "source_tasks": [
+        "afc0fce_1",
+        "afc0fce_2",
+        "afc0fce_3"
+      ],
+      "source_families": [
+        "afc0fce"
+      ]
+    },
+    {
+      "id": "like-all-played-songs-in-spotify-queue",
+      "name": "like_all_played_songs_in_spotify_queue",
+      "type": "Core",
+      "family_id": "ccb4494",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.like_song",
+        "apis.spotify.login",
+        "apis.spotify.show_current_song",
+        "apis.spotify.show_song_queue",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.like_song",
+        "apis.spotify.login",
+        "apis.spotify.show_current_song",
+        "apis.spotify.show_song_queue"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.like_song",
+          "apis.spotify.login",
+          "apis.spotify.show_current_song",
+          "apis.spotify.show_song_queue",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "ccb4494_1",
+        "ccb4494_2",
+        "ccb4494_3"
+      ],
+      "source_families": [
+        "ccb4494"
+      ]
+    },
+    {
+      "id": "like-venmo-feed-transactions-for-contacts",
+      "name": "like_venmo_feed_transactions_for_contacts",
+      "type": "Core",
+      "family_id": "2a163ab",
+      "skill_role": "primary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile",
+        "apis.venmo.like_transaction",
+        "apis.venmo.login",
+        "apis.venmo.show_social_feed"
+      ],
+      "app_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.venmo.like_transaction",
+        "apis.venmo.login",
+        "apis.venmo.show_social_feed"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.get_current_date_and_time",
+          "apis.phone.login",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile",
+          "apis.venmo.like_transaction",
+          "apis.venmo.login",
+          "apis.venmo.show_social_feed"
+        ]
+      ],
+      "source_tasks": [
+        "2a163ab_1",
+        "2a163ab_2",
+        "2a163ab_3"
+      ],
+      "source_families": [
+        "2a163ab"
+      ]
+    },
+    {
+      "id": "organize-files-by-date-into-category-folders",
+      "name": "organize_files_by_date_into_category_folders",
+      "type": "Core",
+      "family_id": "34d9492",
+      "skill_role": "primary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.login",
+        "apis.file_system.move_file",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.file_system.login",
+        "apis.file_system.move_file",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.login",
+          "apis.file_system.move_file",
+          "apis.file_system.show_directory",
+          "apis.file_system.show_file",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "34d9492_1",
+        "34d9492_2",
+        "34d9492_3"
+      ],
+      "source_families": [
+        "34d9492"
+      ]
+    },
+    {
+      "id": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "name": "Play Most/Least Listened Song from a Spotify Album or Playlist",
+      "type": "Core",
+      "family_id": "c901732",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.play_music",
+        "apis.spotify.search_albums",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.play_music",
+        "apis.spotify.search_albums",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.play_music",
+          "apis.spotify.search_albums",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "c901732_1",
+        "c901732_2",
+        "c901732_3"
+      ],
+      "source_families": [
+        "c901732"
+      ]
+    },
+    {
+      "id": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+      "name": "Reply to text-message requests with movie recommendations from Simple Note",
+      "type": "Core",
+      "family_id": "29caf6f",
+      "skill_role": "primary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.phone.search_text_messages",
+        "apis.phone.send_text_message",
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.phone.search_text_messages",
+        "apis.phone.send_text_message",
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.login",
+          "apis.phone.search_contacts",
+          "apis.phone.search_text_messages",
+          "apis.phone.send_text_message",
+          "apis.simple_note.login",
+          "apis.simple_note.search_notes",
+          "apis.simple_note.show_note",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "29caf6f_1",
+        "29caf6f_2",
+        "29caf6f_3"
+      ],
+      "source_families": [
+        "29caf6f"
+      ]
+    },
+    {
+      "id": "robust-bill-parsing-for-irregular-filenames-and-amount-formats",
+      "name": "Robust bill parsing for irregular filenames and amount formats",
+      "type": "Core",
+      "family_id": "76f2c72",
+      "skill_role": "secondary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.get_current_date_and_time",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.get_current_date_and_time"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.login",
+          "apis.file_system.show_directory",
+          "apis.file_system.show_file",
+          "apis.phone.get_current_date_and_time",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "76f2c72_1",
+        "76f2c72_2",
+        "76f2c72_3"
+      ],
+      "source_families": [
+        "76f2c72"
+      ]
+    },
+    {
+      "id": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+      "name": "Robust Bill Split: Pagination, Receipt Selection, and Amount Parsing",
+      "type": "Core",
+      "family_id": "3c13f5a",
+      "skill_role": "secondary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.venmo.create_payment_request"
+      ],
+      "app_apis": [
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.search_contacts",
+        "apis.venmo.create_payment_request"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.show_directory",
+          "apis.file_system.show_file",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.venmo.create_payment_request"
+        ]
+      ],
+      "source_tasks": [
+        "3c13f5a_1",
+        "3c13f5a_2",
+        "3c13f5a_3"
+      ],
+      "source_families": [
+        "3c13f5a"
+      ]
+    },
+    {
+      "id": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "name": "Robust Pagination and Deduplication for Spotify Library CSV Export",
+      "type": "Core",
+      "family_id": "6104387",
+      "skill_role": "secondary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.create_file",
+        "apis.file_system.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "app_apis": [
+        "apis.file_system.create_file",
+        "apis.file_system.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.create_file",
+          "apis.file_system.login",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_artist",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library"
+        ]
+      ],
+      "source_tasks": [
+        "6104387_1",
+        "6104387_2",
+        "6104387_3"
+      ],
+      "source_families": [
+        "6104387"
+      ]
+    },
+    {
+      "id": "robust-pagination-and-failure-handling-for-spotify-genre-follow",
+      "name": "Robust Pagination and Failure Handling for Spotify Genre-Follow",
+      "type": "Core",
+      "family_id": "b7a9ee9",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.follow_artist",
+          "apis.spotify.show_playlist",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "b7a9ee9_1",
+        "b7a9ee9_2",
+        "b7a9ee9_3"
+      ],
+      "source_families": [
+        "b7a9ee9"
+      ]
+    },
+    {
+      "id": "robust-pagination-and-partial-failure-handling-for-spotify-cleanup",
+      "name": "Robust Pagination and Partial Failure Handling for Spotify Cleanup",
+      "type": "Core",
+      "family_id": "229360a",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.remove_album_from_library",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_downloaded_songs",
+        "apis.spotify.show_liked_albums",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.remove_album_from_library",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_downloaded_songs",
+        "apis.spotify.show_liked_albums",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.remove_album_from_library",
+          "apis.spotify.remove_song_from_library",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_downloaded_songs",
+          "apis.spotify.show_liked_albums",
+          "apis.spotify.show_liked_songs",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "229360a_1",
+        "229360a_2",
+        "229360a_3"
+      ],
+      "source_families": [
+        "229360a"
+      ]
+    },
+    {
+      "id": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "name": "Robust Spotify library release-date aggregation and failure handling",
+      "type": "Core",
+      "family_id": "27e1026",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "27e1026_1",
+        "27e1026_2",
+        "27e1026_3"
+      ],
+      "source_families": [
+        "27e1026"
+      ]
+    },
+    {
+      "id": "robust-venmo-contact-aggregation-and-edge-cases",
+      "name": "Robust Venmo Contact Aggregation and Edge Cases",
+      "type": "Core",
+      "family_id": "d0b1f43",
+      "skill_role": "secondary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.venmo.show_transactions"
+      ],
+      "app_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.phone.search_contacts",
+        "apis.venmo.show_transactions"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.get_current_date_and_time",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.venmo.show_transactions"
+        ]
+      ],
+      "source_tasks": [
+        "d0b1f43_1",
+        "d0b1f43_2",
+        "d0b1f43_3"
+      ],
+      "source_families": [
+        "d0b1f43"
+      ]
+    },
+    {
+      "id": "split-shared-bill-with-roommates-via-venmo",
+      "name": "Split Shared Bill with Roommates via Venmo",
+      "type": "Core",
+      "family_id": "3c13f5a",
+      "skill_role": "primary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile",
+        "apis.venmo.create_payment_request",
+        "apis.venmo.login"
+      ],
+      "app_apis": [
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.venmo.create_payment_request",
+        "apis.venmo.login"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.login",
+          "apis.file_system.show_directory",
+          "apis.file_system.show_file",
+          "apis.phone.login",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile",
+          "apis.venmo.create_payment_request",
+          "apis.venmo.login"
+        ]
+      ],
+      "source_tasks": [
+        "3c13f5a_1",
+        "3c13f5a_2",
+        "3c13f5a_3"
+      ],
+      "source_families": [
+        "3c13f5a"
+      ]
+    },
+    {
+      "id": "spotify-library-cleanup-by-liked-downloaded-status",
+      "name": "Spotify Library Cleanup by Liked/Downloaded Status",
+      "type": "Core",
+      "family_id": "229360a",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.remove_album_from_library",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_downloaded_songs",
+        "apis.spotify.show_liked_albums",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.remove_album_from_library",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.show_album_library",
+        "apis.spotify.show_downloaded_songs",
+        "apis.spotify.show_liked_albums",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.remove_album_from_library",
+          "apis.spotify.remove_song_from_library",
+          "apis.spotify.show_album_library",
+          "apis.spotify.show_downloaded_songs",
+          "apis.spotify.show_liked_albums",
+          "apis.spotify.show_liked_songs",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "229360a_1",
+        "229360a_2",
+        "229360a_3"
+      ],
+      "source_families": [
+        "229360a"
+      ]
+    },
+    {
+      "id": "spotify-most-least-played-song-lookup",
+      "name": "Spotify Most/Least Played Song Lookup",
+      "type": "Core",
+      "family_id": "e85d92a",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.search_artists",
+        "apis.spotify.search_songs",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.search_artists",
+        "apis.spotify.search_songs"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.search_artists",
+          "apis.spotify.search_songs",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "e85d92a_1",
+        "e85d92a_2",
+        "e85d92a_3"
+      ],
+      "source_families": [
+        "e85d92a"
+      ]
+    },
+    {
+      "id": "spotify-most-least-recommended-artist-finder",
+      "name": "Spotify Most/Least Recommended Artist Finder",
+      "type": "Core",
+      "family_id": "287e338",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.show_artist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.show_artist",
+          "apis.spotify.show_recommendations",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "287e338_1",
+        "287e338_2",
+        "287e338_3"
+      ],
+      "source_families": [
+        "287e338"
+      ]
+    },
+    {
+      "id": "spotify-playlist-duration-analysis",
+      "name": "Spotify Playlist Duration Analysis",
+      "type": "Core",
+      "family_id": "e7a10f8",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.login",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.access_token_from",
+        "apis.spotify.login",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.access_token_from",
+          "apis.spotify.login",
+          "apis.spotify.show_playlist",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "e7a10f8_1",
+        "e7a10f8_2",
+        "e7a10f8_3"
+      ],
+      "source_families": [
+        "e7a10f8"
+      ]
+    },
+    {
+      "id": "spotify-recommendation-aggregation-edge-case-handling",
+      "name": "Spotify Recommendation Aggregation Edge-Case Handling",
+      "type": "Core",
+      "family_id": "287e338",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.show_artist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.show_artist",
+        "apis.spotify.show_recommendations",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.show_artist",
+          "apis.spotify.show_recommendations",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "287e338_1",
+        "287e338_2",
+        "287e338_3"
+      ],
+      "source_families": [
+        "287e338"
+      ]
+    },
+    {
+      "id": "spotify-remove-songs-by-release-year",
+      "name": "spotify_remove_songs_by_release_year",
+      "type": "Core",
+      "family_id": "ce359b5",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.login",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.remove_song_from_playlist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.login",
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.remove_song_from_playlist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.login",
+          "apis.spotify.remove_song_from_library",
+          "apis.spotify.remove_song_from_playlist",
+          "apis.spotify.show_playlist",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "ce359b5_1",
+        "ce359b5_2",
+        "ce359b5_3"
+      ],
+      "source_families": [
+        "ce359b5"
+      ]
+    },
+    {
+      "id": "spotify-robust-pagination-and-removal-handling",
+      "name": "spotify_robust_pagination_and_removal_handling",
+      "type": "Core",
+      "family_id": "ce359b5",
+      "skill_role": "secondary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.remove_song_from_playlist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.spotify.remove_song_from_library",
+        "apis.spotify.remove_song_from_playlist",
+        "apis.spotify.show_playlist",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.spotify.show_song_library"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.remove_song_from_library",
+          "apis.spotify.remove_song_from_playlist",
+          "apis.spotify.show_playlist",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.spotify.show_song_library",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "ce359b5_1",
+        "ce359b5_2",
+        "ce359b5_3"
+      ],
+      "source_families": [
+        "ce359b5"
+      ]
+    },
+    {
+      "id": "start-workout-playlist-from-note",
+      "name": "start_workout_playlist_from_note",
+      "type": "Core",
+      "family_id": "b0a8eae",
+      "skill_role": "primary",
+      "primary_app": "simple_note",
+      "required_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.spotify.login",
+        "apis.spotify.play_music",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.spotify.login",
+        "apis.spotify.play_music",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.get_current_date_and_time",
+          "apis.simple_note.login",
+          "apis.simple_note.search_notes",
+          "apis.simple_note.show_note",
+          "apis.spotify.login",
+          "apis.spotify.play_music",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "b0a8eae_1",
+        "b0a8eae_2",
+        "b0a8eae_3"
+      ],
+      "source_families": [
+        "b0a8eae"
+      ]
+    },
+    {
+      "id": "sum-utility-bills-for-current-year-from-file-system",
+      "name": "Sum utility bills for current year from file system",
+      "type": "Core",
+      "family_id": "76f2c72",
+      "skill_role": "primary",
+      "primary_app": "file_system",
+      "required_apis": [
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.get_current_date_and_time",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.file_system.login",
+        "apis.file_system.show_directory",
+        "apis.file_system.show_file",
+        "apis.phone.get_current_date_and_time"
+      ],
+      "api_sequences": [
+        [
+          "apis.file_system.login",
+          "apis.file_system.show_directory",
+          "apis.file_system.show_file",
+          "apis.phone.get_current_date_and_time",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "76f2c72_1",
+        "76f2c72_2",
+        "76f2c72_3"
+      ],
+      "source_families": [
+        "76f2c72"
+      ]
+    },
+    {
+      "id": "sync-spotify-followed-artists-with-liked-songs",
+      "name": "sync_spotify_followed_artists_with_liked_songs",
+      "type": "Core",
+      "family_id": "aa8502b",
+      "skill_role": "primary",
+      "primary_app": "spotify",
+      "required_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.login",
+        "apis.spotify.show_following_artists",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.unfollow_artist",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.spotify.follow_artist",
+        "apis.spotify.login",
+        "apis.spotify.show_following_artists",
+        "apis.spotify.show_liked_songs",
+        "apis.spotify.unfollow_artist"
+      ],
+      "api_sequences": [
+        [
+          "apis.spotify.follow_artist",
+          "apis.spotify.login",
+          "apis.spotify.show_following_artists",
+          "apis.spotify.show_liked_songs",
+          "apis.spotify.unfollow_artist",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "aa8502b_1",
+        "aa8502b_2",
+        "aa8502b_3"
+      ],
+      "source_families": [
+        "aa8502b"
+      ]
+    },
+    {
+      "id": "validate-alarm-changes-and-resolve-ambiguity",
+      "name": "validate_alarm_changes_and_resolve_ambiguity",
+      "type": "Core",
+      "family_id": "302c169",
+      "skill_role": "secondary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.show_alarms",
+        "apis.phone.update_alarm",
+        "apis.supervisor.complete_task"
+      ],
+      "app_apis": [
+        "apis.phone.show_alarms",
+        "apis.phone.update_alarm"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.show_alarms",
+          "apis.phone.update_alarm",
+          "apis.supervisor.complete_task"
+        ]
+      ],
+      "source_tasks": [
+        "302c169_1",
+        "302c169_2",
+        "302c169_3"
+      ],
+      "source_families": [
+        "302c169"
+      ]
+    },
+    {
+      "id": "venmo-refund-edge-cases-and-verification",
+      "name": "venmo_refund_edge_cases_and_verification",
+      "type": "Core",
+      "family_id": "60d0b5b",
+      "skill_role": "secondary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile",
+        "apis.venmo.create_transaction",
+        "apis.venmo.login",
+        "apis.venmo.show_sent_payment_requests"
+      ],
+      "app_apis": [
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.venmo.create_transaction",
+        "apis.venmo.login",
+        "apis.venmo.show_sent_payment_requests"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.login",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile",
+          "apis.venmo.create_transaction",
+          "apis.venmo.login",
+          "apis.venmo.show_sent_payment_requests"
+        ]
+      ],
+      "source_tasks": [
+        "60d0b5b_1",
+        "60d0b5b_2",
+        "60d0b5b_3"
+      ],
+      "source_families": [
+        "60d0b5b"
+      ]
+    },
+    {
+      "id": "venmo-transaction-totals-for-contact-relationships",
+      "name": "Venmo Transaction Totals for Contact Relationships",
+      "type": "Core",
+      "family_id": "d0b1f43",
+      "skill_role": "primary",
+      "primary_app": "phone",
+      "required_apis": [
+        "apis.phone.access_token_from",
+        "apis.phone.get_current_date_and_time",
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile",
+        "apis.venmo.access_token_from",
+        "apis.venmo.login",
+        "apis.venmo.show_transactions"
+      ],
+      "app_apis": [
+        "apis.phone.access_token_from",
+        "apis.phone.get_current_date_and_time",
+        "apis.phone.login",
+        "apis.phone.search_contacts",
+        "apis.venmo.access_token_from",
+        "apis.venmo.login",
+        "apis.venmo.show_transactions"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.access_token_from",
+          "apis.phone.get_current_date_and_time",
+          "apis.phone.login",
+          "apis.phone.search_contacts",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile",
+          "apis.venmo.access_token_from",
+          "apis.venmo.login",
+          "apis.venmo.show_transactions"
+        ]
+      ],
+      "source_tasks": [
+        "d0b1f43_1",
+        "d0b1f43_2",
+        "d0b1f43_3"
+      ],
+      "source_families": [
+        "d0b1f43"
+      ]
+    },
+    {
+      "id": "workout-playlist-fallback-and-parsing",
+      "name": "workout_playlist_fallback_and_parsing",
+      "type": "Core",
+      "family_id": "b0a8eae",
+      "skill_role": "secondary",
+      "primary_app": "simple_note",
+      "required_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.spotify.login",
+        "apis.spotify.play_music",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song",
+        "apis.supervisor.complete_task",
+        "apis.supervisor.show_account_passwords",
+        "apis.supervisor.show_profile"
+      ],
+      "app_apis": [
+        "apis.phone.get_current_date_and_time",
+        "apis.simple_note.login",
+        "apis.simple_note.search_notes",
+        "apis.simple_note.show_note",
+        "apis.spotify.login",
+        "apis.spotify.play_music",
+        "apis.spotify.show_playlist_library",
+        "apis.spotify.show_song"
+      ],
+      "api_sequences": [
+        [
+          "apis.phone.get_current_date_and_time",
+          "apis.simple_note.login",
+          "apis.simple_note.search_notes",
+          "apis.simple_note.show_note",
+          "apis.spotify.login",
+          "apis.spotify.play_music",
+          "apis.spotify.show_playlist_library",
+          "apis.spotify.show_song",
+          "apis.supervisor.complete_task",
+          "apis.supervisor.show_account_passwords",
+          "apis.supervisor.show_profile"
+        ]
+      ],
+      "source_tasks": [
+        "b0a8eae_1",
+        "b0a8eae_2",
+        "b0a8eae_3"
+      ],
+      "source_families": [
+        "b0a8eae"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "adjust-phone-alarm-and-disable-others",
+      "target": "validate-alarm-changes-and-resolve-ambiguity",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "302c169_1",
+          "family_id": "302c169",
+          "source": "adjust-phone-alarm-and-disable-others",
+          "target": "validate-alarm-changes-and-resolve-ambiguity",
+          "source_first_line": 37,
+          "target_first_line": 49,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "target_interval": {
+            "first_line": 49,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759"
+        },
+        {
+          "task_id": "302c169_2",
+          "family_id": "302c169",
+          "source": "adjust-phone-alarm-and-disable-others",
+          "target": "validate-alarm-changes-and-resolve-ambiguity",
+          "source_first_line": 37,
+          "target_first_line": 49,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "target_interval": {
+            "first_line": 49,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759"
+        },
+        {
+          "task_id": "302c169_3",
+          "family_id": "302c169",
+          "source": "adjust-phone-alarm-and-disable-others",
+          "target": "validate-alarm-changes-and-resolve-ambiguity",
+          "source_first_line": 37,
+          "target_first_line": 49,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "target_interval": {
+            "first_line": 49,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759"
+        }
+      ]
+    },
+    {
+      "source": "adjust-phone-alarm-and-disable-others",
+      "target": "validate-alarm-changes-and-resolve-ambiguity",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "302c169",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "302c169_1",
+            "302c169_2",
+            "302c169_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "bulk-set-spotify-song-ratings-by-library-and-liked-status",
+      "target": "find-oldest-newest-song-across-spotify-libraries",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "bulk-set-spotify-song-ratings-by-library-and-liked-status",
+      "target": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "compress-subdirectories-to-archives",
+      "target": "organize-files-by-date-into-category-folders",
+      "type": "RELATED",
+      "confidence": 0.4,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "file_system"
+          ],
+          "shared_apis": [
+            "apis.file_system.login",
+            "apis.file_system.show_directory"
+          ],
+          "api_jaccard": 0.4
+        }
+      ]
+    },
+    {
+      "source": "compress-subdirectories-to-archives",
+      "target": "robust-bill-parsing-for-irregular-filenames-and-amount-formats",
+      "type": "RELATED",
+      "confidence": 0.4,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "file_system"
+          ],
+          "shared_apis": [
+            "apis.file_system.login",
+            "apis.file_system.show_directory"
+          ],
+          "api_jaccard": 0.4
+        }
+      ]
+    },
+    {
+      "source": "compress-subdirectories-to-archives",
+      "target": "sum-utility-bills-for-current-year-from-file-system",
+      "type": "RELATED",
+      "confidence": 0.4,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "file_system"
+          ],
+          "shared_apis": [
+            "apis.file_system.login",
+            "apis.file_system.show_directory"
+          ],
+          "api_jaccard": 0.4
+        }
+      ]
+    },
+    {
+      "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+      "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "e3d6c94_1",
+          "family_id": "e3d6c94",
+          "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+          "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.create_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc"
+        },
+        {
+          "task_id": "e3d6c94_2",
+          "family_id": "e3d6c94",
+          "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+          "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.create_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc"
+        },
+        {
+          "task_id": "e3d6c94_3",
+          "family_id": "e3d6c94",
+          "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+          "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.create_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc"
+        }
+      ]
+    },
+    {
+      "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+      "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "e3d6c94",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "e3d6c94_1",
+            "e3d6c94_2",
+            "e3d6c94_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+      "target": "spotify-most-least-recommended-artist-finder",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "delete-all-messages-from-sender",
+      "target": "handle-phone-message-deletion-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "771d8fc_1",
+          "family_id": "771d8fc",
+          "source": "delete-all-messages-from-sender",
+          "target": "handle-phone-message-deletion-edge-cases",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b"
+        },
+        {
+          "task_id": "771d8fc_2",
+          "family_id": "771d8fc",
+          "source": "delete-all-messages-from-sender",
+          "target": "handle-phone-message-deletion-edge-cases",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b"
+        },
+        {
+          "task_id": "771d8fc_3",
+          "family_id": "771d8fc",
+          "source": "delete-all-messages-from-sender",
+          "target": "handle-phone-message-deletion-edge-cases",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b"
+        }
+      ]
+    },
+    {
+      "source": "delete-all-messages-from-sender",
+      "target": "handle-phone-message-deletion-edge-cases",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "771d8fc",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "771d8fc_1",
+            "771d8fc_2",
+            "771d8fc_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "find-oldest-newest-song-across-spotify-libraries",
+      "type": "RELATED",
+      "confidence": 0.5555555555555556,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5555555555555556
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "type": "RELATED",
+      "confidence": 0.5555555555555556,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5555555555555556
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "6104387_1",
+          "family_id": "6104387",
+          "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+          "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+          "source_first_line": 38,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 87,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.access_token_from",
+              "apis.spotify.delete_account",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 81,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded"
+        },
+        {
+          "task_id": "6104387_2",
+          "family_id": "6104387",
+          "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+          "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+          "source_first_line": 38,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 87,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.access_token_from",
+              "apis.spotify.delete_account",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 81,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded"
+        },
+        {
+          "task_id": "6104387_3",
+          "family_id": "6104387",
+          "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+          "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+          "source_first_line": 38,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 87,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.access_token_from",
+              "apis.spotify.delete_account",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 81,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded"
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "6104387",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "6104387_1",
+            "6104387_2",
+            "6104387_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "type": "RELATED",
+      "confidence": 0.8,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.8
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "27e1026",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "27e1026_1",
+            "27e1026_2",
+            "27e1026_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "spotify-playlist-duration-analysis",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "find-oldest-newest-song-across-spotify-libraries",
+      "target": "spotify-remove-songs-by-release-year",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "82e2fac_1",
+          "family_id": "82e2fac",
+          "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+          "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+          "source_first_line": 37,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47"
+        },
+        {
+          "task_id": "82e2fac_2",
+          "family_id": "82e2fac",
+          "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+          "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+          "source_first_line": 37,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47"
+        },
+        {
+          "task_id": "82e2fac_3",
+          "family_id": "82e2fac",
+          "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+          "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+          "source_first_line": 37,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47"
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "82e2fac",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "82e2fac_1",
+            "82e2fac_2",
+            "82e2fac_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "type": "RELATED",
+      "confidence": 0.8,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.8
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "spotify-playlist-duration-analysis",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "spotify-remove-songs-by-release-year",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+      "target": "spotify-recommendation-aggregation-edge-case-handling",
+      "type": "RELATED",
+      "confidence": 0.4,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.4
+        }
+      ]
+    },
+    {
+      "source": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "type": "RELATED",
+      "confidence": 0.5714285714285714,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.5714285714285714
+        }
+      ]
+    },
+    {
+      "source": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "target": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "type": "RELATED",
+      "confidence": 0.6,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.6
+        }
+      ]
+    },
+    {
+      "source": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "target": "spotify-robust-pagination-and-removal-handling",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "handle-spotify-artist-sync-edge-cases",
+      "target": "sync-spotify-followed-artists-with-liked-songs",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "aa8502b",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "aa8502b_1",
+            "aa8502b_2",
+            "aa8502b_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "handle-spotify-queue-like-edge-cases",
+      "target": "like-all-played-songs-in-spotify-queue",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "ccb4494",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "ccb4494_1",
+            "ccb4494_2",
+            "ccb4494_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+      "target": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "29caf6f",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "29caf6f_1",
+            "29caf6f_2",
+            "29caf6f_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions",
+      "target": "robust-venmo-contact-aggregation-and-edge-cases",
+      "type": "RELATED",
+      "confidence": 0.4,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "phone",
+            "venmo"
+          ],
+          "shared_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.show_transactions"
+          ],
+          "api_jaccard": 0.4
+        }
+      ]
+    },
+    {
+      "source": "like-all-played-songs-in-spotify-queue",
+      "target": "handle-spotify-queue-like-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "ccb4494_1",
+          "family_id": "ccb4494",
+          "source": "like-all-played-songs-in-spotify-queue",
+          "target": "handle-spotify-queue-like-edge-cases",
+          "source_first_line": 35,
+          "target_first_line": 37,
+          "source_interval": {
+            "first_line": 35,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "target_interval": {
+            "first_line": 37,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7"
+        },
+        {
+          "task_id": "ccb4494_2",
+          "family_id": "ccb4494",
+          "source": "like-all-played-songs-in-spotify-queue",
+          "target": "handle-spotify-queue-like-edge-cases",
+          "source_first_line": 35,
+          "target_first_line": 37,
+          "source_interval": {
+            "first_line": 35,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "target_interval": {
+            "first_line": 37,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7"
+        },
+        {
+          "task_id": "ccb4494_3",
+          "family_id": "ccb4494",
+          "source": "like-all-played-songs-in-spotify-queue",
+          "target": "handle-spotify-queue-like-edge-cases",
+          "source_first_line": 35,
+          "target_first_line": 37,
+          "source_interval": {
+            "first_line": 35,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "target_interval": {
+            "first_line": 37,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7"
+        }
+      ]
+    },
+    {
+      "source": "like-venmo-feed-transactions-for-contacts",
+      "target": "venmo-transaction-totals-for-contact-relationships",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 2,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "phone",
+            "venmo"
+          ],
+          "shared_apis": [
+            "apis.phone.get_current_date_and_time",
+            "apis.phone.login",
+            "apis.phone.search_contacts",
+            "apis.venmo.login"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "organize-files-by-date-into-category-folders",
+      "target": "robust-bill-parsing-for-irregular-filenames-and-amount-formats",
+      "type": "RELATED",
+      "confidence": 0.6,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "file_system"
+          ],
+          "shared_apis": [
+            "apis.file_system.login",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ],
+          "api_jaccard": 0.6
+        }
+      ]
+    },
+    {
+      "source": "organize-files-by-date-into-category-folders",
+      "target": "sum-utility-bills-for-current-year-from-file-system",
+      "type": "RELATED",
+      "confidence": 0.6,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "file_system"
+          ],
+          "shared_apis": [
+            "apis.file_system.login",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ],
+          "api_jaccard": 0.6
+        }
+      ]
+    },
+    {
+      "source": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "target": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "target": "spotify-playlist-duration-analysis",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "target": "start-workout-playlist-from-note",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "target": "workout-playlist-fallback-and-parsing",
+      "type": "RELATED",
+      "confidence": 0.4444444444444444,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.4444444444444444
+        }
+      ]
+    },
+    {
+      "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+      "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "29caf6f_1",
+          "family_id": "29caf6f",
+          "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+          "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+          "source_first_line": 36,
+          "target_first_line": 40,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.access_token_from",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "target_interval": {
+            "first_line": 40,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf"
+        },
+        {
+          "task_id": "29caf6f_2",
+          "family_id": "29caf6f",
+          "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+          "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+          "source_first_line": 36,
+          "target_first_line": 40,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.access_token_from",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "target_interval": {
+            "first_line": 40,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf"
+        },
+        {
+          "task_id": "29caf6f_3",
+          "family_id": "29caf6f",
+          "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+          "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+          "source_first_line": 36,
+          "target_first_line": 40,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.access_token_from",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "target_interval": {
+            "first_line": 40,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf"
+        }
+      ]
+    },
+    {
+      "source": "robust-bill-parsing-for-irregular-filenames-and-amount-formats",
+      "target": "sum-utility-bills-for-current-year-from-file-system",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "76f2c72",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "76f2c72_1",
+            "76f2c72_2",
+            "76f2c72_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+      "target": "split-shared-bill-with-roommates-via-venmo",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "3c13f5a",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "3c13f5a_1",
+            "3c13f5a_2",
+            "3c13f5a_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "robust-pagination-and-failure-handling-for-spotify-genre-follow",
+      "target": "spotify-playlist-duration-analysis",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "robust-pagination-and-failure-handling-for-spotify-genre-follow",
+      "target": "spotify-robust-pagination-and-removal-handling",
+      "type": "RELATED",
+      "confidence": 0.42857142857142855,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "source": "robust-pagination-and-partial-failure-handling-for-spotify-cleanup",
+      "target": "spotify-library-cleanup-by-liked-downloaded-status",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "229360a",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "229360a_1",
+            "229360a_2",
+            "229360a_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "target": "spotify-playlist-duration-analysis",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "robust-venmo-contact-aggregation-and-edge-cases",
+      "target": "venmo-transaction-totals-for-contact-relationships",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "d0b1f43",
+          "left_role": "secondary",
+          "right_role": "primary",
+          "shared_tasks": [
+            "d0b1f43_1",
+            "d0b1f43_2",
+            "d0b1f43_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "split-shared-bill-with-roommates-via-venmo",
+      "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "3c13f5a_1",
+          "family_id": "3c13f5a",
+          "source": "split-shared-bill-with-roommates-via-venmo",
+          "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+          "source_first_line": 38,
+          "target_first_line": 42,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "target_interval": {
+            "first_line": 42,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.search_contacts",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38"
+        },
+        {
+          "task_id": "3c13f5a_2",
+          "family_id": "3c13f5a",
+          "source": "split-shared-bill-with-roommates-via-venmo",
+          "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+          "source_first_line": 38,
+          "target_first_line": 42,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "target_interval": {
+            "first_line": 42,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.search_contacts",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38"
+        },
+        {
+          "task_id": "3c13f5a_3",
+          "family_id": "3c13f5a",
+          "source": "split-shared-bill-with-roommates-via-venmo",
+          "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+          "source_first_line": 38,
+          "target_first_line": 42,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "target_interval": {
+            "first_line": 42,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.search_contacts",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38"
+        }
+      ]
+    },
+    {
+      "source": "spotify-most-least-recommended-artist-finder",
+      "target": "spotify-recommendation-aggregation-edge-case-handling",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "287e338_1",
+          "family_id": "287e338",
+          "source": "spotify-most-least-recommended-artist-finder",
+          "target": "spotify-recommendation-aggregation-edge-case-handling",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6"
+        },
+        {
+          "task_id": "287e338_2",
+          "family_id": "287e338",
+          "source": "spotify-most-least-recommended-artist-finder",
+          "target": "spotify-recommendation-aggregation-edge-case-handling",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6"
+        },
+        {
+          "task_id": "287e338_3",
+          "family_id": "287e338",
+          "source": "spotify-most-least-recommended-artist-finder",
+          "target": "spotify-recommendation-aggregation-edge-case-handling",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6"
+        }
+      ]
+    },
+    {
+      "source": "spotify-most-least-recommended-artist-finder",
+      "target": "spotify-recommendation-aggregation-edge-case-handling",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "287e338",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "287e338_1",
+            "287e338_2",
+            "287e338_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "spotify-playlist-duration-analysis",
+      "target": "spotify-remove-songs-by-release-year",
+      "type": "RELATED",
+      "confidence": 0.5,
+      "support": 1,
+      "evidence": [
+        {
+          "condition": "shared_app_and_api_overlap",
+          "shared_apps": [
+            "spotify"
+          ],
+          "shared_apis": [
+            "apis.spotify.login",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ],
+          "api_jaccard": 0.5
+        }
+      ]
+    },
+    {
+      "source": "spotify-remove-songs-by-release-year",
+      "target": "spotify-robust-pagination-and-removal-handling",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "ce359b5_1",
+          "family_id": "ce359b5",
+          "source": "spotify-remove-songs-by-release-year",
+          "target": "spotify-robust-pagination-and-removal-handling",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7"
+        },
+        {
+          "task_id": "ce359b5_2",
+          "family_id": "ce359b5",
+          "source": "spotify-remove-songs-by-release-year",
+          "target": "spotify-robust-pagination-and-removal-handling",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7"
+        },
+        {
+          "task_id": "ce359b5_3",
+          "family_id": "ce359b5",
+          "source": "spotify-remove-songs-by-release-year",
+          "target": "spotify-robust-pagination-and-removal-handling",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7"
+        }
+      ]
+    },
+    {
+      "source": "spotify-remove-songs-by-release-year",
+      "target": "spotify-robust-pagination-and-removal-handling",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "ce359b5",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "ce359b5_1",
+            "ce359b5_2",
+            "ce359b5_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "start-workout-playlist-from-note",
+      "target": "workout-playlist-fallback-and-parsing",
+      "type": "RELATED",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "condition": "same_train_family",
+          "family_id": "b0a8eae",
+          "left_role": "primary",
+          "right_role": "secondary",
+          "shared_tasks": [
+            "b0a8eae_1",
+            "b0a8eae_2",
+            "b0a8eae_3"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "sync-spotify-followed-artists-with-liked-songs",
+      "target": "handle-spotify-artist-sync-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "aa8502b_1",
+          "family_id": "aa8502b",
+          "source": "sync-spotify-followed-artists-with-liked-songs",
+          "target": "handle-spotify-artist-sync-edge-cases",
+          "source_first_line": 39,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 39,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc"
+        },
+        {
+          "task_id": "aa8502b_2",
+          "family_id": "aa8502b",
+          "source": "sync-spotify-followed-artists-with-liked-songs",
+          "target": "handle-spotify-artist-sync-edge-cases",
+          "source_first_line": 39,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 39,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc"
+        },
+        {
+          "task_id": "aa8502b_3",
+          "family_id": "aa8502b",
+          "source": "sync-spotify-followed-artists-with-liked-songs",
+          "target": "handle-spotify-artist-sync-edge-cases",
+          "source_first_line": 39,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 39,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc"
+        }
+      ]
+    },
+    {
+      "source": "venmo-transaction-totals-for-contact-relationships",
+      "target": "robust-venmo-contact-aggregation-and-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "d0b1f43_1",
+          "family_id": "d0b1f43",
+          "source": "venmo-transaction-totals-for-contact-relationships",
+          "target": "robust-venmo-contact-aggregation-and-edge-cases",
+          "source_first_line": 41,
+          "target_first_line": 45,
+          "source_interval": {
+            "first_line": 41,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "target_interval": {
+            "first_line": 45,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd"
+        },
+        {
+          "task_id": "d0b1f43_2",
+          "family_id": "d0b1f43",
+          "source": "venmo-transaction-totals-for-contact-relationships",
+          "target": "robust-venmo-contact-aggregation-and-edge-cases",
+          "source_first_line": 41,
+          "target_first_line": 45,
+          "source_interval": {
+            "first_line": 41,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "target_interval": {
+            "first_line": 45,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd"
+        },
+        {
+          "task_id": "d0b1f43_3",
+          "family_id": "d0b1f43",
+          "source": "venmo-transaction-totals-for-contact-relationships",
+          "target": "robust-venmo-contact-aggregation-and-edge-cases",
+          "source_first_line": 41,
+          "target_first_line": 45,
+          "source_interval": {
+            "first_line": 41,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "target_interval": {
+            "first_line": 45,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

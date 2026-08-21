@@ -62,8 +62,8 @@ class GraphBuildTests(unittest.TestCase):
         validate_global_graph({
             "nodes": [{"id": "a"}, {"id": "b"}],
             "edges": [
-                {"source": "a", "target": "b", "type": "PRECEDES", "confidence": 1, "support": 2},
-                {"source": "b", "target": "a", "type": "DATA_DEP", "confidence": 1, "support": 1},
+                {"source": "a", "target": "b", "type": "PREREQ", "confidence": 1, "support": 2},
+                {"source": "b", "target": "a", "type": "FLOW", "confidence": 1, "support": 1},
             ],
         })
 
@@ -72,12 +72,12 @@ class GraphBuildTests(unittest.TestCase):
             root = Path(directory)
             make_skill(root, "core", {"family_id": "family-1"})
             make_skill(root, "shared", {
-                "candidate_type": "reusable_subskill",
                 "supporting_family_ids": ["family-1", "family-2"],
                 "supporting_apis": ["spotify.search"],
             })
             graph = build_global_graph(root)
-            self.assertEqual(graph["edges"], [])
+            self.assertTrue(graph["edges"])
+            self.assertTrue(all(edge["type"] == "RELATED" for edge in graph["edges"]))
             self.assertTrue(
                 any("no Train graph evidence" in value for value in graph["warnings"])
             )
@@ -87,27 +87,21 @@ class GraphBuildTests(unittest.TestCase):
             root = Path(directory)
             make_skill(root, "core", {"family_id": "family-1"})
             make_skill(root, "shared", {
-                "candidate_type": "reusable_subskill",
                 "supporting_family_ids": ["family-1", "family-2"],
                 "supporting_apis": ["spotify.search"],
             })
             evidence = {
-                "schema_version": "train_graph_evidence_v1",
+                "schema_version": "train_graph_evidence_v2",
                 "source_scope": "train_ground_truth_solutions_only",
                 "split": "train",
                 "thresholds": {"min_data_support": 2},
                 "edges": [
                     {
-                        "source": "shared", "target": "core", "type": "SUPPORTS",
-                        "confidence": 1, "support": 1,
-                        "evidence": [{"family_id": "family-1", "task_id": "family-1_1"}],
-                    },
-                    {
-                        "source": "core", "target": "shared", "type": "PRECEDES",
+                        "source": "core", "target": "shared", "type": "PREREQ",
                         "confidence": 1, "support": 2, "evidence": [],
                     },
                     {
-                        "source": "shared", "target": "core", "type": "DATA_DEP",
+                        "source": "shared", "target": "core", "type": "FLOW",
                         "confidence": 1, "support": 2, "evidence": [],
                     },
                 ],
@@ -115,9 +109,9 @@ class GraphBuildTests(unittest.TestCase):
             graph = build_global_graph(root, graph_evidence=evidence)
             self.assertEqual(
                 {edge["type"] for edge in graph["edges"]},
-                {"SUPPORTS", "PRECEDES", "DATA_DEP"},
+                {"PREREQ", "FLOW", "RELATED"},
             )
-            self.assertEqual(graph["schema_version"], "typed_skill_graph_v4")
+            self.assertEqual(graph["schema_version"], "typed_skill_graph_v5")
 
     def test_rejects_non_train_or_weak_formal_evidence(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -125,7 +119,7 @@ class GraphBuildTests(unittest.TestCase):
             make_skill(root, "a", {})
             make_skill(root, "b", {})
             evidence = {
-                "schema_version": "train_graph_evidence_v1",
+                "schema_version": "train_graph_evidence_v2",
                 "source_scope": "train_ground_truth_solutions_only",
                 "split": "dev", "edges": [],
             }
@@ -133,7 +127,7 @@ class GraphBuildTests(unittest.TestCase):
                 build_global_graph(root, graph_evidence=evidence)
             evidence["split"] = "train"
             evidence["edges"] = [{
-                "source": "a", "target": "b", "type": "PRECEDES",
+                "source": "a", "target": "b", "type": "PREREQ",
                 "confidence": 1, "support": 1, "evidence": [],
             }]
             with self.assertRaises(ValueError):
@@ -159,11 +153,11 @@ class GraphRuntimeTests(unittest.TestCase):
     def test_induced_graph_cycle_resolution_and_isolated_node(self):
         graph = {
             "edges": [
-                {"source": "a", "target": "b", "type": "PRECEDES", "confidence": 1, "support": 5},
-                {"source": "b", "target": "c", "type": "SUPPORTS", "confidence": 1, "support": 2},
-                {"source": "c", "target": "a", "type": "DATA_DEP", "confidence": 1, "support": 1},
-                {"source": "a", "target": "outside", "type": "DATA_DEP", "confidence": 1, "support": 9},
-                {"source": "d", "target": "d", "type": "PRECEDES", "confidence": 1, "support": 1},
+                {"source": "a", "target": "b", "type": "PREREQ", "confidence": 1, "support": 5},
+                {"source": "b", "target": "c", "type": "FLOW", "confidence": 1, "support": 2},
+                {"source": "c", "target": "a", "type": "FLOW", "confidence": 1, "support": 1},
+                {"source": "a", "target": "outside", "type": "FLOW", "confidence": 1, "support": 9},
+                {"source": "d", "target": "d", "type": "PREREQ", "confidence": 1, "support": 1},
             ]
         }
         first = build_task_dag(["a", "b", "c", "d", "a"], graph)
@@ -174,14 +168,14 @@ class GraphRuntimeTests(unittest.TestCase):
         self.assertFalse(any(edge["source"] == "d" for edge in first["edges"]))
         self.assertEqual(
             {(edge["source"], edge["target"]) for edge in first["edges"]},
-            {("a", "b"), ("b", "c"), ("c", "a")},
+            {("b", "c"), ("c", "a")},
         )
         self.assertEqual(
             {(edge["source"], edge["target"], edge["reason"]) for edge in first["dropped_edges"]},
-            {("d", "d", "self_loop")},
+            {("d", "d", "self_loop"), ("a", "b", "cycle")},
         )
-        self.assertEqual(first["topological_layers"], [["c"], ["a"], ["b"]])
-        self.assertEqual(first["supporting_only_candidates"], [])
+        self.assertEqual(first["topological_layers"], [["b"], ["c"], ["a"]])
+        self.assertEqual(first["related_clusters"], [])
         self.assertEqual(first["unlinked_candidates"], ["d"])
 
     def test_empty_edges_preserve_every_node(self):
@@ -189,25 +183,26 @@ class GraphRuntimeTests(unittest.TestCase):
         self.assertEqual(dag["nodes"], ["a", "b", "c"])
         self.assertEqual(dag["edges"], [])
         self.assertEqual(dag["topological_layers"], [])
-        self.assertEqual(dag["supporting_only_candidates"], [])
+        self.assertEqual(dag["related_clusters"], [])
         self.assertEqual(dag["unlinked_candidates"], ["a", "b", "c"])
 
-    def test_supporting_only_and_unlinked_preserve_retrieval_rank(self):
+    def test_related_clusters_and_unlinked_preserve_retrieval_rank(self):
         graph = {"edges": [{
-            "source": "b", "target": "c", "type": "SUPPORTS",
+            "source": "b", "target": "c", "type": "RELATED",
             "confidence": 1, "support": 2,
         }]}
         dag = build_task_dag(["d", "b", "a", "c"], graph)
         self.assertEqual(dag["topological_layers"], [])
-        self.assertEqual(dag["supporting_only_candidates"], ["b", "c"])
+        self.assertEqual(dag["related_clusters"], [["b", "c"]])
+        self.assertEqual(dag["entry_skill_id"], "b")
         self.assertEqual(dag["unlinked_candidates"], ["d", "a"])
         library = {
             skill_id: Skill(skill_id, skill_id.upper(), "desc", f"Body {skill_id}")
             for skill_id in ("a", "b", "c", "d")
         }
         context = format_graph_context(dag, library)
-        self.assertIn("no evidenced execution relations", context)
-        self.assertIn("b supports c", context)
+        self.assertIn("No strict PREREQ/FLOW edges", context)
+        self.assertIn("b ~ c", context)
         self.assertIn("[b] B (retrieval rank: 2)", context)
         self.assertIn("[c] C (retrieval rank: 4)", context)
         self.assertLess(
@@ -217,9 +212,9 @@ class GraphRuntimeTests(unittest.TestCase):
 
     def test_same_type_cycle_prefers_confidence_then_support(self):
         graph = {"edges": [
-            {"source": "a", "target": "b", "type": "PRECEDES", "confidence": 0.9, "support": 2},
-            {"source": "b", "target": "c", "type": "PRECEDES", "confidence": 0.8, "support": 9},
-            {"source": "c", "target": "a", "type": "PRECEDES", "confidence": 0.7, "support": 20},
+            {"source": "a", "target": "b", "type": "PREREQ", "confidence": 0.9, "support": 2},
+            {"source": "b", "target": "c", "type": "PREREQ", "confidence": 0.8, "support": 9},
+            {"source": "c", "target": "a", "type": "PREREQ", "confidence": 0.7, "support": 20},
         ]}
         dag = build_task_dag(["a", "b", "c"], graph)
         self.assertEqual(
@@ -243,8 +238,8 @@ class GraphRuntimeTests(unittest.TestCase):
         )
         graph = {
             "edges": [
-                {"source": "a", "target": "b", "type": "SUPPORTS", "confidence": 1, "support": 1},
-                {"source": "outside", "target": "a", "type": "DATA_DEP", "confidence": 1, "support": 1},
+                {"source": "a", "target": "b", "type": "RELATED", "confidence": 1, "support": 1},
+                {"source": "outside", "target": "a", "type": "FLOW", "confidence": 1, "support": 1},
             ]
         }
         hierarchy = {

@@ -1,0 +1,5042 @@
+{
+  "schema_version": "train_graph_evidence_v2",
+  "source_scope": "train_ground_truth_solutions_only",
+  "split": "train",
+  "thresholds": {
+    "min_prereq_support": 2,
+    "min_prereq_ratio": 0.8,
+    "min_flow_support": 2
+  },
+  "inputs": {
+    "train_split_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/datasets/train.txt",
+    "train_split_sha256": "93d9fe71e7a2e3b7529803d4a20b604f4ebf5ae806f321081140238068189d37",
+    "task_count": 90
+  },
+  "task_records": [
+    {
+      "task_id": "82e2fac_1",
+      "family_id": "82e2fac",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/82e2fac_1/ground_truth/solution.py",
+      "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "find-the-most-or-least-liked-played-song-in-a-spotify-library": {
+          "first_line": 37,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis": {
+          "first_line": 43,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "82e2fac_2",
+      "family_id": "82e2fac",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/82e2fac_2/ground_truth/solution.py",
+      "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "find-the-most-or-least-liked-played-song-in-a-spotify-library": {
+          "first_line": 37,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis": {
+          "first_line": 43,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "82e2fac_3",
+      "family_id": "82e2fac",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/82e2fac_3/ground_truth/solution.py",
+      "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "find-the-most-or-least-liked-played-song-in-a-spotify-library": {
+          "first_line": 37,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis": {
+          "first_line": 43,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "692c77d_1",
+      "family_id": "692c77d",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/692c77d_1/ground_truth/solution.py",
+      "solution_sha256": "6929ab49e3ce9dc378aac88201a73eba8dd026cd625f9e9f2ccf20f947a5d55e",
+      "api_occurrences": 8,
+      "skill_intervals": {
+        "bulk-set-spotify-song-ratings-by-library-and-liked-status": {
+          "first_line": 40,
+          "last_line": 100,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.review_song",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song_library",
+            "apis.spotify.show_song_reviews",
+            "apis.spotify.update_song_review"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "692c77d_2",
+      "family_id": "692c77d",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/692c77d_2/ground_truth/solution.py",
+      "solution_sha256": "6929ab49e3ce9dc378aac88201a73eba8dd026cd625f9e9f2ccf20f947a5d55e",
+      "api_occurrences": 8,
+      "skill_intervals": {
+        "bulk-set-spotify-song-ratings-by-library-and-liked-status": {
+          "first_line": 40,
+          "last_line": 100,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.review_song",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song_library",
+            "apis.spotify.show_song_reviews",
+            "apis.spotify.update_song_review"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "692c77d_3",
+      "family_id": "692c77d",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/692c77d_3/ground_truth/solution.py",
+      "solution_sha256": "6929ab49e3ce9dc378aac88201a73eba8dd026cd625f9e9f2ccf20f947a5d55e",
+      "api_occurrences": 8,
+      "skill_intervals": {
+        "bulk-set-spotify-song-ratings-by-library-and-liked-status": {
+          "first_line": 40,
+          "last_line": 100,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.review_song",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song_library",
+            "apis.spotify.show_song_reviews",
+            "apis.spotify.update_song_review"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "2a163ab_1",
+      "family_id": "2a163ab",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/2a163ab_1/ground_truth/solution.py",
+      "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "like-venmo-feed-transactions-for-contacts": {
+          "first_line": 38,
+          "last_line": 89,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.like_transaction",
+            "apis.venmo.show_social_feed"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "2a163ab_2",
+      "family_id": "2a163ab",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/2a163ab_2/ground_truth/solution.py",
+      "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "like-venmo-feed-transactions-for-contacts": {
+          "first_line": 38,
+          "last_line": 89,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.like_transaction",
+            "apis.venmo.show_social_feed"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "2a163ab_3",
+      "family_id": "2a163ab",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/2a163ab_3/ground_truth/solution.py",
+      "solution_sha256": "470419a7f6631b9aeda5753a851c39528d4d43217c3088898cbb6cfd968258ed",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "like-venmo-feed-transactions-for-contacts": {
+          "first_line": 38,
+          "last_line": 89,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.like_transaction",
+            "apis.venmo.show_social_feed"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "6104387_1",
+      "family_id": "6104387",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/6104387_1/ground_truth/solution.py",
+      "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+      "api_occurrences": 9,
+      "skill_intervals": {
+        "export-unique-spotify-library-songs-to-csv-and-delete-account": {
+          "first_line": 38,
+          "last_line": 87,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.create_file",
+            "apis.spotify.access_token_from",
+            "apis.spotify.delete_account",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "robust-pagination-and-deduplication-for-spotify-library-csv-export": {
+          "first_line": 43,
+          "last_line": 81,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.create_file",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "6104387_2",
+      "family_id": "6104387",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/6104387_2/ground_truth/solution.py",
+      "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+      "api_occurrences": 9,
+      "skill_intervals": {
+        "export-unique-spotify-library-songs-to-csv-and-delete-account": {
+          "first_line": 38,
+          "last_line": 87,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.create_file",
+            "apis.spotify.access_token_from",
+            "apis.spotify.delete_account",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "robust-pagination-and-deduplication-for-spotify-library-csv-export": {
+          "first_line": 43,
+          "last_line": 81,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.create_file",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "6104387_3",
+      "family_id": "6104387",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/6104387_3/ground_truth/solution.py",
+      "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded",
+      "api_occurrences": 9,
+      "skill_intervals": {
+        "export-unique-spotify-library-songs-to-csv-and-delete-account": {
+          "first_line": 38,
+          "last_line": 87,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.create_file",
+            "apis.spotify.access_token_from",
+            "apis.spotify.delete_account",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "robust-pagination-and-deduplication-for-spotify-library-csv-export": {
+          "first_line": 43,
+          "last_line": 81,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.create_file",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "29caf6f_1",
+      "family_id": "29caf6f",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/29caf6f_1/ground_truth/solution.py",
+      "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "handling-ambiguous-missing-or-malformed-movie-recommendation-data": {
+          "first_line": 40,
+          "last_line": 93,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.phone.search_text_messages",
+            "apis.phone.send_text_message",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note"
+          ]
+        },
+        "reply-to-text-message-requests-with-movie-recommendations-from-simple-note": {
+          "first_line": 36,
+          "last_line": 93,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.phone.search_text_messages",
+            "apis.phone.send_text_message",
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "29caf6f_2",
+      "family_id": "29caf6f",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/29caf6f_2/ground_truth/solution.py",
+      "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "handling-ambiguous-missing-or-malformed-movie-recommendation-data": {
+          "first_line": 40,
+          "last_line": 93,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.phone.search_text_messages",
+            "apis.phone.send_text_message",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note"
+          ]
+        },
+        "reply-to-text-message-requests-with-movie-recommendations-from-simple-note": {
+          "first_line": 36,
+          "last_line": 93,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.phone.search_text_messages",
+            "apis.phone.send_text_message",
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "29caf6f_3",
+      "family_id": "29caf6f",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/29caf6f_3/ground_truth/solution.py",
+      "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "handling-ambiguous-missing-or-malformed-movie-recommendation-data": {
+          "first_line": 40,
+          "last_line": 93,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.phone.search_text_messages",
+            "apis.phone.send_text_message",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note"
+          ]
+        },
+        "reply-to-text-message-requests-with-movie-recommendations-from-simple-note": {
+          "first_line": 36,
+          "last_line": 93,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.phone.search_text_messages",
+            "apis.phone.send_text_message",
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "afc0fce_1",
+      "family_id": "afc0fce",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/afc0fce_1/ground_truth/solution.py",
+      "solution_sha256": "3b25260bbda3e8b735cd8d6e88e9ae5d0008787755fb41000730300257403a0e",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions": {
+          "first_line": 41,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.create_transaction_comment",
+            "apis.venmo.like_transaction",
+            "apis.venmo.show_transactions"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "afc0fce_2",
+      "family_id": "afc0fce",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/afc0fce_2/ground_truth/solution.py",
+      "solution_sha256": "3b25260bbda3e8b735cd8d6e88e9ae5d0008787755fb41000730300257403a0e",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions": {
+          "first_line": 41,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.create_transaction_comment",
+            "apis.venmo.like_transaction",
+            "apis.venmo.show_transactions"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "afc0fce_3",
+      "family_id": "afc0fce",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/afc0fce_3/ground_truth/solution.py",
+      "solution_sha256": "3b25260bbda3e8b735cd8d6e88e9ae5d0008787755fb41000730300257403a0e",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions": {
+          "first_line": 41,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.create_transaction_comment",
+            "apis.venmo.like_transaction",
+            "apis.venmo.show_transactions"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "287e338_1",
+      "family_id": "287e338",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/287e338_1/ground_truth/solution.py",
+      "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "spotify-most-least-recommended-artist-finder": {
+          "first_line": 37,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        },
+        "spotify-recommendation-aggregation-edge-case-handling": {
+          "first_line": 41,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.show_artist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "287e338_2",
+      "family_id": "287e338",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/287e338_2/ground_truth/solution.py",
+      "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "spotify-most-least-recommended-artist-finder": {
+          "first_line": 37,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        },
+        "spotify-recommendation-aggregation-edge-case-handling": {
+          "first_line": 41,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.show_artist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "287e338_3",
+      "family_id": "287e338",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/287e338_3/ground_truth/solution.py",
+      "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "spotify-most-least-recommended-artist-finder": {
+          "first_line": 37,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_artist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        },
+        "spotify-recommendation-aggregation-edge-case-handling": {
+          "first_line": 41,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.show_artist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "27e1026_1",
+      "family_id": "27e1026",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/27e1026_1/ground_truth/solution.py",
+      "solution_sha256": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "find-oldest-newest-song-across-spotify-libraries": {
+          "first_line": 36,
+          "last_line": 73,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "robust-spotify-library-release-date-aggregation-and-failure-handling": {
+          "first_line": 36,
+          "last_line": 73,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "27e1026_2",
+      "family_id": "27e1026",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/27e1026_2/ground_truth/solution.py",
+      "solution_sha256": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "find-oldest-newest-song-across-spotify-libraries": {
+          "first_line": 36,
+          "last_line": 73,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "robust-spotify-library-release-date-aggregation-and-failure-handling": {
+          "first_line": 36,
+          "last_line": 73,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "27e1026_3",
+      "family_id": "27e1026",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/27e1026_3/ground_truth/solution.py",
+      "solution_sha256": "e252b284b99cb54579e4838ae3bcf239b68a16167a21ab2230e02be81bbeeee6",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "find-oldest-newest-song-across-spotify-libraries": {
+          "first_line": 36,
+          "last_line": 73,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "robust-spotify-library-release-date-aggregation-and-failure-handling": {
+          "first_line": 36,
+          "last_line": 73,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "d0b1f43_1",
+      "family_id": "d0b1f43",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/d0b1f43_1/ground_truth/solution.py",
+      "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "robust-venmo-contact-aggregation-and-edge-cases": {
+          "first_line": 45,
+          "last_line": 90,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.show_transactions"
+          ]
+        },
+        "venmo-transaction-totals-for-contact-relationships": {
+          "first_line": 41,
+          "last_line": 90,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.show_transactions"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "d0b1f43_2",
+      "family_id": "d0b1f43",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/d0b1f43_2/ground_truth/solution.py",
+      "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "robust-venmo-contact-aggregation-and-edge-cases": {
+          "first_line": 45,
+          "last_line": 90,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.show_transactions"
+          ]
+        },
+        "venmo-transaction-totals-for-contact-relationships": {
+          "first_line": 41,
+          "last_line": 90,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.show_transactions"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "d0b1f43_3",
+      "family_id": "d0b1f43",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/d0b1f43_3/ground_truth/solution.py",
+      "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "robust-venmo-contact-aggregation-and-edge-cases": {
+          "first_line": 45,
+          "last_line": 90,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.search_contacts",
+            "apis.venmo.show_transactions"
+          ]
+        },
+        "venmo-transaction-totals-for-contact-relationships": {
+          "first_line": 41,
+          "last_line": 90,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.show_transactions"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "b7a9ee9_1",
+      "family_id": "b7a9ee9",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/b7a9ee9_1/ground_truth/solution.py",
+      "solution_sha256": "28555e8c5226829b967e439cdf1792b422eb56c800099e6c309cb375a9501525",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "robust-pagination-and-failure-handling-for-spotify-genre-follow": {
+          "first_line": 40,
+          "last_line": 59,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "b7a9ee9_2",
+      "family_id": "b7a9ee9",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/b7a9ee9_2/ground_truth/solution.py",
+      "solution_sha256": "28555e8c5226829b967e439cdf1792b422eb56c800099e6c309cb375a9501525",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "robust-pagination-and-failure-handling-for-spotify-genre-follow": {
+          "first_line": 40,
+          "last_line": 59,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "b7a9ee9_3",
+      "family_id": "b7a9ee9",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/b7a9ee9_3/ground_truth/solution.py",
+      "solution_sha256": "28555e8c5226829b967e439cdf1792b422eb56c800099e6c309cb375a9501525",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "robust-pagination-and-failure-handling-for-spotify-genre-follow": {
+          "first_line": 40,
+          "last_line": 59,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "76f2c72_1",
+      "family_id": "76f2c72",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/76f2c72_1/ground_truth/solution.py",
+      "solution_sha256": "126ec0ee65a1a88b524f3d16a69f1e6e83d6a1f6b165acc2d40fe6d9161e340e",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "robust-bill-parsing-for-irregular-filenames-and-amount-formats": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        },
+        "sum-utility-bills-for-current-year-from-file-system": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "76f2c72_2",
+      "family_id": "76f2c72",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/76f2c72_2/ground_truth/solution.py",
+      "solution_sha256": "126ec0ee65a1a88b524f3d16a69f1e6e83d6a1f6b165acc2d40fe6d9161e340e",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "robust-bill-parsing-for-irregular-filenames-and-amount-formats": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        },
+        "sum-utility-bills-for-current-year-from-file-system": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "76f2c72_3",
+      "family_id": "76f2c72",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/76f2c72_3/ground_truth/solution.py",
+      "solution_sha256": "126ec0ee65a1a88b524f3d16a69f1e6e83d6a1f6b165acc2d40fe6d9161e340e",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "robust-bill-parsing-for-irregular-filenames-and-amount-formats": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        },
+        "sum-utility-bills-for-current-year-from-file-system": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "34d9492_1",
+      "family_id": "34d9492",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/34d9492_1/ground_truth/solution.py",
+      "solution_sha256": "c2bb40800c9e3d8b4b73554690275370ebf3e470b28e4d20024d311ea3999e5e",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "organize-files-by-date-into-category-folders": {
+          "first_line": 36,
+          "last_line": 78,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.move_file",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "34d9492_2",
+      "family_id": "34d9492",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/34d9492_2/ground_truth/solution.py",
+      "solution_sha256": "c2bb40800c9e3d8b4b73554690275370ebf3e470b28e4d20024d311ea3999e5e",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "organize-files-by-date-into-category-folders": {
+          "first_line": 36,
+          "last_line": 78,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.move_file",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "34d9492_3",
+      "family_id": "34d9492",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/34d9492_3/ground_truth/solution.py",
+      "solution_sha256": "c2bb40800c9e3d8b4b73554690275370ebf3e470b28e4d20024d311ea3999e5e",
+      "api_occurrences": 6,
+      "skill_intervals": {
+        "organize-files-by-date-into-category-folders": {
+          "first_line": 36,
+          "last_line": 78,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.move_file",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "ce359b5_1",
+      "family_id": "ce359b5",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/ce359b5_1/ground_truth/solution.py",
+      "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+      "api_occurrences": 17,
+      "skill_intervals": {
+        "spotify-remove-songs-by-release-year": {
+          "first_line": 36,
+          "last_line": 131,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009",
+            "api_0010",
+            "api_0011",
+            "api_0012",
+            "api_0013",
+            "api_0014",
+            "api_0015",
+            "api_0016",
+            "api_0017"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.remove_song_from_playlist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "spotify-robust-pagination-and-removal-handling": {
+          "first_line": 39,
+          "last_line": 131,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009",
+            "api_0010",
+            "api_0011",
+            "api_0012",
+            "api_0013",
+            "api_0014",
+            "api_0015",
+            "api_0016",
+            "api_0017"
+          ],
+          "matched_apis": [
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.remove_song_from_playlist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "ce359b5_2",
+      "family_id": "ce359b5",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/ce359b5_2/ground_truth/solution.py",
+      "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+      "api_occurrences": 17,
+      "skill_intervals": {
+        "spotify-remove-songs-by-release-year": {
+          "first_line": 36,
+          "last_line": 131,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009",
+            "api_0010",
+            "api_0011",
+            "api_0012",
+            "api_0013",
+            "api_0014",
+            "api_0015",
+            "api_0016",
+            "api_0017"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.remove_song_from_playlist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "spotify-robust-pagination-and-removal-handling": {
+          "first_line": 39,
+          "last_line": 131,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009",
+            "api_0010",
+            "api_0011",
+            "api_0012",
+            "api_0013",
+            "api_0014",
+            "api_0015",
+            "api_0016",
+            "api_0017"
+          ],
+          "matched_apis": [
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.remove_song_from_playlist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "ce359b5_3",
+      "family_id": "ce359b5",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/ce359b5_3/ground_truth/solution.py",
+      "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7",
+      "api_occurrences": 17,
+      "skill_intervals": {
+        "spotify-remove-songs-by-release-year": {
+          "first_line": 36,
+          "last_line": 131,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009",
+            "api_0010",
+            "api_0011",
+            "api_0012",
+            "api_0013",
+            "api_0014",
+            "api_0015",
+            "api_0016",
+            "api_0017"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.remove_song_from_playlist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "spotify-robust-pagination-and-removal-handling": {
+          "first_line": 39,
+          "last_line": 131,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008",
+            "api_0009",
+            "api_0010",
+            "api_0011",
+            "api_0012",
+            "api_0013",
+            "api_0014",
+            "api_0015",
+            "api_0016",
+            "api_0017"
+          ],
+          "matched_apis": [
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.remove_song_from_playlist",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "b0a8eae_1",
+      "family_id": "b0a8eae",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/b0a8eae_1/ground_truth/solution.py",
+      "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "start-workout-playlist-from-note": {
+          "first_line": 40,
+          "last_line": 77,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        },
+        "workout-playlist-fallback-and-parsing": {
+          "first_line": 40,
+          "last_line": 77,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "b0a8eae_2",
+      "family_id": "b0a8eae",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/b0a8eae_2/ground_truth/solution.py",
+      "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "start-workout-playlist-from-note": {
+          "first_line": 40,
+          "last_line": 77,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        },
+        "workout-playlist-fallback-and-parsing": {
+          "first_line": 40,
+          "last_line": 77,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "b0a8eae_3",
+      "family_id": "b0a8eae",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/b0a8eae_3/ground_truth/solution.py",
+      "solution_sha256": "1d4c69d6e2854fd58085c4d0f4be7fdad43526b3a630fb4c6f54f689d9d2a149",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "start-workout-playlist-from-note": {
+          "first_line": 40,
+          "last_line": 77,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        },
+        "workout-playlist-fallback-and-parsing": {
+          "first_line": 40,
+          "last_line": 77,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "229360a_1",
+      "family_id": "229360a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/229360a_1/ground_truth/solution.py",
+      "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+      "api_occurrences": 8,
+      "skill_intervals": {
+        "robust-pagination-and-partial-failure-handling-for-spotify-cleanup": {
+          "first_line": 37,
+          "last_line": 88,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_album_from_library",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_downloaded_songs",
+            "apis.spotify.show_liked_albums",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "spotify-library-cleanup-by-liked-downloaded-status": {
+          "first_line": 37,
+          "last_line": 88,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_album_from_library",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_downloaded_songs",
+            "apis.spotify.show_liked_albums",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "229360a_2",
+      "family_id": "229360a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/229360a_2/ground_truth/solution.py",
+      "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+      "api_occurrences": 8,
+      "skill_intervals": {
+        "robust-pagination-and-partial-failure-handling-for-spotify-cleanup": {
+          "first_line": 37,
+          "last_line": 88,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_album_from_library",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_downloaded_songs",
+            "apis.spotify.show_liked_albums",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "spotify-library-cleanup-by-liked-downloaded-status": {
+          "first_line": 37,
+          "last_line": 88,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_album_from_library",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_downloaded_songs",
+            "apis.spotify.show_liked_albums",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "229360a_3",
+      "family_id": "229360a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/229360a_3/ground_truth/solution.py",
+      "solution_sha256": "ab9f7db0da05d7f731509028e2654eecd29821939c3dbaaf74839ca2f8f54308",
+      "api_occurrences": 8,
+      "skill_intervals": {
+        "robust-pagination-and-partial-failure-handling-for-spotify-cleanup": {
+          "first_line": 37,
+          "last_line": 88,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_album_from_library",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_downloaded_songs",
+            "apis.spotify.show_liked_albums",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_song_library"
+          ]
+        },
+        "spotify-library-cleanup-by-liked-downloaded-status": {
+          "first_line": 37,
+          "last_line": 88,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007",
+            "api_0008"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.remove_album_from_library",
+            "apis.spotify.remove_song_from_library",
+            "apis.spotify.show_album_library",
+            "apis.spotify.show_downloaded_songs",
+            "apis.spotify.show_liked_albums",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.show_song_library"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "7d7fbf6_1",
+      "family_id": "7d7fbf6",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/7d7fbf6_1/ground_truth/solution.py",
+      "solution_sha256": "ed46a989164fda13597b4c475dfda45d9249ef28d99d7aa815f1d14c3fcff196",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "compress-subdirectories-to-archives": {
+          "first_line": 37,
+          "last_line": 50,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.compress_directory",
+            "apis.file_system.show_directory"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "7d7fbf6_2",
+      "family_id": "7d7fbf6",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/7d7fbf6_2/ground_truth/solution.py",
+      "solution_sha256": "ed46a989164fda13597b4c475dfda45d9249ef28d99d7aa815f1d14c3fcff196",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "compress-subdirectories-to-archives": {
+          "first_line": 37,
+          "last_line": 50,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.compress_directory",
+            "apis.file_system.show_directory"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "7d7fbf6_3",
+      "family_id": "7d7fbf6",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/7d7fbf6_3/ground_truth/solution.py",
+      "solution_sha256": "ed46a989164fda13597b4c475dfda45d9249ef28d99d7aa815f1d14c3fcff196",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "compress-subdirectories-to-archives": {
+          "first_line": 37,
+          "last_line": 50,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.compress_directory",
+            "apis.file_system.show_directory"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e3d6c94_1",
+      "family_id": "e3d6c94",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e3d6c94_1/ground_truth/solution.py",
+      "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year": {
+          "first_line": 37,
+          "last_line": 70,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.add_song_to_playlist",
+            "apis.spotify.create_playlist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        },
+        "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation": {
+          "first_line": 41,
+          "last_line": 70,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.add_song_to_playlist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e3d6c94_2",
+      "family_id": "e3d6c94",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e3d6c94_2/ground_truth/solution.py",
+      "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year": {
+          "first_line": 37,
+          "last_line": 70,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.add_song_to_playlist",
+            "apis.spotify.create_playlist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        },
+        "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation": {
+          "first_line": 41,
+          "last_line": 70,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.add_song_to_playlist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e3d6c94_3",
+      "family_id": "e3d6c94",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e3d6c94_3/ground_truth/solution.py",
+      "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year": {
+          "first_line": 37,
+          "last_line": 70,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.add_song_to_playlist",
+            "apis.spotify.create_playlist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        },
+        "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation": {
+          "first_line": 41,
+          "last_line": 70,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.add_song_to_playlist",
+            "apis.spotify.show_recommendations",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "ccb4494_1",
+      "family_id": "ccb4494",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/ccb4494_1/ground_truth/solution.py",
+      "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "handle-spotify-queue-like-edge-cases": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.like_song",
+            "apis.spotify.show_current_song",
+            "apis.spotify.show_song_queue"
+          ]
+        },
+        "like-all-played-songs-in-spotify-queue": {
+          "first_line": 35,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.like_song",
+            "apis.spotify.show_current_song",
+            "apis.spotify.show_song_queue"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "ccb4494_2",
+      "family_id": "ccb4494",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/ccb4494_2/ground_truth/solution.py",
+      "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "handle-spotify-queue-like-edge-cases": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.like_song",
+            "apis.spotify.show_current_song",
+            "apis.spotify.show_song_queue"
+          ]
+        },
+        "like-all-played-songs-in-spotify-queue": {
+          "first_line": 35,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.like_song",
+            "apis.spotify.show_current_song",
+            "apis.spotify.show_song_queue"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "ccb4494_3",
+      "family_id": "ccb4494",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/ccb4494_3/ground_truth/solution.py",
+      "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "handle-spotify-queue-like-edge-cases": {
+          "first_line": 37,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.like_song",
+            "apis.spotify.show_current_song",
+            "apis.spotify.show_song_queue"
+          ]
+        },
+        "like-all-played-songs-in-spotify-queue": {
+          "first_line": 35,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.like_song",
+            "apis.spotify.show_current_song",
+            "apis.spotify.show_song_queue"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "60d0b5b_1",
+      "family_id": "60d0b5b",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/60d0b5b_1/ground_truth/solution.py",
+      "solution_sha256": "733e8ab32f7f3a0549b876e93ad42cb95b6f184cb62d9e2723ffec6e97b8afdb",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "venmo-refund-edge-cases-and-verification": {
+          "first_line": 36,
+          "last_line": 59,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.create_transaction",
+            "apis.venmo.show_sent_payment_requests"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "60d0b5b_2",
+      "family_id": "60d0b5b",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/60d0b5b_2/ground_truth/solution.py",
+      "solution_sha256": "733e8ab32f7f3a0549b876e93ad42cb95b6f184cb62d9e2723ffec6e97b8afdb",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "venmo-refund-edge-cases-and-verification": {
+          "first_line": 36,
+          "last_line": 59,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.create_transaction",
+            "apis.venmo.show_sent_payment_requests"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "60d0b5b_3",
+      "family_id": "60d0b5b",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/60d0b5b_3/ground_truth/solution.py",
+      "solution_sha256": "733e8ab32f7f3a0549b876e93ad42cb95b6f184cb62d9e2723ffec6e97b8afdb",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "venmo-refund-edge-cases-and-verification": {
+          "first_line": 36,
+          "last_line": 59,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.create_transaction",
+            "apis.venmo.show_sent_payment_requests"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "771d8fc_1",
+      "family_id": "771d8fc",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/771d8fc_1/ground_truth/solution.py",
+      "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "delete-all-messages-from-sender": {
+          "first_line": 36,
+          "last_line": 57,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.delete_text_message",
+            "apis.phone.delete_voice_message",
+            "apis.phone.search_text_messages",
+            "apis.phone.search_voice_messages"
+          ]
+        },
+        "handle-phone-message-deletion-edge-cases": {
+          "first_line": 39,
+          "last_line": 57,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.delete_text_message",
+            "apis.phone.delete_voice_message",
+            "apis.phone.search_text_messages",
+            "apis.phone.search_voice_messages"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "771d8fc_2",
+      "family_id": "771d8fc",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/771d8fc_2/ground_truth/solution.py",
+      "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "delete-all-messages-from-sender": {
+          "first_line": 36,
+          "last_line": 57,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.delete_text_message",
+            "apis.phone.delete_voice_message",
+            "apis.phone.search_text_messages",
+            "apis.phone.search_voice_messages"
+          ]
+        },
+        "handle-phone-message-deletion-edge-cases": {
+          "first_line": 39,
+          "last_line": 57,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.delete_text_message",
+            "apis.phone.delete_voice_message",
+            "apis.phone.search_text_messages",
+            "apis.phone.search_voice_messages"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "771d8fc_3",
+      "family_id": "771d8fc",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/771d8fc_3/ground_truth/solution.py",
+      "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "delete-all-messages-from-sender": {
+          "first_line": 36,
+          "last_line": 57,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.delete_text_message",
+            "apis.phone.delete_voice_message",
+            "apis.phone.search_text_messages",
+            "apis.phone.search_voice_messages"
+          ]
+        },
+        "handle-phone-message-deletion-edge-cases": {
+          "first_line": 39,
+          "last_line": 57,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.delete_text_message",
+            "apis.phone.delete_voice_message",
+            "apis.phone.search_text_messages",
+            "apis.phone.search_voice_messages"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "07b42fd_1",
+      "family_id": "07b42fd",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/07b42fd_1/ground_truth/solution.py",
+      "solution_sha256": "07c6f157393a047ae7b8d2b9442538b1bb2dc32ceb3a35b2c48f52bc718c30e0",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "handle-spotify-artist-search-pagination-and-follow-errors": {
+          "first_line": 40,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.search_artists"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "07b42fd_2",
+      "family_id": "07b42fd",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/07b42fd_2/ground_truth/solution.py",
+      "solution_sha256": "07c6f157393a047ae7b8d2b9442538b1bb2dc32ceb3a35b2c48f52bc718c30e0",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "handle-spotify-artist-search-pagination-and-follow-errors": {
+          "first_line": 40,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.search_artists"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "07b42fd_3",
+      "family_id": "07b42fd",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/07b42fd_3/ground_truth/solution.py",
+      "solution_sha256": "07c6f157393a047ae7b8d2b9442538b1bb2dc32ceb3a35b2c48f52bc718c30e0",
+      "api_occurrences": 3,
+      "skill_intervals": {
+        "handle-spotify-artist-search-pagination-and-follow-errors": {
+          "first_line": 40,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.search_artists"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "3c13f5a_1",
+      "family_id": "3c13f5a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/3c13f5a_1/ground_truth/solution.py",
+      "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "robust-bill-split-pagination-receipt-selection-and-amount-parsing": {
+          "first_line": 42,
+          "last_line": 76,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file",
+            "apis.phone.search_contacts",
+            "apis.venmo.create_payment_request"
+          ]
+        },
+        "split-shared-bill-with-roommates-via-venmo": {
+          "first_line": 38,
+          "last_line": 76,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file",
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.create_payment_request"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "3c13f5a_2",
+      "family_id": "3c13f5a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/3c13f5a_2/ground_truth/solution.py",
+      "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "robust-bill-split-pagination-receipt-selection-and-amount-parsing": {
+          "first_line": 42,
+          "last_line": 76,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file",
+            "apis.phone.search_contacts",
+            "apis.venmo.create_payment_request"
+          ]
+        },
+        "split-shared-bill-with-roommates-via-venmo": {
+          "first_line": 38,
+          "last_line": 76,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file",
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.create_payment_request"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "3c13f5a_3",
+      "family_id": "3c13f5a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/3c13f5a_3/ground_truth/solution.py",
+      "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "robust-bill-split-pagination-receipt-selection-and-amount-parsing": {
+          "first_line": 42,
+          "last_line": 76,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0004",
+            "api_0005",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file",
+            "apis.phone.search_contacts",
+            "apis.venmo.create_payment_request"
+          ]
+        },
+        "split-shared-bill-with-roommates-via-venmo": {
+          "first_line": 38,
+          "last_line": 76,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.file_system.access_token_from",
+            "apis.file_system.show_directory",
+            "apis.file_system.show_file",
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.create_payment_request"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "cf6abd2_1",
+      "family_id": "cf6abd2",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/cf6abd2_1/ground_truth/solution.py",
+      "solution_sha256": "8b37e8bb6f760a574c7250eb2dd5483e8ad80e5b5b4bd36f57a0272ec103a9a3",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "handle-edge-cases-in-simplenote-checklist-updates": {
+          "first_line": 36,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.simple_note.update_note"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "cf6abd2_2",
+      "family_id": "cf6abd2",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/cf6abd2_2/ground_truth/solution.py",
+      "solution_sha256": "8b37e8bb6f760a574c7250eb2dd5483e8ad80e5b5b4bd36f57a0272ec103a9a3",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "handle-edge-cases-in-simplenote-checklist-updates": {
+          "first_line": 36,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.simple_note.update_note"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "cf6abd2_3",
+      "family_id": "cf6abd2",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/cf6abd2_3/ground_truth/solution.py",
+      "solution_sha256": "8b37e8bb6f760a574c7250eb2dd5483e8ad80e5b5b4bd36f57a0272ec103a9a3",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "handle-edge-cases-in-simplenote-checklist-updates": {
+          "first_line": 36,
+          "last_line": 60,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.simple_note.access_token_from",
+            "apis.simple_note.search_notes",
+            "apis.simple_note.show_note",
+            "apis.simple_note.update_note"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "302c169_1",
+      "family_id": "302c169",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/302c169_1/ground_truth/solution.py",
+      "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "adjust-phone-alarm-and-disable-others": {
+          "first_line": 37,
+          "last_line": 95,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.show_alarms",
+            "apis.phone.update_alarm"
+          ]
+        },
+        "validate-alarm-changes-and-resolve-ambiguity": {
+          "first_line": 49,
+          "last_line": 95,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.show_alarms",
+            "apis.phone.update_alarm"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "302c169_2",
+      "family_id": "302c169",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/302c169_2/ground_truth/solution.py",
+      "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "adjust-phone-alarm-and-disable-others": {
+          "first_line": 37,
+          "last_line": 95,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.show_alarms",
+            "apis.phone.update_alarm"
+          ]
+        },
+        "validate-alarm-changes-and-resolve-ambiguity": {
+          "first_line": 49,
+          "last_line": 95,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.show_alarms",
+            "apis.phone.update_alarm"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "302c169_3",
+      "family_id": "302c169",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/302c169_3/ground_truth/solution.py",
+      "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "adjust-phone-alarm-and-disable-others": {
+          "first_line": 37,
+          "last_line": 95,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.show_alarms",
+            "apis.phone.update_alarm"
+          ]
+        },
+        "validate-alarm-changes-and-resolve-ambiguity": {
+          "first_line": 49,
+          "last_line": 95,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.phone.show_alarms",
+            "apis.phone.update_alarm"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e7a10f8_1",
+      "family_id": "e7a10f8",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e7a10f8_1/ground_truth/solution.py",
+      "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "spotify-playlist-duration-analysis": {
+          "first_line": 36,
+          "last_line": 50,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e7a10f8_2",
+      "family_id": "e7a10f8",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e7a10f8_2/ground_truth/solution.py",
+      "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "spotify-playlist-duration-analysis": {
+          "first_line": 36,
+          "last_line": 50,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e7a10f8_3",
+      "family_id": "e7a10f8",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e7a10f8_3/ground_truth/solution.py",
+      "solution_sha256": "85da955340c9a7fbee9fe6cfd4bc871366dea4faa210b2de6c937c5b45f1308d",
+      "api_occurrences": 4,
+      "skill_intervals": {
+        "spotify-playlist-duration-analysis": {
+          "first_line": 36,
+          "last_line": 50,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.show_playlist",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "c901732_1",
+      "family_id": "c901732",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/c901732_1/ground_truth/solution.py",
+      "solution_sha256": "912acb1337ce8748c8765c4557760afed5c2f419a2f4572de0b3e3e470e9480d",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "play-most-least-listened-song-from-a-spotify-album-or-playlist": {
+          "first_line": 39,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.search_albums",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "c901732_2",
+      "family_id": "c901732",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/c901732_2/ground_truth/solution.py",
+      "solution_sha256": "912acb1337ce8748c8765c4557760afed5c2f419a2f4572de0b3e3e470e9480d",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "play-most-least-listened-song-from-a-spotify-album-or-playlist": {
+          "first_line": 39,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.search_albums",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "c901732_3",
+      "family_id": "c901732",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/c901732_3/ground_truth/solution.py",
+      "solution_sha256": "912acb1337ce8748c8765c4557760afed5c2f419a2f4572de0b3e3e470e9480d",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "play-most-least-listened-song-from-a-spotify-album-or-playlist": {
+          "first_line": 39,
+          "last_line": 67,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.play_music",
+            "apis.spotify.search_albums",
+            "apis.spotify.show_playlist_library",
+            "apis.spotify.show_song"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "6ea6792_1",
+      "family_id": "6ea6792",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/6ea6792_1/ground_truth/solution.py",
+      "solution_sha256": "040877edf502ba32ad6e8ea40f4aa9a80485acecff665960b9ad23e3506f3bb5",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "approve-or-deny-venmo-requests-from-selected-relationships": {
+          "first_line": 37,
+          "last_line": 80,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.approve_payment_request",
+            "apis.venmo.deny_payment_request",
+            "apis.venmo.show_received_payment_requests"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "6ea6792_2",
+      "family_id": "6ea6792",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/6ea6792_2/ground_truth/solution.py",
+      "solution_sha256": "040877edf502ba32ad6e8ea40f4aa9a80485acecff665960b9ad23e3506f3bb5",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "approve-or-deny-venmo-requests-from-selected-relationships": {
+          "first_line": 37,
+          "last_line": 80,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.approve_payment_request",
+            "apis.venmo.deny_payment_request",
+            "apis.venmo.show_received_payment_requests"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "6ea6792_3",
+      "family_id": "6ea6792",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/6ea6792_3/ground_truth/solution.py",
+      "solution_sha256": "040877edf502ba32ad6e8ea40f4aa9a80485acecff665960b9ad23e3506f3bb5",
+      "api_occurrences": 7,
+      "skill_intervals": {
+        "approve-or-deny-venmo-requests-from-selected-relationships": {
+          "first_line": 37,
+          "last_line": 80,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005",
+            "api_0006",
+            "api_0007"
+          ],
+          "matched_apis": [
+            "apis.phone.access_token_from",
+            "apis.phone.search_contacts",
+            "apis.venmo.access_token_from",
+            "apis.venmo.approve_payment_request",
+            "apis.venmo.deny_payment_request",
+            "apis.venmo.show_received_payment_requests"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e85d92a_1",
+      "family_id": "e85d92a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e85d92a_1/ground_truth/solution.py",
+      "solution_sha256": "4ccb53e54a9b0704603e6d863e28c31440f042ea36a7b681c5727e95d1aa662a",
+      "api_occurrences": 2,
+      "skill_intervals": {
+        "spotify-most-least-played-song-lookup": {
+          "first_line": 36,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002"
+          ],
+          "matched_apis": [
+            "apis.spotify.search_artists",
+            "apis.spotify.search_songs"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e85d92a_2",
+      "family_id": "e85d92a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e85d92a_2/ground_truth/solution.py",
+      "solution_sha256": "4ccb53e54a9b0704603e6d863e28c31440f042ea36a7b681c5727e95d1aa662a",
+      "api_occurrences": 2,
+      "skill_intervals": {
+        "spotify-most-least-played-song-lookup": {
+          "first_line": 36,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002"
+          ],
+          "matched_apis": [
+            "apis.spotify.search_artists",
+            "apis.spotify.search_songs"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "e85d92a_3",
+      "family_id": "e85d92a",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/e85d92a_3/ground_truth/solution.py",
+      "solution_sha256": "4ccb53e54a9b0704603e6d863e28c31440f042ea36a7b681c5727e95d1aa662a",
+      "api_occurrences": 2,
+      "skill_intervals": {
+        "spotify-most-least-played-song-lookup": {
+          "first_line": 36,
+          "last_line": 48,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002"
+          ],
+          "matched_apis": [
+            "apis.spotify.search_artists",
+            "apis.spotify.search_songs"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "aa8502b_1",
+      "family_id": "aa8502b",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/aa8502b_1/ground_truth/solution.py",
+      "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "handle-spotify-artist-sync-edge-cases": {
+          "first_line": 43,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_following_artists",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.unfollow_artist"
+          ]
+        },
+        "sync-spotify-followed-artists-with-liked-songs": {
+          "first_line": 39,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_following_artists",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.unfollow_artist"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "aa8502b_2",
+      "family_id": "aa8502b",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/aa8502b_2/ground_truth/solution.py",
+      "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "handle-spotify-artist-sync-edge-cases": {
+          "first_line": 43,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_following_artists",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.unfollow_artist"
+          ]
+        },
+        "sync-spotify-followed-artists-with-liked-songs": {
+          "first_line": 39,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_following_artists",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.unfollow_artist"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "aa8502b_3",
+      "family_id": "aa8502b",
+      "solution_path": "/data-nfs/gpu3/u13256401368/skill-organization/data/appworld/data/tasks/aa8502b_3/ground_truth/solution.py",
+      "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc",
+      "api_occurrences": 5,
+      "skill_intervals": {
+        "handle-spotify-artist-sync-edge-cases": {
+          "first_line": 43,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_following_artists",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.unfollow_artist"
+          ]
+        },
+        "sync-spotify-followed-artists-with-liked-songs": {
+          "first_line": 39,
+          "last_line": 71,
+          "occurrence_ids": [
+            "api_0001",
+            "api_0002",
+            "api_0003",
+            "api_0004",
+            "api_0005"
+          ],
+          "matched_apis": [
+            "apis.spotify.access_token_from",
+            "apis.spotify.follow_artist",
+            "apis.spotify.show_following_artists",
+            "apis.spotify.show_liked_songs",
+            "apis.spotify.unfollow_artist"
+          ]
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "adjust-phone-alarm-and-disable-others",
+      "target": "validate-alarm-changes-and-resolve-ambiguity",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "302c169_1",
+          "family_id": "302c169",
+          "source": "adjust-phone-alarm-and-disable-others",
+          "target": "validate-alarm-changes-and-resolve-ambiguity",
+          "source_first_line": 37,
+          "target_first_line": 49,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "target_interval": {
+            "first_line": 49,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759"
+        },
+        {
+          "task_id": "302c169_2",
+          "family_id": "302c169",
+          "source": "adjust-phone-alarm-and-disable-others",
+          "target": "validate-alarm-changes-and-resolve-ambiguity",
+          "source_first_line": 37,
+          "target_first_line": 49,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "target_interval": {
+            "first_line": 49,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759"
+        },
+        {
+          "task_id": "302c169_3",
+          "family_id": "302c169",
+          "source": "adjust-phone-alarm-and-disable-others",
+          "target": "validate-alarm-changes-and-resolve-ambiguity",
+          "source_first_line": 37,
+          "target_first_line": 49,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "target_interval": {
+            "first_line": 49,
+            "last_line": 95,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.show_alarms",
+              "apis.phone.update_alarm"
+            ]
+          },
+          "solution_sha256": "8d0aa130913ef0585b7279c5d8e85700a097762dd62d973d6748056b6291b759"
+        }
+      ]
+    },
+    {
+      "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+      "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "e3d6c94_1",
+          "family_id": "e3d6c94",
+          "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+          "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.create_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc"
+        },
+        {
+          "task_id": "e3d6c94_2",
+          "family_id": "e3d6c94",
+          "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+          "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.create_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc"
+        },
+        {
+          "task_id": "e3d6c94_3",
+          "family_id": "e3d6c94",
+          "source": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+          "target": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.create_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 70,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.add_song_to_playlist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "6cc22549b19737e1793b1327f1388481d8453428fd2d6fd12fbb172d8cda02fc"
+        }
+      ]
+    },
+    {
+      "source": "delete-all-messages-from-sender",
+      "target": "handle-phone-message-deletion-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "771d8fc_1",
+          "family_id": "771d8fc",
+          "source": "delete-all-messages-from-sender",
+          "target": "handle-phone-message-deletion-edge-cases",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b"
+        },
+        {
+          "task_id": "771d8fc_2",
+          "family_id": "771d8fc",
+          "source": "delete-all-messages-from-sender",
+          "target": "handle-phone-message-deletion-edge-cases",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b"
+        },
+        {
+          "task_id": "771d8fc_3",
+          "family_id": "771d8fc",
+          "source": "delete-all-messages-from-sender",
+          "target": "handle-phone-message-deletion-edge-cases",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 57,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.phone.delete_text_message",
+              "apis.phone.delete_voice_message",
+              "apis.phone.search_text_messages",
+              "apis.phone.search_voice_messages"
+            ]
+          },
+          "solution_sha256": "996fae9c854adf82fc741b33ea4f5112ab88a00bad9bed8044c6eb544c94406b"
+        }
+      ]
+    },
+    {
+      "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "6104387_1",
+          "family_id": "6104387",
+          "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+          "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+          "source_first_line": 38,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 87,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.access_token_from",
+              "apis.spotify.delete_account",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 81,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded"
+        },
+        {
+          "task_id": "6104387_2",
+          "family_id": "6104387",
+          "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+          "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+          "source_first_line": 38,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 87,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.access_token_from",
+              "apis.spotify.delete_account",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 81,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded"
+        },
+        {
+          "task_id": "6104387_3",
+          "family_id": "6104387",
+          "source": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+          "target": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+          "source_first_line": 38,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 87,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.access_token_from",
+              "apis.spotify.delete_account",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 81,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.create_file",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "e06a45fc9b4b470c7624f230b7f96290e51e2b490d3e74f3daeeab6d09badded"
+        }
+      ]
+    },
+    {
+      "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "82e2fac_1",
+          "family_id": "82e2fac",
+          "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+          "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+          "source_first_line": 37,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47"
+        },
+        {
+          "task_id": "82e2fac_2",
+          "family_id": "82e2fac",
+          "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+          "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+          "source_first_line": 37,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47"
+        },
+        {
+          "task_id": "82e2fac_3",
+          "family_id": "82e2fac",
+          "source": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+          "target": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+          "source_first_line": 37,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 67,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_album_library",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "3c2963e5ed0d2e178718d3645784dc7abd482872a909c689e1546ecc1f561f47"
+        }
+      ]
+    },
+    {
+      "source": "like-all-played-songs-in-spotify-queue",
+      "target": "handle-spotify-queue-like-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "ccb4494_1",
+          "family_id": "ccb4494",
+          "source": "like-all-played-songs-in-spotify-queue",
+          "target": "handle-spotify-queue-like-edge-cases",
+          "source_first_line": 35,
+          "target_first_line": 37,
+          "source_interval": {
+            "first_line": 35,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "target_interval": {
+            "first_line": 37,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7"
+        },
+        {
+          "task_id": "ccb4494_2",
+          "family_id": "ccb4494",
+          "source": "like-all-played-songs-in-spotify-queue",
+          "target": "handle-spotify-queue-like-edge-cases",
+          "source_first_line": 35,
+          "target_first_line": 37,
+          "source_interval": {
+            "first_line": 35,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "target_interval": {
+            "first_line": 37,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7"
+        },
+        {
+          "task_id": "ccb4494_3",
+          "family_id": "ccb4494",
+          "source": "like-all-played-songs-in-spotify-queue",
+          "target": "handle-spotify-queue-like-edge-cases",
+          "source_first_line": 35,
+          "target_first_line": 37,
+          "source_interval": {
+            "first_line": 35,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "target_interval": {
+            "first_line": 37,
+            "last_line": 48,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.like_song",
+              "apis.spotify.show_current_song",
+              "apis.spotify.show_song_queue"
+            ]
+          },
+          "solution_sha256": "ac7138677ebf039b36e379bcecc45c93e01edda709a37a9c4103800f0048a8b7"
+        }
+      ]
+    },
+    {
+      "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+      "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "29caf6f_1",
+          "family_id": "29caf6f",
+          "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+          "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+          "source_first_line": 36,
+          "target_first_line": 40,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.access_token_from",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "target_interval": {
+            "first_line": 40,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf"
+        },
+        {
+          "task_id": "29caf6f_2",
+          "family_id": "29caf6f",
+          "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+          "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+          "source_first_line": 36,
+          "target_first_line": 40,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.access_token_from",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "target_interval": {
+            "first_line": 40,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf"
+        },
+        {
+          "task_id": "29caf6f_3",
+          "family_id": "29caf6f",
+          "source": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+          "target": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+          "source_first_line": 36,
+          "target_first_line": 40,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.access_token_from",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "target_interval": {
+            "first_line": 40,
+            "last_line": 93,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.phone.search_text_messages",
+              "apis.phone.send_text_message",
+              "apis.simple_note.search_notes",
+              "apis.simple_note.show_note"
+            ]
+          },
+          "solution_sha256": "cf7adc8eb0639070c706e162eae71a10be6f9c9cdb22fbbb4e7be28a78f30dbf"
+        }
+      ]
+    },
+    {
+      "source": "split-shared-bill-with-roommates-via-venmo",
+      "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "3c13f5a_1",
+          "family_id": "3c13f5a",
+          "source": "split-shared-bill-with-roommates-via-venmo",
+          "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+          "source_first_line": 38,
+          "target_first_line": 42,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "target_interval": {
+            "first_line": 42,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.search_contacts",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38"
+        },
+        {
+          "task_id": "3c13f5a_2",
+          "family_id": "3c13f5a",
+          "source": "split-shared-bill-with-roommates-via-venmo",
+          "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+          "source_first_line": 38,
+          "target_first_line": 42,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "target_interval": {
+            "first_line": 42,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.search_contacts",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38"
+        },
+        {
+          "task_id": "3c13f5a_3",
+          "family_id": "3c13f5a",
+          "source": "split-shared-bill-with-roommates-via-venmo",
+          "target": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+          "source_first_line": 38,
+          "target_first_line": 42,
+          "source_interval": {
+            "first_line": 38,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.access_token_from",
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "target_interval": {
+            "first_line": 42,
+            "last_line": 76,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0007"
+            ],
+            "matched_apis": [
+              "apis.file_system.show_directory",
+              "apis.file_system.show_file",
+              "apis.phone.search_contacts",
+              "apis.venmo.create_payment_request"
+            ]
+          },
+          "solution_sha256": "07d3cf87a6604e51078ee77fa6dec4183fd3dadc515ce4f338b074ffc091fd38"
+        }
+      ]
+    },
+    {
+      "source": "spotify-most-least-recommended-artist-finder",
+      "target": "spotify-recommendation-aggregation-edge-case-handling",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "287e338_1",
+          "family_id": "287e338",
+          "source": "spotify-most-least-recommended-artist-finder",
+          "target": "spotify-recommendation-aggregation-edge-case-handling",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6"
+        },
+        {
+          "task_id": "287e338_2",
+          "family_id": "287e338",
+          "source": "spotify-most-least-recommended-artist-finder",
+          "target": "spotify-recommendation-aggregation-edge-case-handling",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6"
+        },
+        {
+          "task_id": "287e338_3",
+          "family_id": "287e338",
+          "source": "spotify-most-least-recommended-artist-finder",
+          "target": "spotify-recommendation-aggregation-edge-case-handling",
+          "source_first_line": 37,
+          "target_first_line": 41,
+          "source_interval": {
+            "first_line": 37,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "target_interval": {
+            "first_line": 41,
+            "last_line": 60,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004"
+            ],
+            "matched_apis": [
+              "apis.spotify.show_artist",
+              "apis.spotify.show_recommendations",
+              "apis.spotify.show_song"
+            ]
+          },
+          "solution_sha256": "1cab96c0faa0b086bc08d6e8cd9dc2906a7d276749a5c5d28194fe6e654bd9f6"
+        }
+      ]
+    },
+    {
+      "source": "spotify-remove-songs-by-release-year",
+      "target": "spotify-robust-pagination-and-removal-handling",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "ce359b5_1",
+          "family_id": "ce359b5",
+          "source": "spotify-remove-songs-by-release-year",
+          "target": "spotify-robust-pagination-and-removal-handling",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7"
+        },
+        {
+          "task_id": "ce359b5_2",
+          "family_id": "ce359b5",
+          "source": "spotify-remove-songs-by-release-year",
+          "target": "spotify-robust-pagination-and-removal-handling",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7"
+        },
+        {
+          "task_id": "ce359b5_3",
+          "family_id": "ce359b5",
+          "source": "spotify-remove-songs-by-release-year",
+          "target": "spotify-robust-pagination-and-removal-handling",
+          "source_first_line": 36,
+          "target_first_line": 39,
+          "source_interval": {
+            "first_line": 36,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "target_interval": {
+            "first_line": 39,
+            "last_line": 131,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006",
+              "api_0007",
+              "api_0008",
+              "api_0009",
+              "api_0010",
+              "api_0011",
+              "api_0012",
+              "api_0013",
+              "api_0014",
+              "api_0015",
+              "api_0016",
+              "api_0017"
+            ],
+            "matched_apis": [
+              "apis.spotify.remove_song_from_library",
+              "apis.spotify.remove_song_from_playlist",
+              "apis.spotify.show_playlist",
+              "apis.spotify.show_playlist_library",
+              "apis.spotify.show_song",
+              "apis.spotify.show_song_library"
+            ]
+          },
+          "solution_sha256": "23d615da18aa33d9479930fce76202a56f0185e67856cedbe6ae60d58bef41d7"
+        }
+      ]
+    },
+    {
+      "source": "sync-spotify-followed-artists-with-liked-songs",
+      "target": "handle-spotify-artist-sync-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "aa8502b_1",
+          "family_id": "aa8502b",
+          "source": "sync-spotify-followed-artists-with-liked-songs",
+          "target": "handle-spotify-artist-sync-edge-cases",
+          "source_first_line": 39,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 39,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc"
+        },
+        {
+          "task_id": "aa8502b_2",
+          "family_id": "aa8502b",
+          "source": "sync-spotify-followed-artists-with-liked-songs",
+          "target": "handle-spotify-artist-sync-edge-cases",
+          "source_first_line": 39,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 39,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc"
+        },
+        {
+          "task_id": "aa8502b_3",
+          "family_id": "aa8502b",
+          "source": "sync-spotify-followed-artists-with-liked-songs",
+          "target": "handle-spotify-artist-sync-edge-cases",
+          "source_first_line": 39,
+          "target_first_line": 43,
+          "source_interval": {
+            "first_line": 39,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.access_token_from",
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "target_interval": {
+            "first_line": 43,
+            "last_line": 71,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005"
+            ],
+            "matched_apis": [
+              "apis.spotify.follow_artist",
+              "apis.spotify.show_following_artists",
+              "apis.spotify.show_liked_songs",
+              "apis.spotify.unfollow_artist"
+            ]
+          },
+          "solution_sha256": "0cce8bc592f14c5b97036eb29f97e91f30803e5964e4d575a9558efdadf64abc"
+        }
+      ]
+    },
+    {
+      "source": "venmo-transaction-totals-for-contact-relationships",
+      "target": "robust-venmo-contact-aggregation-and-edge-cases",
+      "type": "PREREQ",
+      "confidence": 1.0,
+      "support": 3,
+      "evidence": [
+        {
+          "task_id": "d0b1f43_1",
+          "family_id": "d0b1f43",
+          "source": "venmo-transaction-totals-for-contact-relationships",
+          "target": "robust-venmo-contact-aggregation-and-edge-cases",
+          "source_first_line": 41,
+          "target_first_line": 45,
+          "source_interval": {
+            "first_line": 41,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "target_interval": {
+            "first_line": 45,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd"
+        },
+        {
+          "task_id": "d0b1f43_2",
+          "family_id": "d0b1f43",
+          "source": "venmo-transaction-totals-for-contact-relationships",
+          "target": "robust-venmo-contact-aggregation-and-edge-cases",
+          "source_first_line": 41,
+          "target_first_line": 45,
+          "source_interval": {
+            "first_line": 41,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "target_interval": {
+            "first_line": 45,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd"
+        },
+        {
+          "task_id": "d0b1f43_3",
+          "family_id": "d0b1f43",
+          "source": "venmo-transaction-totals-for-contact-relationships",
+          "target": "robust-venmo-contact-aggregation-and-edge-cases",
+          "source_first_line": 41,
+          "target_first_line": 45,
+          "source_interval": {
+            "first_line": 41,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0001",
+              "api_0002",
+              "api_0003",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.access_token_from",
+              "apis.phone.search_contacts",
+              "apis.venmo.access_token_from",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "target_interval": {
+            "first_line": 45,
+            "last_line": 90,
+            "occurrence_ids": [
+              "api_0002",
+              "api_0004",
+              "api_0005",
+              "api_0006"
+            ],
+            "matched_apis": [
+              "apis.phone.search_contacts",
+              "apis.venmo.show_transactions"
+            ]
+          },
+          "solution_sha256": "5beb87c7b6914cd4320de1a2f7389d0d192e2d501da10ab432ab16657b48c2fd"
+        }
+      ]
+    }
+  ],
+  "candidate_counts": {
+    "prereq": 12,
+    "flow": 0
+  },
+  "formal_edge_counts": {
+    "PREREQ": 12
+  },
+  "rejected_counts": {
+    "flow_ambiguous_skill_alignment": 516,
+    "flow_within_skill": 225,
+    "prereq_equal_start_line": 12
+  },
+  "warnings": []
+}

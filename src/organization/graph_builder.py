@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from collections import Counter
 from collections.abc import Iterable, Mapping
 from pathlib import Path
 from typing import Any
@@ -13,8 +12,8 @@ from common.utils import write_json
 from organization.hierarchy import primary_app
 
 
-MIN_ORDER_SUPPORT = 2
-MIN_ORDER_RATIO = 0.8
+MIN_RELATED_API_JACCARD = 0.4
+SUPERVISOR_PREFIX = "apis.supervisor."
 
 
 def build_global_graph(
@@ -23,21 +22,20 @@ def build_global_graph(
     graph_evidence: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:
     records, warnings = parse_skill_records(skill_root)
-    edges = _evidence_edges(records, graph_evidence, warnings)
+    formal_edges = _evidence_edges(records, graph_evidence, warnings)
+    related_edges = _related_edges(records)
     graph = {
-        "schema_version": "typed_skill_graph_v4",
-        "source_scope": "train_ground_truth_evidence_only",
+        "schema_version": "typed_skill_graph_v5",
+        "source_scope": "train_ground_truth_evidence_and_skill_metadata",
         "evidence_schema": (
             graph_evidence.get("schema_version") if graph_evidence else None
         ),
-        "thresholds": dict(graph_evidence.get("thresholds", {}))
-        if graph_evidence
-        else {},
-        "nodes": [
-            {"id": record["id"], "name": record["name"], "type": record["type"]}
-            for record in records.values()
-        ],
-        "edges": [edge.__dict__ for edge in _unique_edges(edges)],
+        "thresholds": {
+            **(dict(graph_evidence.get("thresholds", {})) if graph_evidence else {}),
+            "min_related_api_jaccard": MIN_RELATED_API_JACCARD,
+        },
+        "nodes": [_node_record(record) for record in records.values()],
+        "edges": [edge.__dict__ for edge in _unique_edges(formal_edges + related_edges)],
         "warnings": warnings,
     }
     validate_global_graph(graph)
@@ -52,14 +50,17 @@ def _evidence_edges(
     warnings: list[str],
 ) -> list[GraphEdge]:
     if evidence is None:
-        warnings.append("no Train graph evidence supplied; graph contains nodes only")
+        warnings.append(
+            "no Train graph evidence supplied; graph contains metadata-derived RELATED edges only"
+        )
         return []
     if (
-        evidence.get("schema_version") != "train_graph_evidence_v1"
+        evidence.get("schema_version") != "train_graph_evidence_v2"
         or evidence.get("split") != "train"
         or evidence.get("source_scope") != "train_ground_truth_solutions_only"
     ):
-        raise ValueError("global graph requires train_graph_evidence_v1 Train GT evidence")
+        raise ValueError("global graph requires train_graph_evidence_v2 Train GT evidence")
+
     result = []
     for raw in evidence.get("edges", []):
         if not isinstance(raw, Mapping):
@@ -67,29 +68,100 @@ def _evidence_edges(
         edge = GraphEdge(**dict(raw))
         if edge.source not in records or edge.target not in records:
             raise ValueError("graph evidence references an unknown Skill")
-        if edge.type == "SUPPORTS":
-            source, target = records[edge.source], records[edge.target]
-            if source["type"] != "Shared" or target["type"] != "Core":
-                raise ValueError("SUPPORTS must point from Shared to Core")
-            if len(source["source_families"]) < 2:
-                raise ValueError("SUPPORTS source must span at least two Train families")
-            if not any(
-                isinstance(item, Mapping)
-                and item.get("family_id") in source["source_families"]
-                for item in edge.evidence
-            ):
-                raise ValueError("SUPPORTS lacks source-family trajectory evidence")
-        elif edge.support < 2:
+        if edge.type not in {"PREREQ", "FLOW"}:
+            raise ValueError("formal graph evidence may only contain PREREQ and FLOW edges")
+        if edge.support < 2:
             raise ValueError(f"formal {edge.type} edge requires support from two Train GTs")
         result.append(edge)
     return result
+
+
+def _related_edges(records: Mapping[str, Mapping[str, Any]]) -> list[GraphEdge]:
+    edges: list[GraphEdge] = []
+    ids = sorted(records)
+    for left_index, left_id in enumerate(ids):
+        for right_id in ids[left_index + 1 :]:
+            left, right = records[left_id], records[right_id]
+            family_evidence = _same_family_evidence(left, right)
+            if family_evidence:
+                edges.append(
+                    GraphEdge(
+                        source=left_id,
+                        target=right_id,
+                        type="RELATED",
+                        confidence=1.0,
+                        support=max(1, len(family_evidence[0].get("shared_tasks", []))),
+                        evidence=family_evidence,
+                    )
+                )
+                continue
+
+            shared_apps = sorted(set(left["apps"]) & set(right["apps"]))
+            if not shared_apps:
+                continue
+            shared_apis = sorted(set(left["app_apis"]) & set(right["app_apis"]))
+            jaccard = _jaccard(left["app_apis"], right["app_apis"])
+            if jaccard < MIN_RELATED_API_JACCARD:
+                continue
+            edges.append(
+                GraphEdge(
+                    source=left_id,
+                    target=right_id,
+                    type="RELATED",
+                    confidence=jaccard,
+                    support=max(1, len(shared_apps)),
+                    evidence=[{
+                        "condition": "shared_app_and_api_overlap",
+                        "shared_apps": shared_apps,
+                        "shared_apis": shared_apis,
+                        "api_jaccard": jaccard,
+                    }],
+                )
+            )
+    return edges
+
+
+def _same_family_evidence(
+    left: Mapping[str, Any], right: Mapping[str, Any]
+) -> list[dict[str, Any]]:
+    left_family = left.get("family_id")
+    if not isinstance(left_family, str) or not left_family:
+        return []
+    if left_family != right.get("family_id"):
+        return []
+    shared_tasks = sorted(
+        set(left.get("source_tasks", [])) & set(right.get("source_tasks", []))
+    )
+    return [{
+        "condition": "same_train_family",
+        "family_id": left_family,
+        "left_role": left.get("skill_role"),
+        "right_role": right.get("skill_role"),
+        "shared_tasks": shared_tasks,
+    }]
+
+
+def _node_record(record: Mapping[str, Any]) -> dict[str, Any]:
+    return {
+        "id": record["id"],
+        "name": record["name"],
+        "type": record["type"],
+        "family_id": record["family_id"],
+        "skill_role": record["skill_role"],
+        "primary_app": record["primary_app"],
+        "required_apis": sorted(record["apis"]),
+        "app_apis": sorted(record["app_apis"]),
+        "api_sequences": record["api_sequences"],
+        "source_tasks": record["source_tasks"],
+        "source_families": record["source_families"],
+    }
 
 
 def parse_skill_records(
     skill_root: str | Path,
 ) -> tuple[dict[str, dict[str, Any]], list[str]]:
     records: dict[str, dict[str, Any]] = {}
-    warnings = []
+    warnings: list[str] = []
     root = Path(skill_root)
     for directory in sorted(root.iterdir()) if root.is_dir() else []:
         if not directory.is_dir() or not (directory / "SKILL.md").exists():
@@ -105,16 +177,21 @@ def parse_skill_records(
         evidence = _read_object(directory / "references" / "evidence.json")
         if not metadata:
             warnings.append(f"missing or malformed metadata: {skill_id}")
-        apps = _apps(metadata)
-        trajectory_apis = _strings(api_patterns.get("required_apis"))
-        explicit_sequences = _sequences(api_patterns.get("api_sequences"))
-        if trajectory_apis:
-            explicit_sequences.append(trajectory_apis)
+
+        all_apis = _strings(api_patterns.get("required_apis"))
+        app_apis = [
+            api for api in all_apis if not api.startswith(SUPERVISOR_PREFIX)
+        ]
+        sequences = _sequences(api_patterns.get("api_sequences"))
+        if all_apis:
+            sequences.append(all_apis)
         source_tasks = _source_tasks(metadata, evidence)
         source_families = _source_families(metadata, evidence)
-        supporting_apis = _strings(
-            metadata.get("supporting_apis") or api_patterns.get("supporting_apis")
-        )
+        family_id = _first_nonempty(metadata.get("family_id"), source_families)
+        skill_role = metadata.get("skill_role")
+        if skill_role not in {"primary", "secondary"}:
+            skill_role = "primary"
+
         records[skill_id] = {
             "id": skill_id,
             "name": _skill_name(directory / "SKILL.md", skill_id),
@@ -123,15 +200,15 @@ def parse_skill_records(
                 if metadata.get("candidate_type") == "reusable_subskill"
                 else "Core"
             ),
-            "apps": apps,
-            "apis": sorted(set(trajectory_apis + supporting_apis)),
-            "trajectory_apis": trajectory_apis,
+            "family_id": family_id,
+            "skill_role": skill_role,
+            "primary_app": primary_app(metadata),
+            "apps": _apps(metadata),
+            "apis": sorted(set(all_apis)),
+            "app_apis": sorted(set(app_apis)),
             "source_tasks": source_tasks,
             "source_families": source_families,
-            "api_sequences": explicit_sequences,
-            "supporting_apis": supporting_apis,
-            "supporting_core_ids": _strings(metadata.get("supporting_core_ids")),
-            "data_dependencies": _dependency_records(metadata, api_patterns, evidence),
+            "api_sequences": sequences,
         }
     return records, warnings
 
@@ -150,154 +227,8 @@ def validate_global_graph(graph: Mapping[str, Any]) -> None:
         edge = GraphEdge(**raw)
         if edge.source not in node_set or edge.target not in node_set:
             raise ValueError("global graph edge references an unknown node")
-    # SUPPORTS cycles are irrelevant; execution cycles are resolved per Top-K view.
-    # Cycles are deliberately legal in the offline global graph.
-
-
-def _support_edges(records: Mapping[str, Mapping[str, Any]]) -> list[GraphEdge]:
-    edges = []
-    shared_records = [record for record in records.values() if record["type"] == "Shared"]
-    core_records = [record for record in records.values() if record["type"] == "Core"]
-    for shared in shared_records:
-        for core in core_records:
-            evidence = []
-            support = 0
-            shared_families = set(shared["source_families"])
-            core_families = set(core["source_families"])
-            shared_tasks = set(shared["source_tasks"])
-            core_tasks = set(core["source_tasks"])
-            common_families = sorted(shared_families & core_families)
-            common_tasks = sorted(shared_tasks & core_tasks)
-            matched_apis = sorted(
-                set(shared["supporting_apis"]) & set(core["trajectory_apis"])
-            )
-            if (common_families or common_tasks) and matched_apis:
-                support += len(matched_apis)
-                evidence.append({
-                    "condition": "shared_source_and_api_in_successful_trajectory",
-                    "source_families": common_families,
-                    "source_tasks": common_tasks,
-                    "matched_apis": matched_apis,
-                })
-            subsequences = [
-                sequence
-                for sequence in shared["api_sequences"]
-                if sequence
-                and any(
-                    _is_subsequence(sequence, core_sequence)
-                    for core_sequence in core["api_sequences"]
-                )
-            ]
-            if subsequences:
-                support += len(subsequences)
-                evidence.append({
-                    "condition": "shared_api_sequence_is_core_subsequence",
-                    "matched_sequences": subsequences,
-                })
-            if not evidence:
-                continue
-            denominator = max(
-                1, len(shared["supporting_apis"]) + len(shared["api_sequences"])
-            )
-            edges.append(
-                GraphEdge(
-                    source=shared["id"],
-                    target=core["id"],
-                    type="SUPPORTS",
-                    confidence=min(1.0, support / denominator),
-                    support=support,
-                    evidence=evidence,
-                )
-            )
-    return edges
-
-
-def _explicit_data_dependencies(
-    records: Mapping[str, Mapping[str, Any]],
-) -> list[GraphEdge]:
-    edges = []
-    for record in records.values():
-        for dependency in record["data_dependencies"]:
-            source = dependency.get("producer_skill_id")
-            target = dependency.get("consumer_skill_id")
-            output = dependency.get("output")
-            input_name = dependency.get("input")
-            if (
-                source not in records
-                or target not in records
-                or source == target
-                or not isinstance(output, str)
-                or not isinstance(input_name, str)
-            ):
-                continue
-            support = _positive_int(dependency.get("support"), 1)
-            confidence = _probability(dependency.get("confidence"), 1.0)
-            edges.append(
-                GraphEdge(
-                    source=source,
-                    target=target,
-                    type="DATA_DEP",
-                    confidence=confidence,
-                    support=support,
-                    evidence=[{
-                        "condition": "explicit_producer_consumer_reference",
-                        "output": output,
-                        "input": input_name,
-                    }],
-                )
-            )
-    return edges
-
-
-def _precedence_edges(
-    records: Mapping[str, Mapping[str, Any]],
-    trajectory_orders: Iterable[Mapping[str, Any]],
-) -> list[GraphEdge]:
-    pair_counts: Counter[tuple[str, str]] = Counter()
-    cooccurrence: Counter[frozenset[str]] = Counter()
-    for raw in trajectory_orders:
-        if not isinstance(raw, Mapping):
-            raise ValueError("trajectory order evidence must explicitly declare split=train")
-        split = raw.get("split")
-        if split != "train":
-            raise ValueError(f"non-Train trajectory forbidden in graph build: {split}")
-        evidence_type = raw.get("evidence_type")
-        successful = raw.get("successful", raw.get("success"))
-        if successful is not True and evidence_type not in {
-            "ground_truth_solution",
-            "gt_solution",
-        }:
-            raise ValueError(
-                "PRECEDES evidence must be a successful Train trajectory or GT solution"
-            )
-        order = raw.get("skill_ids", [])
-        ordered = [
-            skill_id for skill_id in _dedupe(_strings(order)) if skill_id in records
-        ]
-        for index, source in enumerate(ordered):
-            for target in ordered[index + 1 :]:
-                pair_counts[(source, target)] += 1
-                cooccurrence[frozenset((source, target))] += 1
-    edges = []
-    for (source, target), before_count in sorted(pair_counts.items()):
-        total = cooccurrence[frozenset((source, target))]
-        ratio = before_count / total if total else 0.0
-        if total >= MIN_ORDER_SUPPORT and ratio >= MIN_ORDER_RATIO:
-            edges.append(
-                GraphEdge(
-                    source=source,
-                    target=target,
-                    type="PRECEDES",
-                    confidence=ratio,
-                    support=total,
-                    evidence=[{
-                        "condition": "train_successful_trajectory_order",
-                        "before_count": before_count,
-                        "cooccur_count": total,
-                    }],
-                )
-            )
-    return edges
+    # RELATED cycles are meaningful clusters; strict execution cycles are resolved
+    # per Top-K view, so cycles are deliberately legal in the offline global graph.
 
 
 def _unique_edges(edges: Iterable[GraphEdge]) -> list[GraphEdge]:
@@ -359,24 +290,18 @@ def _source_families(
     return sorted(set(result))
 
 
-def _dependency_records(*objects: Mapping[str, Any]) -> list[dict[str, Any]]:
-    result = []
-    for value in objects:
-        raw = value.get("data_dependencies", [])
-        if isinstance(raw, list):
-            result.extend(item for item in raw if isinstance(item, dict))
-    return result
-
-
-def _is_subsequence(needle: list[str], haystack: list[str]) -> bool:
-    iterator = iter(haystack)
-    return all(any(candidate == item for candidate in iterator) for item in needle)
-
-
 def _sequences(value: Any) -> list[list[str]]:
     if not isinstance(value, list):
         return []
     return [sequence for item in value if (sequence := _strings(item))]
+
+
+def _jaccard(left: Any, right: Any) -> float:
+    left_set = set(left or [])
+    right_set = set(right or [])
+    if not left_set or not right_set:
+        return 0.0
+    return len(left_set & right_set) / len(left_set | right_set)
 
 
 def _strings(value: Any) -> list[str]:
@@ -385,6 +310,17 @@ def _strings(value: Any) -> list[str]:
 
 def _dedupe(values: Iterable[str]) -> list[str]:
     return list(dict.fromkeys(values))
+
+
+def _first_nonempty(*values: Any) -> str:
+    for value in values:
+        if isinstance(value, list):
+            for item in value:
+                if isinstance(item, str) and item:
+                    return item
+        elif isinstance(value, str) and value:
+            return value
+    return ""
 
 
 def _read_object(path: Path) -> dict[str, Any]:
@@ -408,15 +344,3 @@ def _skill_name(path: Path, fallback: str) -> str:
                 if key.strip() == "name" and name:
                     return name
     return fallback
-
-
-def _positive_int(value: Any, default: int) -> int:
-    return value if isinstance(value, int) and value > 0 else default
-
-
-def _probability(value: Any, default: float) -> float:
-    try:
-        number = float(value)
-    except (TypeError, ValueError):
-        return default
-    return number if 0 <= number <= 1 else default

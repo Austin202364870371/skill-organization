@@ -10,7 +10,7 @@ from common.utils import canonical_hash
 
 CONDITIONS = ("No-Skill", "Flat-NoPD", "Flat-PD", "Hierarchy-PD", "Graph-PD")
 SKILL_CONDITIONS = CONDITIONS[1:]
-EDGE_TYPES = ("SUPPORTS", "DATA_DEP", "PRECEDES")
+EDGE_TYPES = ("PREREQ", "FLOW", "RELATED")
 
 
 def _nonempty(value: str, field_name: str) -> str:

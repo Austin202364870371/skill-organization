@@ -17,7 +17,7 @@ class OrganizationTests(unittest.TestCase):
             "names": {"a": "A", "b": "B"},
         }
         self.graph = {"nodes": [{"id": "a"}, {"id": "b"}], "edges": [{
-            "source": "a", "target": "b", "type": "DATA_DEP", "evidence": [],
+            "source": "a", "target": "b", "type": "FLOW", "evidence": [],
             "confidence": 1.0, "support": 1,
         }]}
 

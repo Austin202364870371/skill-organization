@@ -9,8 +9,9 @@ from common.schemas import GraphEdge, Skill
 from organization.hierarchy import dedupe_skill_ids
 
 
-EXECUTION_EDGE_TYPES = {"DATA_DEP", "PRECEDES"}
-EDGE_PRIORITY = {"DATA_DEP": 2, "PRECEDES": 1}
+EXECUTION_EDGE_TYPES = {"PREREQ", "FLOW"}
+RELATED_EDGE_TYPE = "RELATED"
+EDGE_PRIORITY = {"FLOW": 2, "PREREQ": 1}
 
 
 def build_task_dag(
@@ -60,9 +61,14 @@ def build_task_dag(
         ):
             candidates[key] = edge
 
-    supporting = sorted(
-        (edge for edge in candidates.values() if edge.type == "SUPPORTS"),
-        key=lambda edge: (skill_ids.index(edge.source), skill_ids.index(edge.target)),
+    related = sorted(
+        (edge for edge in candidates.values() if edge.type == RELATED_EDGE_TYPE),
+        key=lambda edge: (
+            -edge.confidence,
+            -edge.support,
+            skill_ids.index(edge.source),
+            skill_ids.index(edge.target),
+        ),
     )
     execution_candidates = [
         edge for edge in candidates.values() if edge.type in EXECUTION_EDGE_TYPES
@@ -79,34 +85,33 @@ def build_task_dag(
     execution_nodes = {
         skill_id for edge in accepted for skill_id in (edge.source, edge.target)
     }
-    support_nodes = {
-        skill_id for edge in supporting for skill_id in (edge.source, edge.target)
+    related_nodes = {
+        skill_id for edge in related for skill_id in (edge.source, edge.target)
     }
     execution_skill_ids = [
         skill_id for skill_id in skill_ids if skill_id in execution_nodes
     ]
-    supporting_only = [
-        skill_id for skill_id in skill_ids
-        if skill_id not in execution_nodes and skill_id in support_nodes
-    ]
+    clusters = _related_components(skill_ids, related)
+    advisory_order = _advisory_order(skill_ids, clusters)
     unlinked = [
         skill_id for skill_id in skill_ids
-        if skill_id not in execution_nodes and skill_id not in support_nodes
+        if skill_id not in execution_nodes and skill_id not in related_nodes
     ]
-    advisory_order = _advisory_order(skill_ids, supporting)
+    entry_skill_id = advisory_order[0] if advisory_order else None
     return {
-        "schema_version": "task_skill_graph_v2",
+        "schema_version": "task_skill_graph_v3",
         "retrieved_skill_ids": skill_ids,
         "nodes": skill_ids,
         "execution_edges": [edge.__dict__ for edge in accepted],
-        "supporting_edges": [edge.__dict__ for edge in supporting],
-        "edges": [edge.__dict__ for edge in accepted + supporting],
+        "related_edges": [edge.__dict__ for edge in related],
+        "edges": [edge.__dict__ for edge in accepted + related],
         "topological_layers": (
             _topological_layers(execution_skill_ids, accepted)
             if execution_skill_ids else []
         ),
+        "related_clusters": clusters,
+        "entry_skill_id": entry_skill_id,
         "advisory_order": advisory_order,
-        "supporting_only_candidates": supporting_only,
         "unlinked_candidates": unlinked,
         "dropped_edges": dropped,
         "warnings": warnings,
@@ -118,13 +123,13 @@ def format_graph_context(
     library: Mapping[str, Skill],
     global_graph: Mapping[str, Any] | None = None,
 ) -> str:
-    """Render a Top-K graph as an action-oriented recommendation.
+    """Render a Top-K graph as either a strict DAG or context clusters.
 
-    The previous rendering led with "no evidenced execution relations" and
-    emphasized "unlinked candidates", which made Graph-PD read as a negative
-    classification rather than a useful plan. This version keeps the same
-    evidence but presents retrieval rank as the default order when no execution
-    edge is available, and labels the remaining skills by their actual role.
+    PREREQ/FLOW edges are execution constraints and are used to produce a
+    topological order. RELATED edges are non-execution context signals; when no
+    strict edge exists in the retrieved subset, they are rendered as clusters
+    with a recommended entry skill instead of being presented as an invented
+    execution order.
     """
     names = {
         node.get("id"): node.get("name")
@@ -135,24 +140,44 @@ def format_graph_context(
         skill_id: rank
         for rank, skill_id in enumerate(dag.get("retrieved_skill_ids", []), start=1)
     }
-    lines = ["Retrieved Skill Graph", "Recommended execution order:"]
+    lines = ["Retrieved Skill Graph"]
     layers = dag.get("topological_layers", [])
     if layers:
+        lines.append("Recommended execution order (PREREQ / FLOW):")
         for index, layer in enumerate(layers):
             lines.append(f"Layer {index}:")
             for skill_id in layer:
                 lines.append(f"- [{skill_id}] {_name(skill_id, library, names)}")
     else:
+        lines.append("No strict PREREQ/FLOW edges in this retrieved subset.")
+        lines.append("Use related-skill clusters and retrieval rank.")
+        entry = dag.get("entry_skill_id")
+        if entry:
+            lines.append(
+                f"Recommended entry skill: [{entry}] "
+                f"{_name(entry, library, names)} (retrieval rank: {ranks[entry]})"
+            )
+        clusters = dag.get("related_clusters", [])
+        lines.append("Related-skill clusters:")
+        if clusters:
+            for index, cluster in enumerate(clusters, start=1):
+                lines.append(f"Cluster {index}:")
+                for skill_id in cluster:
+                    lines.append(
+                        f"- [{skill_id}] {_name(skill_id, library, names)} "
+                        f"(retrieval rank: {ranks[skill_id]})"
+                    )
+        else:
+            lines.append("- none")
         order = dag.get("advisory_order") or dag.get("retrieved_skill_ids", [])
-        lines.append("- no evidenced execution relations in this retrieved subset; using support/retrieval-derived order.")
-        lines.append("Recommended order:")
+        lines.append("Recommended fallback order:")
         for skill_id in order:
             lines.append(
                 f"- [{skill_id}] {_name(skill_id, library, names)} "
                 f"(retrieval rank: {ranks[skill_id]})"
             )
 
-    lines.append("Execution relations:")
+    lines.append("Strict relations (PREREQ / FLOW):")
     execution_edges = dag.get("execution_edges", [])
     if execution_edges:
         lines.extend(
@@ -162,23 +187,12 @@ def format_graph_context(
     else:
         lines.append("- none")
 
-    lines.append("Supporting-only candidates:")
-    supporting_only = dag.get("supporting_only_candidates", [])
-    if supporting_only:
-        for skill_id in supporting_only:
-            lines.append(
-                f"- [{skill_id}] {_name(skill_id, library, names)} "
-                f"(retrieval rank: {ranks[skill_id]})"
-            )
-    else:
-        lines.append("- none")
-
-    lines.append("Supporting relations:")
-    supporting_edges = dag.get("supporting_edges", [])
-    if supporting_edges:
+    lines.append("Related-skill relations:")
+    related_edges = dag.get("related_edges", [])
+    if related_edges:
         lines.extend(
-            f"{edge['source']} supports {edge['target']}"
-            for edge in supporting_edges
+            f"{edge['source']} ~ {edge['target']}"
+            for edge in related_edges
         )
     else:
         lines.append("- none")
@@ -204,31 +218,15 @@ def _name(
 
 
 def _advisory_order(
-    skill_ids: list[str], supporting: Iterable[GraphEdge]
+    skill_ids: list[str], clusters: list[list[str]]
 ) -> list[str]:
-    """Return a stable suggested order when no execution edge is evidenced.
-
-    SUPPORTS edges point from a reusable sub-skill to a Core Skill. In practice
-    the Core target is the main workhorse, so put supported Core targets first
-    (in retrieval rank), then independent candidates, and finally supporting
-    sub-skills. This keeps Graph-PD actionable without inventing DATA_DEP or
-    PRECEDES edges that the Train evidence cannot support.
-    """
-    supported_targets = [edge.target for edge in supporting]
-    support_sources = [edge.source for edge in supporting]
+    """Flatten related clusters by retrieval rank and preserve isolated nodes."""
     seen: set[str] = set()
     ordered: list[str] = []
-    for skill_id in supported_targets:
-        if skill_id in seen or skill_id not in skill_ids:
-            continue
-        seen.add(skill_id)
-        ordered.append(skill_id)
-    for skill_id in skill_ids:
-        if skill_id not in seen and skill_id not in support_sources:
-            seen.add(skill_id)
-            ordered.append(skill_id)
-    for skill_id in support_sources:
-        if skill_id not in seen and skill_id in skill_ids:
+    for cluster in clusters:
+        for skill_id in cluster:
+            if skill_id in seen or skill_id not in skill_ids:
+                continue
             seen.add(skill_id)
             ordered.append(skill_id)
     for skill_id in skill_ids:
@@ -236,6 +234,41 @@ def _advisory_order(
             seen.add(skill_id)
             ordered.append(skill_id)
     return ordered
+
+
+def _related_components(
+    skill_ids: list[str], related_edges: Iterable[GraphEdge]
+) -> list[list[str]]:
+    rank = {skill_id: index for index, skill_id in enumerate(skill_ids)}
+    parent = {skill_id: skill_id for skill_id in skill_ids}
+
+    def find(node: str) -> str:
+        while parent[node] != node:
+            parent[node] = parent[parent[node]]
+            node = parent[node]
+        return node
+
+    def union(left: str, right: str) -> None:
+        left_root, right_root = find(left), find(right)
+        if left_root == right_root:
+            return
+        if rank[left_root] <= rank[right_root]:
+            parent[right_root] = left_root
+        else:
+            parent[left_root] = right_root
+
+    for edge in related_edges:
+        if edge.source in parent and edge.target in parent:
+            union(edge.source, edge.target)
+
+    grouped: dict[str, list[str]] = {}
+    for skill_id in skill_ids:
+        grouped.setdefault(find(skill_id), []).append(skill_id)
+    clusters = []
+    for root, members in sorted(grouped.items(), key=lambda item: (rank[item[0]], item[0])):
+        if len(members) > 1:
+            clusters.append(members)
+    return clusters
 
 
 def _sort_key(edge: GraphEdge) -> tuple[Any, ...]:

@@ -13,9 +13,9 @@ from common.utils import file_hash, write_json
 from organization.graph_builder import parse_skill_records
 
 
-MIN_ORDER_SUPPORT = 2
-MIN_ORDER_RATIO = 0.8
-MIN_DATA_SUPPORT = 2
+MIN_PREREQ_SUPPORT = 2
+MIN_PREREQ_RATIO = 0.8
+MIN_FLOW_SUPPORT = 2
 
 
 def extract_train_graph_evidence(
@@ -24,7 +24,7 @@ def extract_train_graph_evidence(
     output_path: str | Path | None = None,
     split_file: str | Path | None = None,
 ) -> dict[str, Any]:
-    """Extract SUPPORTS, PRECEDES, and DATA_DEP evidence from Train GT code."""
+    """Extract PREREQ and FLOW evidence from Train GT solution code."""
     records, warnings = parse_skill_records(skill_root)
     appworld_root = Path(appworld_root)
     split_path = Path(split_file) if split_file else (
@@ -49,100 +49,110 @@ def extract_train_graph_evidence(
     ):
         raise ValueError("graph evidence input must contain Train task ids only")
 
-    shared = {
-        skill_id: record
-        for skill_id, record in records.items()
-        if record["type"] == "Shared" and len(record["source_families"]) >= 2
-    }
-    support_observations: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
-    order_observations: dict[frozenset[str], list[dict[str, Any]]] = defaultdict(list)
-    dependency_observations: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    prereq_observations: dict[frozenset[str], list[dict[str, Any]]] = defaultdict(list)
+    flow_observations: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     task_records = []
     rejected = Counter()
 
     for task_id in task_ids:
         family_id = task_id.rsplit("_", 1)[0]
-        core_id = f"{family_id}-core"
-        if core_id not in records:
+        family_skills = {
+            skill_id: record
+            for skill_id, record in records.items()
+            if record["family_id"] == family_id
+        }
+        if not family_skills:
             continue
         solution_path = task_root / task_id / "ground_truth" / "solution.py"
         if not solution_path.is_file():
             warnings.append(f"missing Train GT solution: {task_id}")
             continue
         analysis = analyze_solution(solution_path)
-        eligible = {
-            skill_id: record
-            for skill_id, record in shared.items()
-            if family_id in record["source_families"]
-            and core_id in record["supporting_core_ids"]
-        }
-        occurrence_to_skills: dict[str, list[str]] = {}
-        intervals: dict[str, dict[str, Any]] = {}
-        for skill_id, record in eligible.items():
-            declared = set(record["supporting_apis"])
+        occurrences = [
+            {**occurrence, "api": _api_identifier(occurrence["api"])}
+            for occurrence in analysis["occurrences"]
+        ]
+        non_supervisor = [
+            occurrence
+            for occurrence in occurrences
+            if not _is_supervisor_api(occurrence["api"])
+        ]
+
+        matches_by_skill = {}
+        intervals = {}
+        for skill_id, record in family_skills.items():
             matches = [
                 occurrence
-                for occurrence in analysis["occurrences"]
-                if occurrence["api"] in declared
+                for occurrence in non_supervisor
+                if _matches_skill_api(occurrence["api"], record["apis"])
             ]
             if not matches:
-                rejected["support_no_api_coverage"] += 1
+                rejected["prereq_no_api_coverage"] += 1
                 continue
-            matched_apis = sorted({item["api"] for item in matches})
-            support_observations[(skill_id, core_id)].append({
-                "task_id": task_id,
-                "family_id": family_id,
-                "solution_sha256": analysis["solution_sha256"],
-                "matched_apis": matched_apis,
-                "lines": sorted({item["line"] for item in matches}),
-            })
+            matches_by_skill[skill_id] = matches
             intervals[skill_id] = {
                 "first_line": min(item["line"] for item in matches),
                 "last_line": max(item["line"] for item in matches),
                 "occurrence_ids": [item["id"] for item in matches],
-                "matched_apis": matched_apis,
+                "matched_apis": sorted({item["api"] for item in matches}),
             }
-            for occurrence in matches:
-                occurrence_to_skills.setdefault(occurrence["id"], []).append(skill_id)
 
-        for left, right in itertools.combinations(sorted(intervals), 2):
-            left_interval, right_interval = intervals[left], intervals[right]
-            if left_interval["last_line"] < right_interval["first_line"]:
-                source, target = left, right
-            elif right_interval["last_line"] < left_interval["first_line"]:
-                source, target = right, left
-            else:
-                rejected["precedence_overlapping_intervals"] += 1
+        ordered_starts = sorted(
+            (
+                (intervals[skill_id]["first_line"], skill_id)
+                for skill_id in matches_by_skill
+            ),
+            key=lambda item: (item[0], item[1]),
+        )
+        for left, right in itertools.combinations(ordered_starts, 2):
+            left_line, left_skill = left
+            right_line, right_skill = right
+            if left_line == right_line:
+                rejected["prereq_equal_start_line"] += 1
                 continue
-            order_observations[frozenset((left, right))].append({
+            source, target = (left_skill, right_skill)
+            source_line, target_line = left_line, right_line
+            prereq_observations[frozenset((left_skill, right_skill))].append({
                 "task_id": task_id,
                 "family_id": family_id,
                 "source": source,
                 "target": target,
+                "source_first_line": source_line,
+                "target_first_line": target_line,
                 "source_interval": intervals[source],
                 "target_interval": intervals[target],
                 "solution_sha256": analysis["solution_sha256"],
             })
 
-        occurrences = {item["id"]: item for item in analysis["occurrences"]}
+        occurrence_to_skills: dict[str, list[str]] = defaultdict(list)
+        for skill_id, record in family_skills.items():
+            for occurrence in occurrences:
+                if _matches_skill_api(occurrence["api"], record["apis"]):
+                    occurrence_to_skills[occurrence["id"]].append(skill_id)
+
+        occurrence_lookup = {item["id"]: item for item in occurrences}
         seen_task_dependencies = set()
         for dependency in analysis["dependencies"]:
-            source_ids = occurrence_to_skills.get(dependency["source_occurrence"], [])
-            target_ids = occurrence_to_skills.get(dependency["target_occurrence"], [])
+            source_ids = occurrence_to_skills.get(
+                dependency["source_occurrence"], []
+            )
+            target_ids = occurrence_to_skills.get(
+                dependency["target_occurrence"], []
+            )
             if len(source_ids) != 1 or len(target_ids) != 1:
-                rejected["data_dependency_ambiguous_skill_alignment"] += 1
+                rejected["flow_ambiguous_skill_alignment"] += 1
                 continue
             source, target = source_ids[0], target_ids[0]
             if source == target:
-                rejected["data_dependency_within_skill"] += 1
+                rejected["flow_within_skill"] += 1
                 continue
             signature = (source, target, task_id)
             if signature in seen_task_dependencies:
                 continue
             seen_task_dependencies.add(signature)
-            source_occurrence = occurrences[dependency["source_occurrence"]]
-            target_occurrence = occurrences[dependency["target_occurrence"]]
-            dependency_observations[(source, target)].append({
+            source_occurrence = occurrence_lookup[dependency["source_occurrence"]]
+            target_occurrence = occurrence_lookup[dependency["target_occurrence"]]
+            flow_observations[(source, target)].append({
                 "task_id": task_id,
                 "family_id": family_id,
                 "source_api": source_occurrence["api"],
@@ -164,61 +174,48 @@ def extract_train_graph_evidence(
         })
 
     edges = []
-    for (source, target), observations in sorted(support_observations.items()):
-        matched = sorted({api for item in observations for api in item["matched_apis"]})
-        declared_count = max(1, len(shared[source]["supporting_apis"]))
-        edges.append({
-            "source": source,
-            "target": target,
-            "type": "SUPPORTS",
-            "confidence": min(1.0, len(matched) / declared_count),
-            "support": len({item["task_id"] for item in observations}),
-            "evidence": observations,
-        })
-
     for pair, observations in sorted(
-        order_observations.items(), key=lambda item: sorted(item[0])
+        prereq_observations.items(), key=lambda item: sorted(item[0])
     ):
         counts = Counter((item["source"], item["target"]) for item in observations)
         (source, target), before_count = counts.most_common(1)[0]
         comparable = sum(counts.values())
         ratio = before_count / comparable
-        if comparable >= MIN_ORDER_SUPPORT and ratio >= MIN_ORDER_RATIO:
+        if comparable >= MIN_PREREQ_SUPPORT and ratio >= MIN_PREREQ_RATIO:
             edges.append({
                 "source": source,
                 "target": target,
-                "type": "PRECEDES",
+                "type": "PREREQ",
                 "confidence": ratio,
                 "support": comparable,
                 "evidence": observations,
             })
         else:
-            rejected["precedence_below_threshold"] += 1
+            rejected["prereq_below_threshold"] += 1
 
-    for (source, target), observations in sorted(dependency_observations.items()):
+    for (source, target), observations in sorted(flow_observations.items()):
         task_support = len({item["task_id"] for item in observations})
-        if task_support >= MIN_DATA_SUPPORT:
+        if task_support >= MIN_FLOW_SUPPORT:
             edges.append({
                 "source": source,
                 "target": target,
-                "type": "DATA_DEP",
+                "type": "FLOW",
                 "confidence": 1.0,
                 "support": task_support,
                 "evidence": observations,
             })
         else:
-            rejected["data_dependency_below_threshold"] += 1
+            rejected["flow_below_threshold"] += 1
 
     edges.sort(key=lambda edge: (edge["source"], edge["target"], edge["type"]))
     result = {
-        "schema_version": "train_graph_evidence_v1",
+        "schema_version": "train_graph_evidence_v2",
         "source_scope": "train_ground_truth_solutions_only",
         "split": "train",
         "thresholds": {
-            "min_shared_source_families": 2,
-            "min_order_support": MIN_ORDER_SUPPORT,
-            "min_order_ratio": MIN_ORDER_RATIO,
-            "min_data_support": MIN_DATA_SUPPORT,
+            "min_prereq_support": MIN_PREREQ_SUPPORT,
+            "min_prereq_ratio": MIN_PREREQ_RATIO,
+            "min_flow_support": MIN_FLOW_SUPPORT,
         },
         "inputs": {
             "train_split_path": str(split_path.resolve()),
@@ -228,9 +225,8 @@ def extract_train_graph_evidence(
         "task_records": task_records,
         "edges": edges,
         "candidate_counts": {
-            "supports": len(support_observations),
-            "precedence": len(order_observations),
-            "data_dependencies": len(dependency_observations),
+            "prereq": len(prereq_observations),
+            "flow": len(flow_observations),
         },
         "formal_edge_counts": dict(Counter(edge["type"] for edge in edges)),
         "rejected_counts": dict(sorted(rejected.items())),
@@ -280,7 +276,8 @@ class _DataflowAnalyzer:
             for index, node in enumerate(nodes, start=1)
         ]
         self._node_ids = {
-            id(node): occurrence["id"] for node, occurrence in zip(nodes, self.occurrences)
+            id(node): occurrence["id"]
+            for node, occurrence in zip(nodes, self.occurrences)
         }
         self.env: dict[str, set[str]] = {}
         self.dependencies: list[dict[str, Any]] = []
@@ -405,6 +402,26 @@ class _DataflowAnalyzer:
         if root:
             for argument in call.args:
                 self.env.setdefault(root, set()).update(self._lineage(argument))
+
+
+def _api_identifier(api: str) -> str:
+    return api if api.startswith("apis.") else f"apis.{api}"
+
+
+def _matches_skill_api(api: str, declared_apis: Iterable[str]) -> bool:
+    """Match a GT call to a declared API, including AppWorld login aliases."""
+    return any(api in _api_aliases(declared) for declared in declared_apis)
+
+
+def _api_aliases(api: str) -> set[str]:
+    aliases = {api}
+    if api.endswith(".login"):
+        aliases.add(f"{api.rsplit('.', 1)[0]}.access_token_from")
+    return aliases
+
+
+def _is_supervisor_api(api: str) -> bool:
+    return api.startswith("apis.supervisor.")
 
 
 def _api_name(node: ast.Attribute) -> str | None:
