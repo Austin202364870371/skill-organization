@@ -1,0 +1,2249 @@
+{
+  "required_apis": [
+    "apis.phone.login",
+    "apis.phone.search_contacts",
+    "apis.supervisor.complete_task",
+    "apis.supervisor.show_account_passwords",
+    "apis.supervisor.show_profile",
+    "apis.venmo.approve_payment_request",
+    "apis.venmo.deny_payment_request",
+    "apis.venmo.login",
+    "apis.venmo.show_received_payment_requests"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3730/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5143/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4396/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5139/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/2336/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/2339/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4401/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4400/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3732/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3731/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/956/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/1846/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5568/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/1843/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/304/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5567/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4152/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/6034/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/6037/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5565/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5566/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/953/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4155/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/1844/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3804/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5764/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4176/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4168/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5772/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4170/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5469/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4169/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4173/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5467/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4917/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3803/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5768/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4174/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5966/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5771/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3798/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5767/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3730/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5143/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4396/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5139/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/2336/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/2339/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4401/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4400/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3732/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3731/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/956/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/1846/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5568/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/1843/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/304/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5567/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4152/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/6034/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/6037/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5565/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5566/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/953/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4155/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/1844/deny",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/received_payment_requests",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "status"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3804/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5764/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4176/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4168/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5772/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4170/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5469/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4169/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4173/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5467/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4917/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3803/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5768/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/4174/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5966/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5771/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/3798/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/payment_requests/5767/approve",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

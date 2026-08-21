@@ -1,0 +1,24 @@
+{
+  "skill_id": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "29caf6f",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "29caf6f_1",
+  "refinement_task": "29caf6f_2",
+  "acceptance_task": "29caf6f_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "a5c5d87a6218a912fd86a6121fd6716e92fba7e300860a7e9c2f2e6039de5816",
+  "content_hash": "a52c2d8975b4f1128c7ed946c80f01f6200e3e91289443e69a27e411ed51f08b",
+  "required_apps": [
+    "phone",
+    "simple_note"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

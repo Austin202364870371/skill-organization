@@ -1,7 +1,0 @@
-{
-  "supporting_apis": [
-    "spotify.review_song",
-    "spotify.update_song_review",
-    "spotify.show_song_reviews"
-  ]
-}

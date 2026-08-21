@@ -1,0 +1,23 @@
+{
+  "skill_id": "compress-subdirectories-to-archives",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "7d7fbf6",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "7d7fbf6_1",
+  "refinement_task": "7d7fbf6_2",
+  "acceptance_task": "7d7fbf6_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "7e93090f16b643e4189582d0784f4fed04f859e7b2cc4a0deabf164bcfedeb64",
+  "content_hash": "d5963dd539d57cc0d1e5e009b91435491757345bf596f0ed6715f6022181efa3",
+  "required_apps": [
+    "file_system"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

@@ -1,0 +1,1351 @@
+{
+  "required_apis": [
+    "apis.spotify.follow_artist",
+    "apis.spotify.show_following_artists",
+    "apis.spotify.show_liked_songs",
+    "apis.spotify.unfollow_artist",
+    "apis.supervisor.complete_task"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/1",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/2",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/4",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/5",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/6",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/7",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/9",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/11",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/12",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/13",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/14",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/15",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/16",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/19",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/20",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/30",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/34",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/35",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/1",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/2",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/3",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/4",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/5",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/8",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/10",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/11",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/12",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/14",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/16",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/17",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/18",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/1",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/2",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/4",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/5",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/6",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/7",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/9",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/11",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/12",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/13",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/14",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/15",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/16",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/19",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/20",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/30",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/34",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/35",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/1",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/2",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/3",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/4",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/5",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/8",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/10",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/11",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/12",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/14",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/16",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/17",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/spotify/following_artists/18",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

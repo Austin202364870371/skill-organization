@@ -1,0 +1,3 @@
+[
+  "```python\nartist_name = \"Artist Name\"\nranking = \"most\"  # or \"least\"\n\nartists = apis.spotify.search_artists(query=artist_name)\nartist_id = artists[0][\"artist_id\"]\nsort_by = \"-play_count\" if ranking == \"most\" else \"+play_count\"\npage = apis.spotify.search_songs(artist_id=artist_id, sort_by=sort_by)\nsong = page[0]\nanswer = song[\"title\"]\napis.supervisor.complete_task(answer=answer, status=\"success\")\n```"
+]

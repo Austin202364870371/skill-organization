@@ -1,0 +1,25 @@
+{
+  "skill_id": "split-shared-bill-with-roommates-via-venmo",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "3c13f5a",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "3c13f5a_1",
+  "refinement_task": "3c13f5a_2",
+  "acceptance_task": "3c13f5a_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "30b09f1d100386292163d3dd0c100f5a6e8d4f0aa400a16ffce14c03cb0f72f8",
+  "content_hash": "32b46a4b066e604cbb15bcda180e23a898df63504eb7dec99fc44e01ba710587",
+  "required_apps": [
+    "file_system",
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

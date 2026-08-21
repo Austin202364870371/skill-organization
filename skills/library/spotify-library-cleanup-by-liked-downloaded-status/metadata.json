@@ -1,0 +1,23 @@
+{
+  "skill_id": "spotify-library-cleanup-by-liked-downloaded-status",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "229360a",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "229360a_1",
+  "refinement_task": "229360a_2",
+  "acceptance_task": "229360a_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "317d4bc0f737028027e3d38984cf8c5631b8ec6a1b0cc85876f2ac96172a1a7b",
+  "content_hash": "98234d5cb146cda87df6d428c25d91c8cbba2faa0db9dd02ad2d870c46a655ef",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

@@ -1,0 +1,416 @@
+{
+  "required_apis": [
+    "apis.phone.search_contacts",
+    "apis.phone.search_text_messages",
+    "apis.phone.send_text_message",
+    "apis.simple_note.search_notes",
+    "apis.simple_note.show_note",
+    "apis.supervisor.complete_task"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/notes/1608",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/4275730168",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/notes/1556",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/2873148336",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/notes/2705",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/7873383923",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/notes/1608",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/4275730168",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/notes/1556",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/2873148336",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/simple_note/notes",
+      "parameter_names": [
+        "access_token",
+        "dont_reorder_pinned",
+        "page_index",
+        "query"
+      ]
+    },
+    {
+      "path": "/simple_note/notes/2705",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/7873383923",
+      "parameter_names": [
+        "access_token",
+        "message"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

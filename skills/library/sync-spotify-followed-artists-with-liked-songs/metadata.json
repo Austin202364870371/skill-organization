@@ -1,0 +1,23 @@
+{
+  "skill_id": "sync-spotify-followed-artists-with-liked-songs",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "aa8502b",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "aa8502b_1",
+  "refinement_task": "aa8502b_2",
+  "acceptance_task": "aa8502b_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "064498de1d27c8e6d16e31d3dda29c6126bb6782d1d6719a106ed21484abc927",
+  "content_hash": "95999c5483ef67a7090577c8e34d3da8a109c37cf6450b79f8c2d57255e5e796",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

@@ -1,0 +1,3 @@
+[
+  "```python\naccess_token = apis.spotify.login(username, password)\nliked_ids = {s.song_id for s in get_all_pages(apis.spotify.show_liked_songs, access_token=access_token)}\nlibrary_ids = set()\nfor pl in get_all_pages(apis.spotify.show_playlist_library, access_token=access_token):\n    library_ids.update(pl.song_ids)\ntarget_ids = library_ids & liked_ids if liked_only else library_ids - liked_ids\nfor sid in target_ids:\n    reviews = get_all_pages(apis.spotify.show_song_reviews, song_id=sid, user_email=user_email)\n    if reviews:\n        apis.spotify.update_song_review(access_token, reviews[0].song_review_id, target_rating)\n    else:\n        apis.spotify.review_song(access_token, sid, target_rating)\n```"
+]

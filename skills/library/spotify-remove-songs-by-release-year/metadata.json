@@ -1,0 +1,23 @@
+{
+  "skill_id": "spotify-remove-songs-by-release-year",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "ce359b5",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "ce359b5_1",
+  "refinement_task": "ce359b5_2",
+  "acceptance_task": "ce359b5_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "2c4ae5272fc4ba817d046289e964eefaad58d590683e814ded2b89bfc467a12f",
+  "content_hash": "167b4d33d21ac577ec55fba4f9fc08dbbc909f2fcd3a64ac6edc29a9d0ee9443",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

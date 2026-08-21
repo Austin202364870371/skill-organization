@@ -1,7 +1,0 @@
-{
-  "supporting_apis": [
-    "file_system.move_file",
-    "file_system.compress_directory",
-    "phone.delete_text_message"
-  ]
-}

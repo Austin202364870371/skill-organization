@@ -1,0 +1,4 @@
+[
+  "```python\n# Fetch all roommates using pagination\nall_contacts = []\npage = 0\nwhile True:\n    contacts = apis.phone.search_contacts(\n        access_token=token, query=\"roommate\", relationship=\"roommate\", page_index=page\n    )\n    all_contacts.extend(contacts)\n    if len(contacts) < 20:\n        break\n    page += 1\nemails = {c['email'] for c in all_contacts}\n```",
+  "```python\n# Extract total amount robustly\nimport re\ncontent = receipt.content\nmatch = re.search(r\"Total (?:Amount|Bill)[^0-9]*\\$?\\s*([0-9,]+\\.?\\d*)\", content)\ntotal = float(match.group(1).replace(\",\", \"\"))\n```"
+]

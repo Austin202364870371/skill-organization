@@ -1,0 +1,23 @@
+{
+  "skill_id": "robust-pagination-and-failure-handling-for-spotify-genre-follow",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "b7a9ee9",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "b7a9ee9_1",
+  "refinement_task": "b7a9ee9_2",
+  "acceptance_task": "b7a9ee9_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "2a3e9282916ac166785a1a67b48fddc69520e716bffd410d61a69290736c0d05",
+  "content_hash": "924ce809ba01348134968c397d1cce70013401b58d4e1954891198c7329dea24",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

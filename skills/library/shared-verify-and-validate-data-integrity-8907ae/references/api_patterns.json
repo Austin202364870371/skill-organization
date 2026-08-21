@@ -1,7 +1,0 @@
-{
-  "supporting_apis": [
-    "file_system.show_file",
-    "simple_note.show_note",
-    "spotify.show_song"
-  ]
-}

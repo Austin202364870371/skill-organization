@@ -1,0 +1,1469 @@
+{
+  "required_apis": [
+    "apis.phone.get_current_date_and_time",
+    "apis.phone.login",
+    "apis.phone.search_contacts",
+    "apis.supervisor.complete_task",
+    "apis.supervisor.show_account_passwords",
+    "apis.supervisor.show_profile",
+    "apis.venmo.like_transaction",
+    "apis.venmo.login",
+    "apis.venmo.show_social_feed"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8230/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8219/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/1245/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/7294/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8223/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8218/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/5215/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/5224/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8220/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/3299/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/4243/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/6909/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8219/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/7334/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8026/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/1749/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/2699/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8226/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/5326/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/3156/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/4751/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8218/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8229/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8225/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/484/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/3299/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8015/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8230/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8219/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/1245/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/7294/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8223/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8218/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/5215/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/5224/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8220/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/3299/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/4243/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/6909/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/social_feed",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8219/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/7334/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8026/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/1749/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/2699/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8226/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/5326/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/3156/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/4751/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8218/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8229/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8225/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/484/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/3299/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8015/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

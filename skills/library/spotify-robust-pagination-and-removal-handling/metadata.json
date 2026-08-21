@@ -1,0 +1,23 @@
+{
+  "skill_id": "spotify-robust-pagination-and-removal-handling",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "ce359b5",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "ce359b5_1",
+  "refinement_task": "ce359b5_2",
+  "acceptance_task": "ce359b5_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "724c3fe50efa652388277ac7d486f1c2d8ff41a11945e70e42e0801c9dcf3954",
+  "content_hash": "d2d22bce0e7f1994dbfc0b2dead655c06369912e27f7567b974dbe58a8484cd0",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

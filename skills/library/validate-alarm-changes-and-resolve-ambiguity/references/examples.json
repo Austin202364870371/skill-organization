@@ -1,0 +1,3 @@
+[
+  "```python\n# Generic example: choose target with ambiguity handling\nmatches = [a for a in alarms if label_substring in a.label]\nif not matches:\n    apis.supervisor.complete_task(answer=None, status=\"success\")\n    return\ntarget = next((a for a in matches if a.enabled), matches[0])\nnew_time = Time.from_string(target.time).add(minutes=shift_minutes).to_string()\napis.phone.update_alarm(alarm_id=target.alarm_id, time=new_time, access_token=token)\nfor a in find_all_from_pages(apis.phone.show_alarms, access_token=token):\n    if a.alarm_id != target.alarm_id and a.enabled:\n        apis.phone.update_alarm(alarm_id=a.alarm_id, enabled=False, access_token=token)\n```"
+]

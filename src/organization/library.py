@@ -78,38 +78,71 @@ def validate_library(
             metadata.get("skill_id") != directory.name
             or metadata.get("source_split") != "train"
             or metadata.get("validation_status") != "grounded"
-            or metadata.get("inclusion_policy") != "train_grounded_v1"
             or any(not path.is_file() for path in required)
             or (directory / "contract.json").exists()
         ):
             invalid.append(directory.name)
             continue
-        try:
-            evidence = read_json(directory / "references" / "evidence.json")
-            read_json(directory / "references" / "api_patterns.json")
-            read_json(directory / "references" / "examples.json")
-        except (FileNotFoundError, ValueError, TypeError):
-            invalid.append(directory.name)
-            continue
-        if not _source_records_match(directory.name, metadata, evidence):
-            invalid.append(directory.name)
-    for skill_id, metadata in metadata_by_id.items():
-        if metadata.get("candidate_type") != "reusable_subskill":
-            continue
-        families = set(metadata.get("supporting_family_ids", []))
-        core_ids = set(metadata.get("supporting_core_ids", []))
-        if (
-            len(families) < 2
-            or families
-            != {str(core_id).removesuffix("-core") for core_id in core_ids}
-            or any(core_id not in metadata_by_id for core_id in core_ids)
-        ):
-            invalid.append(skill_id)
+        if metadata.get("inclusion_policy") == "train_grounded_v2":
+            if not _source_records_match_v2(directory.name, metadata, read_json(directory / "references" / "evidence.json")):
+                invalid.append(directory.name)
+                continue
+        else:
+            if metadata.get("inclusion_policy") != "train_grounded_v1":
+                invalid.append(directory.name)
+                continue
+            try:
+                evidence = read_json(directory / "references" / "evidence.json")
+                read_json(directory / "references" / "api_patterns.json")
+                read_json(directory / "references" / "examples.json")
+            except (FileNotFoundError, ValueError, TypeError):
+                invalid.append(directory.name)
+                continue
+            if not _source_records_match(directory.name, metadata, evidence):
+                invalid.append(directory.name)
+    family_ids = sorted({
+        str(metadata.get("family_id"))
+        for metadata in metadata_by_id.values()
+        if metadata.get("inclusion_policy") == "train_grounded_v2"
+    })
+    v2_skills = {
+        skill_id: metadata
+        for skill_id, metadata in metadata_by_id.items()
+        if metadata.get("inclusion_policy") == "train_grounded_v2"
+    }
+    if v2_skills:
+        for skill_id, metadata in v2_skills.items():
+            if metadata.get("candidate_type") != "core":
+                invalid.append(skill_id)
+            if metadata.get("skill_role") not in {"primary", "secondary"}:
+                invalid.append(skill_id)
+        for family_id in family_ids:
+            roles = {
+                metadata.get("skill_role")
+                for metadata in v2_skills.values()
+                if metadata.get("family_id") == family_id
+            }
+            if not roles or not roles.issubset({"primary", "secondary"}):
+                invalid.append(str(family_id))
     if invalid:
         raise ValueError(
             f"library contains invalid skills: {sorted(set(invalid))[:20]}"
         )
     return {"skills": len(directories), "validated": len(directories)}
+
+
+def _source_records_match_v2(
+    skill_id: str, metadata: Mapping[str, Any], evidence: Mapping[str, Any]
+) -> bool:
+    split_roles = evidence.get("split_roles", {}) if isinstance(evidence, Mapping) else {}
+    return (
+        metadata.get("candidate_type") == "core"
+        and metadata.get("family_id") == split_roles.get("family_id")
+        and metadata.get("generation_task") == split_roles.get("generation_task")
+        and metadata.get("refinement_task") == split_roles.get("refinement_task")
+        and metadata.get("acceptance_task") == split_roles.get("acceptance_task")
+        and metadata.get("reference_hash") == evidence.get("reference_hash")
+    )
 
 
 def _source_records_match(

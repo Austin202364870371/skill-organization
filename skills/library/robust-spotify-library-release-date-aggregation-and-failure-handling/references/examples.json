@@ -1,0 +1,3 @@
+[
+  "```python\nrelease_by_song_id = {}\nfor album in apis.spotify.show_album_library(access_token=token, page_index=idx):\n    for song_id in album.song_ids:\n        try:\n            detail = apis.spotify.show_song(song_id=song_id)\n            release_by_song_id[song_id] = detail.release_date\n        except Exception:\n            release_by_song_id.setdefault(song_id, album.release_date)\n# If the result set is empty:\nif not release_by_song_id:\n    apis.supervisor.complete_task(answer=None, status=\"failure\")\n```"
+]

@@ -3,740 +3,815 @@
   "count": 45,
   "skills": [
     {
-      "skill_id": "07b42fd-core",
-      "candidate_type": "core",
-      "family_id": "07b42fd",
-      "supporting_family_ids": [],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "85a21819c1a621e35e5666e7dcdade90098d4cb9925c53db471c0fac66cdd610",
-      "metadata_sha256": "f3388447a7ba1b75a069fb426fae1c4b6f86891aa1b39d6749945aa9ef8dd38f",
-      "reference_sha256": {
-        "references/api_patterns.json": "6c5642856cea4a5b3f8632148599ebf1326de5c06ced8a2b879554478bb35c3c",
-        "references/evidence.json": "e5b4b2c5d964adf9927e7d493433632b7d24d277d683de3fe136bca0ba37ca0d",
-        "references/examples.json": "2d1a98cd97f7fbebb969bf46de95c10c55c38a3a9b77bbca7cbdf47975b9b6b0"
-      }
-    },
-    {
-      "skill_id": "229360a-core",
-      "candidate_type": "core",
-      "family_id": "229360a",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "d5cb897c12d7c19e102ce8cd0a984bd205539bd98b8811ec642cbe2cfd426302",
-      "metadata_sha256": "e5ed90ebb945cb64f112ed9708c56fc005ccad79174d8f3e4620b8cdf54b92c2",
-      "reference_sha256": {
-        "references/api_patterns.json": "52c71eea64e7a7a7b9288e19e911d4e5c2e8c8fabe6c1367995d1d2bea9ab15e",
-        "references/evidence.json": "31581417f3266cf0ef43db9c83a030308a60d349c31c450015a3e7b97bfd393c",
-        "references/examples.json": "61e68d3c86dc8c33a46a0f8e9e9a5e091797094f2975f84a07d9478787d88195"
-      }
-    },
-    {
-      "skill_id": "22cc237-core",
-      "candidate_type": "core",
-      "family_id": "22cc237",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "04c64ddfe3ba7a57b1c36f502733d4d6785d981b7a9ffe3c2dc9a13cd55bccdc",
-      "metadata_sha256": "5a11e76c3d90fb19d1ef4a852ab498dff2e442cf2490e0da54ed788cd381cb09",
-      "reference_sha256": {
-        "references/api_patterns.json": "0886cdcf997882f9f277a7c70fd08b88db75f95b25f2a5640866d82199727de3",
-        "references/evidence.json": "c2c42a438109616e219fcc8bdabf8fa63b47ba2a27ef8d0a789c76c1d2368ce2",
-        "references/examples.json": "14917d728bb62b8e9ecafb6971b6043d9aa0166abbc03818524792d06fdabfaf"
-      }
-    },
-    {
-      "skill_id": "27e1026-core",
-      "candidate_type": "core",
-      "family_id": "27e1026",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "19c9b2fec701d716dc963a74d515315395d064582ea54dfc7a9bf8b4bc887856",
-      "metadata_sha256": "101d6359c226c2d3c6c803c07a2e9f26f535e291e7257e73a94f40d924b1948b",
-      "reference_sha256": {
-        "references/api_patterns.json": "2396c425cdef36e81aff04908611f11e44811e2f18418bd02c23e1011adf1ee7",
-        "references/evidence.json": "4fec5159238ac0d3acf42daa68e22ed02f25e3879a2b69871600c61b95c00e93",
-        "references/examples.json": "43bae254601cb1d919949be01e07b76ea098e9827d28bd9c63ca5226cb96a7e0"
-      }
-    },
-    {
-      "skill_id": "287e338-core",
-      "candidate_type": "core",
-      "family_id": "287e338",
-      "supporting_family_ids": [],
-      "version": 1,
-      "validation_status": "grounded",
-      "skill_sha256": "ebfa1f1704d68449fa001cca262e12799caf70c9026550c79663c3bc7bee4378",
-      "metadata_sha256": "db426408dde5283de9e76a006c51bced9897394ea714696a53712f921e35e766",
-      "reference_sha256": {
-        "references/api_patterns.json": "3564bb865d99b5c74bb19aee4b877e710377fb26e16fccfca94fba6d4c2e9505",
-        "references/evidence.json": "ab860615e6ddb843dff7f5031d49cca31efceffd72070c9f55579848b69bec76",
-        "references/examples.json": "b15d8ba086094c0aa84702ebfc3aba419a4fe2f7f939c5da4bdd7951cf22ef3f"
-      }
-    },
-    {
-      "skill_id": "29caf6f-core",
-      "candidate_type": "core",
-      "family_id": "29caf6f",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "59ec40c8eeea41b49884487f6305f89daf02e275771adc9037d9b14d1fac7632",
-      "metadata_sha256": "828bd62159eee7d5fffe2e719b177bab9fcca8e12fe94030c91acac61251925a",
-      "reference_sha256": {
-        "references/api_patterns.json": "7a8f01a54907d5007c60f5f2b1bdc2c58d1bd416d3a697ad847d8ebd8d5144b0",
-        "references/evidence.json": "34c726673e4b0ac5e4a4f35cf45dfbf87e17a1a7538dcf80740d1747b48147a4",
-        "references/examples.json": "a8429737cf37674b42989fed64f4d887dad7822f00b9a4772c68eab0cfde1218"
-      }
-    },
-    {
-      "skill_id": "2a163ab-core",
-      "candidate_type": "core",
-      "family_id": "2a163ab",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "c972dd0bfef29f501e07232a551a072e737df731e6a55e4ee263b861c5c063e6",
-      "metadata_sha256": "4780af1fe1915f9818a02abd3713e83b0431f0c7812a42437b9741ff4574b539",
-      "reference_sha256": {
-        "references/api_patterns.json": "49761ab9aff1e3258e8aaeabf185790e4f3f1bffb104c851373526026816e878",
-        "references/evidence.json": "b8e8dbde6de84582e40610c70148d5611b114730d1ab4880658a44102b0fa1cf",
-        "references/examples.json": "234ee4925d213fb548c13e00c599c8bdb7472244376b4f2fc20562b8d39ec254"
-      }
-    },
-    {
-      "skill_id": "302c169-core",
+      "skill_id": "adjust-phone-alarm-and-disable-others",
       "candidate_type": "core",
       "family_id": "302c169",
-      "supporting_family_ids": [],
-      "version": 1,
-      "validation_status": "grounded",
-      "skill_sha256": "182ed9c8968b9da4b1e1aa089f732f2fbc6e56318c67bcad6e2175ce1e1e181c",
-      "metadata_sha256": "8e2bdb005f610ad317897d98d16f051cf89eef99949f55d0c608d449d839eb8a",
-      "reference_sha256": {
-        "references/api_patterns.json": "af4e800c5725a2e24a12ad343122670e61dde8396ff8f4fe24b02b684dcf669c",
-        "references/evidence.json": "f3476825874b8454b6d8aa2eea725c75236507d4bc41aa856c1079b0f7e250c6",
-        "references/examples.json": "8b68b7f9a30b6e96910f7ba43bfb22bd278424d232d9a60846b6eaab8e1baafb"
-      }
-    },
-    {
-      "skill_id": "34d9492-core",
-      "candidate_type": "core",
-      "family_id": "34d9492",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "62d4b8fbc0212df16a7db26762bbc5d6949bd210d47937d23452b9e774065e43",
-      "metadata_sha256": "8096f576545fe324c0b217b7a0ef9bfc5dc43c6bc7bb0e4cf2fb23093696346c",
-      "reference_sha256": {
-        "references/api_patterns.json": "39ee3db2674002a6c586ea3b77fc3026e8b81061cdc49031a95f09a1b0b7be18",
-        "references/evidence.json": "fd62d170ca356501eeefb6c3a6bb37db77699ba136b837320c4a7d667ce6b3e9",
-        "references/examples.json": "c931fdf22f8c7b3838c3536dc1c0d72e82e5edff735f0c0d403a9f5c1ed2a497"
-      }
-    },
-    {
-      "skill_id": "3c13f5a-core",
-      "candidate_type": "core",
-      "family_id": "3c13f5a",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "e9527f33ab9c657a633be315c3efa25ad79e89b01b0afc97acecd0e3e80a246a",
-      "metadata_sha256": "ba5fffc837cee74f1bb19961f88c2a7c5f7642282c69782e96abf063b17a01ba",
-      "reference_sha256": {
-        "references/api_patterns.json": "e553fe143ce6bd6ca6388b8c1144413ed75a6dbd6a4c97f7687ed08100f9b44a",
-        "references/evidence.json": "843c1879923e61fd1b322eb717ca16e1d06a3665f555bbd3f7c5d6dff54ee509",
-        "references/examples.json": "c2712aeb43afdf0b3215a0a4f0b2b9d8fe9c55715ab8fca1afd99d3f46046b7c"
-      }
-    },
-    {
-      "skill_id": "60d0b5b-core",
-      "candidate_type": "core",
-      "family_id": "60d0b5b",
+      "skill_role": "primary",
       "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "016dacab9b65047b3870228b1891427f3ed5b7828503f05df6969f1caaffda80",
-      "metadata_sha256": "7e04d18b180d5c0aa3f091b74cae8a3388bc47d34fe41b47ac86c2caa80a7916",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "a34d849b8d345a7c9aa35c6daa6d54fdb398df5753844b16788194951f00e49c",
+      "metadata_sha256": "cce71fb07019c21bcd5fbaf4ee2049d20b198b640cfe3d9fb1b113442c5c25bc",
       "reference_sha256": {
-        "references/api_patterns.json": "65269114afe41ccc964154c8239e8de80f57940dd334a5f2e35ea2c38ccea196",
-        "references/evidence.json": "b988be1a5fbd8e0f91bb247e8a4a1270faa51aecb4d9c50bdc67e550d4e46c4f",
-        "references/examples.json": "2c7a8dfebedfc17d401424f9434b37721347a4e4d3c8da9f354315835313d8c9"
+        "references/api_patterns.json": "bc85745e4bf6b7677b1ba21f4fc3f10c83c92d532f19c72ccac20ec508616c02",
+        "references/evidence.json": "54930b0ae89a5bb1608bd3617214273306ec933319d933fb4aabec829374ea97",
+        "references/examples.json": "d0aa4bfb984287efa3c62ccfc11307bf8d75aaedbaec8ed2f1d0e17e737826c7"
       }
     },
     {
-      "skill_id": "6104387-core",
-      "candidate_type": "core",
-      "family_id": "6104387",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "05c619ec497d7e7b211e9edee768d11c344aa53ef5e14a9218405847043ef7e9",
-      "metadata_sha256": "d7dc2f8bb63822540a5b709e751dcdd24e6c33af3c4fae39e24226dbff902539",
-      "reference_sha256": {
-        "references/api_patterns.json": "d30e8aed24e4176bed931d9473c2d235c62a8817a48b973163026986740a92c7",
-        "references/evidence.json": "7732558f223443db19b855ec34c684a1c5490cc46a89b3d463df89cdca5d76a1",
-        "references/examples.json": "17dc0ed0cb4daf1bb1ca493b5d593b46ae3fff02918f93bba0388fb566b97902"
-      }
-    },
-    {
-      "skill_id": "692c77d-core",
-      "candidate_type": "core",
-      "family_id": "692c77d",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "1db6df0d1ba166050b86fadc9e2c6f9608f92e14b9f87304465a235f07aac8a0",
-      "metadata_sha256": "86e8ec24027eb4ec6e0020667e1f8283cf96aebc790db904d072df88c109205a",
-      "reference_sha256": {
-        "references/api_patterns.json": "f61a624cfb74a86d571a495877ff8b57aa7eecf3a7e84be982e30dcd8cb38368",
-        "references/evidence.json": "df9e42c3ff73ccba73877b83f81406b4950d5b21b61a41d229401db068cd0375",
-        "references/examples.json": "d8600ca8e8a59b2e0d1d418d83dd6a7739764062785618538e497d1d27eac5ba"
-      }
-    },
-    {
-      "skill_id": "6ea6792-core",
+      "skill_id": "approve-or-deny-venmo-requests-from-selected-relationships",
       "candidate_type": "core",
       "family_id": "6ea6792",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "79a85388a15f4d5232938df75638427ec0b12edb04b85d6be2ab0858042f024d",
-      "metadata_sha256": "2880913bbd064536ec3872ce8f23d29260c49fd44c9440d4ac35363f86acb670",
-      "reference_sha256": {
-        "references/api_patterns.json": "0c0c94e5960b1b237f4e5194fe87a7f0ee1c3298f884ea9ad986dcc65a61f0fc",
-        "references/evidence.json": "66afdc672804d2cafc944832882489f24ff1d0230ddb3cce45cb8afe5090bb51",
-        "references/examples.json": "06231555e9974234373e6e91ac02a02be359e64751e0a1d76c17d76e444a0154"
-      }
-    },
-    {
-      "skill_id": "76f2c72-core",
-      "candidate_type": "core",
-      "family_id": "76f2c72",
+      "skill_role": "primary",
       "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "0dd8664b98e2012cfd2fabceccd7fe218efd12af1864f32fe42e987b4be49de9",
-      "metadata_sha256": "aea82276a8bfad15f0e4d6da8de1100f0b6259654ae54dd14022a7024efee6f2",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "manually_revised",
+      "skill_sha256": "4e3e1c21bbb5c12f671d478e4e89823a88e78b77eed907a8cf114d08c0a6424f",
+      "metadata_sha256": "4f9b309117ad17fc4efe8a88d28539b6f73c984fc74249980222eb4f3c8d234b",
       "reference_sha256": {
-        "references/api_patterns.json": "670ab7118b8b16b8426f7dedeedb21ebbaf4cdc92d3c153fc4927798a3876640",
-        "references/evidence.json": "9c56697bdca399bb3e5dab9025aeb1ca5152c08713b26ec6085220ab2f259539",
-        "references/examples.json": "031802c447cb520fa8dea76b577d5d5767cb0846d9c63d6028a5ae797081ac6c"
+        "references/api_patterns.json": "23937078e240d0ff399580830ea94ec73631cbb2f0fbd24763201b6f55626918",
+        "references/evidence.json": "8e80971f10d606598b12eacb412af1caea4b8aa96dd79019a3c6f5cbd9e4beab",
+        "references/examples.json": "5491ecf2101035d1f83eb7e8fbd967720732e7bffde44729838c14caf3d0e1b7"
       }
     },
     {
-      "skill_id": "771d8fc-core",
+      "skill_id": "bulk-set-spotify-song-ratings-by-library-and-liked-status",
       "candidate_type": "core",
-      "family_id": "771d8fc",
+      "family_id": "692c77d",
+      "skill_role": "primary",
       "supporting_family_ids": [],
-      "version": 2,
+      "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "b2a769b8bef99343b52a4211677b71cdb1f8916a831d76020067703e23349b58",
-      "metadata_sha256": "931ff0c15e7d7c3a20645eab48006711aed627d00a90eab53cc1b3297036b863",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "881ffe5315e73534ffce9576b096a503e2a4eb9db218f89a93fef0616c8bff86",
+      "metadata_sha256": "e690abba4770b20a63922ac51e57a10ff3cb6707623a8d6bc63ecb486a42d068",
       "reference_sha256": {
-        "references/api_patterns.json": "ac94c59df5336b3eef6c542b01193e7b00914a74ac111d5092dcc06dd5e21fd6",
-        "references/evidence.json": "6ed1f3f7efdc4995b533e0942d9bcc8ed59398f069027e91f16be7993073ea10",
-        "references/examples.json": "c8343fbd02a969f612679863585a8353b8ede87b77d0bdde6f13c1d0cecc7876"
+        "references/api_patterns.json": "8abb60e570cb9e2eb48ee16bb531f9b8b87ac25d49f9b6e9fb582ea01b9554c2",
+        "references/evidence.json": "936b65b0ec5699ad4a701406a58f664206f8c840bbf06588d6317610b2962e69",
+        "references/examples.json": "eb15b3127f953b0d9b88988550405547313e53d25fd0bf61b6a66241cd328948"
       }
     },
     {
-      "skill_id": "7d7fbf6-core",
+      "skill_id": "compress-subdirectories-to-archives",
       "candidate_type": "core",
       "family_id": "7d7fbf6",
+      "skill_role": "primary",
       "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "bb37386e1ac5847aeb761fa76e95bd40b218590d0b6278f22614b92bf8e7357d",
-      "metadata_sha256": "304b28c102bf34dd63193c1381686432880db9f796ce741cc271d7a0e252a38a",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "d5963dd539d57cc0d1e5e009b91435491757345bf596f0ed6715f6022181efa3",
+      "metadata_sha256": "bf7799b55a732731c1d605baa036f0218d5d991362bcea57c83021e7abc894d0",
       "reference_sha256": {
-        "references/api_patterns.json": "3190239b556ab470eb6be588813f129873e284abb576d78f6fbd998c33afc704",
-        "references/evidence.json": "5772b5a5ef094532585d189f1a900561a9494cda50cf2825fcbd3e1dee1c7978",
-        "references/examples.json": "e6615d717994059cee8cb9cebe6e5de484952b274123a61eba93b76370869086"
+        "references/api_patterns.json": "90fe39925e1be370cfba0c3ad843263b29baf6eabcf11e65782578087a1dca61",
+        "references/evidence.json": "3540a5428fc1f44512f7b777177c26574110eb2ae97ceae7146866276aecd4dc",
+        "references/examples.json": "b11f4519c967c67637ef009381f9753408dcf50674268c366886462712c0b170"
       }
     },
     {
-      "skill_id": "82e2fac-core",
-      "candidate_type": "core",
-      "family_id": "82e2fac",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "49d2dfd5fb61d0d704322855718afb272f8ff42556b0d803142569df5cdeef75",
-      "metadata_sha256": "77cbd84f8129fe85c274521e78bf6b5276adae81c99dbf318e01112be24f10ae",
-      "reference_sha256": {
-        "references/api_patterns.json": "6fcfdd09609bdeb5d3b3ded94afbc28bb2c86611dfbbff113d1ef804fdc57161",
-        "references/evidence.json": "b3b51c9e2e9545eec3b3b49a0049f5c51630f394f9b494bfa32a5b37bdaa6ae6",
-        "references/examples.json": "333a17b44f0d4bce485039f1e7f2c526e35d4576426e98c11fb6026abf971178"
-      }
-    },
-    {
-      "skill_id": "aa8502b-core",
-      "candidate_type": "core",
-      "family_id": "aa8502b",
-      "supporting_family_ids": [],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "ec3db34ccda85456ee988599ec65b38030cef304876397251ea3ab39f69ecce7",
-      "metadata_sha256": "48101c3d0775dbeeb2b2b7c6b576bea2cd29b068240df28414e71dc009250ea1",
-      "reference_sha256": {
-        "references/api_patterns.json": "7c472d2c48110c31b11d79dc8499eaca516f5c914b59ea711fdf3b10dcb66e84",
-        "references/evidence.json": "f3966adbc2be2fc84d5db38fb6e776cbac8e88b11ad86ef29362f7a71c938029",
-        "references/examples.json": "6b279dbb38d11ae4796d7ee49f2a9a887db6c6372d13b7c61eeb9819b904ce76"
-      }
-    },
-    {
-      "skill_id": "afc0fce-core",
-      "candidate_type": "core",
-      "family_id": "afc0fce",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "2a4148d8025f0a9d37b478b821f7e2f0dbbf57afc6f6b6c7c9b468b706a5c2d5",
-      "metadata_sha256": "f8136cc83d80384933d91f969aaad0d247d5fd4dae7fb3c4ce9a36e3d277ffb9",
-      "reference_sha256": {
-        "references/api_patterns.json": "ca2713ddaab2224d9246fa15be0f56f3840d844fe461e35c2cdde7fcacd54f49",
-        "references/evidence.json": "9975b7a407cd25ff5ed691227f4a18a4123f8984f74c993d36abf45f33c17c79",
-        "references/examples.json": "b4c99486760b9d68f1b52271b914259f44c2917718d3750deff900d38ce6a136"
-      }
-    },
-    {
-      "skill_id": "b0a8eae-core",
-      "candidate_type": "core",
-      "family_id": "b0a8eae",
-      "supporting_family_ids": [],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "326f6a6c57178115fe68a5c722cb4d35182bff48ef99ca481b631e5e95e7e5cd",
-      "metadata_sha256": "48618bdef534c3bf022938dbe99dcd26f68962f9da2e6dc6583c1660aa9b058a",
-      "reference_sha256": {
-        "references/api_patterns.json": "68f3c1fae2654ece2bacd6104e5282a6baae934b51dd42a4ebee37f4737bfb4c",
-        "references/evidence.json": "ca61e8ac6856ab5dde1503f9f81e37b942f5cf795191926eb27c9e18a64c5b5f",
-        "references/examples.json": "e59f1a9dab770b33c806f2731058936c7f3c1e66b73eaefc9b908443eaae0246"
-      }
-    },
-    {
-      "skill_id": "b7a9ee9-core",
-      "candidate_type": "core",
-      "family_id": "b7a9ee9",
-      "supporting_family_ids": [],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "9df78d9448f8db06ec02596484d972c75a33015058da4dbb74e987c6dab1aa33",
-      "metadata_sha256": "757329a8df81296372cbb2e858cedcba06a2eb17a4515b71e2b027c3fb4078f5",
-      "reference_sha256": {
-        "references/api_patterns.json": "68577227902b76cd6318c068832c832a59a13a21bda043abad8778f4866e70a7",
-        "references/evidence.json": "b8a65154954e8586920752c7188193351c2fa2380b0a6f28bdb4b2bc06c42d11",
-        "references/examples.json": "269720bf89bacb18e1c32f59d39bdeae3a49e2090a95f8bde0876a9516c7b1ba"
-      }
-    },
-    {
-      "skill_id": "c901732-core",
-      "candidate_type": "core",
-      "family_id": "c901732",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "49255866ecf5a2f725d51823bcb0fa14983bfc76a20c55325d842b501ab5edae",
-      "metadata_sha256": "6084f66f933cc4567399a61b1b604749b098aff00fee9fcabeb23866c2bff04c",
-      "reference_sha256": {
-        "references/api_patterns.json": "ed5af16c3389a5141195f9bc48872249ef6e210ee1251cdc3807c889ca700ffe",
-        "references/evidence.json": "3007b96f43d816dfb5edf5ccd5f1fcfeb74374f6d5f1994156d7a5f0fcdf5abb",
-        "references/examples.json": "f87c75624f778628934c2856225310c996a10c42980ce1867bf55216ad076eba"
-      }
-    },
-    {
-      "skill_id": "ccb4494-core",
-      "candidate_type": "core",
-      "family_id": "ccb4494",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "84a9c7bbf1f6fd7bd4df44fddab721da49a16262e451e59f4fc49cd9dd40234e",
-      "metadata_sha256": "129755f67e36de68b8520ecba299cbbb16d42c3a3559c7f1db1f21faeeafe548",
-      "reference_sha256": {
-        "references/api_patterns.json": "a59f8e2535d15054eae058fd70e5281646c6df09c6ce07b7f70e2ad70fe37ee0",
-        "references/evidence.json": "f1c417f2759a9d8b333aecae8d7f9c65851220c55a05edc371dd1b028e816b05",
-        "references/examples.json": "a1657e5be71524fc3b6a0e16c5854f4859250a3ee386048e649fab314589277e"
-      }
-    },
-    {
-      "skill_id": "ce359b5-core",
-      "candidate_type": "core",
-      "family_id": "ce359b5",
-      "supporting_family_ids": [],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "20dfc4aac55ad04c0a27fac5f511fd3a2c2dae3c173585a56f7181e891778cc1",
-      "metadata_sha256": "c691e444b4eab64b2079f975afac8e74b65e82398f7fe17f22df0fb426e4a77f",
-      "reference_sha256": {
-        "references/api_patterns.json": "89e38655a47fc295da3e0543f5aba7e8ab013216bf2cc7ed9fb0b0ed41f337c1",
-        "references/evidence.json": "548fd016d809bbf8925131f45df7b73ca346248a7fe4c2b3f3fa15609d5c6a0f",
-        "references/examples.json": "1b6db6a1a54a181ea5b0fe30788303c6efd503f03f63ba37af944a719284e498"
-      }
-    },
-    {
-      "skill_id": "cf6abd2-core",
-      "candidate_type": "core",
-      "family_id": "cf6abd2",
-      "supporting_family_ids": [],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "5b5e81525ac67adcd4f50aca6ef112e004a7ddcf869a5fbe88a1ea613b8c74cd",
-      "metadata_sha256": "cf4a0bf7679cdd7195a380646fa8c06f1a02ade874b457a044f2becd1b7ef881",
-      "reference_sha256": {
-        "references/api_patterns.json": "a44ed8731595733048d06ef051a28652b3f24a921b2417bd7bcd52b47616cd22",
-        "references/evidence.json": "bb78230b10e58f58112787f30b1e56c76a9d430f88d3f755b54d195c69b8aed8",
-        "references/examples.json": "6a3de32be0c8922e2c0517d39a8d5241807f04f56c1d9a85abb4e31cb5e284ed"
-      }
-    },
-    {
-      "skill_id": "d0b1f43-core",
-      "candidate_type": "core",
-      "family_id": "d0b1f43",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "1b27dfd5cdbd696a78d018535c5f013d22d4f9fa8bc085141aa1863621e96fb8",
-      "metadata_sha256": "ac8c872daedb69c0b3ca2ce3eac1a846da0a85d939bf0153d65ffde7329cc225",
-      "reference_sha256": {
-        "references/api_patterns.json": "bda280712389aa12b98d8e06a719342a80b4ac2e0581f52d71391fc6af94e881",
-        "references/evidence.json": "6acb9140e559396619abe6303c54715c4701d8f592b82b10c723f1792a0efe51",
-        "references/examples.json": "b721a6e100f04b9cac73ece482f1974442fc618e083175c184039ed8660ebb70"
-      }
-    },
-    {
-      "skill_id": "e3d6c94-core",
+      "skill_id": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
       "candidate_type": "core",
       "family_id": "e3d6c94",
-      "supporting_family_ids": [],
-      "version": 2,
-      "validation_status": "grounded",
-      "skill_sha256": "414d73e019accd4f26a7586e1ed35d48a486cea727cc09a7d637927a2cf7183b",
-      "metadata_sha256": "a6a5b7a70c1f49c731a826abc26e9768cbd22938703befa3ec3d2291e4b23f98",
-      "reference_sha256": {
-        "references/api_patterns.json": "3dca4f67138eac7c205b890d226a3c0740e2d9ba6439e489995eb8a7a397aa41",
-        "references/evidence.json": "c755e3f2e073e71030679669566617ef7baa32fd018d98b0ef3c4e898cc0b788",
-        "references/examples.json": "2623916ab773c31b14e0e63348978a4415e48c438b242b09b02ba825dd1e5f8b"
-      }
-    },
-    {
-      "skill_id": "e7a10f8-core",
-      "candidate_type": "core",
-      "family_id": "e7a10f8",
+      "skill_role": "primary",
       "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "db5c81b44c0cd7f71b29504fef0f7f2575b85ef037f83c395f2a6e810e4a9f6e",
-      "metadata_sha256": "01341a104216ff6acdfe3c78dc12ae42a97cf76674d5616a271cc66908bbd2df",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "14a3498cc7e61246d06daba0c37497964d275a148cf451a67473cc424254acf3",
+      "metadata_sha256": "228b1def61f7bb0c86d4f710f713a965e9c34982e0a46bc46b8092069cc3d3b3",
       "reference_sha256": {
-        "references/api_patterns.json": "145e0aa04e5b447cb9bbe7726c7f546b3e0233460576c5b4def4f2bfe9a63c0e",
-        "references/evidence.json": "1c5cccb98b4a2b054916e6bf12060fef161023e7881387ca79faef730b44b816",
-        "references/examples.json": "8cf877a18bef483be7a920ca67109dcb302f3a8008ec5913e37eb80899fe5116"
+        "references/api_patterns.json": "157a987cb529afcc21764d5b6287cde69b56b7704c03bfd45f245cd3726395af",
+        "references/evidence.json": "8d01c5475d864f1a9054d5a6e9909bd35ad921994bcece22a117199ba2dc6bf3",
+        "references/examples.json": "37255cde4bdb4a8baef54f4deab92fa041a64332b1779d603131f351280f8b28"
       }
     },
     {
-      "skill_id": "e85d92a-core",
+      "skill_id": "delete-all-messages-from-sender",
+      "candidate_type": "core",
+      "family_id": "771d8fc",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "901ffad462c828430313c95926409d7d36835457c9bfa7fec6397bd4b020c6c7",
+      "metadata_sha256": "0f85754ed7c206130bf767a4699571e718610939945ae909ea2f5fea1e3360f5",
+      "reference_sha256": {
+        "references/api_patterns.json": "9234972fea4c8982cb4508039ff2adfa51e98ff1f1995995412129a1f1ca05c9",
+        "references/evidence.json": "60ee857725f56b11f0694454057f0025ad69662b2ff943d45ca5408154404315",
+        "references/examples.json": "6117c6fdc755500c28663de303825767a426578c188f81482debd5676bb43c69"
+      }
+    },
+    {
+      "skill_id": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+      "candidate_type": "core",
+      "family_id": "6104387",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "502484d6e2a1b36ee2ed6ae283eb52ac64496a204788d6c643f084287b86304b",
+      "metadata_sha256": "659b61e1ea3b4946a1704c4d2556da12c6b40a1be0d14efa53cde15af5aed5db",
+      "reference_sha256": {
+        "references/api_patterns.json": "36f424ca54298ab1a9e49bcf581a82b86a4a7d6b60bd56e18a8b0aa06b2a3e44",
+        "references/evidence.json": "6f41eaf90dc2195dd3b29df48b6f448c71e61feb3090c882c4af796823699c3f",
+        "references/examples.json": "2eb3a850086cbab5cf0e5a9489f9e6d6c32bb40c358dbdaebe570f7696c54eb5"
+      }
+    },
+    {
+      "skill_id": "find-oldest-newest-song-across-spotify-libraries",
+      "candidate_type": "core",
+      "family_id": "27e1026",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "8498ca99d24e74f2c44c09e8bed8f06a4bbb940bd5c9ba1d7691ac33dec0216e",
+      "metadata_sha256": "4f57e16eae8a7348ba9f7b8e0742952eadf8d5d574f02293f1480bfc23117cd3",
+      "reference_sha256": {
+        "references/api_patterns.json": "3f1c31b69cae4f980746412a61ff309b222bf2fc9574f5a56ec6e3d57f8e9d0e",
+        "references/evidence.json": "22f832a0943dd1e92a3d6c93b591def59ef97110cd8daed094b9d5002def02d7",
+        "references/examples.json": "bf560078fdd22b4b7f39ea9c9823fbdb822c60c8e112504f9a370786217d17cc"
+      }
+    },
+    {
+      "skill_id": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+      "candidate_type": "core",
+      "family_id": "82e2fac",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "d747109c5313bba934a9159ef7dfdae8775fa6d5edf24bf823b2e8204424751e",
+      "metadata_sha256": "c74ff577b14f434768162e805dae8e53775f0db6c2092f44aed09b8338d3b5da",
+      "reference_sha256": {
+        "references/api_patterns.json": "d54f2c1611ae18e9d060a45f728dd82fc0e37bafa3e42fd3cfd0fe1a000862bd",
+        "references/evidence.json": "79dbe2b258c4edfb0674046fe814a2a945ab737bb3c995deae6d07a02b53b33e",
+        "references/examples.json": "cdeaa58d8ece7d74bfb68c85ad1218eb5e329d274bae7975581755565e4815c7"
+      }
+    },
+    {
+      "skill_id": "handle-edge-cases-in-simplenote-checklist-updates",
+      "candidate_type": "core",
+      "family_id": "cf6abd2",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "03373c3519a5fed016a97f22490a034a447ac12dfd2b7b68b377585403e9a33a",
+      "metadata_sha256": "464051bd1d8d1088b50b594d4f18211697c532ed8aa2508afb873e6c8d7a8b9c",
+      "reference_sha256": {
+        "references/api_patterns.json": "b1cb21874701747e4fedda8b242c912f38df16c059dd607ba507305eb311ba1e",
+        "references/evidence.json": "d7762cc015010e88eac83d2dc5cecf67da45de60654e9bd2a57918464ce3454d",
+        "references/examples.json": "55f6a7f2ef6977972303b726422ca98a5ef43ce6cc6e1b1e232ff81a49acf36d"
+      }
+    },
+    {
+      "skill_id": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+      "candidate_type": "core",
+      "family_id": "e3d6c94",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "1707a8f3714cfc35492f49ee8c321ca8c887bdf27b9fc6e271283d2627d3248e",
+      "metadata_sha256": "e8d712221cbb2f7a179eb688de2eabd7ec7573b90d02a4c1d556f3722bfc4be5",
+      "reference_sha256": {
+        "references/api_patterns.json": "abc8a45d895ac1039fbb44150f7db6204929c458fe320968c733a38e0492c66f",
+        "references/evidence.json": "36a4ae3d7f02e40961a44c125b8de95384ac52346891855c076e65bbed0884e4",
+        "references/examples.json": "f115961a0dfc07de67aac399672610afa2ec7256f64820df2e952b2b6e9d8a16"
+      }
+    },
+    {
+      "skill_id": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+      "candidate_type": "core",
+      "family_id": "82e2fac",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "09dd5b89291fd26f33d451d58bf58c696ca0d4dcd21766aeda401879b07f3434",
+      "metadata_sha256": "6880faa20ba978ec3b456b4a03d54e6cbedd99f5806f51c0660d8607bb53bf22",
+      "reference_sha256": {
+        "references/api_patterns.json": "3eac5d55706eaadc717ac907519853e584d0e79d110e4cb99c11d4905456d7b3",
+        "references/evidence.json": "dfabf091b228e85f7ed6c15a57f9f823636bb58c6aecfaff0cc398714eb6935a",
+        "references/examples.json": "7efde49c345a1574560ee6f7c6199f859b0f094822181e4f36b7c0b2b1fe7267"
+      }
+    },
+    {
+      "skill_id": "handle-phone-message-deletion-edge-cases",
+      "candidate_type": "core",
+      "family_id": "771d8fc",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "c8ab8b1fd490d68bb10fc6aea80b9094637a9b55fff1385bdff15433d59a8507",
+      "metadata_sha256": "87994c93336f3ffc72305836c878254f398db88d88a8f804f6f8721f80b482ce",
+      "reference_sha256": {
+        "references/api_patterns.json": "a4d5d8719a7f2a5b8108ab5950c518853ea27ef85e1f4a65ab21d32fa2ae880c",
+        "references/evidence.json": "0d9453a91b0f9dadecee3a607599a9247e67ec753146a8588cc6bd2f4ad2421d",
+        "references/examples.json": "a022fa7bbad2188946c87219251b4fa518ebb6c41c4a71760de9451e8a08aef0"
+      }
+    },
+    {
+      "skill_id": "handle-spotify-artist-search-pagination-and-follow-errors",
+      "candidate_type": "core",
+      "family_id": "07b42fd",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "3f43bfd49fa31ea37321f1806561a1de4c6746b175afd11e95012697992a4ddc",
+      "metadata_sha256": "28148b89f26396d8425362921ffb31b6be0ebe1b868ca4ff03b33f4a99ba4322",
+      "reference_sha256": {
+        "references/api_patterns.json": "cce09024c6f5e50a2b5c87e6150508e46f3bb9318753d9a1d0d464f3163264de",
+        "references/evidence.json": "2b6aa772ca9e6cc4baac096e6e1e88655f77e58fe32789bd8dc8ee52dc890bce",
+        "references/examples.json": "9e8510c6084b7dfba98ffadb92d01b2bb8c69b54cb8872ea85093bdd6d6d767b"
+      }
+    },
+    {
+      "skill_id": "handle-spotify-artist-sync-edge-cases",
+      "candidate_type": "core",
+      "family_id": "aa8502b",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "b27362354a8f626ef8ae50ed21bc985e94f404824068a129fca7f83d2ab04710",
+      "metadata_sha256": "d57b2cce6f8b456489269a146ed846ef3fdbbb9f283957db549855cc4f4310ec",
+      "reference_sha256": {
+        "references/api_patterns.json": "bb491de60a2be42b3b1a7c59bbe651dbe99339fff547b256d372d11645e78085",
+        "references/evidence.json": "ea6d1177ab448a1615ebe9bd4ced0697be057dac8e13534c30b975b1a1f93bd1",
+        "references/examples.json": "460f848dab1ee82f89d6f03ead43dd14ad09f0e9ce482097dbac67a8f34183bb"
+      }
+    },
+    {
+      "skill_id": "handle-spotify-queue-like-edge-cases",
+      "candidate_type": "core",
+      "family_id": "ccb4494",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "5403ba609c41e11d1117732d63a21d5b4bb0b8bfea3cdabd00ca8660c183e89a",
+      "metadata_sha256": "4fbc82e123b224c4652e189b2984261991a1239115be0a982232758f7dc20fdc",
+      "reference_sha256": {
+        "references/api_patterns.json": "62c2095b396fea515a9278cffa65033acde5b61f358e62c1764a2a7c86984b1e",
+        "references/evidence.json": "7d5819fbd4e23585f759febb8a264ba1e31a5114d1d78e19eb1350dd1901bf45",
+        "references/examples.json": "4b7bb2b3558b7299b6390af2579d98f8a680a7e966c86841e1b75c3e85d41654"
+      }
+    },
+    {
+      "skill_id": "handling-ambiguous-missing-or-malformed-movie-recommendation-data",
+      "candidate_type": "core",
+      "family_id": "29caf6f",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "31ef43828479d14a4790fb98c082de16e5477018e2272e2f14631ee88de2e6fb",
+      "metadata_sha256": "b0d338fcbee7d5a9d020919fc149dfd60017580683c062bedda4890e75f91d3d",
+      "reference_sha256": {
+        "references/api_patterns.json": "8b0d1fb05963521259a0ab1386fe039b1c68b91a60abb28b51ebe59a60af3e5a",
+        "references/evidence.json": "e308df9030a22947242443cea2d9219a459eff7ea54fb634325cb82ca53cba1e",
+        "references/examples.json": "58472d193fd4403fd4ecf03cdc9bc2e95cc9569340674bf7d0a648f3c4995f7f"
+      }
+    },
+    {
+      "skill_id": "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions",
+      "candidate_type": "core",
+      "family_id": "afc0fce",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "ad5337d284bc1e71ac74bb0795588dc7611f7553e7127c56b0ee7fbd81c6c1d8",
+      "metadata_sha256": "98c56b6169772fbd5ccb54046eeb8625ab0120736001b5618f29c89e10a909ab",
+      "reference_sha256": {
+        "references/api_patterns.json": "6065ed2d3e2c7895f414f5f3b9c7bbc84631a1738cf4cf6978ad85fdf390a6d7",
+        "references/evidence.json": "2e7330bc236bf4d35e0f886ed0b0e34b02999df48e55a00381ad295add6200ef",
+        "references/examples.json": "4f33eb55c9f580510914e6c2fbadd60139a1d56e590b89050b1139661a050b78"
+      }
+    },
+    {
+      "skill_id": "like-all-played-songs-in-spotify-queue",
+      "candidate_type": "core",
+      "family_id": "ccb4494",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "2a272908ab04745176bf80c9d4ae9ae830e580793c4b89d18802af9ce9bbcb54",
+      "metadata_sha256": "a426958e31eff121bfc6ca2a0e1b2eade0bbedeec436fe81c32213ec0064ede6",
+      "reference_sha256": {
+        "references/api_patterns.json": "0efb0e365cc5edb8d82215cff5123e8dea2411a298a485c5fe477c096cd0c2d9",
+        "references/evidence.json": "fbdba9235b700f0bcdd9519d96519c7dd82476817f2b5239291e8e30fb6aeda7",
+        "references/examples.json": "e97d5833d0271c28b5a89710cc6fda5657c5adb0d17d1c892c7c54b40b76f2bb"
+      }
+    },
+    {
+      "skill_id": "like-venmo-feed-transactions-for-contacts",
+      "candidate_type": "core",
+      "family_id": "2a163ab",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "86d529886ee858fcd6bbdb53e9e92714d88fd9eaad717d575fc342ddf84535f8",
+      "metadata_sha256": "c2155bd3470660e9be86eb4367363d7ba872b0c1347b26aceabe5f5fa4ab94bd",
+      "reference_sha256": {
+        "references/api_patterns.json": "731b93387691757e9b00fe0fdbc54d1b8928173d82146094f3d2216a2e99c7cc",
+        "references/evidence.json": "94c5ebcab43de3515f1074485d0a9425118f521926890c920b37067fcd3c34d0",
+        "references/examples.json": "7f8a2db9ca5aad84304d3395a781cf7e472cc71279edf7334ca54cedff8bacac"
+      }
+    },
+    {
+      "skill_id": "organize-files-by-date-into-category-folders",
+      "candidate_type": "core",
+      "family_id": "34d9492",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "581d1f89accc3d18e72e794cabd78921ec94ded346637c92f87c27f84b2b8e0b",
+      "metadata_sha256": "437f787f87d20ca12320c5e52a2a443c32b68dc0a336d7937ccb27e33aed009a",
+      "reference_sha256": {
+        "references/api_patterns.json": "b3daac8da8073e8fc7b0b7e9553cd281172ed8d18068d01d6353786aecf9a4e7",
+        "references/evidence.json": "21a3c91ad26439572f005ea16570edfc8fd2d9ccd685f576af246ff702f3e6fc",
+        "references/examples.json": "5b2c6984e1fb0251af25e4ceb57e1e25d9d968185449c31b2c54b3c18f5d328b"
+      }
+    },
+    {
+      "skill_id": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+      "candidate_type": "core",
+      "family_id": "c901732",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "4eb85206bb0b442ddd9bea9c60f37c1c97795624bd82a6eeaf9ff687a33ee89e",
+      "metadata_sha256": "044c077d616754076fb478fe382a146d047df1d4926622b611136f5996a91d9b",
+      "reference_sha256": {
+        "references/api_patterns.json": "bea598aadd1c16a7ff6cb3e966eb8c1f9f52902973399af1b2272a82ad99b9ec",
+        "references/evidence.json": "7086f7cd1bc2090bdc392d2b193cb68db8886b4c8f7b747bc8040fb703a003fe",
+        "references/examples.json": "d9e5e1f62e2a21111fde892af55ea378f4a35fdbd809464da841b89878987b5c"
+      }
+    },
+    {
+      "skill_id": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+      "candidate_type": "core",
+      "family_id": "29caf6f",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "eb15e5a7c6b3bb2bbe7c4652abb9c952704972a9a3566dbe6af05457ee956c8f",
+      "metadata_sha256": "f0d2b408b5a275bf56bc259ef058bd223f4d6ce0c39aba5d256a9161a5c42d7f",
+      "reference_sha256": {
+        "references/api_patterns.json": "e607ba0a2e2cc5cb3bde7a986aa3a6ea61debf9aa28de467ddc1c406754aefa4",
+        "references/evidence.json": "f727ce064194ff735171d0ecc4aa3d3dba6496d01a83c5774e2458732e2e9471",
+        "references/examples.json": "7644251d4c2aa18daa29febfacfa7e61855a1bab9715e5ef7f01a12104da19af"
+      }
+    },
+    {
+      "skill_id": "robust-bill-parsing-for-irregular-filenames-and-amount-formats",
+      "candidate_type": "core",
+      "family_id": "76f2c72",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "2598ce7f32bb47013e97f020c1d1db3da2f760e9c8df5cab76443ae64c45d4bf",
+      "metadata_sha256": "6795d260b28957a21172a92b0045d5c87bbfb92e81e98d714e31b33a9fadeade",
+      "reference_sha256": {
+        "references/api_patterns.json": "ef01f901488a796da5f6fd60b77854648f1207fbffeadafb746e9fff98497beb",
+        "references/evidence.json": "0e050a0eca71fe7c6680f7591694dab061da2531964e7f04c97da9d95ce88b92",
+        "references/examples.json": "82c9a2d86a1de8d7d00235dea9781e542a77d5685062f7dfaabd2e56cde94a8e"
+      }
+    },
+    {
+      "skill_id": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+      "candidate_type": "core",
+      "family_id": "3c13f5a",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "112983d807848b207052ea5cec7efd200048c392826b789df68a2fded44eb00e",
+      "metadata_sha256": "562543944dfd846140d115d537f26a3e8fc47612c05d6a2d441a3e4c99b5034a",
+      "reference_sha256": {
+        "references/api_patterns.json": "c2badabea92bb4373571eab7b28728bd253b90b981525cb1290a49aa25e6acaa",
+        "references/evidence.json": "cb478f0f0740cd33138938cd94c92316e5e70c15b1ed083b0ac76905845a28cd",
+        "references/examples.json": "86fb50c805bda11de403e2805f791a93a7ab5d151118f875cab3fc01c41f9958"
+      }
+    },
+    {
+      "skill_id": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+      "candidate_type": "core",
+      "family_id": "6104387",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "5d8a84877d5dea9a46457060b32155cf11006a34dd1abc3d75fa9b5d7fc0aa99",
+      "metadata_sha256": "04238621ccf8a37d8ef763278fb21e06de510ddecc9f3e64a8893780a7aaf6b9",
+      "reference_sha256": {
+        "references/api_patterns.json": "fb935e77273d695c54295e98bcf5a2ee8e85a55b6e04f386cad01fe0ddf6a6a2",
+        "references/evidence.json": "ec306f3d5035d18c8613187eecb7cb8cd3409a9492b410a6b23de909ebabae00",
+        "references/examples.json": "57c513881d4e7cee4935aefaded4657bc57924f70d5e05a43d690afc9c0b6a6a"
+      }
+    },
+    {
+      "skill_id": "robust-pagination-and-failure-handling-for-spotify-genre-follow",
+      "candidate_type": "core",
+      "family_id": "b7a9ee9",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "924ce809ba01348134968c397d1cce70013401b58d4e1954891198c7329dea24",
+      "metadata_sha256": "e21aff5f6cad5cc39d7c6139bac2fb68ff1d18774e70ea3926b231e22149ddc3",
+      "reference_sha256": {
+        "references/api_patterns.json": "9ef7e770b69fcb69cababed2c20c4dfc09951c9951d921ae9de4358aaa71d9b8",
+        "references/evidence.json": "c1fb4ddaacfee18038453d75548e7f6dd86933c6da120b3e47ba98c194774d90",
+        "references/examples.json": "71f339f26fc6207e83181d27e1c2dbec1baee48600894b25d2a2ad2c6a132304"
+      }
+    },
+    {
+      "skill_id": "robust-pagination-and-partial-failure-handling-for-spotify-cleanup",
+      "candidate_type": "core",
+      "family_id": "229360a",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "8591b7c39bc2783d80b06a93c2986b2b2d46f4cb97d7efdc119d320c4f9e15d0",
+      "metadata_sha256": "675f9877f4db6126552865c275056ee9e5393a5f309e08dc50aa27937973b8a7",
+      "reference_sha256": {
+        "references/api_patterns.json": "708d60910074f40ca377cfa1a10a90a1923a768f98590ecc1ecf0f641f73689f",
+        "references/evidence.json": "d4b6d82998fd8869f7740fc5e5c03608c1ab9fee342a6d67f3e91ba03d9d4974",
+        "references/examples.json": "075a3db2e47d750311d8ae7f34e9aedc157d35adbae506f2525bb4d205100a6f"
+      }
+    },
+    {
+      "skill_id": "robust-spotify-library-release-date-aggregation-and-failure-handling",
+      "candidate_type": "core",
+      "family_id": "27e1026",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "8220a8a33619e1cd9dee0a40dc80b8e4a1602cf0e5d1193a89aed2e6025a605d",
+      "metadata_sha256": "3529501a0be5ffdfb7c2b6e2a059bf15399e64fc0e38dc4150118c163ef3b9e4",
+      "reference_sha256": {
+        "references/api_patterns.json": "44a87cf6dc2add7b06da26a7cea6f897bc4165558623795b6a2f4c38aff2e686",
+        "references/evidence.json": "c3eac5720d3d69e8e8a53246d2cc2a24fb59747499e4cde06303e45b2fdc78c5",
+        "references/examples.json": "0d862f63b841eff6bd3e5d96a700ceea122ddcca1ae9d66e25924159aa153b46"
+      }
+    },
+    {
+      "skill_id": "robust-venmo-contact-aggregation-and-edge-cases",
+      "candidate_type": "core",
+      "family_id": "d0b1f43",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "b8e4ad26889333c2301400721f0735066ddcaca5334145ff155ab460a576e2bd",
+      "metadata_sha256": "29dbd28f5f777a5fd12c654a8c5e3487baee7aac0384d3253bfddf08540faf6c",
+      "reference_sha256": {
+        "references/api_patterns.json": "9c35f453f80b1f543c7c46d0e4a1e12be96cd1a3e2bdb07aff7b1c44e3d216db",
+        "references/evidence.json": "596188e858b135d87458fc355b8a4ae9f02a66faaf350c27439e3c9f5293be4a",
+        "references/examples.json": "c1364164942801017c7d50ef5dba66a920274cf11556a5203e15ef317813f8a4"
+      }
+    },
+    {
+      "skill_id": "split-shared-bill-with-roommates-via-venmo",
+      "candidate_type": "core",
+      "family_id": "3c13f5a",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "32b46a4b066e604cbb15bcda180e23a898df63504eb7dec99fc44e01ba710587",
+      "metadata_sha256": "5d96690effb999a8093f6902b743193be136239b0fd38c159594c2847506b7b4",
+      "reference_sha256": {
+        "references/api_patterns.json": "0f39a89b12ab7a9a9c5abde7ad8505492bf6cd69a542b78adaf54864ef2af49c",
+        "references/evidence.json": "7c4ad77621c9638736043844b8240dc5e09f3eeb22ad75a3ad34f7d37d5195a5",
+        "references/examples.json": "723d918f5bc05cce206c362ed4303f0d1c7c1420961a6c7f6aa83c1bd7ab37c2"
+      }
+    },
+    {
+      "skill_id": "spotify-library-cleanup-by-liked-downloaded-status",
+      "candidate_type": "core",
+      "family_id": "229360a",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
+      "version": 0,
+      "validation_status": "grounded",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "98234d5cb146cda87df6d428c25d91c8cbba2faa0db9dd02ad2d870c46a655ef",
+      "metadata_sha256": "0a3c026168f01995504f91778d3fe0fab7ca053ce579b3b13db3b75d76dbe733",
+      "reference_sha256": {
+        "references/api_patterns.json": "c5c7f16104fd5318bba187504300af12a24ed6c96b803630a5a1bbb869eec4c6",
+        "references/evidence.json": "a54899103e3098bcad2188dbd5d310bfe8ec59b52c11f0773b98885b457813f2",
+        "references/examples.json": "24f8c56bc1a96935f9fc14f2bd3e20c671bd487721ddd2f374152661725b4656"
+      }
+    },
+    {
+      "skill_id": "spotify-most-least-played-song-lookup",
       "candidate_type": "core",
       "family_id": "e85d92a",
+      "skill_role": "primary",
       "supporting_family_ids": [],
-      "version": 2,
+      "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "3a18040649f9aae57a1ebeea21186608fba259c06ce28be255ee458ab641ea1f",
-      "metadata_sha256": "8030f3bb90daa5b6dabf6348e637239247b5fbf3f9fa9b8314a61a7d2cffeea0",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "88d565b8c56a3bf0b79953a7eb42bb57019768dd27552e59ed7f1e1945975393",
+      "metadata_sha256": "47f0e30ead37e851ff8405757d8a6f0ce8fdb571cc0a03c97f11b51fac9190dc",
       "reference_sha256": {
-        "references/api_patterns.json": "0b790837c42bd93f796c3346e46579e723f989ab0ab811a07fefc4248168ee78",
-        "references/evidence.json": "b137910f1a9e0e41f6c2ec3cf46ba2303334bc84284ff9a3e777db71ae555be7",
-        "references/examples.json": "c143bac7b9ffc4e8493fa0b80b38a49e3b523c27e62ef996c5e6a88709b1709c"
+        "references/api_patterns.json": "f1ed103ca25a80e2200b2a9229a7fc237a4d2021b49824771ae3f3c259a53761",
+        "references/evidence.json": "00f284674a4f9abdbc8f6fef970c865295d1b545fa9fb6895fc3d51b146d802f",
+        "references/examples.json": "389ff5814521f848c709dc0d83306205204c0ae2c8256c94d574ad80aac5b6dd"
       }
     },
     {
-      "skill_id": "shared-aggregate-and-process-multi-app-data-046b84",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "22cc237",
-        "3c13f5a",
-        "60d0b5b"
-      ],
+      "skill_id": "spotify-most-least-recommended-artist-finder",
+      "candidate_type": "core",
+      "family_id": "287e338",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "d6bfa6bde21d7bb2a4eaf0bfe58e22f5ef97875900ee6d715943b4828f6e8138",
-      "metadata_sha256": "d439ea12ebd4938898e8eb300817590ed56933290b9f8594af6554178bd7da48",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "6ca3076b5b2128922f431d2e3d691a0101131b1e5cf25c8aefc7fbdfb452ee76",
+      "metadata_sha256": "24661ad52d32d58be2aa2f96db54507e1cccd8539079e3c47cd2f7acbd22c850",
       "reference_sha256": {
-        "references/api_patterns.json": "18d2db414cc4b5018064023c0721c1af2ff3cb8b66f125cd4e3e608da185342e",
-        "references/evidence.json": "fe30cf4941dc03185efdafda79a39808a73fee4102dfa0f75ba0af2f2da44aa7",
-        "references/examples.json": "e49b7bbb4af301fa0f2aef6a13b7313a6075c944ba5918914fcfb04fd7d8899e"
+        "references/api_patterns.json": "177165f03206d1e45b0b9ef23e69b63540b42e1740b348918f5ae5483c06e4ae",
+        "references/evidence.json": "527828f7a11598ac96ff179f754d1e00f0a1062b180d4d66de7b0ccaadd6fc20",
+        "references/examples.json": "4750068e856339ac413198521da117353ebb7b66bcdf08c6c1a51852e40c0a85"
       }
     },
     {
-      "skill_id": "shared-conditional-media-item-management-ae2999",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "229360a",
-        "aa8502b",
-        "ce359b5"
-      ],
+      "skill_id": "spotify-playlist-duration-analysis",
+      "candidate_type": "core",
+      "family_id": "e7a10f8",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "070a932935b093e9a4b7ab7385b0729bc569fbc6dd57c578d24d2897194cb616",
-      "metadata_sha256": "60160736991dfa076f04bc5827890f50164272cd9667f3d9efb73538bd8d43ea",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "90589b4c0c6e67385d0a5c464e41a227034c2a0c28fbcb31d6b98d81e87b7205",
+      "metadata_sha256": "0e6d44e9f82f94ebce19827f5d5171a9e18dccd3f7a9a3fd503fd4a82020bbd3",
       "reference_sha256": {
-        "references/api_patterns.json": "9b6b5040a384d6775b14800e1406f9887a020d3a99ba30b387b87aa3d34ed1bf",
-        "references/evidence.json": "9f703808eebb1460004246382230fac092c9af6ab835fa8a8afc440867544f20",
-        "references/examples.json": "c74b0f8b610d866c2a199cc4aece37df4f7fa3ed149bb99943e92f507e41e8d1"
+        "references/api_patterns.json": "0f1c9de70e5c182119544d7ca35b7bc4c1f5fbc4db3bf211e3d546b193e37c54",
+        "references/evidence.json": "83f4eaa030000fbd57f02b11d6b19b6d2b86698790d70c5a16b9a8908761b920",
+        "references/examples.json": "af95d3ed496a584cdeff6f182d95ecbf7225ea4add43f9587398f6460052dfe3"
       }
     },
     {
-      "skill_id": "shared-cross-app-entity-resolution-f1abe4",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "29caf6f",
-        "6ea6792",
-        "d0b1f43"
-      ],
+      "skill_id": "spotify-recommendation-aggregation-edge-case-handling",
+      "candidate_type": "core",
+      "family_id": "287e338",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "307514c86228f2a0e72f0a0218ddb49876744df3a062788ce53c98f625e9c9aa",
-      "metadata_sha256": "d0b920ad8a824ad69a813790b114c2b77a18ef26996e1296723643067d24e886",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "8bdee7ce99c9d5c5f2f08f8b94f4bbfde10f08d03d56204491573e2c50e3474a",
+      "metadata_sha256": "f6220cc484cf2846231da4a5c70fae5c30da316ad5e8f163fb3e7ccc22fb00fb",
       "reference_sha256": {
-        "references/api_patterns.json": "21c235bb8f7a7bb4dee59557f18e0e3c38d09ce564e3734659f45db8ea23d7ca",
-        "references/evidence.json": "06b763219daae6f597790d46c8022b28e4ca2c18178a8c6bec81c6fee2c8d2ef",
-        "references/examples.json": "940fbed1a32127644f91a4713e89721874e7f84eb294a6979642d208f82b126d"
+        "references/api_patterns.json": "b236225234aebad872012dbd91d6f4e03a0f634f314f1e81e1bc10d615418734",
+        "references/evidence.json": "32f0c6424e7ec5549d9e631e01d6d0ff16a00ab3b9ac7429d0473891c8159f35",
+        "references/examples.json": "e597bf67919414a4482ea776fa6ec679efa3b96fb7a72df37eca3cc201e6c28e"
       }
     },
     {
-      "skill_id": "shared-extract-and-transform-metadata-42f943",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "27e1026",
-        "6104387",
-        "e7a10f8"
-      ],
+      "skill_id": "spotify-remove-songs-by-release-year",
+      "candidate_type": "core",
+      "family_id": "ce359b5",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "f50138bd1ff69288385fb95f0257a42609ae95b2169c73e62d1539d617f07605",
-      "metadata_sha256": "3b6f09c2953a96771f86c9a9ae2a242bafe07bf59aafb7711cf79355df390785",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "167b4d33d21ac577ec55fba4f9fc08dbbc909f2fcd3a64ac6edc29a9d0ee9443",
+      "metadata_sha256": "87d0806784a34adc605c38491738fcc5f4007d5064e5ea287d03844c2d6d0e4c",
       "reference_sha256": {
-        "references/api_patterns.json": "c0667a75e16ddfba45e1de6af86def2f6374a8a41a9196f7f0dd6d5e00083649",
-        "references/evidence.json": "441d3ea3134a00b70f3539d99ce7c675c24f8dd23c33a8ba9a4146246be9e597",
-        "references/examples.json": "3e97f13d501ad958da7aa50da9036424c41abb8781cb56a37b44c7ca8a14bf93"
+        "references/api_patterns.json": "b3cc9dd89131f1a3e056a906501a71c55068cb4e10f914ea5ac759c3af88ca65",
+        "references/evidence.json": "ee22e78600a79009a4e6c5ebffe68edf5d0ca6823e0ed821c6d45fd0acad1b11",
+        "references/examples.json": "e720df24dabe0f9be8855acb87044aa48495a22b6f7ceb2b16f9d5219c49cadf"
       }
     },
     {
-      "skill_id": "shared-file-system-directory-management-f04886",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "34d9492",
-        "771d8fc",
-        "7d7fbf6"
-      ],
+      "skill_id": "spotify-robust-pagination-and-removal-handling",
+      "candidate_type": "core",
+      "family_id": "ce359b5",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "525f0903d02d03df20f78fd796859d6246824976d299938ecae67b867d56b1e6",
-      "metadata_sha256": "199c8ac4946ddfbec102835729678c45a633b83e8de9551549c4c8708b342aae",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "d2d22bce0e7f1994dbfc0b2dead655c06369912e27f7567b974dbe58a8484cd0",
+      "metadata_sha256": "6216e11fb2cd9b7718b150460c204dcd8ea82fb2effdf7854760a6c490940c80",
       "reference_sha256": {
-        "references/api_patterns.json": "de80bd4e201984dfba581f1bc2ab97d98ed4c757024789f365a7ecc8af282bfa",
-        "references/evidence.json": "2651ff6c8a1550c47e375987426818652be13ab187bffdd2d1a21764fcc614fc",
-        "references/examples.json": "bab833d9a1c79b3faca5e930f5093b1296eec0701ce84fe80293ecdfd86b93ad"
+        "references/api_patterns.json": "13369fa4dc6a9bae9cdf31f3bf4bcc73b55cd0e4bb61c4e20a514c67346b1c28",
+        "references/evidence.json": "8a63dccf1dfbe9e76f6a7c5a60623ffbe08cafc9a04ecfc8fa02a7383259424b",
+        "references/examples.json": "06d8d10d04d5281ed341457e7301059e525b3677b4cf69850761b053ef69bee9"
       }
     },
     {
-      "skill_id": "shared-iterative-playlist-and-artist-processing-fcdaf9",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "07b42fd",
-        "aa8502b",
-        "b7a9ee9"
-      ],
+      "skill_id": "start-workout-playlist-from-note",
+      "candidate_type": "core",
+      "family_id": "b0a8eae",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "604d1a6f7070993687b3f5bdcaa49d85fcb8728da9dc40b721e74e7f57235fb8",
-      "metadata_sha256": "b3244e098ec87f7223fd7875a11e519d5db33b0a98694d8327fa30383cbedeb1",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "7e50046a10845a20b8cd750ae483d245160b0a46312ac4a4c514181426e18e18",
+      "metadata_sha256": "ef030666d880a766d81462dd3fb0bac681c4358327a4e4ef7d1258725de3dd58",
       "reference_sha256": {
-        "references/api_patterns.json": "efe0a9348a8980c53195d4e0c1bc56fd958f23947476d26a3030152ebb8d442a",
-        "references/evidence.json": "f7859e990be74e5bac66c34f5f481ea1f9bccd6292ef8a98875c3a3d0d08c005",
-        "references/examples.json": "565ab7c881013b6a51ac355e4bd1f5c3c9b333690c28d35724f67813d15f6a0c"
+        "references/api_patterns.json": "e28d7a62864d34cc122d951f2adc7b4ec94a40bcac74d393b2335d37edb5bd72",
+        "references/evidence.json": "3b2eb6cbbfeae03e5074b28db00daa68afe05860103247ac1a942aa3f02bcb82",
+        "references/examples.json": "ecdddfb0962879420fc1384af7eb319dee81e506f6e25e834788051aa40e48e5"
       }
     },
     {
-      "skill_id": "shared-join-app-specific-entities-7d507c",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "29caf6f",
-        "3c13f5a",
-        "b0a8eae"
-      ],
+      "skill_id": "sum-utility-bills-for-current-year-from-file-system",
+      "candidate_type": "core",
+      "family_id": "76f2c72",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "59e047ceb2a73feb2493b0a289621ed31e46a4a6bd3c761fc836e663daaa8860",
-      "metadata_sha256": "0dbca2e55ad253d18c539cc8eb6a10d566cd1c7d4886ed3d987e8434152d09af",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "f27615a91e8001ffbf0039934901dccc376c2577f3dc8847c52ae9cf22e573ca",
+      "metadata_sha256": "dddb8e2903455312a36950a3facb577daac82ae6c053007ab9939222bda7c0c0",
       "reference_sha256": {
-        "references/api_patterns.json": "5b93258f597d7fb34b25c547bae19df922f2d82a06eeac5a1e3f6e67d0bcb6ca",
-        "references/evidence.json": "668972b33bda019b8f7d095ac0c08bcc28bcd7fc7724fc73e510bfcaebc34151",
-        "references/examples.json": "027e6a824e30b8204e7b0585497a3f3204407568ce45d1aa8218179a4d9b7114"
+        "references/api_patterns.json": "f45093cd5f1b63e650b9092e40d4575cd9d6c449a0a64202a589d027fd5a6450",
+        "references/evidence.json": "25cf84e66be8127bf13f7fd1d55cf5c84eea76b8cde985c7ec036b75eeb52816",
+        "references/examples.json": "2da5f5b2a4c5dbd2a4565449bf2ce8f268425f9baf31b238f5bba99afa46848b"
       }
     },
     {
-      "skill_id": "shared-note-based-task-state-updates-191e5d",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "22cc237",
-        "b0a8eae",
-        "cf6abd2"
-      ],
+      "skill_id": "sync-spotify-followed-artists-with-liked-songs",
+      "candidate_type": "core",
+      "family_id": "aa8502b",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "e13b4e39113d55c9f0102f69b9fa5f3986040b0312d232f3209ae6a238ee3aa6",
-      "metadata_sha256": "2d509cc6afa9fad5e70aeb634818fb04b4c0f57bdf41ea15229b6de970aec852",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "95999c5483ef67a7090577c8e34d3da8a109c37cf6450b79f8c2d57255e5e796",
+      "metadata_sha256": "b88262fd1e552fe3ebee63199883d49ae6401701e0d654eea02b5a05db05880f",
       "reference_sha256": {
-        "references/api_patterns.json": "3193b9375651a1c76121482805947dd9aef468a993fc556d30aec659a01685f1",
-        "references/evidence.json": "96ca4eef0b7e656baeb8ca4dbcf2f030501fdab853e78a1b0a6ce540979f1fda",
-        "references/examples.json": "5d675c670f04cc00cb7d76a37f272fd250c95c327321713a2e89bcbfaa86bfac"
+        "references/api_patterns.json": "e1a1f17e97c2385659588269dd88b1bb8d27109846ef4797041557d5f7612d24",
+        "references/evidence.json": "d6fb1aae732524bb176d6c120031ef7dee50bd094224083298a09339519e50bc",
+        "references/examples.json": "2d436a01ceee4c3cef7adbfacd1599c2b30376c11d690455fd94ac986f9c5215"
       }
     },
     {
-      "skill_id": "shared-paginate-and-filter-api-results-8fccba",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "2a163ab",
-        "82e2fac",
-        "e3d6c94"
-      ],
+      "skill_id": "validate-alarm-changes-and-resolve-ambiguity",
+      "candidate_type": "core",
+      "family_id": "302c169",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "d75e9d37ea66b84ca035271c12ba93729687bf37e2435073d74134270f817267",
-      "metadata_sha256": "a5a1d25278fd39015021c6458c76c9799f9845990e86a727fa8f12cc0c9c4419",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "808101e00e9a2a0e646a87c176c91cf9d180270ff289ab7ca9530de1e7e080a7",
+      "metadata_sha256": "f926dad064dbb27aaeaf57e91c0dc1232ecebb4b84be6b9211da85b49d03aadc",
       "reference_sha256": {
-        "references/api_patterns.json": "e956b09648be279766f36c1f0d3aa6d2651f3af415a579cd3bb6be9cced56cfc",
-        "references/evidence.json": "d8ba29a7167fc637db127c7da56cd53823d5e9da89b9f0c3957b9a9bc25eb5ce",
-        "references/examples.json": "11c50b62b037b71bb84cea15d162e29d3fec83bbb1592e10b0f4bb684b8a32b6"
+        "references/api_patterns.json": "e7a79684d833a6ce552dad8db955f3e91a81a19dac1d16c1856e30ef24631b20",
+        "references/evidence.json": "ecb3704fffc568fa02ccee053261d28364e6407eb4d3bc8eae574d9f725b999a",
+        "references/examples.json": "caf51c2f3d53565d04f34ad5ffab9a054bb933f9d7ec048ba877f9f1bf9c7c6b"
       }
     },
     {
-      "skill_id": "shared-ranking-by-metadata-criteria-532682",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "287e338",
-        "82e2fac",
-        "e85d92a"
-      ],
+      "skill_id": "venmo-refund-edge-cases-and-verification",
+      "candidate_type": "core",
+      "family_id": "60d0b5b",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "a16b8783b53dc201eb93e998064dd91939ef75162303daef9bcdfe3ca2cc7c1b",
-      "metadata_sha256": "eb1f966855b1822e71c49827ec9fcc6eb033f70783e86758acfc61f42d7b5d75",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "a3e187bc3ec15c0605c0867c0d603167586d65230843475e3f7eb1eb16852a06",
+      "metadata_sha256": "20b7c9244eb363aad99bfa075b49775d910acd480b6b1644ca33ef52cd5b5bf6",
       "reference_sha256": {
-        "references/api_patterns.json": "dbf5aba97e2a7fb2dd156fb46e033f50f7659c2b62f4f28014fe7b95ae32a3ed",
-        "references/evidence.json": "0af68f25de097a2f20111cc25b3c0e366823429b47d2aaaa78bf07f250da9c24",
-        "references/examples.json": "19f54c217eac50082ef4b11fc2ac83afc6d451c116f04ed002015ed55167f963"
+        "references/api_patterns.json": "f6d5505dd2c4a2027d2c5d95e1595d1669dac00239f0098bbb667d256ceef4d3",
+        "references/evidence.json": "45c0d28e33301e198abd3229b373fd83e164958e1e8fe53684b22bdfc04b3899",
+        "references/examples.json": "1fc6760a84c64f38a1905884c41566dd9b830172d1ad78d82311847f8935928b"
       }
     },
     {
-      "skill_id": "shared-safe-batch-mutation-b459e3",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "229360a",
-        "ccb4494",
-        "ce359b5"
-      ],
+      "skill_id": "venmo-transaction-totals-for-contact-relationships",
+      "candidate_type": "core",
+      "family_id": "d0b1f43",
+      "skill_role": "primary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "24f2b2cc10d83201e4eef34e96157ac65ed93e79c1ac3725f439d88e88d1bdea",
-      "metadata_sha256": "40ee422cf7940b1c19e69862d18c320f964b5e44b0d8b2bc43216fa6aae33e18",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "73c01e87c828ee2e637bc4910db4030814d90ab852a2ef35b02a7703b6f65629",
+      "metadata_sha256": "287b1320c56449306e6571286ebda5371e87443f7df500288b8472eab9ba0c3e",
       "reference_sha256": {
-        "references/api_patterns.json": "80fc365e147038047d447e1dcce747d8cbf26875929edd799d43e50d5189644c",
-        "references/evidence.json": "1a49801a7d0cd5576fd417d69e9d4aedd4165c14b481a6723ed0cce37ee73cf2",
-        "references/examples.json": "17cc4bd71a3b801ac25f35b760ed36770abd775fbdeebbbd17829ef789b3ef04"
+        "references/api_patterns.json": "a5366e201fb4d94e0c970db93583a2a4f6ae7061b087779840ecdbc3498b5ef8",
+        "references/evidence.json": "ebdf7e33afc243043e838432b0c60327e9d4ef4093e5407215b15bf7904ff22f",
+        "references/examples.json": "73507ef104faed7ca5824451ad4ce2c3fd1852cc391c66c1ebe599926196013c"
       }
     },
     {
-      "skill_id": "shared-set-aggregation-across-media-types-fa7d52",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "6104387",
-        "82e2fac",
-        "e7a10f8"
-      ],
+      "skill_id": "workout-playlist-fallback-and-parsing",
+      "candidate_type": "core",
+      "family_id": "b0a8eae",
+      "skill_role": "secondary",
+      "supporting_family_ids": [],
       "version": 0,
       "validation_status": "grounded",
-      "skill_sha256": "ad09d6f0c3fcaf19fabde32cc0d5c753c44cc2295a3228fe3000bff2b8db70b8",
-      "metadata_sha256": "0c671fd744f4155278e1c47d26b31ac7c675ea25ca49204fb8d728b15fee13fa",
+      "inclusion_policy": "train_grounded_v2",
+      "execution_review_status": "pending",
+      "skill_sha256": "45710753f1a83ac14b542d6a8624ff5e46a771b084f632e68c751003114c5927",
+      "metadata_sha256": "2ab657ef9cb095a22752d51057798f19925b6b8c94cde95770a7980112f3e564",
       "reference_sha256": {
-        "references/api_patterns.json": "4e249d912f47fe8977f8534f606ae3bc48571acddcff712904c5443ee45ae7c1",
-        "references/evidence.json": "55b9b493e5fdb416a0d7b1f281901fc598126620ec9ba3eeae9b0c4e4f6e7185",
-        "references/examples.json": "eb8561f279482c0f9d2b3a907f6ca0f94ad305a1c56d78fdb2630a322cc3b141"
-      }
-    },
-    {
-      "skill_id": "shared-song-review-management-4acfeb",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "692c77d",
-        "ccb4494",
-        "e85d92a"
-      ],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "23c7426150021c9130c4367225886f293343f78e75b72de7a72f820c20c86dfc",
-      "metadata_sha256": "bb88a59d5036065b7bb0ef5630417b48bf69d0fe30fb784b9ceeaef2bca22028",
-      "reference_sha256": {
-        "references/api_patterns.json": "94c3d32d3db39df48ebbb233576ce560af7f5a7d941d554e3f14d63784515c80",
-        "references/evidence.json": "c9becb6a040d3c4d14dbe4b70553b52ef6fd6b7cae0ad93ba97841944c8303ab",
-        "references/examples.json": "8267a4cc3e1464bd5fd3ef356400c05c961334c3e1a12e84802a33d16a494f47"
-      }
-    },
-    {
-      "skill_id": "shared-temporal-filtering-of-transactions-6f1f17",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "2a163ab",
-        "afc0fce",
-        "d0b1f43"
-      ],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "f2a5d9bbaf1adfbfd227627e5b0995772418a5bcba0c58856a44ba8726f0a121",
-      "metadata_sha256": "e6c728d5e2062c9b654f64073f28094c2700e274730d19921af61ebe1db956dd",
-      "reference_sha256": {
-        "references/api_patterns.json": "c30b858c0427b7c48b215b4496ec7ee6dc81602b7be1c5a37fee88b36ea056ad",
-        "references/evidence.json": "f3bd9c302e66c4854943a93c5ddb985c42fc9e2fff1bcf08de496f245da060d6",
-        "references/examples.json": "1b2f19de19c1ebc2e63e700ab772123940c0adc01b0b7da41d350a04353f77db"
-      }
-    },
-    {
-      "skill_id": "shared-verify-and-validate-data-integrity-8907ae",
-      "candidate_type": "reusable_subskill",
-      "family_id": null,
-      "supporting_family_ids": [
-        "22cc237",
-        "6104387",
-        "76f2c72"
-      ],
-      "version": 0,
-      "validation_status": "grounded",
-      "skill_sha256": "4c6dedb074c22119286a1b74b747a1939c4bd6a21ab010c5452bdaa91f317cd8",
-      "metadata_sha256": "5376794c5e82b11f28935ee77a86dd052322a482f186d64dd74b9a00a3798e13",
-      "reference_sha256": {
-        "references/api_patterns.json": "89961a9670aabb0b5eb0ffc094f630dcefe4831058fdbdc9e26e9a1d5262cb17",
-        "references/evidence.json": "72d791903e953273d1830306e127a7c66ccfac19e2776b593b1ef63a2b9612c8",
-        "references/examples.json": "72894fb37defdf02ec40d55c11e9ba2edf1053c50c5f7f785a3654537eae84c1"
+        "references/api_patterns.json": "d39e32092cfc3c1ebced5737e19d723192bb277e529ae2bdbf01c33c74c29901",
+        "references/evidence.json": "b43f9b96fcf54cf1696cdb83425fb0e51aab5c9f7c5a56a4c48fe38470fcb579",
+        "references/examples.json": "0553ad40bc8f70139f761a4947f58f05f0eaadcc8425d4f0a6b390a103e4c746"
       }
     }
   ],
-  "library_hash": "c229650d0762f9322d2206213e05dcfb6d3d6240919ea51eaa32f6ded1a42da8"
+  "library_hash": "173c30bf9a512ab17f438d69996a3734535528a7dc5184c791dfe2cfc2e19199"
 }

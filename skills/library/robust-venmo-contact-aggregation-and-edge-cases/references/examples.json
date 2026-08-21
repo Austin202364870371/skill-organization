@@ -1,0 +1,3 @@
+[
+  "```python\nfrom appworld.common.datetime import DateTime\n\n# Compute threshold for a month name like 'Jan' in current year.\nmonth_num = {\"Jan\": 1, \"Feb\": 2, \"Mar\": 3, \"Apr\": 4, \"May\": 5}[month_name]\nnow = apis.phone.get_current_date_and_time()\nstart_date = DateTime.today().set(month=month_num).set(day=1).to_date_string()\n\n# Empty contacts handling\ncontacts = find_all_from_pages(apis.phone.search_contacts, ...)\nif not contacts:\n    apis.supervisor.complete_task(answer=0, status=\"success\")\n```"
+]

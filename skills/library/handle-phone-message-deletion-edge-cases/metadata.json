@@ -1,0 +1,23 @@
+{
+  "skill_id": "handle-phone-message-deletion-edge-cases",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "771d8fc",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "771d8fc_1",
+  "refinement_task": "771d8fc_2",
+  "acceptance_task": "771d8fc_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "e35b239ddd22b9cde889be9df6922d5c973ce4cc03c7311ce2362b50415afac1",
+  "content_hash": "c8ab8b1fd490d68bb10fc6aea80b9094637a9b55fff1385bdff15433d59a8507",
+  "required_apps": [
+    "phone"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

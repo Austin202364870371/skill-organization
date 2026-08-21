@@ -1,0 +1,6837 @@
+{
+  "required_apis": [
+    "apis.spotify.login",
+    "apis.spotify.review_song",
+    "apis.spotify.show_album_library",
+    "apis.spotify.show_liked_songs",
+    "apis.spotify.show_playlist_library",
+    "apis.spotify.show_song_library",
+    "apis.spotify.show_song_reviews",
+    "apis.spotify.update_song_review",
+    "apis.supervisor.complete_task",
+    "apis.supervisor.show_account_passwords",
+    "apis.supervisor.show_profile"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/292",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/293",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/291",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/295",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/294",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/291",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/293",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/292",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/231/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/40/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/175/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/239/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/211/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/292",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/95/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/249/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/122/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/28/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/254/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/293",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/159/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/291",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/202/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/12/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/295",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/173/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/304/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/310/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/247/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/294",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/31/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/liked_songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/1/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/291",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/5/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/6/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/16/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/17/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/18/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/23/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/25/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/293",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/26/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/27/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/49/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/52/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/song_reviews/292",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/53/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/63/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/66/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/76/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/80/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/81/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/spotify/songs/82/reviews",
+      "parameter_names": [
+        "access_token",
+        "rating"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

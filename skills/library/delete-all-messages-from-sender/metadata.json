@@ -1,0 +1,23 @@
+{
+  "skill_id": "delete-all-messages-from-sender",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "771d8fc",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "771d8fc_1",
+  "refinement_task": "771d8fc_2",
+  "acceptance_task": "771d8fc_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "209e62c0c7d699863ef2c59f5607eee580df38ea0c1b3a39eaf1c5d57db024ca",
+  "content_hash": "901ffad462c828430313c95926409d7d36835457c9bfa7fec6397bd4b020c6c7",
+  "required_apps": [
+    "phone"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

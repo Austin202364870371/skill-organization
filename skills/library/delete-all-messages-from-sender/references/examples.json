@@ -1,0 +1,3 @@
+[
+  "```python\n# Generic pattern for deleting all messages from one sender\ntoken = apis.phone.login(username=user['username'], password=password)\n\n# Text messages\npage = 0\nwhile True:\n    msgs = apis.phone.search_text_messages(access_token=token, phone_number=spam_number, page_index=page)\n    if not msgs:\n        break\n    for m in msgs:\n        apis.phone.delete_text_message(access_token=token, text_message_id=m['text_message_id'])\n    page += 1\n\n# Voice messages: repeat with search_voice_messages / delete_voice_message\n```"
+]

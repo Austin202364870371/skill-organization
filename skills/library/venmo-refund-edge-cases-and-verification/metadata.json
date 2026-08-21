@@ -1,0 +1,24 @@
+{
+  "skill_id": "venmo-refund-edge-cases-and-verification",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "60d0b5b",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "60d0b5b_1",
+  "refinement_task": "60d0b5b_2",
+  "acceptance_task": "60d0b5b_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "2409a350489d2809ebfa1db33ab9a5f3e89b8c626530d6d6939229ade03d3424",
+  "content_hash": "a3e187bc3ec15c0605c0867c0d603167586d65230843475e3f7eb1eb16852a06",
+  "required_apps": [
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

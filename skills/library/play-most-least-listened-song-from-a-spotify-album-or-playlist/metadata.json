@@ -1,0 +1,23 @@
+{
+  "skill_id": "play-most-least-listened-song-from-a-spotify-album-or-playlist",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "c901732",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "c901732_1",
+  "refinement_task": "c901732_2",
+  "acceptance_task": "c901732_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "befc05eaa02e06ee7d7c93ddd1cb567b122f57c601d86a429c1f6fc172f852e9",
+  "content_hash": "4eb85206bb0b442ddd9bea9c60f37c1c97795624bd82a6eeaf9ff687a33ee89e",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

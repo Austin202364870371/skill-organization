@@ -1,0 +1,23 @@
+{
+  "skill_id": "spotify-recommendation-aggregation-edge-case-handling",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "287e338",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "287e338_1",
+  "refinement_task": "287e338_2",
+  "acceptance_task": "287e338_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "120d4d74331cd71103e31840c32fe8664e32e3fbc0a7e42ca9d72c6e32cff92c",
+  "content_hash": "8bdee7ce99c9d5c5f2f08f8b94f4bbfde10f08d03d56204491573e2c50e3474a",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

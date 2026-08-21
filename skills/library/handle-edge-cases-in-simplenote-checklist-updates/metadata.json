@@ -1,0 +1,23 @@
+{
+  "skill_id": "handle-edge-cases-in-simplenote-checklist-updates",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "cf6abd2",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "cf6abd2_1",
+  "refinement_task": "cf6abd2_2",
+  "acceptance_task": "cf6abd2_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "2c0951b22496d7f6ae96eb9aa52a4d3e14f44dbd0bb62ef7ff37f4fde0c4bec3",
+  "content_hash": "03373c3519a5fed016a97f22490a034a447ac12dfd2b7b68b377585403e9a33a",
+  "required_apps": [
+    "simple_note"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

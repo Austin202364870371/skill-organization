@@ -1,0 +1,377 @@
+{
+  "library": "/data-nfs/gpu3/u13256401368/skill-organization/skills/library",
+  "skill_count": 45,
+  "family_count": 23,
+  "blocker_count": 0,
+  "warning_count": 46,
+  "families": [
+    {
+      "family_id": "adjust",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "adjust-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "adjust-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "approve",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "approve-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "approve-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "bulk",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "bulk-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "bulk-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "compress",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "compress-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "compress-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "create",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "create-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "create-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "delete",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "delete-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "delete-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "export",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "export-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "export-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "find",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "find-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "find-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "handle",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "handle-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "handle-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "handling",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "handling-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "handling-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "like",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "like-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "like-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "organize",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "organize-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "organize-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "play",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "play-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "play-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "reply",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "reply-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "reply-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "robust",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "robust-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "robust-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "split",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "split-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "split-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "spotify",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "spotify-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "spotify-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "start",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "start-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "start-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "sum",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "sum-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "sum-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "sync",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "sync-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "sync-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "validate",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "validate-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "validate-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "venmo",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "venmo-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "venmo-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    },
+    {
+      "family_id": "workout",
+      "issues": [],
+      "warnings": [
+        {
+          "skill_id": "workout-primary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        },
+        {
+          "skill_id": "workout-secondary",
+          "level": "warning",
+          "message": "skill role intentionally omitted"
+        }
+      ]
+    }
+  ]
+}

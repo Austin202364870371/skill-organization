@@ -1,0 +1,24 @@
+{
+  "skill_id": "reply-to-text-message-requests-with-movie-recommendations-from-simple-note",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "29caf6f",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "29caf6f_1",
+  "refinement_task": "29caf6f_2",
+  "acceptance_task": "29caf6f_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "fd5174e956694ec31efcd7ee6c85e3ca2f5ae73e764c345701c117c6f95d9c36",
+  "content_hash": "eb15e5a7c6b3bb2bbe7c4652abb9c952704972a9a3566dbe6af05457ee956c8f",
+  "required_apps": [
+    "phone",
+    "simple_note"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

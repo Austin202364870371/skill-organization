@@ -1,0 +1,23 @@
+{
+  "skill_id": "handle-pagination-deduplication-and-edge-cases-in-spotify-library-song-analysis",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "82e2fac",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "82e2fac_1",
+  "refinement_task": "82e2fac_2",
+  "acceptance_task": "82e2fac_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "c6819dd554a3a3199841ca79e9d868bc83b3e8ec30f79e21d4696ea87aa7d9ba",
+  "content_hash": "09dd5b89291fd26f33d451d58bf58c696ca0d4dcd21766aeda401879b07f3434",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

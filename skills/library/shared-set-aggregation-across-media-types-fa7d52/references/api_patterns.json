@@ -1,7 +1,0 @@
-{
-  "supporting_apis": [
-    "spotify.show_album_library",
-    "spotify.show_playlist_library",
-    "spotify.show_song"
-  ]
-}

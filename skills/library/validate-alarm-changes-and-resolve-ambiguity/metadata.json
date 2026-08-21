@@ -1,0 +1,23 @@
+{
+  "skill_id": "validate-alarm-changes-and-resolve-ambiguity",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "302c169",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "302c169_1",
+  "refinement_task": "302c169_2",
+  "acceptance_task": "302c169_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "7033f615a7bb3246f705b39f5783c963763804aef48a8836fd4fa4530aa2a0ec",
+  "content_hash": "808101e00e9a2a0e646a87c176c91cf9d180270ff289ab7ca9530de1e7e080a7",
+  "required_apps": [
+    "phone"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

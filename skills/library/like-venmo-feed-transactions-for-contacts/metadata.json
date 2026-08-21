@@ -1,0 +1,24 @@
+{
+  "skill_id": "like-venmo-feed-transactions-for-contacts",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "2a163ab",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "2a163ab_1",
+  "refinement_task": "2a163ab_2",
+  "acceptance_task": "2a163ab_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "612a7923ae5c1cf4f7630e66a6c640a8a1cd02ced24d26d916e209d85a7b2b42",
+  "content_hash": "86d529886ee858fcd6bbdb53e9e92714d88fd9eaad717d575fc342ddf84535f8",
+  "required_apps": [
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

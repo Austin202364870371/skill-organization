@@ -1,0 +1,3 @@
+[
+  "```python\n# Edge case: current song missing from queue -> like whole queue\naccess_token = apis.spotify.access_token_from(main_user)\ncurrent = apis.spotify.show_current_song(access_token=access_token)\nqueue = apis.spotify.show_song_queue(access_token=access_token)\nif not queue:\n    apis.supervisor.complete_task(status=\"success\")\n    return\nids = [s.song_id for s in queue]\nif current and current.song_id in ids:\n    ids = ids[:ids.index(current.song_id)+1]\nfor sid in ids:\n    apis.spotify.like_song(access_token=access_token, song_id=sid, raise_on_failure=False)\napis.supervisor.complete_task(status=\"success\")\n```"
+]

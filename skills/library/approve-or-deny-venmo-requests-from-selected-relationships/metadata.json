@@ -1,0 +1,24 @@
+{
+  "skill_id": "approve-or-deny-venmo-requests-from-selected-relationships",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "6ea6792",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "6ea6792_1",
+  "refinement_task": "6ea6792_2",
+  "acceptance_task": "6ea6792_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "55c4a21a2fedc1d8162bf3b38d5fc2470007855392c7c21270f07afb02c6faa1",
+  "content_hash": "4e3e1c21bbb5c12f671d478e4e89823a88e78b77eed907a8cf114d08c0a6424f",
+  "required_apps": [
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "manually_revised",
+  "validation_scope": "static review and sampled execution"
+}

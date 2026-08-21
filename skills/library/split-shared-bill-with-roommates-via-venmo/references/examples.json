@@ -1,0 +1,4 @@
+[
+  "```python\n# Find all roommates (handles pagination)\nroommates = []\npage = 0\nwhile True:\n    batch = apis.phone.search_contacts(\n        access_token=phone_token, query=\"roommate\", relationship=\"roommate\", page_index=page\n    )\n    roommates.extend(batch)\n    if len(batch) < 20:  # typical page size\n        break\n    page += 1\nemails = {c['email'] for c in roommates}\n```",
+  "```python\n# Read and parse the latest monthly bill\ntotal = float(content.split(\"Total Amount => $\")[1].strip())\nshare = round(total / (len(emails) + 1))\nfor email in emails:\n    apis.venmo.create_payment_request(\n        access_token=venmo_token, user_email=email, amount=share, description=\"shared bill\"\n    )\n```"
+]

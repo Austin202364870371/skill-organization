@@ -1,0 +1,5348 @@
+{
+  "required_apis": [
+    "apis.file_system.create_file",
+    "apis.file_system.login",
+    "apis.spotify.delete_account",
+    "apis.spotify.login",
+    "apis.spotify.show_album_library",
+    "apis.spotify.show_artist",
+    "apis.spotify.show_playlist_library",
+    "apis.spotify.show_song",
+    "apis.spotify.show_song_library",
+    "apis.supervisor.complete_task",
+    "apis.supervisor.show_account_passwords",
+    "apis.supervisor.show_profile"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/128",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/257",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/130",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/262",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/134",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/141",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/142",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/146",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/150",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/279",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/159",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/161",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/290",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/160",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/38",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/170",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/171",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/172",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/45",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/46",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/47",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/48",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/49",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/50",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/51",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/52",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/53",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/54",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/55",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/56",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/57",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/183",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/314",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/317",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/63",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/64",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/65",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/66",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/319",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/196",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/200",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/202",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/74",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/75",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/76",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/77",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/78",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/79",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/80",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/81",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/82",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/207",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/217",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/90",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/220",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/221",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/96",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/100",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/228",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/229",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/108",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/238",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/114",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/116",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/120",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/121",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "content",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/spotify/account",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/256",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/260",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/137",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/265",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/143",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/271",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/144",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/148",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/149",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/283",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/290",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/294",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/39",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/42",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/43",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/300",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/305",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/51",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/180",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/308",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/55",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/311",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/58",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/59",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/60",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/61",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/62",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/318",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/64",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/187",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/322",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/195",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/70",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/201",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/74",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/75",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/76",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/205",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/210",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/82",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/213",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/85",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/1",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/86",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/1",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/90",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/222",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/228",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/229",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/231",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/108",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/112",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/240",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/243",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/244",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/245",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/118",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/115",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/249",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "content",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/spotify/account",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/264",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/263",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/140",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/268",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/269",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/144",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/152",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/145",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/282",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/147",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/160",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/163",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/14",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/37",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/169",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/45",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/47",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/48",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/49",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/50",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/51",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/52",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/53",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/54",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/179",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/186",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/58",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/59",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/60",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/61",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/62",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/190",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/65",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/322",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/193",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/68",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/197",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/324",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/72",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/76",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/80",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/81",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/82",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/211",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/87",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/1",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/88",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/89",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/221",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/94",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/229",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/230",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/234",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/111",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/241",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/244",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/126",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/254",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "content",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/spotify/account",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/128",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/257",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/130",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/262",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/134",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/141",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/142",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/146",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/150",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/279",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/159",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/161",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/290",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/160",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/38",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/170",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/171",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/172",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/45",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/46",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/47",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/48",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/49",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/50",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/51",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/52",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/53",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/54",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/55",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/56",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/57",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/183",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/314",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/317",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/63",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/64",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/65",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/66",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/319",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/196",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/200",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/202",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/74",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/75",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/76",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/77",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/78",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/79",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/80",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/81",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/82",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/207",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/217",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/90",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/220",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/221",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/96",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/100",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/228",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/229",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/108",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/238",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/114",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/116",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/120",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/121",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "content",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/spotify/account",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/256",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/260",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/137",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/265",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/143",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/271",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/144",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/148",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/149",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/283",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/290",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/294",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/39",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/42",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/43",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/300",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/305",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/51",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/180",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/308",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/55",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/311",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/58",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/59",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/60",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/61",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/62",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/318",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/64",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/187",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/322",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/195",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/70",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/201",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/74",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/75",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/76",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/205",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/210",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/82",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/213",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/85",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/1",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/86",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/1",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/90",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/222",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/228",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/229",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/231",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/108",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/112",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/240",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/243",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/244",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/245",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/118",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/115",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/249",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "content",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/spotify/account",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/songs",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/albums",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/library/playlists",
+      "parameter_names": [
+        "access_token",
+        "page_index"
+      ]
+    },
+    {
+      "path": "/spotify/songs/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/264",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/263",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/27",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/140",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/10",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/268",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/269",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/28",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/144",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/21",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/152",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/12",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/145",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/282",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/147",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/30",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/32",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/19",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/35",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/160",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/13",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/163",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/14",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/11",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/37",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/169",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/15",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/45",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/47",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/48",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/49",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/50",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/51",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/52",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/53",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/54",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/179",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/16",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/186",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/58",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/59",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/60",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/61",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/62",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/190",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/17",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/65",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/31",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/5",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/322",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/193",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/68",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/197",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/18",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/324",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/36",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/72",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/29",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/7",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/76",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/34",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/9",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/80",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/81",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/82",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/33",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/211",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/20",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/87",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/1",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/88",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/89",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/2",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/221",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/22",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/94",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/3",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/229",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/230",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/23",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/234",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/24",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/111",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/6",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/241",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/244",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/25",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/126",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/8",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/songs/254",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists/26",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "content",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/spotify/account",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[
+  "```python\ndef fetch_all_pages(api_func, access_token):\n    all_items = []\n    page_index = 0\n    while True:\n        page = api_func(access_token=access_token, page_index=page_index)\n        if not page:\n            break\n        all_items.extend(page)\n        page_index += 1\n    return all_items\n\n# Usage:\nsong_lib = fetch_all_pages(apis.spotify.show_song_library, spotify_token)\n```"
+]

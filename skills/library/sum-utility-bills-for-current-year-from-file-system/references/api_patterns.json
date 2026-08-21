@@ -1,0 +1,987 @@
+{
+  "required_apis": [
+    "apis.file_system.login",
+    "apis.file_system.show_directory",
+    "apis.file_system.show_file",
+    "apis.phone.get_current_date_and_time",
+    "apis.supervisor.complete_task",
+    "apis.supervisor.show_account_passwords",
+    "apis.supervisor.show_profile"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/file_system/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/file_system/directory",
+      "parameter_names": [
+        "access_token",
+        "directory_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/file_system/file",
+      "parameter_names": [
+        "access_token",
+        "file_path"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    }
+  ]
+}

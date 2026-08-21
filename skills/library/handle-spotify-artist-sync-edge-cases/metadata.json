@@ -1,0 +1,23 @@
+{
+  "skill_id": "handle-spotify-artist-sync-edge-cases",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "aa8502b",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "aa8502b_1",
+  "refinement_task": "aa8502b_2",
+  "acceptance_task": "aa8502b_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "7dd0bcd9089d99f589e38706b525817786668827d56939e73f0b6f1a8ee7f1c2",
+  "content_hash": "b27362354a8f626ef8ae50ed21bc985e94f404824068a129fca7f83d2ab04710",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

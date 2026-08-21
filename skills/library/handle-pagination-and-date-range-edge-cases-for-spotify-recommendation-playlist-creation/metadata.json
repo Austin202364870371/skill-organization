@@ -1,0 +1,23 @@
+{
+  "skill_id": "handle-pagination-and-date-range-edge-cases-for-spotify-recommendation-playlist-creation",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "e3d6c94",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "e3d6c94_1",
+  "refinement_task": "e3d6c94_2",
+  "acceptance_task": "e3d6c94_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "d92383962605d8d75cf093f45d7c57c14e743fc7e533d841d4422b4976a3e1a2",
+  "content_hash": "1707a8f3714cfc35492f49ee8c321ca8c887bdf27b9fc6e271283d2627d3248e",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

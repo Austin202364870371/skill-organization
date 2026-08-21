@@ -1,0 +1,23 @@
+{
+  "skill_id": "handle-spotify-queue-like-edge-cases",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "ccb4494",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "ccb4494_1",
+  "refinement_task": "ccb4494_2",
+  "acceptance_task": "ccb4494_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "153f84e400e5c71f79e6cb63b3ba6d9c4f02a646e5f8b08825ca0af8d097794c",
+  "content_hash": "5403ba609c41e11d1117732d63a21d5b4bb0b8bfea3cdabd00ca8660c183e89a",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

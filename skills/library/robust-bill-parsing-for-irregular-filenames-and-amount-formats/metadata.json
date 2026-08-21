@@ -1,0 +1,23 @@
+{
+  "skill_id": "robust-bill-parsing-for-irregular-filenames-and-amount-formats",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "76f2c72",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "76f2c72_1",
+  "refinement_task": "76f2c72_2",
+  "acceptance_task": "76f2c72_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "2574b140c50de863189903cb998bebe7031e0f3272adbc34567084f1f9d63c39",
+  "content_hash": "2598ce7f32bb47013e97f020c1d1db3da2f760e9c8df5cab76443ae64c45d4bf",
+  "required_apps": [
+    "file_system"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

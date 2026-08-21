@@ -1,0 +1,23 @@
+{
+  "skill_id": "create-spotify-playlist-from-recommended-songs-by-genre-and-release-year",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "e3d6c94",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "e3d6c94_1",
+  "refinement_task": "e3d6c94_2",
+  "acceptance_task": "e3d6c94_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "c167c3de01dcde9b09546afeca3166960f50cb8784c4ea0409a442885895063b",
+  "content_hash": "14a3498cc7e61246d06daba0c37497964d275a148cf451a67473cc424254acf3",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

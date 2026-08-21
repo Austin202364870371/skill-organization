@@ -1,0 +1,23 @@
+{
+  "skill_id": "spotify-most-least-played-song-lookup",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "e85d92a",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "e85d92a_1",
+  "refinement_task": "e85d92a_2",
+  "acceptance_task": "e85d92a_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "9827379ffa1fd948daf8bf202873a787c64c64540c42d57066acaf1e09e8cecc",
+  "content_hash": "88d565b8c56a3bf0b79953a7eb42bb57019768dd27552e59ed7f1e1945975393",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

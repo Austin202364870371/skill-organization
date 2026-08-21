@@ -1,7 +1,0 @@
-{
-  "supporting_apis": [
-    "spotify.remove_album_from_library",
-    "spotify.remove_song_from_library",
-    "spotify.follow_artist"
-  ]
-}

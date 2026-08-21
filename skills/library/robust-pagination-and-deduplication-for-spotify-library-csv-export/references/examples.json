@@ -1,0 +1,4 @@
+[
+  "```python\ndef safe_artist_names(song):\n    names = []\n    for artist in getattr(song, 'artists', []):\n        try:\n            names.append(apis.spotify.show_artist(artist_id=artist.id).name)\n        except Exception:\n            continue\n    return '|'.join(names)\n```",
+  "```python\nimport csv, io\nout = io.StringIO()\nwriter = csv.writer(out)\nwriter.writerow(['Title', 'Artists'])\nfor title, artists in rows.items():\n    writer.writerow([title, artists])\ncontent = out.getvalue()\n```"
+]

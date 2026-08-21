@@ -1,0 +1,23 @@
+{
+  "skill_id": "spotify-most-least-recommended-artist-finder",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "287e338",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "287e338_1",
+  "refinement_task": "287e338_2",
+  "acceptance_task": "287e338_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "5c2626cdfaf7ea2373e554e3cf4716d08cc192e7e78d78c30c0ac8c33b3a5bf3",
+  "content_hash": "6ca3076b5b2128922f431d2e3d691a0101131b1e5cf25c8aefc7fbdfb452ee76",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

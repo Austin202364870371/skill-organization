@@ -1,0 +1,23 @@
+{
+  "skill_id": "sum-utility-bills-for-current-year-from-file-system",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "76f2c72",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "76f2c72_1",
+  "refinement_task": "76f2c72_2",
+  "acceptance_task": "76f2c72_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "524cecffbf48c3056113032154f9b664f9d5412d851560aeadd3290a751c354a",
+  "content_hash": "f27615a91e8001ffbf0039934901dccc376c2577f3dc8847c52ae9cf22e573ca",
+  "required_apps": [
+    "file_system"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

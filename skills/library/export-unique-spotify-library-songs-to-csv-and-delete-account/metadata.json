@@ -1,0 +1,24 @@
+{
+  "skill_id": "export-unique-spotify-library-songs-to-csv-and-delete-account",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "6104387",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "6104387_1",
+  "refinement_task": "6104387_2",
+  "acceptance_task": "6104387_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "c1834dcbb80396c872b57ead3dc854dd577060cc57081bc841c5087033f18902",
+  "content_hash": "502484d6e2a1b36ee2ed6ae283eb52ac64496a204788d6c643f084287b86304b",
+  "required_apps": [
+    "file_system",
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

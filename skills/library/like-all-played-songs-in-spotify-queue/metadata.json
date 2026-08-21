@@ -1,0 +1,23 @@
+{
+  "skill_id": "like-all-played-songs-in-spotify-queue",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "ccb4494",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "ccb4494_1",
+  "refinement_task": "ccb4494_2",
+  "acceptance_task": "ccb4494_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "a43f7c3ce32f066111bd498677e13750d718be0ed4bac043dc47349835de8787",
+  "content_hash": "2a272908ab04745176bf80c9d4ae9ae830e580793c4b89d18802af9ce9bbcb54",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

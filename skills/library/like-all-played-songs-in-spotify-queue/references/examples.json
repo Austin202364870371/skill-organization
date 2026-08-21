@@ -1,0 +1,3 @@
+[
+  "```python\n# Obtain access token and like all played songs\naccess_token = apis.spotify.access_token_from(main_user)\ncurrent_song = apis.spotify.show_current_song(access_token=access_token)\nqueue = apis.spotify.show_song_queue(access_token=access_token)\nsong_ids = []\nfor song in queue:\n    song_ids.append(song.song_id)\n    if song.song_id == current_song.song_id:\n        break\nfor sid in song_ids:\n    apis.spotify.like_song(access_token=access_token, song_id=sid, raise_on_failure=False)\napis.supervisor.complete_task(status=\"success\")\n```"
+]

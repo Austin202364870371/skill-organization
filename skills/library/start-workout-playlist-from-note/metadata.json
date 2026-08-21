@@ -1,0 +1,24 @@
+{
+  "skill_id": "start-workout-playlist-from-note",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "b0a8eae",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "b0a8eae_1",
+  "refinement_task": "b0a8eae_2",
+  "acceptance_task": "b0a8eae_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "6a6f4cc65ce900f40b27564fc4e0602d9b8995c1692ce5b9773737c904c132fa",
+  "content_hash": "7e50046a10845a20b8cd750ae483d245160b0a46312ac4a4c514181426e18e18",
+  "required_apps": [
+    "simple_note",
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

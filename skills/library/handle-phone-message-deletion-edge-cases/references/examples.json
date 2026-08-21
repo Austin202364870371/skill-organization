@@ -1,0 +1,3 @@
+[
+  "```python\n# Paginate text messages manually\ntext_page = 0\nwhile True:\n    page_msgs = apis.phone.search_text_messages(access_token=token, phone_number=spam_number, page_index=text_page)\n    if not page_msgs:\n        break\n    for msg in page_msgs:\n        apis.phone.delete_text_message(access_token=token, text_message_id=msg['text_message_id'])\n    text_page += 1\n\n# Paginate voice messages manually\nvoice_page = 0\nwhile True:\n    page_msgs = apis.phone.search_voice_messages(access_token=token, phone_number=spam_number, page_index=voice_page)\n    if not page_msgs:\n        break\n    for msg in page_msgs:\n        apis.phone.delete_voice_message(access_token=token, voice_message_id=msg['voice_message_id'])\n    voice_page += 1\n```"
+]

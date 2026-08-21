@@ -1,0 +1,1831 @@
+{
+  "required_apis": [
+    "apis.phone.delete_text_message",
+    "apis.phone.delete_voice_message",
+    "apis.phone.search_text_messages",
+    "apis.phone.search_voice_messages",
+    "apis.supervisor.complete_task"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16804",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16812",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16802",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16808",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16810",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16800",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16806",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16798",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16794",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16796",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17028",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17036",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17038",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17042",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17040",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17026",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17030",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17034",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17024",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17032",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17044",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17022",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16802",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16796",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16810",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16814",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16808",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16806",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16804",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16800",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16798",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16794",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16812",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17028",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17036",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17026",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17030",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17022",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17024",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17034",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17032",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16796",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16798",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16800",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16802",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16794",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16804",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16806",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17022",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17032",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17026",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17034",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17042",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17024",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17046",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17040",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17044",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17028",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17038",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17036",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17030",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16804",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16812",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16802",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16808",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16810",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16800",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16806",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16798",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16794",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16796",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17028",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17036",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17038",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17042",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17040",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17026",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17030",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17034",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17024",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17032",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17044",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17022",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16802",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16796",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16810",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16814",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16808",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16806",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16804",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16800",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16798",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16794",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16812",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17028",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17036",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17026",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17030",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17022",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17024",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17034",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17032",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16796",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16798",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16800",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16802",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16794",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16804",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/text/16806",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "phone_number"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17022",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17032",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17026",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17034",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17042",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17024",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17046",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17040",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17044",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17028",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17038",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17036",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/phone/messages/voice/17030",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

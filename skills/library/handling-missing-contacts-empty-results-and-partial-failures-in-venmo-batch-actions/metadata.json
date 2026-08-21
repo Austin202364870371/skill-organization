@@ -1,0 +1,24 @@
+{
+  "skill_id": "handling-missing-contacts-empty-results-and-partial-failures-in-venmo-batch-actions",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "afc0fce",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "afc0fce_1",
+  "refinement_task": "afc0fce_2",
+  "acceptance_task": "afc0fce_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "6fc7fb1fa929ad4b94db0215a45fff13dff955bbeb1047c25d131e82fab78135",
+  "content_hash": "ad5337d284bc1e71ac74bb0795588dc7611f7553e7127c56b0ee7fbd81c6c1d8",
+  "required_apps": [
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

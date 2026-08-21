@@ -1,0 +1,23 @@
+{
+  "skill_id": "adjust-phone-alarm-and-disable-others",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "302c169",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "302c169_1",
+  "refinement_task": "302c169_2",
+  "acceptance_task": "302c169_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "37a186b075dc4032f83d571b956693cda57fb3c35678b50acf8db21dc0d93594",
+  "content_hash": "a34d849b8d345a7c9aa35c6daa6d54fdb398df5753844b16788194951f00e49c",
+  "required_apps": [
+    "phone"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

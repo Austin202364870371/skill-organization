@@ -1,0 +1,25 @@
+{
+  "skill_id": "robust-bill-split-pagination-receipt-selection-and-amount-parsing",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "3c13f5a",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "3c13f5a_1",
+  "refinement_task": "3c13f5a_2",
+  "acceptance_task": "3c13f5a_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "cc32f83c5fe7740acf38b8d6e9ed6d6dc4b7ece06b86c290116b7c07580aede7",
+  "content_hash": "112983d807848b207052ea5cec7efd200048c392826b789df68a2fded44eb00e",
+  "required_apps": [
+    "file_system",
+    "phone",
+    "venmo"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

@@ -1,0 +1,3 @@
+[
+  "```python\n# Generic example: find the most-played song in the user's saved-song library.\naccess_token = apis.spotify.login(\n    username=main_user.username,\n    password=passwords['spotify']\n)\n\nsong_ids = set()\npage_index = 0\nwhile True:\n    page = apis.spotify.show_song_library(\n        access_token=access_token, page_index=page_index\n    )\n    if not page.songs:\n        break\n    song_ids.update(s.song_id for s in page.songs)\n    page_index += 1\n\nsongs = [apis.spotify.show_song(song_id=sid) for sid in song_ids]\ntarget = max(songs, key=lambda s: s.play_count)\napis.supervisor.complete_task(answer=target.title, status=\"success\")\n```"
+]

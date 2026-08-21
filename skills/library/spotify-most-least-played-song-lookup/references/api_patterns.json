@@ -1,0 +1,185 @@
+{
+  "required_apis": [
+    "apis.spotify.search_artists",
+    "apis.spotify.search_songs",
+    "apis.supervisor.complete_task"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists",
+      "parameter_names": [
+        "query"
+      ]
+    },
+    {
+      "path": "/spotify/songs",
+      "parameter_names": [
+        "artist_id",
+        "page_index",
+        "sort_by"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists",
+      "parameter_names": [
+        "query"
+      ]
+    },
+    {
+      "path": "/spotify/songs",
+      "parameter_names": [
+        "artist_id",
+        "page_index",
+        "sort_by"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists",
+      "parameter_names": [
+        "query"
+      ]
+    },
+    {
+      "path": "/spotify/songs",
+      "parameter_names": [
+        "artist_id",
+        "page_index",
+        "sort_by"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists",
+      "parameter_names": [
+        "query"
+      ]
+    },
+    {
+      "path": "/spotify/songs",
+      "parameter_names": [
+        "artist_id",
+        "page_index",
+        "sort_by"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists",
+      "parameter_names": [
+        "query"
+      ]
+    },
+    {
+      "path": "/spotify/songs",
+      "parameter_names": [
+        "artist_id",
+        "page_index",
+        "sort_by"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/spotify/artists",
+      "parameter_names": [
+        "query"
+      ]
+    },
+    {
+      "path": "/spotify/songs",
+      "parameter_names": [
+        "artist_id",
+        "page_index",
+        "sort_by"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "answer",
+        "status"
+      ]
+    }
+  ]
+}

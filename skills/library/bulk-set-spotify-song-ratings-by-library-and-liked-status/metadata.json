@@ -1,0 +1,23 @@
+{
+  "skill_id": "bulk-set-spotify-song-ratings-by-library-and-liked-status",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "692c77d",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "692c77d_1",
+  "refinement_task": "692c77d_2",
+  "acceptance_task": "692c77d_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "45b104df02c246028709ae53c48c5e7a9873186bb40ea9cc9477e3093e0bd2f2",
+  "content_hash": "881ffe5315e73534ffce9576b096a503e2a4eb9db218f89a93fef0616c8bff86",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

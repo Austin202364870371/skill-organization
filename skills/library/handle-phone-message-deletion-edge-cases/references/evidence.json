@@ -1,0 +1,14 @@
+{
+  "split_roles": {
+    "family_id": "771d8fc",
+    "generation_task": "771d8fc_1",
+    "refinement_task": "771d8fc_2",
+    "acceptance_task": "771d8fc_3"
+  },
+  "reference_provenance": {
+    "reference_hash": "e35b239ddd22b9cde889be9df6922d5c973ce4cc03c7311ce2362b50415afac1"
+  },
+  "reference_hash": "e35b239ddd22b9cde889be9df6922d5c973ce4cc03c7311ce2362b50415afac1",
+  "raw_response_hash": "ba61b8db9af7ab145e25e7578f16a3fadbde3654bdb7d3bf03f0fd7569c0e101",
+  "evidence_scope": "generation evidence; not causal validation evidence"
+}

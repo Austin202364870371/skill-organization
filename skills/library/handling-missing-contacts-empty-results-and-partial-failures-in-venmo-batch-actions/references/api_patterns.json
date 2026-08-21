@@ -1,0 +1,4875 @@
+{
+  "required_apis": [
+    "apis.phone.search_contacts",
+    "apis.supervisor.complete_task",
+    "apis.venmo.create_transaction_comment",
+    "apis.venmo.like_transaction",
+    "apis.venmo.show_transactions"
+  ],
+  "ground_truth_api_calls": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8246/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8246/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8266/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8266/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8248/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8248/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8252/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8252/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8247/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8247/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8263/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8263/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8267/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8267/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8251/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8251/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8264/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8264/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8281/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8281/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8288/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8288/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8295/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8295/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8297/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8297/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8280/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8280/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8285/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8285/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8284/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8284/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8286/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8286/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8282/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8282/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8283/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8283/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8287/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8287/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8298/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8298/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8319/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8319/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8328/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8328/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8339/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8339/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8320/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8320/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8327/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8327/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8329/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8329/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8335/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8335/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8341/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8341/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ],
+  "successful_trajectory_steps": [
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8246/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8246/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8266/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8266/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8248/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8248/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8252/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8252/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8247/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8247/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8263/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8263/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8267/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8267/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8251/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8251/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8264/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8264/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8281/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8281/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8288/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8288/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8295/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8295/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8297/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8297/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8280/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8280/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8285/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8285/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8284/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8284/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8286/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8286/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8282/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8282/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8283/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8283/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8287/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8287/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8298/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8298/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    },
+    {
+      "path": "/supervisor/profile",
+      "parameter_names": []
+    },
+    {
+      "path": "/supervisor/account_passwords",
+      "parameter_names": []
+    },
+    {
+      "path": "/phone/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/phone/contacts",
+      "parameter_names": [
+        "access_token",
+        "page_index",
+        "query",
+        "relationship"
+      ]
+    },
+    {
+      "path": "/venmo/auth/token",
+      "parameter_names": [
+        "password",
+        "username"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8319/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8319/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8328/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8328/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8339/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8339/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8320/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8320/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8327/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8327/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions",
+      "parameter_names": [
+        "access_token",
+        "direction",
+        "min_created_at",
+        "page_index",
+        "user_email"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8329/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8329/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8335/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8335/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8341/likes",
+      "parameter_names": [
+        "access_token"
+      ]
+    },
+    {
+      "path": "/venmo/transactions/8341/comments",
+      "parameter_names": [
+        "access_token",
+        "comment"
+      ]
+    },
+    {
+      "path": "/supervisor/message",
+      "parameter_names": [
+        "status"
+      ]
+    }
+  ]
+}

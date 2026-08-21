@@ -1,0 +1,23 @@
+{
+  "skill_id": "robust-pagination-and-partial-failure-handling-for-spotify-cleanup",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "229360a",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "229360a_1",
+  "refinement_task": "229360a_2",
+  "acceptance_task": "229360a_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "6e9dd5a3535bb673a0204d90ed7ba3542bc5463ff6ad64ac808db93a22e07420",
+  "content_hash": "8591b7c39bc2783d80b06a93c2986b2b2d46f4cb97d7efdc119d320c4f9e15d0",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

@@ -1,0 +1,24 @@
+{
+  "skill_id": "robust-pagination-and-deduplication-for-spotify-library-csv-export",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "6104387",
+  "candidate_type": "core",
+  "skill_role": "secondary",
+  "generation_task": "6104387_1",
+  "refinement_task": "6104387_2",
+  "acceptance_task": "6104387_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "5b5979b9360f29f49c729a397066897dc50a9a6888ad244ee02adb8dbe176bbc",
+  "content_hash": "5d8a84877d5dea9a46457060b32155cf11006a34dd1abc3d75fa9b5d7fc0aa99",
+  "required_apps": [
+    "file_system",
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}

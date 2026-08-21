@@ -1,0 +1,23 @@
+{
+  "skill_id": "find-the-most-or-least-liked-played-song-in-a-spotify-library",
+  "status": "candidate",
+  "source_split": "train",
+  "family_id": "82e2fac",
+  "candidate_type": "core",
+  "skill_role": "primary",
+  "generation_task": "82e2fac_1",
+  "refinement_task": "82e2fac_2",
+  "acceptance_task": "82e2fac_3",
+  "model_id": "deepseek-v4-flash",
+  "generation_seed": 42,
+  "prompt_version": "family_skill_v2_primary_secondary",
+  "reference_hash": "81fd9f60c881d87bc0fa3869c5e93d20e6631415a47dab8d36eb0b1bf1e7fde6",
+  "content_hash": "d747109c5313bba934a9159ef7dfdae8775fa6d5edf24bf823b2e8204424751e",
+  "required_apps": [
+    "spotify"
+  ],
+  "validation_status": "grounded",
+  "inclusion_policy": "train_grounded_v2",
+  "execution_review_status": "pending",
+  "validation_scope": "static review and sampled execution"
+}
